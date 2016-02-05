@@ -17,6 +17,7 @@ Class Email extends CI_Controller
             'smtp_user' => 'benoats@gmail.com',
             'smpt_pass' => 'Playmouth.09'
         );
+
         $this->load->library('email', $config);
 
         $this->email->set_newline("\r\n");
@@ -26,6 +27,8 @@ Class Email extends CI_Controller
         $this->email->subject('this is a test');
         $this->email->message('working');
 
+        $path = $this->config->item('server_root');
+        echo $path; die();
         if($this->email->send())
         {
             echo "success";
