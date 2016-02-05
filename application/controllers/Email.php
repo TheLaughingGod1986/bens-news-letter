@@ -22,6 +22,7 @@ Class Email extends CI_Controller
 
 
 $filename = 'newsletter.txt';
+        echo realpath('newsletter.txt');
 if (is_readable($filename)) {
     echo 'The file is readable';
 } else {
