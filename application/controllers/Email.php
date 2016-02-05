@@ -20,6 +20,15 @@ Class Email extends CI_Controller
         $this->form_validation->set_rules('name', 'Name', 'trim|required');
         $this->form_validation->set_rules('email', 'Email Address', 'trim|required|valid_email');
 
+
+$filename = 'newsletter.txt';
+if (is_readable($filename)) {
+    echo 'The file is readable';
+} else {
+    echo 'The file is not readable';
+}
+
+
         if ($this->form_validation->run() == FALSE) {
             $this->load->view('newsletter');
         }
@@ -40,7 +49,7 @@ Class Email extends CI_Controller
             $path = $this->config->item('server_root');
             $file = $path . '/news-letter/attachments/yourinfo.txt';
 
-        $this->email->attach->is_readable($file);;
+        $this->email->attach($file);
 
             if($this->email->send())
             {
