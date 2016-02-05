@@ -8,7 +8,9 @@
  */
 class Sites extends CI_Controller
 {
-    function index()
-    {$this->load->view('home');
+    function index(){
+        $data['myValue'] = "some string";
+        $data['anotherValue'] = "and string";
+    $this->load->view('home');
     }
 }
