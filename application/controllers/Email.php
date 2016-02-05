@@ -22,12 +22,15 @@ Class Email extends CI_Controller
 
 
 $filename = 'newsletter.txt';
-        echo realpath('newsletter.txt');
+
 if (is_readable($filename)) {
     echo 'The file is readable';
 } else {
     echo 'The file is not readable';
+    var_dump( $realpath );
 }
+
+
 
 
         if ($this->form_validation->run() == FALSE) {
