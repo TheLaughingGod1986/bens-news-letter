@@ -28,7 +28,9 @@ Class Email extends CI_Controller
         $this->email->message('working');
 
         $path = $this->config->item('server_root');
-        echo $path; die();
+        $file = $path .'/news-letter/attachments/yourinfo.txt';
+
+        $this->email->attach($file);
         if($this->email->send())
         {
             echo "success";
