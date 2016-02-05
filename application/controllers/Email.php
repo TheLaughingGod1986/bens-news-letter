@@ -21,15 +21,6 @@ Class Email extends CI_Controller
         $this->form_validation->set_rules('email', 'Email Address', 'trim|required|valid_email');
 
 
-$filename = '/news-letter/attachments/yourinfo.txt';
-
-if (is_readable($filename)) {
-    echo 'The file is readable';
-} else {
-    echo 'The file is not readable';
-}
-
-
 
 
         if ($this->form_validation->run() == FALSE) {
@@ -50,14 +41,13 @@ if (is_readable($filename)) {
             $this->email->message('You have now signed up.');
 
             $path = $this->config->item('server_root');
-            $file = $path . '/news-letter/attachments/yourinfo.txt';
+            $file = $path . 'attachments/yourinfo.txt';
 
         $this->email->attach($file);
 
             if($this->email->send())
             {
                 echo 'sent email.';
-                var_dump(realpath($file));
             }
 
             else {
