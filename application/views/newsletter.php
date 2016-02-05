@@ -1,3 +1,7 @@
+<head>
+    <link rel="stylesheet" href="<?php echo base_url():?>css/style.css" type="text/css" media="screen" charset="utf-8">
+</head>
+
 <h3>news letter page loaded</h3>
 <style type="text/css">
     label {
