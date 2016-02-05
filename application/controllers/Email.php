@@ -27,11 +27,7 @@ if (is_readable($filename)) {
     echo 'The file is readable';
 } else {
     echo 'The file is not readable';
-
-$dir = dirname(yourinfo.txt);
-echo "<p>Full path to this dir: " . $dir . "</p>";
-echo "<p>Full path to a .htpasswd file in this dir: " . $dir . "/.htpasswd" . "</p>";
-
+    echo dirname(yourinfo.txt);
 }
 
 
