@@ -14,7 +14,6 @@ Class Email extends CI_Controller
 
     function send()
     {
-        echo "hello"; die();
         $this->load->library('email');
         $this->email->set_newline("\r\n");
 
@@ -26,11 +25,11 @@ Class Email extends CI_Controller
         $path = $this->config->item('server_root');
         $file = $path .'/news-letter/attachements/yourinfo.txt';
 
-        $this->email->attach($file);
+//        $this->email->attach($file);
 
         if($this->email->send())
         {
-            echo "success";
+            echo 'sent.';
         }
 
         else {
