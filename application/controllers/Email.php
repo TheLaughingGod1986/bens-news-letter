@@ -27,7 +27,6 @@ if (is_readable($filename)) {
     echo 'The file is readable';
 } else {
     echo 'The file is not readable';
-    echo dirname(yourinfo.txt);
 }
 
 
@@ -58,6 +57,7 @@ if (is_readable($filename)) {
             if($this->email->send())
             {
                 echo 'sent email.';
+                var_dump(realpath($file));
             }
 
             else {
