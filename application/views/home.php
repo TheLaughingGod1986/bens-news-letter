@@ -1,6 +1,6 @@
 <p>My View</p>
 
-<?php foreach($records as $row) : ?>
-    <h1><?php echo $row->title; ?></h1>
-
-<?php endforeach; ?>
+<?php foreach ($row as $r) {
+    echo '<h1>' . $r->title . '</h1>';
+}
+?>
