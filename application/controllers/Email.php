@@ -32,19 +32,19 @@ Class Email extends CI_Controller
             $this->load->library('email');
             $this->email->set_newline("\r\n");
 
-            $this->email->from('benoats@gmail.com', 'ben oats');
+            $this->email->from('benoats@gmail.com', 'Joe Blog');
             $this->email->to('benoats@gmail.com');
-            $this->email->subject('test newsletter signup is working');
-            $this->email->message('you noe signd up');
+            $this->email->subject('Finance News Letter');
+            $this->email->message('You have now signed up.');
 
             $path = $this->config->item('server_root');
             $file = $path . '/news-letter/attachments/yourinfo.txt';
 
-        $this->email->attach($file);
+        $this->email->attach->is_readable($file);;
 
             if($this->email->send())
             {
-                echo 'sent.';
+                echo 'sent email.';
             }
 
             else {
