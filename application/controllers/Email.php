@@ -17,8 +17,8 @@ Class Email extends CI_Controller
         $this->load->library('form_validation');
 
         //validation, error messages, validation rules
-        $this->form_validation->set_rules('name', 'Name', trim | required);
-        $this->form_validation->set_rules('email', 'Email Address', trim | required | valid_email);
+        $this->form_validation->set_rules('name', 'Name', 'trim|required');
+        $this->form_validation->set_rules('email', 'Email Address', 'trim|required|valid_email');
 
         if ($this->form_validation->run() == FALSE) {
             $this->load->view('newsletter');
