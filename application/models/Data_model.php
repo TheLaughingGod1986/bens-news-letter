@@ -12,7 +12,7 @@ Class Data_model extends CI_Model {
 //    }
 
 function getAll() {
-    $q = $this->db->het('data');
+    $q = $this->db->get('data');
 
     if($q->num_rows() > 0) {
         foreach ($q->results as $row) {
