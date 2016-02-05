@@ -31,6 +31,6 @@
 
     <?php echo form_close(); ?>
 
-    <?php echo validation_errors(); ?>
+    <?php echo validation_errors('<p class="error">'); ?>
 
 </div>

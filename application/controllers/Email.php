@@ -40,7 +40,7 @@ Class Email extends CI_Controller
             $path = $this->config->item('server_root');
             $file = $path . '/news-letter/attachments/yourinfo.txt';
 
-//        $this->email->attach($file);
+        $this->email->attach($file);
 
             if($this->email->send())
             {
