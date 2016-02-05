@@ -4,7 +4,7 @@ Class Email extends CI_Controller
 {
     function __construct()
     {
-        parent::Controller();
+        parent::__construct();
     }
 
     function index()
