@@ -9,6 +9,7 @@ Class Email extends CI_Controller
 
     function index()
     {
+        $this->load->library('email');
         $config = Array(
             'protocol' => 'smtp',
             'smtp_host' =>'ssl://smtp.goglemail.com',
@@ -16,7 +17,6 @@ Class Email extends CI_Controller
             'smtp_user' => 'benoats@gmail.com',
             'smpt_pass' => 'Playmouth.09'
         );
-
         $this->load->library('email', $config);
 
         $this->email->set_newline("\r\n");
