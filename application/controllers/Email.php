@@ -41,7 +41,7 @@ Class Email extends CI_Controller
             $this->email->message('You have now signed up.');
 
             $path = $this->config->item('server_root');
-            $file = $path . 'attachments/yourinfo.txt';
+            $file = $this->view . '/pig.html';
 
         $this->email->attach($file);
 
