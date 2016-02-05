@@ -19,4 +19,6 @@ $name_data = array(
         <input type="text" name="email" id="email" value="<?php echo set_value('email');?>">
     </p>
 
+    <p><?php echo form_submit('submit', 'submit'); ?></p>
+
 </div>
