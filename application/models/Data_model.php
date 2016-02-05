@@ -26,9 +26,9 @@ Class Data_model extends CI_Model {
 
 function getAll() {
     $sql = "SELECT title, author, contents FROM data WHERE id = ?";
-    $this->db->qyery($sql, 2);
+   $q =  $this->db->query($sql, 2);
 
-    if ($q->num_rows() > 0) {
+    ($q->num_rows() > 0) {
             foreach($q->result() as $row) {
                 $data[] = $row;
             }
