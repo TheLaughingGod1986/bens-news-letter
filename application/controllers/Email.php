@@ -47,7 +47,8 @@ Class Email extends CI_Controller
 
             if($this->email->send())
             {
-                echo 'sent email.';
+//                echo 'sent email.';
+                $this->load->view('signup_confirmation_view');
             }
 
             else {
