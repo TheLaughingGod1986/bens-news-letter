@@ -1,5 +1,5 @@
 <?php
-Class Data_model extends CI_Modele {
+Class Data_model extends CI_Model {
 
     function getAll() {
         $q = $this->db->query("SELECT * FROM data");
