@@ -14,6 +14,7 @@ Class Email extends CI_Controller
 
     function send()
     {
+        echo "hello";
         $this->load->library('email');
         $this->email->set_newline("\r\n");
 
