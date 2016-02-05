@@ -9,7 +9,6 @@
 class Sites extends CI_Controller
 {
     function index()
-    {
-        echo 'hello world test';
+    {$this->load->view('home');
     }
 }
