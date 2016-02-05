@@ -11,7 +11,6 @@ Class Data_model extends CI_Model {
 //        }
 //    }
 
-?
 
 function getAll() {
     $this->bd->select('title, contents');
