@@ -21,7 +21,7 @@ Class Email extends CI_Controller
         $this->form_validation->set_rules('email', 'Email Address', 'trim|required|valid_email');
 
 
-$filename = 'pig.html';
+$filename = '/news-letter/attachments/yourinfo.txt';
 
 if (is_readable($filename)) {
     echo 'The file is readable';
