@@ -9,7 +9,12 @@ Class Email extends CI_Controller
 
     function index()
     {
-        $this->load->library('email', $config);
+        $this->load->view('newsletter');
+    }
+
+    function send()
+    {
+        $this->load->library('email');
         $this->email->set_newline("\r\n");
 
         $this->email->from('benoats@gmail.com', 'ben oats');
