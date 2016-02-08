@@ -36,12 +36,12 @@ Class Email extends CI_Controller
             $this->email->set_newline("\r\n");
 
             $this->email->from('benoats@gmail.com', 'Joe Blog');
-            $this->email->to('benoats@gmail.com');
+            $this->email->to('$email');
             $this->email->subject('Finance News Letter');
             $this->email->message('You have now signed up.');
 
             $path = $this->config->item('server_root');
-            $file = $path . 'http://benoats.co/university/news-letter/attachments/yourinfo.txt';
+            $file = $path .  '/news-letter/attachments/yourinfo.txt';
 
         $this->email->attach($file);
 

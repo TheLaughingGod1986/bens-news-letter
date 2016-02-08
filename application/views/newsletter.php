@@ -3,11 +3,6 @@
 </head>
 
 <h3>news letter page loaded</h3>
-<style type="text/css">
-    label {
-        display: block
-    }
-</style>
 
 <div id="newsletter_form">
 
