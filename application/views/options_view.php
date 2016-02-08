@@ -6,7 +6,7 @@
 <body>
 
 <h2>create</h2>
-<?php echo form_open('site/create');?>
+<?php echo form_open('sites/create');?>
 <p>
     <label for="title"> Title</label>
     <input type="text " name="title" id="title"/>
