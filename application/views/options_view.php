@@ -20,5 +20,19 @@
 </p>
 <?php echo form_close();?>
 
+
+<h2>read</h2>
+
+<?php if(isset($records)) : foreach($records as $row) : ?>
+
+<h2><?php echo $row->$title; ?></h2>
+<div><?php echo $row->$content; ?></div>
+
+<?php endforeach; ?>
+
+<?php else : ?>
+<h2>no records</h2>
+<?php endif; ?>
+
 </body>
 </html>

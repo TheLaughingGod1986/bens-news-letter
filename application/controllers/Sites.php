@@ -9,7 +9,14 @@
 class Sites extends CI_Controller
 {
     function index(){
-        $this->load->view('options_view');
+        $data = array();
+
+        if($query = $this->view('options_view'));
+        {
+            $data['records'] = $query;
+        }
+
+        $this->load->view('options_view', $data);
 
 //       $this->load->model('data_model');
 //        $data['row'] = $this->data_model->getAll();
