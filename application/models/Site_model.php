@@ -30,7 +30,7 @@ class Site_model extends CI_Model
     function update_record($data)
     {
         $this->db->where('id', 2);
-        $this->update('data', $data);
+        $this->db->update('data', $data);
     }
 
     function delete_row()
