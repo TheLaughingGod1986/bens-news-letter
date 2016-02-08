@@ -36,6 +36,16 @@ class Sites extends CI_Controller
 
     }
 
+    function update()
+    {
+        $data = array(
+            'title' => 'updated title',
+            'content' => 'content update here'
+        );
+
+        $this->site_model->update_record($data);
+    }
+
     function delete()
     {
         $this->site_model->delete_row();
