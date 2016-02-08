@@ -20,13 +20,14 @@
 </p>
 <?php echo form_close();?>
 
+</hr>
 
 <h2>read</h2>
 
 <?php if(isset($records)) : foreach($records as $row) : ?>
 
-<h2><?php echo $row->$title; ?></h2>
-<div><?php echo $row->$content; ?></div>
+<h2><?php echo $row->title; ?></h2>
+<div><?php echo $row->content; ?></div>
 
 <?php endforeach; ?>
 
