@@ -33,7 +33,7 @@ class Site_model extends CI_Model
         $this->update('data', $data);
     }
 
-    function delete_record()
+    function delete_row()
     {
         $this->db->where('id', $this->uri->segment(3));
         $this->delete('data');
