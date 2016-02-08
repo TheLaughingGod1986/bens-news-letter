@@ -36,4 +36,10 @@ class Sites extends CI_Controller
 
     }
 
+    function delete()
+    {
+        $this->site_model->delete_row();
+        $this->index();
+    }
+
 }
