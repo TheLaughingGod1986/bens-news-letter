@@ -26,7 +26,7 @@ class Sites extends CI_Controller
 
         $this->site_model->add_record('$data');
         $this->index();
-        
+
     }
 
 }
