@@ -17,4 +17,16 @@ class Sites extends CI_Controller
 //        $this->load->view('home', $data);
     }
 
+    function create()
+    {
+        $data = array(
+            'title' => $this->input->post('title'),
+            'content' => $this->input->post('content')
+        );
+
+        $this->site_model->add_record('$data');
+        $this->index();
+        
+    }
+
 }
