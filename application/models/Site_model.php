@@ -18,7 +18,7 @@ class Site_model extends CI_Model
     function get_records()
     {
         $query = $this->db->get('data');
-        return $query->results();
+        return $query->result();
     }
 
     function add_record ($data)
