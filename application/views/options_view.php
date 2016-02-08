@@ -26,7 +26,7 @@
 
 <?php if(isset($records)) : foreach($records as $row) : ?>
 
-<h2><?php echo $row->title; ?></h2>
+<h2><?php echo anchor("sites/delete/$row", $row->title); ?></h2>
 <div><?php echo $row->content; ?></div>
 
 <?php endforeach; ?>
@@ -35,5 +35,10 @@
 <h2>no records</h2>
 <?php endif; ?>
 
+</hr>
+
+<h2>delete</h2>
+
+<p>just click on a heading to delete</p>
 </body>
 </html>
