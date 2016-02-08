@@ -21,7 +21,7 @@ class Sites extends CI_Controller
     {
         $data = array(
             'title' => $this->input->post('title'),
-            'content' => $this->input->post('content')
+            'content' => $this->input->post('contents')
         );
 
         $this->site_model->add_record($data);
