@@ -14,4 +14,28 @@ class Site_model extends CI_Model
             return $data;
         }
     }
+
+    function get_records()
+    {
+        $query = $this->db->get('data');
+        return $query->results();
+    }
+
+    function add_record ($data)
+    {
+        $this->db->insert('data', $data);
+        return;
+    }
+
+    function update_record($data)
+    {
+        $this->db->where('id' 2);
+        $this->update('data' $data);
+    }
+
+    function delete_record()
+    {
+        $this->db->where('id', $this->uri->segment(3));
+        $this->delete('data');
+    }
 }

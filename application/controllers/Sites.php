@@ -9,9 +9,12 @@
 class Sites extends CI_Controller
 {
     function index(){
-       $this->load->model('data_model');
-        $data['row'] = $this->data_model->getAll();
+        $this->load->view('options_view');
 
-        $this->load->view('home', $data);
+//       $this->load->model('data_model');
+//        $data['row'] = $this->data_model->getAll();
+//
+//        $this->load->view('home', $data);
     }
+
 }
