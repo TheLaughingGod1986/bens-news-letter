@@ -7,7 +7,7 @@
 
 <h2>create</h2>
 <?php echo form_open('site/create');?>
-<?php echo form_closed();?>
+<?php echo form_close();?>
 
 </body>
 </html>
