@@ -26,7 +26,7 @@
 
 <?php if(isset($records)) : foreach($records as $row) : ?>
 
-<h2><?php echo anchor("sites/delete/$row", $row->title); ?></h2>
+<h2><?php echo anchor("sites/delete/$row->id", $row->title); ?></h2>
 <div><?php echo $row->content; ?></div>
 
 <?php endforeach; ?>
