@@ -11,7 +11,7 @@ class Sites extends CI_Controller
     function index(){
         $data = array();
 
-        if($query = $this->view('options_view'));
+        if($query = $this->site_model->get_records())
         {
             $data['records'] = $query;
         }
