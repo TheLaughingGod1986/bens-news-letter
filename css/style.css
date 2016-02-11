@@ -44,9 +44,19 @@ input [type=submit], form a {
     -webkit-box-shadow: 0 1px 0 white;
 }
 
-input[type=submit]{
-    background: #287368;
-    cursor: pointer;
+input[type=submit], input :hover{
+    border: none;
+    margin-right: 1em;
+    padding: 6px;
+    text-decoration: none;
+    font-size: 12px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    background: #348075;
+    color: white;
+    box-shadow: 0 1px 0 white;
+    -moz-box-shadow: 0 1px 0 white;
+    -webkit-box-shadow: 0 1px 0 white;
 }
 a:hover, form a:hover {
     background: #287368;
