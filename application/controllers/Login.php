@@ -7,4 +7,5 @@ class Login extends CI_Controller
         $data['main_content'] = 'login_form';
         $this->load->view('includes/template', $data);
     }
+    
 }

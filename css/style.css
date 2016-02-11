@@ -14,7 +14,7 @@ body {
     -webkit-border-radius: 3px;
 }
 
-h1,h2,h3,h4,h5 {
+h1, h2, h3, h4, h5 {
     margin-top: 0;
     text-align: center;
 }
@@ -53,6 +53,7 @@ input[type=submit]:hover, form a:hover {
     color: #393939;
     font-size: 15px;
 }
+
 fieldset {
     width: 300px;
     margin: auto;
