@@ -44,7 +44,11 @@ input [type=submit], form a {
     -webkit-box-shadow: 0 1px 0 white;
 }
 
-input[type=submit] a:hover, form a:hover {
+input[type=submit]{
+    background: #287368;
+    cursor: pointer;
+}
+a:hover, form a:hover {
     background: #287368;
     cursor: pointer;
 }
