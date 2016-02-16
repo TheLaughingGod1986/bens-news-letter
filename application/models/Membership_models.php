@@ -1,10 +1,5 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Ben
- * Date: 16/02/2016
- * Time: 12:08
- */
+
 class Membership_model extends CI_Model {
     function validate()
     {
