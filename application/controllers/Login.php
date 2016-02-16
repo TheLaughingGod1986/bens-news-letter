@@ -12,7 +12,7 @@ class Login extends CI_Controller
     {
         $this->load->model('member_model');
         $query = $this->member_model->validate();
-
+echo 'test';
         if($query) // if user cred validate
         {
             $data = array(
