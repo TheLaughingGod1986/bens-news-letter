@@ -10,8 +10,8 @@ class Login extends CI_Controller
 
     function validate_credentials()
     {
-        $this->load->model('membership_model');
-        $query = $this->membership_model->validate();
+        $this->load->model('member_model');
+        $query = $this->member_model->validate();
 
         if($query) // if user cred validate
         {
