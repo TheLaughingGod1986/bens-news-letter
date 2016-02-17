@@ -1,5 +1,3 @@
-<link rel="stylesheet" href="<?php echo base_url();?>css/table.css" type="text/css" media="screen" charset="utf-8">
-
 <?php
 
 /**
