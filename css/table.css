@@ -26,7 +26,7 @@ th {
     border-right: 1px solid #aaaaaa;
 }
 
-tr:odd {
+tr:nth-child(odd) {
     background: #e3e3e3;
 }
 
