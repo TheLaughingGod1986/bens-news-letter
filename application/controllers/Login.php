@@ -23,8 +23,8 @@ class Login extends CI_Controller
             $this->session->set_userdata($data);
             redirect('members/members_area');
         } else {
-            echo 'u shit';
-//            $this->index();
+            $this->index();
+            echo 'try again';
         }
     }
 

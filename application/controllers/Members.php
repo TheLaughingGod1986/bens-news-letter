@@ -6,7 +6,7 @@
  * Time: 06:48
  */
 
-class Sites extends CI_Controller
+class Members extends CI_Controller
 {
 
     function __construct()
