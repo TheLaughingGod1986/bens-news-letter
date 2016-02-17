@@ -23,6 +23,6 @@
     echo form_submit('submit', 'Create Account')
     ?>
 
-    <?php echo validation_errors('<p class="error">'); ?>
+    <?php echo validation_errors('<p class="error"/>'); ?>
 
 </fieldset>
