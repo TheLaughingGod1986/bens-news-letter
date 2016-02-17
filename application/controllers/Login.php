@@ -21,14 +21,12 @@ class Login extends CI_Controller
             );
 
             $this->session->set_userdata($data);
-
-           echo 'yes';
-//            redirect('sites/members_area');
+            redirect('sites/members_area');
         }
 
         else
         {
-            echo 'shit';
+            $this->index();
         }
     }
 }
