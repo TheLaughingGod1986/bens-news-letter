@@ -36,7 +36,7 @@ $config['server_root'] = $_SERVER['DOCUMENT_ROOT'];
 | variable so that it is blank.
 |
 */
-$config['index_page'] = 'index.php';
+$config['index_page'] = '';
 
 /*
 |--------------------------------------------------------------------------

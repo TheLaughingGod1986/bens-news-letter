@@ -24,7 +24,7 @@ class Login extends CI_Controller
             redirect('members/members_area');
         } else {
             $this->index();
-            echo 'try again';
+            echo 'Incorrect Password or Username';
         }
     }
 
