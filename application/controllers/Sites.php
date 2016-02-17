@@ -10,6 +10,7 @@ class Sites extends CI_Controller
 {
     function index()
     {
+        $this->load->view('includes/template', $data);
         $this->load->library('pagination');
         $this->load->library('table');
 
