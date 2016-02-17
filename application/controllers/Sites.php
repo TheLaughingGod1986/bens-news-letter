@@ -10,7 +10,6 @@ class Sites extends CI_Controller
 {
     function index()
     {
-
         $this->load->library('pagination');
 
         $config['base_url'] = 'http://benoats.co/university/news-letter/index.php/sites/index';
