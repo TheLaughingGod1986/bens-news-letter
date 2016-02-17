@@ -13,6 +13,8 @@ class Sites extends CI_Controller
         $this->load->library('pagination');
         $this->load->library('table');
 
+        $this->table->set_headings('ID', 'The Title', 'The Content');
+
         $config['base_url'] = 'http://benoats.co/university/news-letter/index.php/sites/index';
         $config['total_rows'] = $this->db->get('data')->num_rows();
         $config['per_page'] = 10;
