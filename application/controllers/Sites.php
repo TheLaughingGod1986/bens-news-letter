@@ -22,7 +22,7 @@ class Sites extends CI_Controller
 
         $data['records'] = $this->db->get('data', $config['per_page'], $this->uri->segment(3));
 
-        $this->load->view('site_view', $data);
+        $this->load->view('sites_view', $data);
 
 //        $data = array();
 //
