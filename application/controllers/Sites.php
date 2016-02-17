@@ -11,6 +11,7 @@ class Sites extends CI_Controller
     function index()
     {
         $this->load->library('pagination');
+        $this->load->library('table');
 
         $config['base_url'] = 'http://benoats.co/university/news-letter/index.php/sites/index';
         $config['total_rows'] = $this->db->get('data')->num_rows();
