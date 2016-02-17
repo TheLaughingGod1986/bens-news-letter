@@ -6,7 +6,7 @@
 <body>
 
 <h2>create</h2>
-<?php echo form_open('sites/create');?>
+<?php echo form_open('sites/create'); ?>
 <p>
     <label for="title"> Title</label>
     <input type="text " name="title" id="title"/>
@@ -16,23 +16,23 @@
     <input type="text " name="content" id="content"/>
 </p>
 <p>
-    <input type="submit" value="submit" />
+    <input type="submit" value="submit"/>
 </p>
-<?php echo form_close();?>
+<?php echo form_close(); ?>
 
 </hr>
 
 <h2>read</h2>
 
-<?php if(isset($records)) : foreach($records as $row) : ?>
+<?php if (isset($records)) : foreach ($records as $row) : ?>
 
-<h2><?php echo anchor("sites/delete/$row->id", $row->title); ?></h2>
-<div><?php echo $row->content; ?></div>
+    <h2><?php echo anchor("sites/delete/$row->id", $row->title); ?></h2>
+    <div><?php echo $row->content; ?></div>
 
 <?php endforeach; ?>
 
 <?php else : ?>
-<h2>no records</h2>
+    <h2>no records</h2>
 <?php endif; ?>
 
 </hr>

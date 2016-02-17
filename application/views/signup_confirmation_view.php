@@ -1,1 +1,1 @@
-<h1> you suck, give me money</h1>
+<h1>you have subscribed to our monthly news letter, thank you</h1>
