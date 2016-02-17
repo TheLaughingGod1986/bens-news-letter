@@ -29,4 +29,10 @@ class Login extends CI_Controller
             $this->index();
         }
     }
+
+    function signup()
+    {
+        $data['main_content'] = 'signup_form';
+        $this->load->view('includes/template', $data);
+    }
 }
