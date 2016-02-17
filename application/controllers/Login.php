@@ -51,7 +51,7 @@ class Login extends CI_Controller
 
         if($this->form_validation->run() == FALSE)
         {
-            $this->load->view('signup_form');
+            $this->signup();
         }
         else
         {
