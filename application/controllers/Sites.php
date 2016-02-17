@@ -64,7 +64,7 @@ class Sites extends CI_Controller
     {
         $is_logged_in = $this->session->userdata('is_logged_in');
 
-        if(!isset($is_logged_in) || $is_logged_in !== true)
+        if(!isset($is_logged_in) || $is_logged_in != true)
         {
             echo 'lol, try again. this area is secure. MEMBERS ONLY !. please <a href= "../login">Login</a>';
             die();
