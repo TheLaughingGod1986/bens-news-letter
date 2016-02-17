@@ -13,7 +13,7 @@ class Login extends CI_Controller
         $this->load->model('member_model');
         $query = $this->member_model->validate();
 
-        if($query) // if user cred validate
+        if ($query) // if user cred validate
         {
             $data = array(
                 'username' => $this->input->post('username'),
@@ -22,10 +22,7 @@ class Login extends CI_Controller
 
             $this->session->set_userdata($data);
             redirect('sites/members_area');
-        }
-
-        else
-        {
+        } else {
             $this->index();
         }
     }
@@ -49,22 +46,15 @@ class Login extends CI_Controller
         $this->form_validation->set_rules('password', 'Password', 'trim|required|min_length[4]|max_length[32]');
         $this->form_validation->set_rules('password2', 'Password Confirmation', 'trim|required|matches[password]');
 
-        if($this->form_validation->run() == FALSE)
-        {
+        if ($this->form_validation->run() == FALSE) {
             $this->signup();
-        }
-        else
-        {
+        } else {
             $this->load->model('member_model');
-            if($query = $this->member_model->create_member())
-            {
-$data['main_content'] = 'signup_successfull';
+            if ($query = $this->member_model->create_member()) {
+                $data['main_content'] = 'signup_successfull';
                 $this->load->view('includes/template', $data);
-            }
-            else
-            {
-//                $this->load->view('signup_form');
-                echo 'bad input';
+            } else {
+                $this->load->view('signup_form');
             }
         }
     }
