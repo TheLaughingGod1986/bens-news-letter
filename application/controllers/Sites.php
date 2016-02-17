@@ -1,11 +1,11 @@
 <?php
-
 /**
  * Created by PhpStorm.
  * User: Ben
  * Date: 05/02/2016
  * Time: 06:48
  */
+
 class Sites extends CI_Controller
 {
     function index(){
@@ -18,10 +18,6 @@ class Sites extends CI_Controller
 
         $this->load->view('options_view', $data);
 
-//       $this->load->model('data_model');
-//        $data['row'] = $this->data_model->getAll();
-//
-//        $this->load->view('home', $data);
     }
 
     function create()
@@ -51,9 +47,28 @@ class Sites extends CI_Controller
         $this->index();
     }
 
+ // membership bit//
+
+    function __construct()
+    {
+        parent::CI_Controller();
+        $this->is_logged_in();
+    }
+
     function members_area()
     {
         $this->load->view('members_area');
+    }
+
+    function is_logged_in()
+    {
+        $is_logged_in = $this->session->userdata('is_logged_in');
+
+        if(!isset($is_logged_in) || $is_logged_in !== true)
+        {
+            echo 'lol, try again. this area is secure. MEMBERS ONLY !. please <a href= "../login">Login</a>';
+            die();
+        }
     }
 
 }
