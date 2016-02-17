@@ -64,6 +64,7 @@ $data['main_content'] = 'signup_successfull';
             else
             {
                 $this->load->view('signup_form');
+                echo 'bad input';
             }
         }
     }
