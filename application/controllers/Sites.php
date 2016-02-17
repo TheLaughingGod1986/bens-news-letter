@@ -1,7 +1,6 @@
-<head>
-    <link rel="stylesheet" href="<?php echo base_url();?>css/table.css" type="text/css" media="screen" charset="utf-8">
-</head>
 <?php
+echo '<link rel="stylesheet" href="<?php echo base_url();?>css/table.css" type="text/css" media="screen" charset="utf-8">
+</head>';
 
 /**
  * Created by PhpStorm.
