@@ -51,7 +51,7 @@ class Sites extends CI_Controller
 
     function __construct()
     {
-        parent::CI_Controller();
+        parent::__construct();
         $this->is_logged_in();
     }
 
