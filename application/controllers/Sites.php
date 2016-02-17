@@ -51,4 +51,9 @@ class Sites extends CI_Controller
         $this->index();
     }
 
+    function members_area()
+    {
+        $this->load->view('members_area');
+    }
+
 }
