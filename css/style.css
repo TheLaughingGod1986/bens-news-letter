@@ -108,6 +108,10 @@ th {
     border-right: 1px solid #aaaaaa;
 }
 
+tr:odd {
+    background: #e3e3e3;
+}
+
 #pagination a #pagination strong {
     background: #e3e3e3;
     padding: 4px 7px;
