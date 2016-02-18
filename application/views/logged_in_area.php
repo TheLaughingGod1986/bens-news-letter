@@ -11,10 +11,6 @@
 <p>This section represents the area that only logged in members can access.</p>
 
 
-
-<?php //echo die(var_dump($this->input->post('username'))); ?>
-
-
 <h4><?php echo anchor('login/logout', 'Logout'); ?></h4>
 
 
