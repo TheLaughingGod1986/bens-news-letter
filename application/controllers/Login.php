@@ -13,10 +13,12 @@ class Login extends CI_Controller
         $this->load->model('member_model');
         $query = $this->member_model->validate();
 
-        if ($query) // if user cred validate
+        if ($query) // if user cred validate the user session start
         {
             $data = array(
                 'username' => $this->input->post('username'),
+                'first_name' => $this->input->post('first_name'),
+                'last_name' => $this->input->post('last_name'),
                 'is_logged_in' => true
             );
 
