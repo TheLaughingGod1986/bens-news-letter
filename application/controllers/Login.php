@@ -23,7 +23,7 @@ class Login extends CI_Controller
                 'is_logged_in' => true
             );
 //            $this->session->set_userdata('first_name');
-            die(var_dump($this->input->post('username')));
+            die(var_dump($this->input->post('password')));
 
 
             redirect('members/members_area');
