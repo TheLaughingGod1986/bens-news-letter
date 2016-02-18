@@ -8,6 +8,7 @@
     echo form_input('bank_name', set_value('bank_name', 'Account Name'));
     echo form_input('interest', set_value('interest', 'Interest'));
     echo form_input('start_amount', set_value('start_amount', 'Starting Balance'));
+    echo form_input('length', set_value('length', 'Length'));
 
     echo form_submit('submit', 'Create Account')
         ?>
