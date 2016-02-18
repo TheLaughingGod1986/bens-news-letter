@@ -18,10 +18,10 @@ class Member_model extends CI_Model {
             return true;
         }
     }
-function test()
-{
-    $data['userdata'] = $this->session->all_userdata();
-}
+//function test()
+//{
+//    $data['userdata'] = $this->session->all_userdata();
+//}
 
     function create_member()
     {
