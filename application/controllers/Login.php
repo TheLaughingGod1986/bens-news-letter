@@ -19,7 +19,7 @@ class Login extends CI_Controller
 //                'username' => $this->input->post('username'),
 //                'first_name' => $this->input->post('first_name'),
 //                'last_name' => $this->input->post('last_name'),
-                $data['userdata'] = $this->session->all_userdata(),
+//                $data['userdata'] = $this->session->all_userdata(),
                 'is_logged_in' => true
             );
 
