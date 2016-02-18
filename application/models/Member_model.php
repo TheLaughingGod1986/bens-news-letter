@@ -9,7 +9,6 @@ class Member_model extends CI_Model {
     function validate()
     {
         $this->db->where('username', $this->input->post('username'));
-        $this->db->where('first_name', $this->input->post('first_name'));
         $this->db->where('password', md5($this->input->post('password')));
         $query = $this->db->get('membership');
 
