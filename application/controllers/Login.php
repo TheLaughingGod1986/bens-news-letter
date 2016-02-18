@@ -19,6 +19,7 @@ class Login extends CI_Controller
                 'username' => $query->username,
                 'password' => $query->password,
                 'first_name'=>$query->first_name,
+                'last_name'=>$query->last_name,
         'is_logged_in' => true
     );
 
