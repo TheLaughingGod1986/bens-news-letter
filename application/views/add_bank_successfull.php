@@ -1,5 +1,7 @@
-<h1>well done, you added a bak</h1>
+<h1>well done, you added a bank</h1>
+<p>add more accounts ?</p>
 
-     <p>   <?php echo anchor('banks', 'Add Another Bank'); ?> </p>
-<!--<p> --><?php //echo anchor($this->load->view('logged_in_area', 'Profile'));?><!--</p>-->
-<?php $this->load->view('add_bank_form');?>
+<p><?php echo anchor('logged_in_area', 'Profile'); ?></p>
+
+
+<p><?php $this->load->view('add_bank_form'); ?></p>

@@ -9,6 +9,11 @@ class Banks extends CI_Controller
         $this->load->view('includes/template', $data);
     }
 
+    function profile()
+    {
+        $this->load->view('logged_in_area');
+    }
+
     function create_bank()
     {
         $this->load->library('form_validation');
