@@ -15,7 +15,7 @@
 
 <h4><?php echo anchor('login/logout', 'Logout'); ?></h4>
 
-<?php echo die(var_dump($this->input->post('first_name')))?>
+
 
 <ul>
     <li>Profile</li>
