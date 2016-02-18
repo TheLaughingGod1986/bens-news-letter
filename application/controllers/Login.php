@@ -16,8 +16,9 @@ class Login extends CI_Controller
         if ($query) // if user cred validate the user session start
         {
             $data = array(
-                'username' => $this->input->post('username'),
-                'password' => $this->input->post('password'),
+//                'username' => $this->input->post('username'),
+//                'password' => $this->input->post('password'),
+                $this->session->all_userdata(),
                 'is_logged_in' => true
             );
 
