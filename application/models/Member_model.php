@@ -15,7 +15,11 @@ class Member_model extends CI_Model {
 
         if($query->num_rows() == 1)
         {
-            return true;
+            return $query->row();
+        }
+        else
+        {
+            return false;
         }
     }
 //function test()
