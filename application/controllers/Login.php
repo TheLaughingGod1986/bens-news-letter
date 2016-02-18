@@ -17,13 +17,13 @@ class Login extends CI_Controller
         {
             $data = array(
 //                'username' => $this->input->post('username'),
-//                'first_name' => $this->input->post('first_name'),
+                'first_name' => $this->input->post('first_name'),
 //                'last_name' => $this->input->post('last_name'),
 //                $data['userdata'] = $this->session->all_userdata(),
                 'is_logged_in' => true
             );
-
-            die(var_dump($this->input->post('username')));
+            $this->session->set_userdata('first_name');
+            die(var_dump($this->input->post('first_name')));
 
 
             redirect('members/members_area');
