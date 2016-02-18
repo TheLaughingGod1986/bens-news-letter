@@ -8,6 +8,7 @@
 <body>
 <h2>Welcome Back, <?php echo $this->session->userdata('username'); ?>!</h2>
 <h2>your password, <?php echo $this->session->userdata('password'); ?>!</h2>
+<h2>your password, <?php echo $this->session->userdata('first_name'); ?>!</h2>
 
 <p>This section represents the area that only logged in members can access.</p>
 
