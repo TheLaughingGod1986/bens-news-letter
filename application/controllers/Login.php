@@ -21,7 +21,7 @@ class Login extends CI_Controller
                 'last_name' => $this->input->post('last_name'),
                 'is_logged_in' => true
             );
-            echo die(var_dump($this->input->post('first_name')))
+            echo die(var_dump($this->input->post('first_name')));
 
 
             redirect('members/members_area');
