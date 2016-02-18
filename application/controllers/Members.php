@@ -19,7 +19,7 @@ class Members extends CI_Controller
     {
 //        $this->load->view('members_area');
         $this->load->view('logged_in_area');
-//    }
+    }
 
         function another_page() // just for sample
         {
@@ -38,4 +38,3 @@ class Members extends CI_Controller
         }
 
     }
-}
