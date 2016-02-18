@@ -18,7 +18,7 @@ class Login extends CI_Controller
             $data = array(
                 'username' => $query->username,
                 'password' => $query->password,
-                'first_name'=>$query->firstname,
+                'first_name'=>$query->first_name,
         'is_logged_in' => true
     );
 
