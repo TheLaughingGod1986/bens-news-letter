@@ -7,9 +7,10 @@
 </head>
 <body>
 <h2>Welcome Back, <?php echo $this->session->userdata('username'); ?>!</h2>
+
 <p>This section represents the area that only logged in members can access.</p>
 
-<h2>Yor Savings, <?php echo $this->session->userdata('id'); ?>!</h2>
+<h2>Yor Name Is , <?php echo $this->session->userdata('first_name', 'last_name'); ?>!</h2>
 
 
 <h4><?php echo anchor('login/logout', 'Logout'); ?></h4>
