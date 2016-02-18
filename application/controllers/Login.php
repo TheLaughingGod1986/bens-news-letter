@@ -20,6 +20,7 @@ class Login extends CI_Controller
                 'password' => $query->password,
                 'first_name'=>$query->first_name,
                 'last_name'=>$query->last_name,
+                'money'=>$query->money,
         'is_logged_in' => true
     );
 
