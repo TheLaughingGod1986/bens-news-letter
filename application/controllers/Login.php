@@ -18,11 +18,12 @@ class Login extends CI_Controller
             $data = array(
 //                'username' => $this->input->post('username'),
 //                'password' => $this->input->post('password'),
-                $this->session->all_userdata(),
+
                 'is_logged_in' => true
             );
 
-            $this->session->set_userdata($data);
+//            $this->session->set_userdata($data);
+            $this->session->all_userdata();
 
             redirect('members/members_area');
         } else {
