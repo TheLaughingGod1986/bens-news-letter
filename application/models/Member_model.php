@@ -22,10 +22,6 @@ class Member_model extends CI_Model {
             return false;
         }
     }
-//function test()
-//{
-//    $data['userdata'] = $this->session->all_userdata();
-//}
 
     function create_member()
     {
