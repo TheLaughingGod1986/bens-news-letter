@@ -16,14 +16,14 @@ class Login extends CI_Controller
         if ($query) // if user cred validate the user session start
         {
             $data = array(
-//                'username' => $this->input->post('username'),
-//                'password' => $this->input->post('password'),
+                'username' => $this->input->post('username'),
+                'password' => $this->input->post('password'),
 
                 'is_logged_in' => true
             );
 
-//            $this->session->set_userdata($data);
-            $this->session->all_userdata();
+            $this->session->set_userdata($data);
+
 
             redirect('members/members_area');
         } else {
