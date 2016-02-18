@@ -6,6 +6,7 @@
  * Time: 12:08
  */
 class Member_model extends CI_Model {
+
     function validate()
     {
         $this->db->where('username', $this->input->post('username'));
@@ -17,6 +18,10 @@ class Member_model extends CI_Model {
             return true;
         }
     }
+function test()
+{
+    $data['userdata'] = $this->session->all_userdata();
+}
 
     function create_member()
     {

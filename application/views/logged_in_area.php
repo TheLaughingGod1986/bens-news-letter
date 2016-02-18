@@ -11,7 +11,9 @@
 <p>This section represents the area that only logged in members can access.</p>
 
 <h2>Yor Name Is , <?php echo $this->session->userdata('first_name', 'last_name'); ?>!</h2>
+<h2>Yor Name Is bb , <?php echo $this->models->test('first_name', 'last_name'); ?>!</h2>
 
+<?php //echo die(var_dump($this->input->post('username'))); ?>
 
 
 <h4><?php echo anchor('login/logout', 'Logout'); ?></h4>
