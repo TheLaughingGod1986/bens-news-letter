@@ -3,7 +3,7 @@
 class Banks extends CI_Controller
 {
 
-    function add_bank_acc()
+    function index()
     {
         $data['main_content'] = 'add_bank_form';
         $this->load->view('includes/template', $data);
