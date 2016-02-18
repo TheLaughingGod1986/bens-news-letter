@@ -17,10 +17,17 @@ class Members extends CI_Controller
 
     function members_area()
     {
-        $this->load->view('members_area');
-    }
+//        $this->load->view('members_area');
+        $this->load->view('logged_in_area');
+//    }
 
-    function is_logged_in()
+        function another_page() // just for sample
+        {
+            echo 'good. you\'re logged in.';
+        }
+
+
+        function is_logged_in()
     {
         $is_logged_in = $this->session->userdata('is_logged_in');
 
