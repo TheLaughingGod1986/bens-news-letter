@@ -8,6 +8,7 @@ class Bank_model extends CI_Model {
             'interest' => $this->input->post('interest'),
             'start_amount' => $this->input->post('start_amount'),
             'length' => $this->input->post('length'),
+            'id' => $this->session->userdata('id')
         );
 
         $insert = $this->db->insert('bank', $new_bank_acc_insert_data);
