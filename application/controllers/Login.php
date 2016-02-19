@@ -17,6 +17,7 @@ class Login extends CI_Controller
         {
             $data = array(
                 'username' => $query->username,
+                'id' => $query->id,
                 'password' => $query->password,
                 'first_name'=>$query->first_name,
                 'last_name'=>$query->last_name,

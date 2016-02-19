@@ -9,6 +9,7 @@
     echo form_input('interest', set_value('interest', 'Interest'));
     echo form_input('start_amount', set_value('start_amount', 'Starting Balance'));
     echo form_input('length', set_value('length', 'Length'));
+    echo form_input('id', set_value('id', $this->session->userdata('id')));
 
     echo form_submit('submit', 'Create Account')
         ?>
