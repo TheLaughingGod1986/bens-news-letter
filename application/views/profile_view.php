@@ -1,5 +1,5 @@
 <?php
-$query = $this->db->query('SELECT first_name, username, email FROM membership');
+$query = $this->db->query('SELECT username FROM membership');
 
 foreach ($query->result() as $row)
 {
