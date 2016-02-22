@@ -58,7 +58,6 @@ class Login extends CI_Controller
             $this->load->view('signup_form');
         } else
         {
-            echo 'a error happend ';
             $this->load->model('member_model');
 
             if
