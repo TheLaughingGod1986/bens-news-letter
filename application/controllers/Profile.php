@@ -15,5 +15,10 @@ class Profile extends CI_Controller
 
     }
 
+    function getprofile()
+    {
+        $this->members/profile_model();
+        $this->index();
+    }
 
 }
