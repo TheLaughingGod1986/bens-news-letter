@@ -10,7 +10,7 @@ class Members extends CI_Controller
 {
     function index()
     {
-        $data['main_content'] = 'login_form';
+        $data['main_content'] = 'bank_view';
         $this->load->view('includes/template', $data);
     }
 
