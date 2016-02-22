@@ -1,11 +1,9 @@
 <?php
-$query = $this->db->query('SELECT username FROM membership');
+
+
+$query = $this->db->get('membership');
 
 foreach ($query->result() as $row)
 {
-
-echo $row->username;
-
+    echo $row->title;
 }
-
-echo 'Total Results: ' . $query->num_rows();
