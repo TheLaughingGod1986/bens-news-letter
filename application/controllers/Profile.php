@@ -11,7 +11,6 @@ class Profile extends CI_Controller
     function index()
     {
         $data = array();
-        $this->load->view('profile_view');
 
         if($query = $this->profile_model->get_user_bank())
         {
