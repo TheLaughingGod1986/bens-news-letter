@@ -3,18 +3,6 @@
 class Banks extends CI_Controller
 {
 
-    function index()
-    {
-        $data['main_content'] = 'login_form';
-        $this->load->view('includes/template', $data);
-    }
-
-    function __construct()
-    {
-        parent::__construct();
-        $this->controller->members('is_logged_in');
-    }
-
     function profile()
     {
         $this->load->view('logged_in_area');
