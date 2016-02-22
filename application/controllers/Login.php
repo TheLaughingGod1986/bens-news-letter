@@ -10,7 +10,7 @@ class Login extends CI_Controller
 
     function validate_credentials()
     {
-        $this->load->model('member/member_model');
+        $this->load->model('member_model');
         $query = $this->member_model->validate();
 
         if ($query) // if user cred validate the user session start
@@ -59,7 +59,7 @@ class Login extends CI_Controller
         } else
         {
             echo 'a error happend ';
-            $this->load->model('member/member_model');
+            $this->load->model('member_model');
 
             if
             ($query = $this->member_model->create_member()) {
