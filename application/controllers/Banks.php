@@ -16,8 +16,6 @@ class Banks extends CI_Controller
 
     function create_bank()
     {
-
-        $this->is_logged_in();
         $this->load->library('form_validation');
         // field name, error message, validation rules
 
@@ -32,7 +30,7 @@ class Banks extends CI_Controller
 
         if ($this->form_validation->run() == FALSE)
         {
-            $this->load->view('add_bank_form');
+            $this->models->members('add_bank_account');
         }
 
         else
