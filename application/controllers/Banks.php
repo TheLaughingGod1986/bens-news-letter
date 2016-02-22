@@ -3,10 +3,10 @@
 class Banks extends CI_Controller
 {
 
-    function index()
+    function __construct()
     {
-        $data['main_content'] = 'add_bank_form';
-        $this->load->view('includes/template', $data);
+        parent::__construct();
+        $this->is_logged_in();
     }
 
     function profile()
