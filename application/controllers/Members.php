@@ -8,6 +8,7 @@
 
 class Members extends CI_Controller
 {
+
     function index()
     {
         $data['main_content'] = 'members_view';
@@ -27,7 +28,8 @@ class Members extends CI_Controller
 
         function add_bank_account() // just for sample
         {
-            $this->load->view('includes/template');
+            $data['main_content'] = 'add_bank_form';
+            $this->load->view('includes/template', $data);
             $this->load->view('add_bank_form');
             echo 'good. you\'re logged in.';
         }
