@@ -17,12 +17,12 @@ class Members extends CI_Controller
 
     function members_area()
     {
-//        $this->load->view('members_area');
         $this->load->view('logged_in_area');
     }
 
         function add_bank_account() // just for sample
         {
+            $this->load->view('includes/template');
             $this->load->view('add_bank_form');
             echo 'good. you\'re logged in.';
         }

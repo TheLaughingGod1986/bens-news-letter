@@ -3,12 +3,6 @@
 class Banks extends CI_Controller
 {
 
-//    function __construct()
-//    {
-//        parent::__construct();
-//        $this->is_logged_in();
-//    }
-
     function profile()
     {
         $this->load->view('logged_in_area');
