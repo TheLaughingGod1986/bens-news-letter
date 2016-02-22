@@ -1,9 +1,10 @@
 <?php
-class Profiles_model extends CI_Model {
+class Profiles_model extends CI_Model
+{
 
-    public function getbank()
+    function getbank()
     {
         $query = $this->db->get('bank');
-        return $query->results_array();  #
+        return $query->results();
     }
 }
