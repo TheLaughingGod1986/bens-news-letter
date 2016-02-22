@@ -2,11 +2,11 @@
 
 class Login extends CI_Controller
 {
-    function index()
-    {
-        $data['main_content'] = 'login_form';
-        $this->load->view('includes/template', $data);
-    }
+//    function index()
+//    {
+//        $data['main_content'] = 'login_form';
+//        $this->load->view('includes/template', $data);
+//    }
 
     function validate_credentials()
     {
@@ -59,9 +59,7 @@ class Login extends CI_Controller
         } else
         {
             $this->load->model('member_model');
-
-            if
-            ($query = $this->member_model->create_member()) {
+            if ($query = $this->member_model->create_member()) {
                 $data['main_content'] = 'signup_successfull';
                             }
             else
