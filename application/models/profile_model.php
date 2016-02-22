@@ -2,10 +2,11 @@
 
 class Profile_model extends CI_Model {
 
-    function getbank()
-{
-    $query = $this->db->get('bank');
-    return $query->results();
+    public function getbank()  # Changed
+    {
+        $query = $this->db->get('bank');
+        return $query->results_array();  # Changed
+    }
 }
 
 //    function update_user_bank()
