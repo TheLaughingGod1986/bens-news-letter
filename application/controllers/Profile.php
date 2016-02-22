@@ -4,15 +4,11 @@ class Profile extends CI_Controller
 {
     function index()
     {
-        $data = array();
+            $this->load->model('profile_model');
+            $data['rows'] = $this->profile_model->getAll();
 
-        $this->load->models('Profile_model');
-
-        if ($query = $this->Profile_model->getbank()) {
-            $data['records'] = $query;
+            $this->load->view('profile_view' , $data);
         }
 
-        $this->load->view('profile_view', $data);
-    }
 
 }
