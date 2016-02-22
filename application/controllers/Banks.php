@@ -31,6 +31,7 @@ class Banks extends CI_Controller
         if ($this->form_validation->run() == FALSE)
         {
             echo 'incorrect bank details';
+            // validation is not working.. everything is validating !!
         }
 
         else
@@ -44,7 +45,7 @@ class Banks extends CI_Controller
             }
             else
             {
-                $this->load->view('add_bank_form');
+                echo 'Im sorry, something went wrong';
             }
         }
     }
