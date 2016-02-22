@@ -8,7 +8,7 @@
  */
 class Sites extends CI_Controller
 {
-    function index()
+    function profile()
     {
 //        $this->load->library('pagination');
 //        $this->load->library('table');
