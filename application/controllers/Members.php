@@ -11,7 +11,7 @@ class Members extends CI_Controller
 
     function index()
     {
-        $data['main_content'] = 'members_view';
+        $data['main_content'] = 'members_pages/members_view';
         $this->load->view('includes/template', $data);
     }
 
