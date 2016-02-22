@@ -38,7 +38,7 @@ class Members extends CI_Controller
 
             if (!isset($is_logged_in) || $is_logged_in != true) {
                 echo 'lol, try again. this area is secure. MEMBERS ONLY !. please ';
-echo anchor('members/add_bank_account', 'Add Bank');
+echo anchor('members/login', 'Login');
                 die();
             }
         }
