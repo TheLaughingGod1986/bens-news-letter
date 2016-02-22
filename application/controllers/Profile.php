@@ -18,13 +18,6 @@ class Profile extends CI_Controller
         }
 
         $this->load->view('profile_view', $data);
-
-    }
-
-    function getprofile()
-    {
-        $this->members/profile_model();
-        $this->index();
     }
 
 }
