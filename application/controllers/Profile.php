@@ -12,7 +12,7 @@ class Profile extends CI_Controller
     {
         $data = array();
 
-        if($query = $this->profile_model->get_user_bank())
+        if($query = $this->profile_model->getbank())
         {
             $data['records'] = $query;
         }
