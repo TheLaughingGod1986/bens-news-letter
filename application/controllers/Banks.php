@@ -12,7 +12,7 @@ class Banks extends CI_Controller
     function __construct()
     {
         parent::__construct();
-        $this->load->members('is_logged_in');
+        $this->controller->members('is_logged_in');
     }
 
     function profile()
