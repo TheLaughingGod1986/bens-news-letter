@@ -41,7 +41,7 @@ class Banks extends CI_Controller
 
         else
         {
-            $this->load->model('bank_model');
+            $this->load->model('bank/bank_model');
 
             if ($query = $this->bank_model->create_bank())
             {
