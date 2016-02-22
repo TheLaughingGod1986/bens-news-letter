@@ -1,5 +1,3 @@
-<h2>Logged In As, <?php echo $this->session->userdata('username'); ?>!</h2>
-<h4><?php echo anchor('login/logout', 'Logout'); ?></h4>
 <h1>Create Bank Account</h1>
 
 <fieldset>
