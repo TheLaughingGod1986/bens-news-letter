@@ -11,7 +11,7 @@
     echo form_input('length', set_value('length', 'Length'));
 //    echo form_input('id', set_value('mem_id', $this->session->userdata('id')));
 
-    echo form_submit('submit', 'Create Account')
+    echo form_submit('submit', 'Add Bank ')
         ?>
 </fieldset>
 

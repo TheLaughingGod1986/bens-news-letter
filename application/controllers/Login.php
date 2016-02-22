@@ -56,10 +56,9 @@ class Login extends CI_Controller
         if ($this->form_validation->run() == FALSE)
         {
             $this->load->view('signup_form');
-        } else
+        } 
+        else
         {
-            echo 'a error happend ';
-            $this->load->model('member/member_model');
 
             if
             ($query = $this->member_model->create_member()) {
