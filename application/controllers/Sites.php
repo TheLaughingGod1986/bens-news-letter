@@ -35,7 +35,7 @@ class Sites extends CI_Controller
 //        }
 
 //        $this->load->view('options_view', $data);
-        $this->load->view('profile_view');
+//        $this->load->view('profile_view');
 
     }
 
