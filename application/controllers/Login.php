@@ -59,7 +59,7 @@ class Login extends CI_Controller
         } else
         {
             echo 'a error happend ';
-            $this->load->model('member_model');
+            $this->load->models('member_model');
 
             if
             ($query = $this->member_model->create_member()) {
