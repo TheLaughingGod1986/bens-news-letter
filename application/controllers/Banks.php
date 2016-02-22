@@ -16,6 +16,8 @@ class Banks extends CI_Controller
 
     function create_bank()
     {
+
+        $this->is_logged_in();
         $this->load->library('form_validation');
         // field name, error message, validation rules
 
