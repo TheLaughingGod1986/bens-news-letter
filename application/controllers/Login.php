@@ -53,16 +53,19 @@ class Login extends CI_Controller
         $this->form_validation->set_rules('password', 'Password', 'trim|required|min_length[4]|max_length[32]');
         $this->form_validation->set_rules('password2', 'Password Confirmation', 'trim|required|matches[password]');
 
-        if ($this->form_validation->run() == FALSE) {
-//            $this->signup();
+        if ($this->form_validation->run() == FALSE)
+        {
             $this->load->view('signup_form');
-        } else {
+        } else
+        {
             $this->load->model('member_model');
 
-            if ($query = $this->member_model->create_member()) {
+            if
+            ($query = $this->member_model->create_member()) {
                 $data['main_content'] = 'signup_successfull';
-                $this->load->view('includes/template', $data);
-            } else {
+                            }
+            else
+            {
                 $this->load->view('signup_form');
             }
         }

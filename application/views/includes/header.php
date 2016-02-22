@@ -9,5 +9,6 @@
 
 <body>
 Header here
-<h2>Logged In As, <?php echo $this->session->userdata('username'); ?>!</h2>
+<h2>Logged In As, <?php echo $this->session->userdata('username'); ?>!</h2> </br>
+<h4><?php echo anchor('login/logout', 'Login Here'); ?></h4>
 FIX SO IF NOT LOGGED IN DO NOT SHOW
