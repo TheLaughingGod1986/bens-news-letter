@@ -9,6 +9,12 @@ class Banks extends CI_Controller
         $this->load->view('includes/template', $data);
     }
 
+    function __construct()
+    {
+        parent::__construct();
+        $this->load->members('is_logged_in');
+    }
+
     function profile()
     {
         $this->load->view('logged_in_area');
