@@ -10,6 +10,8 @@ class Profile extends CI_Controller
 {
     function index()
     {
+
+        $this->load->model('Profile_model');
         $data = array();
 
         if($query = $this->profile_model->getbank())
