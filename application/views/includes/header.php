@@ -10,3 +10,4 @@
 <body>
 Header here
 <h2>Logged In As, <?php echo $this->session->userdata('username'); ?>!</h2>
+FIX SO IF NOT LOGGED IN DO NOT SHOW
