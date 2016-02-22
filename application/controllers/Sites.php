@@ -28,13 +28,14 @@ class Sites extends CI_Controller
 //
 //        $this->load->view('sites_view', $data);
 
-        $data = array();
+//        $data = array();
+//
+//        if ($query = $this->site_model->get_records()) {
+//            $data['records'] = $query;
+//        }
 
-        if ($query = $this->site_model->get_records()) {
-            $data['records'] = $query;
-        }
-
-        $this->load->view('options_view', $data);
+//        $this->load->view('options_view', $data);
+        $this->load->view('profile_view');
 
     }
 
