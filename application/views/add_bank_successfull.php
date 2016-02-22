@@ -4,4 +4,4 @@
 <p><?php echo anchor('members/members_area', 'Profile');; ?></p>
 
 
-<p><?php $this->load->view('add_bank_form'); ?></p>
+<p><?php echo anchor('members/add_bank_account', 'Add Another Bank'); ?></p>
