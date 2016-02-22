@@ -3,11 +3,11 @@
 class Banks extends CI_Controller
 {
 
-    function __construct()
-    {
-        parent::__construct();
-        $this->is_logged_in();
-    }
+//    function __construct()
+//    {
+//        parent::__construct();
+//        $this->is_logged_in();
+//    }
 
     function profile()
     {
