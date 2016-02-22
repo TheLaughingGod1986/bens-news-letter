@@ -23,7 +23,7 @@ class Members extends CI_Controller
 
     function members_area()
     {
-        $this->load->view('logged_in_area');
+        $this->load->view('member_pages/logged_in_area');
     }
 
     function add_bank_account() // just for sample

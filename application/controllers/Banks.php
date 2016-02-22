@@ -4,7 +4,7 @@ class Banks extends CI_Controller
 {
     function index()
     {
-        $data['main_content'] = 'bank_view';
+        $data['main_content'] = 'member_pages/bank_view';
         $this->load->view('includes/template', $data);
     }
 
@@ -16,7 +16,8 @@ class Banks extends CI_Controller
 
     function profile()
     {
-        $this->load->view('logged_in_area');
+        $this->load->view('member_pages/logged_in_area');
+//        $this->load->model('members_area');
     }
 
     function create_bank()
