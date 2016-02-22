@@ -30,7 +30,7 @@ class Banks extends CI_Controller
 
         if ($this->form_validation->run() == FALSE)
         {
-            $this->models('members');
+            echo 'incorrect bank details';
         }
 
         else
