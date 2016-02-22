@@ -2,6 +2,17 @@
 
 class Banks extends CI_Controller
 {
+    function index()
+    {
+        $data['main_content'] = 'bank_view';
+        $this->load->view('includes/template', $data);
+    }
+
+    function __construct()
+    {
+        parent::__construct();
+        $this->is_logged_in();
+    }
 
     function profile()
     {
@@ -44,10 +55,15 @@ class Banks extends CI_Controller
         }
     }
 
-//    function logout()
-//    {
-//        $this->session->sess_destroy();
-//        $this->index();
-//    }
+    function is_logged_in()
+    {
+        $is_logged_in = $this->session->userdata('is_logged_in');
+
+        if (!isset($is_logged_in) || $is_logged_in != true) {
+            echo 'lol, try again. this area is secure. MEMBERS ONLY !. please ';
+            echo anchor('login/index', 'Login');
+            die();
+        }
+    }
 
 }
