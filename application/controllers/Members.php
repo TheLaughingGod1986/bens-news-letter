@@ -27,6 +27,7 @@ class Members extends CI_Controller
 
         function add_bank_account() // just for sample
         {
+            $this->load->view('includes/template');
             $this->load->view('add_bank_form');
             echo 'good. you\'re logged in.';
         }
