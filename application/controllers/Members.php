@@ -21,8 +21,9 @@ class Members extends CI_Controller
         $this->load->view('logged_in_area');
     }
 
-        function another_page() // just for sample
+        function add_bank_account() // just for sample
         {
+            $this->load->view('add_bank_form');
             echo 'good. you\'re logged in.';
         }
 
