@@ -11,10 +11,10 @@ class Profile extends CI_Controller
     function index()
     {
         $data = array();
-        $this->load->model('profile_model'); # Added
-        $query = $this->profile_model->getbank(); # Changed
+        $this->load->model('profile_model');
+        $query = $this->profile_model->getbank();
 
-        if(!empty($query)) # Changed
+        if(!empty($query))
         {
             $data['records'] = $query;
         }
