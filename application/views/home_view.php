@@ -1,2 +1,1 @@
-IM Home!!!!
-this is home
+this is the home page
