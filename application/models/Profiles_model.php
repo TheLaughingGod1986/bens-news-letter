@@ -2,9 +2,9 @@
 class Profiles_model extends CI_Model
 {
 
-    function getbank()
+    function get_bank()
     {
         $query = $this->db->get('bank');
-        return $query->results();
+        return $query->result();
     }
 }
