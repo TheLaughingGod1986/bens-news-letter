@@ -8,6 +8,9 @@ class Profile extends CI_Controller
         $this->load->model('user_profile/profiles_model');
         $query = $this->profiles_model->get_bank();
 
+
+
+
         if(!empty($query))
         {
             $data['records'] = $query;
