@@ -2,7 +2,7 @@
 <?php
 if (isset($records)) : foreach($records as $row) : ?>
 
-    <h2><?php echo $row->username; ?></h2>
+    <h2><?php echo $row->bank_name;  ?></h2>
 
 <?php endforeach; ?>
 
