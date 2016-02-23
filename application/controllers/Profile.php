@@ -5,10 +5,10 @@ class Profile extends CI_Controller
     function index()
     {
         $data = array();
-
         $this->load->model('prof_model');
+        $query = $this->prof_model->getbank();
 
-        if($query = $this->prof_model->get_bank())
+        if(!empty($query))
         {
             $data['records'] = $query;
         }

@@ -1,10 +1,9 @@
 <?php
-class Prof_model extends CI_Model
-{
+class Prof_model extends CI_Model {
 
-    function get_bank()
+    public function getbank()
     {
         $query = $this->db->get('bank');
-        return $query->result();
+        return $query->results_array();  
     }
 }
