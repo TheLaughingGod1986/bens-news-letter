@@ -2,13 +2,17 @@
 
 class Profile extends CI_Controller
 {
+    function __construct()
+    {
+        parent::__construct();
+        $this->is_logged_in();
+    }
+
     function index()
     {
         $data = array();
         $this->load->model('user_profile/profiles_model');
         $query = $this->profiles_model->get_bank();
-
-
 
 
         if(!empty($query))
@@ -17,6 +21,17 @@ class Profile extends CI_Controller
         }
 
         $this->load->view('profile_view', $data);
+    }
+
+    function is_logged_in()
+    {
+        $is_logged_in = $this->session->userdata('is_logged_in');
+
+        if (!isset($is_logged_in) || $is_logged_in != true) {
+            echo 'lol, try again. this area is secure. MEMBERS ONLY !. please ';
+            echo anchor('login/index', 'Login');
+            die();
+        }
     }
 
 }

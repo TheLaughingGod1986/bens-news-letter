@@ -8,17 +8,17 @@
  */
 class Members extends CI_Controller
 {
+    function __construct()
+    {
+        parent::__construct();
+        $this->is_logged_in();
+    }
+
 
     function index()
     {
         $data['main_content'] = 'member_pages/members_view';
         $this->load->view('includes/template', $data);
-    }
-
-    function __construct()
-    {
-        parent::__construct();
-        $this->is_logged_in();
     }
 
     function members_area()
