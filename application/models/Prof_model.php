@@ -2,7 +2,7 @@
 class Prof_model extends CI_Model
 {
 
-    function getbank()
+    function get_bank()
     {
         $query = $this->db->get('bank');
         return $query->results();

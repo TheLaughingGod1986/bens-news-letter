@@ -6,9 +6,9 @@ class Profile extends CI_Controller
     {
         $data = array();
 
-        $this->load->model('Prof_model');
+        $this->load->model('prof_model');
 
-        if($query = $this->prof_model->getbank())
+        if($query = $this->prof_model->get_bank())
         {
             $data['records'] = $query;
         }
