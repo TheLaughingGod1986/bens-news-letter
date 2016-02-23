@@ -6,6 +6,8 @@ class Profile extends CI_Controller
     {
         $data = array();
 
+        $this->load->model('Profiles_model');
+
         if($query = $this->profiles_model->getbank())
         {
             $data['records'] = $query;
