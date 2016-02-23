@@ -5,7 +5,7 @@ class Profile extends CI_Controller
     function index()
     {
         $data = array();
-        $this->load->model('profiles_model');
+        $this->load->model('user_profile/profiles_model');
         $query = $this->profiles_model->get_bank();
 
         if(!empty($query))
