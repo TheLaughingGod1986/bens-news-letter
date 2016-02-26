@@ -9,17 +9,13 @@
     echo form_input('start_amount', set_value('start_amount', 'Starting Balance'));
     echo form_input('length', set_value('length', 'Valid For'));
     echo form_input('monthly_deposits', set_value('length', 'Monthly Deposits'));
-    echo form_input('monthly_deposits', set_value('length', 'Monthly Deposits'));
-
     $options = array(
         'small'  => 'Small Shirt',
         'med'    => 'Medium Shirt',
         'large'   => 'Large Shirt',
         'xlarge' => 'Extra Large Shirt',
     );
-
-    $shirts_on_sale = array('small', 'large');
-
+//    $shirts_on_sale = array('small', 'large');
     echo form_dropdown('shirts', $options, 'large');
         ?>
     <input type="date" name="start_date">
