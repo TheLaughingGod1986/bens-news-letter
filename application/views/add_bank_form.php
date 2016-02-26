@@ -9,7 +9,7 @@
     echo form_input('start_amount', set_value('start_amount', 'Starting Balance'));
     echo form_input('length', set_value('length', 'Valid For'));
     echo form_input('monthly_deposits', set_value('length', 'Monthly Deposits'));
-    echo form_('monthly_deposits', set_value('length', 'Monthly Deposits'));
+    echo form_input('monthly_deposits', set_value('length', 'Monthly Deposits'));
 
     $options = array(
         'small'  => 'Small Shirt',
