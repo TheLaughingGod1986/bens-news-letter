@@ -9,7 +9,7 @@ if (isset($records)) : foreach ($records as $row) : ?>
     <p><?php echo $row->start_amount; ?></p>
 
     <h2>total amount</h2>
-    <?php $answer = $interest * $start_amount;
+    <?php $answer = $row->interest * $row->start_amount;
     print "<h2>$answer</h2>";
     ;?>
 
