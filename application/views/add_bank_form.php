@@ -9,11 +9,20 @@
     echo form_input('interest', set_value('interest', 'Interest'));
     echo form_input('start_amount', set_value('start_amount', 'Starting Balance'));
     echo form_input('length', set_value('length', 'Length'));
-//    echo form_input('id', set_value('mem_id', $this->session->userdata('id')));
-
     echo form_submit('submit', 'Add Bank ')
         ?>
-    <input type="datetime" name="start_date" value="<?php echo set_value('start_date'); ?>" size="10" />
+    &lt;form&gt;
+    <label>Name</label>
+    &lt;input type="text" /&gt;
+
+    <label>Day of Birth</label>
+    &lt;?=$formdate->selectDay()?&gt;
+    &lt;?=$formdate->selectMonth()?&gt;
+    &lt;?=$formdate->selectYear()?&gt;
+
+    &lt;input type='button' /&gt;
+    &lt;/form&gt;
+
 </fieldset>
 
 <?php echo validation_errors('<p class="error"/>'); ?>
