@@ -14,7 +14,7 @@
 
     echo form_submit('submit', 'Add Bank ')
         ?>
-    <input type="text" name="date" value="<?php echo set_value('date'); ?>
+    <input type="datetime" name="start_date" value="<?php echo set_value('start_date'); ?>
 </fieldset>
 
 <?php echo validation_errors('<p class="error"/>'); ?>
