@@ -8,7 +8,10 @@ if (isset($records)) : foreach ($records as $row) : ?>
     <h2>Monthly Deposits</h2>
     <p><?php echo $row->start_amount; ?></p>
 
-    <h1>test<?php print_r($var_bank_name)?> </h1>
+    <h2>total amount</h2>
+    <?php $answer = $interest * $start_amount;
+    print "<h2>$answer</h2>";
+    ;?>
 
 <?php endforeach; ?>
 
@@ -16,5 +19,6 @@ if (isset($records)) : foreach ($records as $row) : ?>
     <h3>No Accounts Added </h3>
 
 <?php endif; ?>
+<!--<h1>test--><?php //print_r($var_bank_name)?><!-- </h1>-->
 
 
