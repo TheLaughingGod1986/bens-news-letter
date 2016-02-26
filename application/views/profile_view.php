@@ -8,9 +8,13 @@ if (isset($records)) : foreach ($records as $row) : ?>
     <h2>Monthly Deposits</h2>
     <p><?php echo $row->start_amount; ?></p>
 
+    <h1>test<?php print_r($var_bank_name)?> </h1>
+
 <?php endforeach; ?>
 
 <?php else : ?>
-    <h3>No Records</h3>
+    <h3>No Accounts Added </h3>
 
 <?php endif; ?>
+
+
