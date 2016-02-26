@@ -8,10 +8,11 @@
     echo form_input('interest', set_value('interest', 'Interest'));
     echo form_input('start_amount', set_value('start_amount', 'Starting Balance'));
     echo form_input('length', set_value('length', 'Length'));
-   echo "<input type='date' name='start_date>";
-
-    echo form_submit('submit', 'Add Bank ')
         ?>
+    </fieldset>
+    <fieldset>
+    <input type='date' name='start_date>
+      <?php echo form_submit('submit', 'Add Bank ')?>
 </fieldset>
 
 <?php echo validation_errors('<p class="error"/>'); ?>
