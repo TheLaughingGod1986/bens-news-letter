@@ -15,7 +15,7 @@
         'large'   => 'Monthly'
     );
     $shirts_on_sale = array('small', 'large');
-    <form_label('Compound Type');
+    echo "<label>Compound Type</label>";
     echo form_dropdown('shirts', $options, 'large');
         ?>
     <label>Start Date</label>
