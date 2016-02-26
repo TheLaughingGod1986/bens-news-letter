@@ -8,6 +8,7 @@ class Bank_model extends CI_Model {
             'interest' => ($this->input->post('interest') / 100),
             'start_amount' => $this->input->post('start_amount'),
             'length' => $this->input->post('length'),
+            'start_date' => date('Y-m-d H:i:s',strtotime($this->input->post('start_date'))),
             'mem_id' => $this->session->userdata('id')
         );
 
