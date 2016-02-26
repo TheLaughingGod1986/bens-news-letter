@@ -11,7 +11,7 @@
         ?>
     </fieldset>
     <fieldset>
-    <input type='date' name='start_date>
+    <input type="date" name="start_date">
       <?php echo form_submit('submit', 'Add Bank ')?>
 </fieldset>
 
