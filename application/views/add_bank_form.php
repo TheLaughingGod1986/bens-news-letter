@@ -10,13 +10,12 @@
     echo form_input('length', set_value('length', 'Valid For'));
     echo form_input('monthly_deposits', set_value('length', 'Monthly Deposits'));
     $options = array(
-        'small'  => 'Small Shirt',
-        'med'    => 'Medium Shirt',
-        'large'   => 'Large Shirt',
-        'xlarge' => 'Extra Large Shirt',
+        'small'  => 'Yearly',
+        'med'    => 'Monthly',
+        'large'   => 'Daily',
     );
-//    $shirts_on_sale = array('small', 'large');
-    echo form_dropdown('shirts', $options, 'large');
+    $shirts_on_sale = array();
+    echo form_dropdown( $options);
         ?>
     <input type="date" name="start_date">
       <?php echo form_submit('submit', 'Add Bank ')?>
