@@ -9,7 +9,7 @@
     echo form_input('interest', set_value('interest', 'Interest'));
     echo form_input('start_amount', set_value('start_amount', 'Starting Balance'));
     echo form_input('length', set_value('length', 'Length'));
-    echo form_dropdown('start_date', set_value('start_date', 'Start Date'));
+    echo form_date ('start_date', set_value('start_date', 'Start Date'));
 //    echo form_input('id', set_value('mem_id', $this->session->userdata('id')));
 
     echo form_submit('submit', 'Add Bank ')
