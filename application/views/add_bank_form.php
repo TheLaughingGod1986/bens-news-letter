@@ -15,7 +15,7 @@
         'large'   => 'Monthly'
     );
     $shirts_on_sale = array('small', 'large');
-    echo form_dropdown('shirts', $options, 'large');
+    echo form_dropdown('shirts', $options, 'large', set_value('length', 'Compound Frequency'));
         ?>
     <input type="date" name="start_date">
       <?php echo form_submit('submit', 'Add Bank ')?>
