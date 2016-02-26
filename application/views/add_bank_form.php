@@ -11,11 +11,11 @@
     echo form_input('monthly_deposits', set_value('length', 'Monthly Deposits'));
     $options = array(
         'small'  => 'Yearly',
-        'med'    => 'Monthly',
-        'large'   => 'Daily',
+        'med'    => 'Daily',
+        'large'   => 'Monthly'
     );
-    $shirts_on_sale = array();
-    echo form_dropdown( $options);
+    $shirts_on_sale = array('small', 'large');
+    echo form_dropdown('shirts', $options, 'large');
         ?>
     <input type="date" name="start_date">
       <?php echo form_submit('submit', 'Add Bank ')?>
