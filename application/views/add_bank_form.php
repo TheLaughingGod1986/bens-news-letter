@@ -9,19 +9,12 @@
     echo form_input('interest', set_value('interest', 'Interest'));
     echo form_input('start_amount', set_value('start_amount', 'Starting Balance'));
     echo form_input('length', set_value('length', 'Length'));
-    echo form_submit('submit', 'Add Bank ')
         ?>
-    &lt;form&gt;
-    <label>Name</label>
-    &lt;input type="text" /&gt;
-
-    <label>Day of Birth</label>
-    &lt;?=$formdate->selectDay()?&gt;
-    &lt;?=$formdate->selectMonth()?&gt;
-    &lt;?=$formdate->selectYear()?&gt;
-
-    &lt;input type='button' /&gt;
-    &lt;/form&gt;
+    <form>
+        Birthday:
+        <input type="date" name="start_date">
+    </form>
+    <?php echo form_submit('submit', 'Add Bank ') ?>
 
 </fieldset>
 
