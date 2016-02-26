@@ -8,7 +8,7 @@
     echo form_input('interest', set_value('interest', 'Interest'));
     echo form_input('start_amount', set_value('start_amount', 'Starting Balance'));
     echo form_input('length', set_value('length', 'Length'));
-    echo form_input("<type ='date' name='start_date'>") ;
+    echo datefmt_format_object("<type ='date' name='start_date'>") ;
     echo form_submit('submit', 'Add Bank ')
         ?>
 </fieldset>
