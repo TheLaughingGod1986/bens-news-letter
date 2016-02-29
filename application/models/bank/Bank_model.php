@@ -9,7 +9,8 @@ class Bank_model extends CI_Model {
             'start_amount' => $this->input->post('start_amount'),
             'length' => $this->input->post('length'),
             'start_date' => date('Y-m-d',strtotime($this->input->post('start_date'))),
-            'mem_id' => $this->session->userdata('id')
+            'mem_id' => $this->session->userdata('id'),
+            'account_add_date' => date('Y-m-d',strtotime($this->input-> now(local_to_gmt())))
         );
 
         $insert = $this->db->insert('bank', $new_bank_acc_insert_data);

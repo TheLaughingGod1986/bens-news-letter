@@ -13,6 +13,17 @@ class Profile extends CI_Controller
         $data = array();
         $this->load->model('user_profile/profiles_model');
         $query = $this->profiles_model->get_bank();
+//        $sesdata = array(
+//            'username' => $query->username,
+//            'id' => $query->id,
+//            'password' => $query->password,
+//            'first_name'=>$query->first_name,
+//            'last_name'=>$query->last_name,
+//            'email_address'=>$query->email_address,
+//            'is_logged_in' => true
+//        );
+//
+//        $this->session->set_userdata($sesdata);
 
 
         if(!empty($query))
@@ -22,6 +33,14 @@ class Profile extends CI_Controller
 
         $this->load->view('profile_view', $data);
     }
+
+    public function account_data()
+    {
+        $string = trim($this->input->get_post('term'));
+        $data['result']= $this->profile_model->account_list($string);
+        $this->load->view('user_profile/profiles_model', $data);
+    }
+
 
     function is_logged_in()
     {

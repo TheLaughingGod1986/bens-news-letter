@@ -33,6 +33,9 @@ class Banks extends CI_Controller
 
         $this->form_validation->set_rules('length', 'trim|required');
 
+        $this->form_validation->set_rules('start_date', 'trim|required');
+
+
 
         if ($this->form_validation->run() == FALSE)
         {
