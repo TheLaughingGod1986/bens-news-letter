@@ -3,6 +3,8 @@ class Bank_model extends CI_Model {
 
     function create_bank()
     {
+        $this->load->helper('date');
+
         $new_bank_acc_insert_data = array(
             'bank_name' => $this->input->post('bank_name'),
             'interest' => ($this->input->post('interest') / 100),
