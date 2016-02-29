@@ -1,6 +1,12 @@
 <?php
 class Bank_model extends CI_Model {
 
+    function current_date() {
+        // gets current timestamp
+        date_default_timezone_set(gmt_to_local()); // What timezone you want to be the default value for your current date.
+        return date('Y-m-d H:i:s');
+    }
+
     function create_bank()
     {
         $this->load->helper('date');
