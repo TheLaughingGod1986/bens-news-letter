@@ -16,9 +16,12 @@ if (isset($records)) : foreach ($records as $row) : ?>
 
     $total = $i * $o;
 
-    print "<h2>total = $total</h2>";#
-    
+    print "<h2>$total</h2>";#
+
     ;?>
+
+    <p>Bank data</p>
+    <p><?=isset($records['differenceInMonth'])?$records['differenceInMonth']:"No record found"?></p>
 
 
 
