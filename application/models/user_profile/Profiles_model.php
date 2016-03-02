@@ -1,4 +1,5 @@
 <?php
+
 class Profiles_model extends CI_Model
 {
 
@@ -7,16 +8,18 @@ class Profiles_model extends CI_Model
         $this->db->where('mem_id', $this->session->userdata("id"));
         $query = $this->db->get('bank');
         return $query->result();
-    }
 
-//    function account_list($var_bank_name = null)
-//    {
-//        if($var_bank_name != ''){
-//            $this->db->where('mem_id', $this->session->userdata("id"));
-//            $query = $this->db->query("SELECT bank_name FROM `bank` WHERE bank_name LIKE '%".$var_bank_name."%\'");
-//            return $query->row_array();
-//        }
-//        else
-//            return false;
-//    }
+        $query = $this->db->query("SELECT
+(
+   12* (YEAR('account_add_date') - YEAR('start_date')) +
+          (MONTH('account_add_date') - MONTH('start_date'))
+) AS differenceInMonth
+->FROM ('bank')
+WHERE mem_id = '".$this->session->userdata('id')."'");
+
+    $data['account_age'] =  $query->row_array();
+
+
+    }
 }
+
