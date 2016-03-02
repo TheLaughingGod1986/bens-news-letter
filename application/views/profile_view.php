@@ -13,9 +13,19 @@ if (isset($records)) : foreach ($records as $row) : ?>
     <?php
     $i = $row->interest;
     $o = $row->start_amount;
-    $answer = $i * $o;
-    print "<h2>$answer</h2>";
+
+    $total = $i * $o;
+$age = $this->load('profile_model', 'show_age');
+
+    print "<h2>total = $total</h2>";#
+
+    print "<h2>age = $age</h2>";
+
     ;?>
+
+
+
+
 
 <?php endforeach; ?>
 
