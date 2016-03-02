@@ -23,7 +23,7 @@ if (isset($records)) : foreach ($records as $row) : ?>
     <h2>age of account</h2>
 
     <?php
-    $age = $query->row_array->account_age;
+    $age = $this->model('profiles_model' , $data );
 
     print "<h2>$age</h2>";
 
