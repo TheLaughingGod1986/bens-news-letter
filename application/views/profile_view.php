@@ -23,10 +23,10 @@ if (isset($records)) : foreach ($records as $row) : ?>
     <h2>age of account</h2>
 
     <?php foreach($records as $record); ?>
-    <?=$record['differenceInMonth']?>
+    <?php $record['differenceInMonth']?>
 <?php endforeach; ?>
 
-    
+
 
 <?php else : ?>
     <h3>No Accounts Added </h3>
