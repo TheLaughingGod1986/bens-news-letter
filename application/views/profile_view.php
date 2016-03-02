@@ -25,7 +25,8 @@ if (isset($records)) : foreach ($records as $row) : ?>
     <?php
     $age = $this->model('profiles_model' , $data );
 
-    print "<h2>$age</h2>";
+
+   print "<h2>$records</h2>";
 
     ?>
 
