@@ -23,18 +23,15 @@ class Profile extends CI_Controller
 //        $this->load->view('profile_view', $data);
 //    }
 
-    function index() {
-        $data = array(
-            'records' => array()
-        );
-        $this->load->model('user_profile/profiles_model');
-        $bank = $this->profiles_model->get_bank();
+    function get_bank() {
+        $mem_id = $this->session->userdata('id');
+        $query = $this->db
+            ->select("12*(YEAR('account_add_date') - YEAR('start_date')) + (MONTH('account_add_date') - MONTH('start_date')) AS differenceInMonth")
+            ->where('mem_id', $mem_id)
+            ->get('bank');
 
-        if($bank->num_rows()){
-            $data['records'] = $bank->result_array();
-        }
-
-        $this->load->view('profile_view', $data);
+        return $query;
+        // $data['account_age'] =  $query->row_array(); <-- Statement after return is useless.
     }
 
     public function account_data()
