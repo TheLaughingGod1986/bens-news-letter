@@ -8,31 +8,21 @@ class Profile extends CI_Controller
         $this->is_logged_in();
     }
 
-//    function index()
-//    {
-//        $data = array();
-//        $this->load->model('user_profile/profiles_model');
-//        $query = $this->profiles_model->get_bank();
-//
-//
-//        if(!empty($query))
-//        {
-//            $data['records'] = $query;
-//        }
-//
-//        $this->load->view('profile_view', $data);
-//    }
+    function index()
+    {
+        $data = array();
+        $this->load->model('user_profile/profiles_model');
+        $query = $this->profiles_model->get_bank();
 
-    function get_bank() {
-        $mem_id = $this->session->userdata('id');
-        $query = $this->db
-            ->select("12*(YEAR('account_add_date') - YEAR('start_date')) + (MONTH('account_add_date') - MONTH('start_date')) AS differenceInMonth")
-            ->where('mem_id', $mem_id)
-            ->get('bank');
 
-        return $query;
-        // $data['account_age'] =  $query->row_array(); <-- Statement after return is useless.
+        if(!empty($query))
+        {
+            $data['records'] = $query;
+        }
+
+        $this->load->view('profile_view', $data);
     }
+    
 
     public function account_data()
     {
