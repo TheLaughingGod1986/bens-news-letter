@@ -16,16 +16,14 @@ if (isset($records)) : foreach ($records as $row) : ?>
 
     $total = $i * $o;
 
-
     print "<h2>$total</h2>";#
-
-
 
     ;?>
 
     <h2>age of account</h2>
 
     <?php
+    $age = $query->row_array->account_age;
 
     print "<h2>$age</h2>";
 
