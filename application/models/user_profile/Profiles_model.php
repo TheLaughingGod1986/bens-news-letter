@@ -14,7 +14,7 @@ class Profiles_model extends CI_Model
    12* (YEAR('account_add_date') - YEAR('start_date')) +
           (MONTH('account_add_date') - MONTH('start_date'))
 ) AS differenceInMonth
-->FROM ('bank')
+
 WHERE mem_id = '".$this->session->userdata('id')."'");
 
     $data =  $query->row_array();
