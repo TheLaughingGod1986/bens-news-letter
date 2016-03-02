@@ -24,7 +24,7 @@ if (isset($records)) : foreach ($records as $row) : ?>
 
 <?php endif; ?>
 
-<p>Bank data</p>
+<h2>Age Of Account</h2>
 <p><?=isset($records['differenceInMonth'])?$records['differenceInMonth']:"No record found"?></p>
 
 
