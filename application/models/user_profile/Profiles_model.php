@@ -17,7 +17,7 @@ class Profiles_model extends CI_Model
 ->FROM ('bank')
 WHERE mem_id = '".$this->session->userdata('id')."'");
 
-    $data['account_age'] =  $query->row_array();
+    $data =  $query->row_array();
 
 
     }
