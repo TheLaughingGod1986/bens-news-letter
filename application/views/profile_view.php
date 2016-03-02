@@ -23,6 +23,8 @@ if (isset($records)) : foreach ($records as $row) : ?>
     <h3>No Accounts Added </h3>
 
 <?php endif; ?>
-<!--<h1>test--><?php //print_r($var_bank_name)?><!-- </h1>-->
+
+<p>Bank data</p>
+<p><?=isset($records['differenceInMonth'])?$records['differenceInMonth']:"No record found"?></p>
 
 
