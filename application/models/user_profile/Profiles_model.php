@@ -17,8 +17,7 @@ class Profiles_model extends CI_Model
             ->select("12*(YEAR('account_add_date') - YEAR('start_date')) + (MONTH('account_add_date') - MONTH('start_date')) AS differenceInMonth")
             ->where('mem_id', $mem_id)
             ->get('bank');
-
-    return $query;
+        return $query;
     }
 }
 
