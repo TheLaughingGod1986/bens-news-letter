@@ -15,13 +15,21 @@ if (isset($records)) : foreach ($records as $row) : ?>
     $o = $row->start_amount;
 
     $total = $i * $o;
-$age = $this->load('profile_model', 'show_age');
 
-    print "<h2>total = $total</h2>";#
 
-    print "<h2>age = $age</h2>";
+    print "<h2>$total</h2>";#
+
+
 
     ;?>
+
+    <h2>age of account</h2>
+
+    <?php
+    $age = $this->load('profile_model', 'show_age');
+    print "<h2>$age</h2>";
+
+    ?>
 
 
 
