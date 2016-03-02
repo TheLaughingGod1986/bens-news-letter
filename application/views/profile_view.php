@@ -16,26 +16,15 @@ if (isset($records)) : foreach ($records as $row) : ?>
 
     $total = $i * $o;
 
-    print "<h2>$total</h2>";#
-
+    print "<h2>total = $total</h2>";#
+    
     ;?>
 
-    <p>Bank data</p>
-    <p><?=isset($records['differenceInMonth'])?$records['differenceInMonth']:"No record found"?></p>
-
-    <h2>age of account</h2>
-
-    <?php
-    $age = $this->model('profiles_model' , $data );
 
 
-   print "<h2>$records</h2>";
 
-    ?>
 
 <?php endforeach; ?>
-
-    
 
 <?php else : ?>
     <h3>No Accounts Added </h3>
