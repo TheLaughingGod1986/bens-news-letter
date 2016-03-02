@@ -31,7 +31,7 @@ class Profile extends CI_Controller
         $bank = $this->profiles_model->get_bank();
 
         if($bank->num_rows()){
-            $data['records'] = $bank-> row_array()();
+            $data['records'] = $bank-> row_array();
         }
 
         $this->load->view('profile_view', $data);
