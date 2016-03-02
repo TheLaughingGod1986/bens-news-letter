@@ -8,27 +8,30 @@ class Profile extends CI_Controller
         $this->is_logged_in();
     }
 
-    function index()
-    {
-        $data = array();
-        $this->load->model('user_profile/profiles_model');
-        $query = $this->profiles_model->get_bank();
-//        $sesdata = array(
-//            'username' => $query->username,
-//            'id' => $query->id,
-//            'password' => $query->password,
-//            'first_name'=>$query->first_name,
-//            'last_name'=>$query->last_name,
-//            'email_address'=>$query->email_address,
-//            'is_logged_in' => true
-//        );
+//    function index()
+//    {
+//        $data = array();
+//        $this->load->model('user_profile/profiles_model');
+//        $query = $this->profiles_model->get_bank();
 //
-//        $this->session->set_userdata($sesdata);
+//
+//        if(!empty($query))
+//        {
+//            $data['records'] = $query;
+//        }
+//
+//        $this->load->view('profile_view', $data);
+//    }
 
+    function index() {
+        $data = array(
+            'records' => array()
+        );
+        $this->load->model('user_profile/profiles_model');
+        $bank = $this->profiles_model->get_bank();
 
-        if(!empty($query))
-        {
-            $data['records'] = $query;
+        if($bank->num_rows()){
+            $data['records'] = $bank-> row_array()();
         }
 
         $this->load->view('profile_view', $data);
