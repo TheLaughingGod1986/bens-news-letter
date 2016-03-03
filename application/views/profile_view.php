@@ -4,20 +4,20 @@ if (isset($records)) : foreach ($records as $row) : ?>
     <h2>Account Name</h2>
     <p><?php echo $row->bank_name; ?></p>
     <h2>Interest Rate</h2>
-    <p><?php echo $row->interest; ?></p>
+    <p>%<?php echo $row->interest; ?></p>
     <h2>Monthly Deposits</h2>
-    <p><?php echo $row->start_amount; ?></p>
+    <p><?php echo £$row->start_amount; ?></p>
     <!--    <h2>Open Date</h2>-->
     <!--    <p>--><?php //echo $row->account_add_date; ?><!--</p>-->
     <!--    <h2>Start Date</h2>-->
     <!--    <p>--><?php //echo $row->start_date; ?><!--</p>-->
 
-    <h2>total amount</h2>
+    <h2>Total amount</h2>
     <?php
     $i = $row->interest;
     $o = $row->start_amount;
     $answer = $i * $o;
-    print "<h2>$answer</h2>";; ?>
+    print "<p>£$answer</p>";; ?>
 
     <h2>Age Of Account</h2>
     <?php
