@@ -36,7 +36,7 @@ if (isset($records)) : foreach ($records as $row) : ?>
 
     $vf = $p * $y + ( ($r * $y - 1 ) / $x );
     ?>
-    <p>£<?php echo $vf; ?></p>
+    <p>£<?php echo (int)$vf; ?></p>
 
 
 <?php endforeach; ?>
