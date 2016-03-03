@@ -31,25 +31,7 @@ if (isset($records)) : foreach ($records as $row) : ?>
     print "<h2>$answer</h2>";
     ;?>
 
-    <h2>kjjoo</h2>
-    <?php
-
-    $z = $row->account_add_date;
-    $y = $row->start_date;
-
-    $date1 = ($z);
-    $date2 = ($y);
-
-    $diff = abs(strtotime($date2) - strtotime($date1));
-
-    $years = floor($diff / (365*60*60*24));
-    $months = floor(($diff - $years * 365*60*60*24) / (30*60*60*24));
-    $days = floor(($diff - $years * 365*60*60*24 - $months*30*60*60*24)/ (60*60*24));
-
-    printf("%d years, %d months, %d days\n", $years, $months, $days);
-    ?>
-
-    <h2>Date diff attempt</h2>
+    <h2>Age Of Account</h2>
     <?php
     $z = $row->account_add_date;
     $y = $row->start_date;
@@ -59,7 +41,7 @@ if (isset($records)) : foreach ($records as $row) : ?>
     $date1 = new DateTime($date1);
     $date2 = new DateTime($date2);
 
-    echo $date1->diff($date2)->format("%d days, %h hours and %i minuts");
+    echo $date1->diff($date2)->format("%a days, %h hours and %i minuts");
     ?>
 
 <!--    <p>Bank data</p>-->
