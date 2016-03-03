@@ -20,15 +20,12 @@ if (isset($records)) : foreach ($records as $row) : ?>
     $answer = $i * $o;
     print "<p>£$answer</p>";; ?>
 
-    <?php $date = new \Datetime('now');
-    var_dump($date);
-    ?>
-
     <h2>Age Of Account</h2>
     <?php
+//    $z = $row->account_add_date;
+//    $y = $row->start_date;
 
-
-    $date1 = now();
+    $date1 = $row->account_add_date;
     $date2 = $row->start_date;
     $date1 = new DateTime($date1);
     $date2 = new DateTime($date2);
