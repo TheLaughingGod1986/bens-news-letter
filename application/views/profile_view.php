@@ -20,6 +20,7 @@ if (isset($records)) : foreach ($records as $row) : ?>
     echo $date1->diff($date2)->format
     ("%y years, %m months, %d days, %h hours, %i minuets and %s seconds");
     ?>
+    <h2>Interest Earned To Date</h2>
 
     <h2>Total Balance To Date</h2>
    <?php
