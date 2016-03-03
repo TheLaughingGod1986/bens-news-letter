@@ -62,8 +62,8 @@ if (isset($records)) : foreach ($records as $row) : ?>
     $z = $row->account_add_date;
     $y = $row->start_amount;
 
-    $date1=new DateTime($z);
-    $date2=new DateTime($y);
+    $date1=date_create($z);
+    $date2=date_create($y);
     $diff=date_diff($date1,$date2);
     echo $diff->format('%d days');
     ?>
