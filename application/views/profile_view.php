@@ -7,29 +7,17 @@ if (isset($records)) : foreach ($records as $row) : ?>
     <p><?php echo $row->interest; ?></p>
     <h2>Monthly Deposits</h2>
     <p><?php echo $row->start_amount; ?></p>
-    <h2>Open Date</h2>
-    <p><?php echo $row->account_add_date; ?></p>
-    <h2>Start Date</h2>
-    <p><?php echo $row->start_date; ?></p>
-
-
-<!--    <h2>Age Of Account</h2>-->
-<!--    --><?php
-//    $y = new DateTime($row->account_add_date);
-//    $x = new DateTime($row->start_date);
-//    $interval = $y->diff($x);
-//    $age_answer = 12 * $y - $x;
-//    echo $interval->getTimestamp();
-//    ;?>
-
+    <!--    <h2>Open Date</h2>-->
+    <!--    <p>--><?php //echo $row->account_add_date; ?><!--</p>-->
+    <!--    <h2>Start Date</h2>-->
+    <!--    <p>--><?php //echo $row->start_date; ?><!--</p>-->
 
     <h2>total amount</h2>
     <?php
     $i = $row->interest;
     $o = $row->start_amount;
     $answer = $i * $o;
-    print "<h2>$answer</h2>";
-    ;?>
+    print "<h2>$answer</h2>";; ?>
 
     <h2>Age Of Account</h2>
     <?php
@@ -37,15 +25,12 @@ if (isset($records)) : foreach ($records as $row) : ?>
     $y = $row->start_date;
 
     $date1 = $row->account_add_date;
-    $date2 =$row->start_date;
+    $date2 = $row->start_date;
     $date1 = new DateTime($date1);
     $date2 = new DateTime($date2);
 
     echo $date1->diff($date2)->format("%a days, %h hours and %i minuts");
     ?>
-
-<!--    <p>Bank data</p>-->
-<!--    <p>--><?//=isset($records['differenceInMonth'])?$records['differenceInMonth']:"No record found"?><!--</p>-->
 
 <?php endforeach; ?>
 

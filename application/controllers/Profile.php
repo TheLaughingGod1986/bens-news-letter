@@ -14,23 +14,8 @@ class Profile extends CI_Controller
         $this->load->model('user_profile/profiles_model');
         $query = $this->profiles_model->get_bank();
 
-        if(!empty($query))
-        {
+        if (!empty($query)) {
             $data['records'] = $query;
-        }
-
-        $this->load->view('profile_view', $data);
-    }
-
-    function add_age() {
-        $data = array(
-            'records' => array()
-        );
-        $this->load->model('user_profile/profiles_model');
-        $bank = $this->profiles_model->get_age();
-
-        if($bank->num_rows()){
-            $data['records'] = $bank->row_array();
         }
 
         $this->load->view('profile_view', $data);
@@ -39,7 +24,7 @@ class Profile extends CI_Controller
     public function account_data()
     {
         $string = trim($this->input->get_post('term'));
-        $data['result']= $this->profile_model->account_list($string);
+        $data['result'] = $this->profile_model->account_list($string);
         $this->load->view('user_profile/profiles_model', $data);
     }
 
