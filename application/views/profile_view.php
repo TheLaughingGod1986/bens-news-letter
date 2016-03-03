@@ -7,6 +7,11 @@ if (isset($records)) : foreach ($records as $row) : ?>
     <p><?php echo $row->interest; ?></p>
     <h2>Monthly Deposits</h2>
     <p><?php echo $row->start_amount; ?></p>
+    <h2>Open Date</h2>
+    <p><?php echo $row->account_add_date; ?></p>
+    <h2>Start Date</h2>
+    <p><?php echo $row->start_date; ?></p>
+
 
     <h2>total amount</h2>
 
@@ -17,7 +22,7 @@ if (isset($records)) : foreach ($records as $row) : ?>
     print "<h2>$answer</h2>";
     ;?>
 
-   
+
 
 <?php endforeach; ?>
 
