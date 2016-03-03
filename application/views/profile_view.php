@@ -10,7 +10,7 @@ if (isset($records)) : foreach ($records as $row) : ?>
     <p><?php echo $row->interest; ?>%</p>
 
     <h2>Monthly Deposits</h2>
-    <p>£<?php echo $row->monthly_deposits * 100; ?></p>
+    <p>£<?php echo $row->monthly_deposits; ?></p>
 
     <h2>Age Of Account</h2>
     <?php
