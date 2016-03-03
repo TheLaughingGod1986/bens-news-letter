@@ -20,6 +20,18 @@ if (isset($records)) : foreach ($records as $row) : ?>
     print "<h2>$age_answer</h2>";
     ;?>
 
+    <h2>Age Of Account two</h2>
+    <?php
+    $y = $row->account_add_date;
+    $x = $row->start_date;
+
+    $y = new DateTime('2011-09-01');
+    $x = new DateTime('2012-06-06');
+    $interval = $y->diff($x);
+
+    $interval->format('%m months');
+    ?>
+
 
     <h2>total amount</h2>
     <?php
