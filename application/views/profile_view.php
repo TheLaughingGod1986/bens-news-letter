@@ -1,4 +1,5 @@
 <h2>My Regular Savings Accounts</h2>
+</hr> 
 <?php
 if (isset($records)) : foreach ($records as $row) : ?>
     <h2>Account Name</h2>
