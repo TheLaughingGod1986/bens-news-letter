@@ -10,17 +10,16 @@
     echo form_input('length', set_value('length', 'Valid For'));
     echo form_input('monthly_deposits', set_value('monthly_deposits', 'Monthly Deposits'));
     $options = array(
-        'small'  => 'Yearly',
-        'med'    => 'Daily test',
-        'large'   => 'Monthly'
+        '1' => 'Yearly',
+        '12' => 'Monthly',
+        '365' => 'Daily'
     );
-    $shirts_on_sale = array('small', 'large');
-    echo "<label>Compound Type</label>";
-    echo form_dropdown('compound_frequency', $options, 'large');
-        ?>
+    echo form_dropdown('compound_frequency', $options, set_value('compound_frequency', 'Compound Rate'));
+    ?>
+
     <label>Start Date</label>
     <input type="date" name="start_date">
-      <?php echo form_submit('submit', 'Add Bank ')?>
+    <?php echo form_submit('submit', 'Add Bank ') ?>
 </fieldset>
 
 <?php echo validation_errors('<p class="error"/>'); ?>
