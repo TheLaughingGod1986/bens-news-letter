@@ -12,6 +12,8 @@ if (isset($records)) : foreach ($records as $row) : ?>
     <h2>Start Date</h2>
     <p><?php echo $row->start_date; ?></p>
 
+    <?php isset($records['differenceInMonth'])?$records['differenceInMonth']:"No record found"?>
+
 <!--    <h2>Age Of Account</h2>-->
 <!--    --><?php
 //    $y = new DateTime($row->account_add_date);
@@ -40,6 +42,6 @@ if (isset($records)) : foreach ($records as $row) : ?>
 <?php endif; ?>
 
 <h2>Age Of Account</h2>
-<p><?=isset($records['differenceInMonth'])?$records['differenceInMonth']:"No record found"?></p>
+<p><?php isset($records['differenceInMonth'])?$records['differenceInMonth']:"No record found"?></p>
 
 
