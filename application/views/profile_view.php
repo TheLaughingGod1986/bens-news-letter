@@ -25,9 +25,9 @@ if (isset($records)) : foreach ($records as $row) : ?>
 //    $z = $row->account_add_date;
 //    $y = $row->start_date;
 
-    $date1 = $row->account_add_date;
+//    $date1 = $row->account_add_date;
     $date2 = $row->start_date;
-    $date1 = new DateTime($date1);
+    $date1 = new DateTime('now');
     $date2 = new DateTime($date2);
 
     echo $date1->diff($date2)->format("%d days, %h hours and %i minuets");
