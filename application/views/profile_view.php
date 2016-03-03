@@ -22,7 +22,7 @@ if (isset($records)) : foreach ($records as $row) : ?>
     ?>
     <h2>Account Maturity</h2>
     <?php
-    $remain = 360 - (int)$date1->diff($date2)->format("%d");
+    $remain = 365 - (int)$date1->diff($date2)->format("%d");
 
     echo $remain;
     ?>
