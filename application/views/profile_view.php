@@ -14,23 +14,12 @@ if (isset($records)) : foreach ($records as $row) : ?>
 
     <h2>Age Of Account</h2>
     <?php
-    $y = $row->account_add_date;
-    $x = $row->start_date;
-    $age_answer = 12 * $y - $x;
-    print "<h2>$age_answer</h2>";
-    ;?>
-
-    <h2>Age Of Account two</h2>
-    <?php
-    $y = $row->account_add_date;
-    $x = $row->start_date;
-
-    $y = new DateTime('2011-09-01');
-    $x = new DateTime('2012-06-06');
+    $y = new DateTime($row->account_add_date);
+    $x = new DateTime($row->start_date);
     $interval = $y->diff($x);
-    $interval->format('%m months');
+    $age_answer = 12 * $y - $x;
     print "<h2>$interval</h2>";
-    ?>
+    ;?>
 
 
     <h2>total amount</h2>
