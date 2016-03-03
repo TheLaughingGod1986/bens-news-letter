@@ -17,12 +17,18 @@ if (isset($records)) : foreach ($records as $row) : ?>
     $start_time = $row->start_date;
     $date1 = new DateTime('now');
     $date2 = new DateTime($start_time);
-    echo $date1->diff($date2)->format
+   $age = ('echo $date1->diff($date2)->format');
     ("%y years, %m months, %d days, %h hours, %i minuets and %s seconds");
     ?>
 
     <h2>Total Balance To Date</h2>
-    // p : principal
+   <?php
+    $p = 0;
+    $i = $row->interest;
+    $c = $row->compound_frequency;
+    $n =
+    ?>
+
     // i : annual rate interest
     // c: compound
     // n : valid for
