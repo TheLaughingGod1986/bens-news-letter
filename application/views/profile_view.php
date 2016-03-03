@@ -41,8 +41,8 @@ if (isset($records)) : foreach ($records as $row) : ?>
 <?php endforeach; ?>
 
 <?php else : ?>
-    <h3>No Accounts Added </h3>
-    <h4>Add Bank ></h4>
+    <h3>You Have No Accounts</h3>
+    <h4>Why No Add A Account?</h4>
 <?php endif; ?>
 
 

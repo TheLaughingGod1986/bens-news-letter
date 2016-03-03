@@ -6,17 +6,25 @@
     echo form_open('banks/create_bank');
     echo form_input('bank_name', set_value('bank_name', 'Account Name'));
     echo form_input('interest', set_value('interest', 'Interest Rate'));
-    echo form_input('start_amount', set_value('start_amount', 'Starting Balance'));
-    echo form_input('length', set_value('length', 'Valid For'));
     echo form_input('monthly_deposits', set_value('monthly_deposits', 'Monthly Deposits'));
 
-    $options = array(
+    $compound_options = array(
         '1' => 'Yearly',
         '12' => 'Monthly',
         '365' => 'Daily'
     );
-    echo "<h3>Compound Rate</h3>";
-    echo form_dropdown('compound_frequency', $options );
+    echo "<h4>Compound Rate</h4>";
+    echo form_dropdown('compound_frequency', $compound_options);
+
+    $valid_options = array(
+        '1' => '1 yeah',
+        '2' => '2 yeah',
+        '3' => '3 year',
+        '4' => '4 year',
+        '5' => '5 year'
+    );
+    echo "<h4>Account Fixed Term</h4>";
+    echo form_dropdown('length', $valid_options);
 
     ?>
 
