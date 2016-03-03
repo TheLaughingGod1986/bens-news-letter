@@ -28,8 +28,8 @@ if (isset($records)) : foreach ($records as $row) : ?>
     $y = new DateTime('2011-09-01');
     $x = new DateTime('2012-06-06');
     $interval = $y->diff($x);
-
     $interval->format('%m months');
+    print "<h2>$interval</h2>";
     ?>
 
 
