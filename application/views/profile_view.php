@@ -54,10 +54,12 @@ if (isset($records)) : foreach ($records as $row) : ?>
     $z = $row->account_add_date;
     $y = $row->start_amount;
 
-    $date1=date_create($z);
-    $date2=date_create($y);
-    $diff=date_diff($date1,$date2);
-    echo $diff->format('%d days');
+    $date1 = $row->account_add_date;
+    $date2 =$row->start_amount;
+    $date1 = new DateTime($date1);
+    $date2 = new DateTime($date2);
+
+    echo $date1->diff($date2)->format("%d days, %h hours and %i minuts");
     ?>
 
 <!--    <p>Bank data</p>-->
