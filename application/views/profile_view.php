@@ -37,7 +37,7 @@ if (isset($records)) : foreach ($records as $row) : ?>
 
     $vf = $p * $y + ($r * ($y - 1) / $x);
     ?>
-    <p>Answer:<?php echo (double)$vf; ?></p>
+    <p>£<?php echo $vf; ?></p>
 
 
 <?php endforeach; ?>
