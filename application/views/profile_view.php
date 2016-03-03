@@ -25,7 +25,7 @@ if (isset($records)) : foreach ($records as $row) : ?>
     $z = $row->account_add_date;
     $y = $row->start_date;
 
-    $date1 = $row->account_add_date;
+    $date1 = date('Y-m-d');
     $date2 = $row->start_date;
     $date1 = new DateTime($date1);
     $date2 = new DateTime($date2);
