@@ -26,7 +26,7 @@ if (isset($records)) : foreach ($records as $row) : ?>
     $p = 0;
     $i = $row->interest;
     $c = $row->compound_frequency;
-    $n = $date1->diff($date2)->format("%m");
+    $n = $date1->diff($date2)->format("%d");
     $r = $row->monthly_deposits;
 
     echo $n;
