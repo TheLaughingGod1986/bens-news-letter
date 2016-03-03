@@ -36,7 +36,7 @@ if (isset($records)) : foreach ($records as $row) : ?>
 //    $r = 200;
 
     $x = $i / $c;
-    $y = pow((1 + $x), ($n * $c));
+    $y = pow((1 + $x), ($n/12 * $c));
 
     $vf = $p * $y + ($r * ($y - 1) / $x);
     ?>
