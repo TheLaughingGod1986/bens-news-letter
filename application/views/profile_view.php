@@ -24,7 +24,7 @@ if (isset($records)) : foreach ($records as $row) : ?>
     <?php
  
 
-    $date1 = date('Y-m-d');
+    $date1 = now();
     $date2 = $row->start_date;
     $date1 = new DateTime($date1);
     $date2 = new DateTime($date2);
