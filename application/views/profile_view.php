@@ -30,8 +30,8 @@ if (isset($records)) : foreach ($records as $row) : ?>
 //    $i = 0.06;
     $c = $row->compound_frequency;
 //    $c = 12;
-//    $n = (int)$date1->diff($date2)->format("%d");
-    $n = 1;
+    $n = (int)$date1->diff($date2)->format("%d");
+//    $n = 1;
     $r = $row->monthly_deposits;
 //    $r = 200;
 
