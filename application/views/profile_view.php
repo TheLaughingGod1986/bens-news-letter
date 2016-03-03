@@ -21,7 +21,13 @@ if (isset($records)) : foreach ($records as $row) : ?>
     ("%y years, %m months, %d days, %h hours, %i minuets and %s seconds");
     ?>
     <h2>Account Maturity</h2>
-    <h2>Interest Earned To Date</h2>
+    <?php
+    $remain = $row->length - $date1->diff($date2)->format
+        ("%y years, %m months, %d days, %h hours, %i minuets and %s seconds");
+
+    echo $remain;
+    ?>
+
 
     <h2>Total Balance To Date</h2>
     <?php
@@ -39,6 +45,7 @@ if (isset($records)) : foreach ($records as $row) : ?>
     $vf = $p * $y + ($r * ($y - 1) / $x);
     ?>
     <p>£<?php echo $vf; ?></p>
+
     <h2>Interest Earned To Date</h2>
     <?php
      $total_int = $row->monthly_deposits * (int)$date1->diff($date2)->format("%m");
@@ -46,7 +53,7 @@ if (isset($records)) : foreach ($records as $row) : ?>
 
     echo $w;
     ?>
-    
+
 
 <?php endforeach; ?>
 
