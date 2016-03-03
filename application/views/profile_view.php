@@ -39,7 +39,14 @@ if (isset($records)) : foreach ($records as $row) : ?>
     $vf = $p * $y + ($r * ($y - 1) / $x);
     ?>
     <p>£<?php echo $vf; ?></p>
+    <h2>Interest Earned To Date</h2>
+    <?php
+     $total_int = $row->monthly_deposits * (int)$date1->diff($date2)->format("%m");
+    $w =  $vf - $total_int;
 
+    echo $w;
+    ?>
+    
 
 <?php endforeach; ?>
 
