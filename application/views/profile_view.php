@@ -29,20 +29,14 @@ if (isset($records)) : foreach ($records as $row) : ?>
     $n = $date1->diff($date2)->format("%d");
     $r = $row->monthly_deposits;
 
-    echo $n;
+
+    $x = $i / $c;
+    $y = pow ( (1 + $x), ($n * $c) );
+
+    $vf = $p * $y + ( ($R * $y - 1 ) / $x );
+
+    echo $vf;
     ?>
-<!---->
-<!--    // p : principle-->
-<!--    // i : annual rate interest-->
-<!--    // c : compound-->
-<!--    // n : valid for-->
-<!--    // R : monthly deposit-->
-<!---->
-<!--    // calculate the terms that appear twice-->
-<!--    $x = $i / $c;-->
-<!--    $y = pow ( (1 + $x), ($n * $c) );-->
-<!---->
-<!--    $vf = $p * $y + ( ($R * $y - 1 ) / $x );-->
 
 <?php endforeach; ?>
 
