@@ -22,8 +22,7 @@ if (isset($records)) : foreach ($records as $row) : ?>
     ?>
     <h2>Account Maturity</h2>
     <?php
-    $remain = $row->length - $date1->diff($date2)->format
-        ("%y years, %m months, %d days, %h hours, %i minuets and %s seconds");
+    $remain = 360 - (int)$date1->diff($date2)->format("%d");
 
     echo $remain;
     ?>
