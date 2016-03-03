@@ -52,15 +52,15 @@ if (isset($records)) : foreach ($records as $row) : ?>
 <!--    <h2>Age</h2>-->
 <!--    --><?php
 //    $start = new DateTime( 'account_add_date' );
-//    $end   = new DateTime( 'start_date' );
+//    $end   = new DateTime( 'account_add_date' );
 //    $diff  = $start->diff( $end );
 //    echo $diff->format( '%d days' );
 //    ?>
 
     <h2>new attempt</h2>
     <?php
-    $date1=date_create("2013-12-01");
-    $date2=date_create("2013-12-12");
+    $date1=date_create("account_add_date");
+    $date2=date_create("account_add_date");
     $diff=date_diff($date1,$date2);
     echo $diff->format('%d days');
     ?>
