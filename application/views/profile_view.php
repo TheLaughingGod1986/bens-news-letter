@@ -51,8 +51,8 @@ if (isset($records)) : foreach ($records as $row) : ?>
 
     <h2>123abc</h2>
     <?php
-    $start = new DateTime( 'account_add_date' );
-    $end   = new DateTime( 'start_date' );
+    $start = new DateInterval( 'account_add_date' );
+    $end   = new DateInterval( 'start_date' );
     $diff  = $start->diff( $end );
 
     echo $diff->format( '%d days' );
