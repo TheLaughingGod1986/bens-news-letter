@@ -6,7 +6,7 @@ if (isset($records)) : foreach ($records as $row) : ?>
     <h2>Interest Rate</h2>
     <p>%<?php echo $row->interest; ?></p>
     <h2>Monthly Deposits</h2>
-    <p><?php echo £$row->start_amount; ?></p>
+    <p>£<?php echo $row->start_amount; ?></p>
     <!--    <h2>Open Date</h2>-->
     <!--    <p>--><?php //echo $row->account_add_date; ?><!--</p>-->
     <!--    <h2>Start Date</h2>-->
