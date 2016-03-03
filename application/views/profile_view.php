@@ -12,12 +12,12 @@ if (isset($records)) : foreach ($records as $row) : ?>
     <h2>Monthly Deposits</h2>
     <p>£<?php echo $row->monthly_deposits; ?></p>
 
-    <h2>Age Of Account</h2>
+    <h2>Time Left</h2>
     <?php
     $start_time = $row->start_date;
     $date1 = new DateTime('now');
     $date2 = new DateTime($start_time);
-    echo $date1->diff($date2)->format
+  echo 365 - $date1->diff($date2)->format
     ("%y years, %m months, %d days, %h hours, %i minuets and %s seconds");
     ?>
     <h2>Interest Earned To Date</h2>
