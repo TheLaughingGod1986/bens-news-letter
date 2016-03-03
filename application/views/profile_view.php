@@ -24,7 +24,7 @@ if (isset($records)) : foreach ($records as $row) : ?>
     <?php
     $remain = 365 - (int)$date1->diff($date2)->format("%d"); // will need to change fom 365 to a variable
     ?>
-    <p>Days Till Maturity = <?php $remain; ?></p>
+    <p>Days Till Account Maturity = <?php echo $remain; ?></p>
 
 
     <h2>Total Balance To Date</h2>
