@@ -31,10 +31,10 @@ if (isset($records)) : foreach ($records as $row) : ?>
     print "<h2>$answer</h2>";
     ;?>
 
-    <h3>test</h3>
+    <h2>Age Of Account</h2>
 <?php
-    $date2 = 'account_add_date';
-    $date1 = 'start_date';
+    $date1 = 'account_add_date';
+    $date2 = 'start_date';
 
     $ts1 = strtotime($date1);
     $ts2 = strtotime($date2);
@@ -49,6 +49,14 @@ if (isset($records)) : foreach ($records as $row) : ?>
     print "<h2>$diff</h2>";
 ?>
 
+    <h2>123abc</h2>
+    <?php
+    $start = new DateTime( 'account_add_date' );
+    $end   = new DateTime( 'start_date' );
+    $diff  = $start->diff( $end );
+
+    echo $diff->format( '%d days' );
+    ?>
 
 <?php endforeach; ?>
 
@@ -56,8 +64,5 @@ if (isset($records)) : foreach ($records as $row) : ?>
     <h3>No Accounts Added </h3>
 
 <?php endif; ?>
-
-<h2>Age Of Account</h2>
-<p><?php isset($records['differenceInMonth'])?$records['differenceInMonth']:"No record found"?></p>
 
 
