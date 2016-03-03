@@ -8,7 +8,7 @@
     echo form_input('interest', set_value('interest', 'Interest Rate'));
     echo form_input('start_amount', set_value('start_amount', 'Starting Balance'));
     echo form_input('length', set_value('length', 'Valid For'));
-    echo form_input('monthly_deposits', set_value('length', 'Monthly Deposits'));
+    echo form_input('monthly_deposits', set_value('monthly_deposits', 'Monthly Deposits'));
     $options = array(
         'small'  => 'Yearly',
         'med'    => 'Daily',
