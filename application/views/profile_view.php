@@ -59,8 +59,11 @@ if (isset($records)) : foreach ($records as $row) : ?>
 
     <h2>new attempt</h2>
     <?php
-    $date1=date_create("account_add_date");
-    $date2=date_create("start_date");
+    $z = $row->account_add_date;
+    $y = $row->start_amount;
+
+    $date1=new DateTime($z);
+    $date2=new DateTime($y);
     $diff=date_diff($date1,$date2);
     echo $diff->format('%d days');
     ?>
