@@ -16,7 +16,7 @@ if (isset($records)) : foreach ($records as $row) : ?>
     <?php
     $y = $row->account_add_date;
     $x = $row->start_date;
-    $age_answer = $x - $y;
+    $age_answer = 12 * $y - $x;
     print "<h2>$age_answer</h2>";
     ;?>
 
