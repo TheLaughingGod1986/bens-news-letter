@@ -57,6 +57,14 @@ if (isset($records)) : foreach ($records as $row) : ?>
 //    echo $diff->format( '%d days' );
 //    ?>
 
+    <h2>new attempt</h2>
+    <?php
+    $date1=date_create("2013-03-15");
+    $date2=date_create("2013-12-12");
+    $diff=date_diff($date1,$date2);
+    print "<h2>$diff</h2>";
+    ?>
+
     <p>Bank data</p>
     <p><?=isset($records['differenceInMonth'])?$records['differenceInMonth']:"No record found"?></p>
 
