@@ -9,12 +9,15 @@
     echo form_input('start_amount', set_value('start_amount', 'Starting Balance'));
     echo form_input('length', set_value('length', 'Valid For'));
     echo form_input('monthly_deposits', set_value('monthly_deposits', 'Monthly Deposits'));
+
     $options = array(
         '1' => 'Yearly',
         '12' => 'Monthly',
         '365' => 'Daily'
     );
-    echo form_dropdown('compound_frequency', $options, set_value('compound_frequency', 'Compound Rate'));
+    echo "<h3>Compound Rate</h3>";
+    echo form_dropdown('compound_frequency', $options );
+
     ?>
 
     <label>Start Date</label>

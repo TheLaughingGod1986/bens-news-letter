@@ -19,7 +19,8 @@ class Bank_model extends CI_Model {
             'start_date' => date('Y-m-d',strtotime($this->input->post('start_date'))),
             'mem_id' => $this->session->userdata('id'),
             'account_add_date' => $this->current_date(),
-            'monthly_deposits' => $this->input->post('monthly_deposits')
+            'monthly_deposits' => $this->input->post('monthly_deposits'),
+            'compound_frequency' => $this->input->post('compound_frequency')
         );
 
         $insert = $this->db->insert('bank', $new_bank_acc_insert_data);
