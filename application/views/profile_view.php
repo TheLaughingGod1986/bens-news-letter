@@ -30,7 +30,7 @@ if (isset($records)) : foreach ($records as $row) : ?>
     $date1 = new DateTime($date1);
     $date2 = new DateTime($date2);
 
-    echo $date1->diff($date2)->format("%a days, %h hours and %i minuts");
+    echo $date1->diff($date2)->format("%d days, %h hours and %i minuets");
     ?>
 
 <?php endforeach; ?>
