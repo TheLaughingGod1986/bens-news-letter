@@ -18,7 +18,7 @@ if (isset($records)) : foreach ($records as $row) : ?>
     $x = new DateTime($row->start_date);
     $interval = $y->diff($x);
     $age_answer = 12 * $y - $x;
-    print "<h2>$interval</h2>";
+    echo $interval->getTimestamp();
     ;?>
 
 
