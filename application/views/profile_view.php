@@ -31,23 +31,23 @@ if (isset($records)) : foreach ($records as $row) : ?>
     print "<h2>$answer</h2>";
     ;?>
 
-    <h2>Age Of Account</h2>
+<!--    <h2>Age Of Account</h2>-->
 <?php
-    $date1 = 'account_add_date';
-    $date2 = 'start_date';
-
-    $ts1 = strtotime($date1);
-    $ts2 = strtotime($date2);
-
-    $year1 = date('Y', $ts1);
-    $year2 = date('Y', $ts2);
-
-    $month1 = date('m', $ts1);
-    $month2 = date('m', $ts2);
-
-    $diff = (($year2 - $year1) * 12) + ($month2 - $month1);
-    print "<h2>$diff</h2>";
-?>
+//    $date1 = 'account_add_date';
+//    $date2 = 'start_date';
+//
+//    $ts1 = strtotime($date1);
+//    $ts2 = strtotime($date2);
+//
+//    $year1 = date('Y', $ts1);
+//    $year2 = date('Y', $ts2);
+//
+//    $month1 = date('m', $ts1);
+//    $month2 = date('m', $ts2);
+//
+//    $diff = (($year2 - $year1) * 12) + ($month2 - $month1);
+//    print "<h2>$diff</h2>";
+//?>
 
 <!--    <h2>Age</h2>-->
 <!--    --><?php
@@ -57,7 +57,7 @@ if (isset($records)) : foreach ($records as $row) : ?>
 //    echo $diff->format( '%d days' );
 //    ?>
 
-    <h2>new attempt</h2>
+    <h2>Date diff attempt</h2>
     <?php
     $z = $row->account_add_date;
     $y = $row->start_amount;
@@ -68,8 +68,8 @@ if (isset($records)) : foreach ($records as $row) : ?>
     echo $diff->format('%d days');
     ?>
 
-    <p>Bank data</p>
-    <p><?=isset($records['differenceInMonth'])?$records['differenceInMonth']:"No record found"?></p>
+<!--    <p>Bank data</p>-->
+<!--    <p>--><?//=isset($records['differenceInMonth'])?$records['differenceInMonth']:"No record found"?><!--</p>-->
 
 <?php endforeach; ?>
 
