@@ -55,7 +55,7 @@ if (isset($records)) : foreach ($records as $row) : ?>
     $y = $row->start_date;
 
     $date1 = $row->account_add_date;
-    $date2 =$row->start_amount;
+    $date2 =$row->start_date;
     $date1 = new DateTime($date1);
     $date2 = new DateTime($date2);
 
