@@ -17,7 +17,7 @@ if (isset($records)) : foreach ($records as $row) : ?>
     $start_time = $row->start_date;
     $date1 = new DateTime('now');
     $date2 = new DateTime($start_time);
-   $age = ('echo $date1->diff($date2)->format');
+    echo $date1->diff($date2)->format
     ("%y years, %m months, %d days, %h hours, %i minuets and %s seconds");
     ?>
 
@@ -26,11 +26,13 @@ if (isset($records)) : foreach ($records as $row) : ?>
     $p = 0;
     $i = $row->interest;
     $c = $row->compound_frequency;
-    $n =
+//    $n =
+    $r = $row->monthly_deposits;
     ?>
 
+    // p : principle
     // i : annual rate interest
-    // c: compound
+    // c : compound
     // n : valid for
     // R : monthly deposit
 
