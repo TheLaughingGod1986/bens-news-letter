@@ -20,9 +20,13 @@ if (isset($records)) : foreach ($records as $row) : ?>
     $answer = $i * $o;
     print "<p>£$answer</p>";; ?>
 
+    <?php $date = new \Datetime('now');
+    var_dump($date);
+    ?>
+
     <h2>Age Of Account</h2>
     <?php
- 
+
 
     $date1 = now();
     $date2 = $row->start_date;
