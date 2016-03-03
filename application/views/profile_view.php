@@ -22,8 +22,7 @@ if (isset($records)) : foreach ($records as $row) : ?>
 
     <h2>Age Of Account</h2>
     <?php
-    $z = $row->account_add_date;
-    $y = $row->start_date;
+ 
 
     $date1 = date('Y-m-d');
     $date2 = $row->start_date;
