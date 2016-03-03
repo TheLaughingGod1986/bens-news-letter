@@ -12,7 +12,9 @@ class Profiles_model extends CI_Model
     function get_age() {
         $mem_id = $this->session->userdata('id');
         $query = $this->db
-            ->select("YEAR('account_add_date') - YEAR('start_date')) + (MONTH('account_add_date') - MONTH('start_date')) AS differenceInMonth")
+//            ->select("12 * YEAR('account_add_date') - YEAR('start_date')) + (MONTH('account_add_date') - MONTH('start_date'))
+//             AS differenceInMonth")
+            ->select (TIMESTAMPDIFF(SECOND, 'account_add_date', 'start_date'))
             ->where('mem_id', $mem_id)
             ->get('bank');
 

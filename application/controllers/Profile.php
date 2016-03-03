@@ -22,7 +22,7 @@ class Profile extends CI_Controller
         $this->load->view('profile_view', $data);
     }
 
-    function get_age() {
+    function add_age() {
         $data = array(
             'records' => array()
         );
