@@ -38,9 +38,9 @@ if (isset($records)) : foreach ($records as $row) : ?>
     $x = $i / $c;
     $y = pow((1 + $x), ($n * $c));
 
-    $vf = $p * $y + (($r * $y - 1) / $x);
+    $vf = $p * $y + ($r * ($y - 1) / $x);
     ?>
-    <p>£<?php echo $vf; ?></p>
+    <p>Answer:<?php echo $vf; ?></p>
 
 
 <?php endforeach; ?>
