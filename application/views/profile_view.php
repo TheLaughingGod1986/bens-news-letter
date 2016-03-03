@@ -12,9 +12,16 @@ if (isset($records)) : foreach ($records as $row) : ?>
     <h2>Start Date</h2>
     <p><?php echo $row->start_date; ?></p>
 
+    <h2>Age Of Account</h2>
+    <?php
+    $y = $row->account_add_date;
+    $x = $row->start_date;
+    $age_answer = $y - $x;
+    print "<h2>$age_answer</h2>";
+    ;?>
+
 
     <h2>total amount</h2>
-
     <?php
     $i = $row->interest;
     $o = $row->start_amount;
