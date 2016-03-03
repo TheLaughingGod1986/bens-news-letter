@@ -49,12 +49,11 @@ if (isset($records)) : foreach ($records as $row) : ?>
     print "<h2>$diff</h2>";
 ?>
 
-    <h2>123abc</h2>
+    <h2>Age</h2>
     <?php
-    $start = new DateInterval( 'account_add_date' );
-    $end   = new DateInterval( 'start_date' );
+    $start = new DateTime( 'account_add_date' );
+    $end   = new DateTime( 'start_date' );
     $diff  = $start->diff( $end );
-
     echo $diff->format( '%d days' );
     ?>
 
