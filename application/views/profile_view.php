@@ -17,28 +17,30 @@ if (isset($records)) : foreach ($records as $row) : ?>
     $start_time = $row->start_date;
     $date1 = new DateTime('now');
     $date2 = new DateTime($start_time);
-  echo $date1->diff($date2)->format
+    echo $date1->diff($date2)->format
     ("%y years, %m months, %d days, %h hours, %i minuets and %s seconds");
     ?>
     <h2>Account Maturity</h2>
     <h2>Interest Earned To Date</h2>
 
     <h2>Total Balance To Date</h2>
-   <?php
+    <?php
     $p = 0;
-    $i = $row->interest;
-    $c = $row->compound_frequency;
+//    $i = $row->interest;
+    $i = 0.06;
+//    $c = $row->compound_frequency;
+    $c = 12;
 //    $n = (int)$date1->diff($date2)->format("%d");
-$n = 1;
-    $r = $row->monthly_deposits;
-
-
+    $n = 1;
+//    $r = $row->monthly_deposits;
+    $r = 200;
+    
     $x = $i / $c;
-    $y = pow ( (1 + $x), ($n * $c) );
+    $y = pow((1 + $x), ($n * $c));
 
-    $vf = $p * $y + ( ($r * $y - 1 ) / $x );
+    $vf = $p * $y + (($r * $y - 1) / $x);
     ?>
-    <p>£<?php echo$vf; ?></p>
+    <p>£<?php echo $vf; ?></p>
 
 
 <?php endforeach; ?>
