@@ -33,8 +33,8 @@ if (isset($records)) : foreach ($records as $row) : ?>
 
     <h3>test</h3>
 <?php
-    $date1 = 'account_add_date';
-    $date2 = 'start_date';
+    $date2 = 'account_add_date';
+    $date1 = 'start_date';
 
     $ts1 = strtotime($date1);
     $ts2 = strtotime($date2);
