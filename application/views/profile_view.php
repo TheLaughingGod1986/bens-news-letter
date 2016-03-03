@@ -33,7 +33,7 @@ if (isset($records)) : foreach ($records as $row) : ?>
 //    $n = (int)$date1->diff($date2)->format("%d");
     $n = 1;
 //    $r = $row->monthly_deposits;
-    $r = 0;
+    $r = 200;
 
     $x = $i / $c;
     $y = pow((1 + $x), ($n * $c));
