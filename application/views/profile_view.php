@@ -31,31 +31,23 @@ if (isset($records)) : foreach ($records as $row) : ?>
     print "<h2>$answer</h2>";
     ;?>
 
-<!--    <h2>Age Of Account</h2>-->
-<?php
-//    $date1 = 'account_add_date';
-//    $date2 = 'start_date';
-//
-//    $ts1 = strtotime($date1);
-//    $ts2 = strtotime($date2);
-//
-//    $year1 = date('Y', $ts1);
-//    $year2 = date('Y', $ts2);
-//
-//    $month1 = date('m', $ts1);
-//    $month2 = date('m', $ts2);
-//
-//    $diff = (($year2 - $year1) * 12) + ($month2 - $month1);
-//    print "<h2>$diff</h2>";
-//?>
+    <h2>kjjoo</h2>
+    <?php
 
-<!--    <h2>Age</h2>-->
-<!--    --><?php
-//    $start = new DateTime( 'account_add_date' );
-//    $end   = new DateTime( 'account_add_date' );
-//    $diff  = $start->diff( $end );
-//    echo $diff->format( '%d days' );
-//    ?>
+    $z = $row->account_add_date;
+    $y = $row->start_amount;
+
+    $date1 = ($z);
+    $date2 = ($y);
+
+    $diff = abs(strtotime($date2) - strtotime($date1));
+
+    $years = floor($diff / (365*60*60*24));
+    $months = floor(($diff - $years * 365*60*60*24) / (30*60*60*24));
+    $days = floor(($diff - $years * 365*60*60*24 - $months*30*60*60*24)/ (60*60*24));
+
+    printf("%d years, %d months, %d days\n", $years, $months, $days);
+    ?>
 
     <h2>Date diff attempt</h2>
     <?php
