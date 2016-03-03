@@ -26,14 +26,14 @@ if (isset($records)) : foreach ($records as $row) : ?>
     <h2>Total Balance To Date</h2>
     <?php
     $p = 0;
-//    $i = $row->interest;
-    $i = 0.06;
-//    $c = $row->compound_frequency;
-    $c = 12;
+    $i = $row->interest;
+//    $i = 0.06;
+    $c = $row->compound_frequency;
+//    $c = 12;
 //    $n = (int)$date1->diff($date2)->format("%d");
     $n = 1;
-//    $r = $row->monthly_deposits;
-    $r = 200;
+    $r = $row->monthly_deposits;
+//    $r = 200;
 
     $x = $i / $c;
     $y = pow((1 + $x), ($n * $c));
