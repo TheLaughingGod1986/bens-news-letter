@@ -35,7 +35,7 @@ if (isset($records)) : foreach ($records as $row) : ?>
     <?php
 
     $z = $row->account_add_date;
-    $y = $row->start_amount;
+    $y = $row->start_date;
 
     $date1 = ($z);
     $date2 = ($y);
@@ -52,7 +52,7 @@ if (isset($records)) : foreach ($records as $row) : ?>
     <h2>Date diff attempt</h2>
     <?php
     $z = $row->account_add_date;
-    $y = $row->start_amount;
+    $y = $row->start_date;
 
     $date1 = $row->account_add_date;
     $date2 =$row->start_amount;
