@@ -23,7 +23,7 @@
 <h4><?php echo anchor('login/logout', 'Logout'); ?></h4>
 
 <ul>
-    <li>Profile</li>
+    <li><?php echo anchor('profile/index', 'profile'); ?></li>
     <li>home</li>
     <li>subscribe to our newsletter</li>
 </ul>
