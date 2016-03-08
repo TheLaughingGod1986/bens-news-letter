@@ -1,4 +1,4 @@
-<?php //$this->load->view('includes/template'); ?>
+<?php $this->load->view('includes/template'); ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -18,14 +18,15 @@
 
 <p>This section represents the area that only logged in members can access.</p>
 
-
 <ul>
-    <li><?php echo anchor('profile/index', 'profile'); ?></li>
-    <lable>Accounts</lable>
+    <li><?php echo anchor('profile/index', 'My Accounts'); ?></li>
+
+    <field>Accounts</field>
+
     <li><?php echo anchor('members/add_bank_account', 'Add Regular Savings'); ?></li>
     <li>Add Notification Account</li>
     <li>Add Fixed Rate Bond Account</li>
-    <li>subscibe to newsletter</li>
+    <li>subscribe to newsletter</li>
     <li><?php echo anchor('login/logout', 'Logout'); ?></li>
 
 </ul>
