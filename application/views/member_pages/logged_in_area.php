@@ -1,4 +1,4 @@
-<?php $this->load->view('includes/template'); ?>
+<?php //$this->load->view('includes/template'); ?>
 
 <!DOCTYPE html>
 <html lang="en">
