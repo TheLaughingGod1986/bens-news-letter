@@ -18,9 +18,6 @@
 
 <p>This section represents the area that only logged in members can access.</p>
 
-<h4><?php echo anchor('members/add_bank_account', 'Add Bank'); ?></h4>
-
-<h4><?php echo anchor('login/logout', 'Logout'); ?></h4>
 
 <ul>
     <li><?php echo anchor('profile/index', 'profile'); ?></li>
