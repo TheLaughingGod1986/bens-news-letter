@@ -24,8 +24,9 @@
 
 <ul>
     <li><?php echo anchor('profile/index', 'profile'); ?></li>
-    <li>home</li>
-    <li>subscribe to our newsletter</li>
+    <li><?php echo anchor('members/add_bank_account', 'Add Bank'); ?></li>
+    <li><?php echo anchor('login/logout', 'Logout'); ?></li>
+    <li>subscibe to newsletter</li>
 </ul>
 </body>
 </html>
