@@ -24,9 +24,13 @@
 
 <ul>
     <li><?php echo anchor('profile/index', 'profile'); ?></li>
-    <li><?php echo anchor('members/add_bank_account', 'Add Bank'); ?></li>
-    <li><?php echo anchor('login/logout', 'Logout'); ?></li>
+    <lable>Accounts</lable>
+    <li><?php echo anchor('members/add_bank_account', 'Add Regular Savings'); ?></li>
+    <li>Add Notification Account</li>
+    <li>Add Fixed Rate Bond Account</li>
     <li>subscibe to newsletter</li>
+    <li><?php echo anchor('login/logout', 'Logout'); ?></li>
+
 </ul>
 </body>
 </html>
