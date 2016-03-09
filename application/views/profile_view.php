@@ -26,7 +26,7 @@ if (isset($records)) : foreach ($records as $row) : ?>
         $Total_balance = 1 + $y + ($r * ($y - 1) / $x);
     }
 
-    $remain = $row->length - (int)$date1->diff($date2)->format("%d");
+    $remain = $row->length - (int)$date1->diff($date2)->format("%y years, %m months, %d days");
     ?>
 
 
@@ -60,7 +60,7 @@ if (isset($records)) : foreach ($records as $row) : ?>
             </td>
 
             <td>
-                <?php echo $date1->diff($date2)->format("%y years, %m months, %d"); ?>
+                <?php echo $date1->diff($date2)->format("%y years, %m months, %d days"); ?>
             </td>
 
             <td>
