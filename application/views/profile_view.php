@@ -26,7 +26,7 @@ if (isset($records)) : foreach ($records as $row) :
         $Total_balance = 1 + $y + ($r * ($y - 1) / $x);
     }
 
-    $remain = $row->length - (int)$date1->diff($date2)->format("%y years, %m months, %d days");
+    $remain = 365 - (int)$date1->diff($date2)->format("%R%a days");
 
 
      $Int = $row->monthly_deposits  * (int)$date1->diff($date2)->format("%m");
@@ -64,7 +64,7 @@ if (isset($records)) : foreach ($records as $row) :
             </td>
 
             <td>
-<!--                --><?php //echo $date1->diff($date2)->format("%y years, %m months, %d days"); ?>
+
                 <?php echo $row->start_date; ?>
             </td>
 
@@ -74,7 +74,7 @@ if (isset($records)) : foreach ($records as $row) :
             </td>
 
             <td>
-                                <?php echo $remain; ?>
+                <?php echo $date1->diff($date2)->format("%R%a days"); ?>
             </td>
 
             <td>
