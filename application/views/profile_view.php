@@ -22,9 +22,9 @@ if (isset($records)) : foreach ($records as $row) : ?>
     ?>
     <h2>Account Maturity</h2>
     <?php
-    $remain = $row->length - (int)$date1->diff($date2)->format("%d"); // will need to change fom 365 to a variable
+    $remain = $row->length - (int)$date1->diff($date2)->format("%d");
     ?>
-    <p>Days Till Account Maturity = <?php echo $remain; ?></p>
+    <p>Days Till Account Maturity = <?php echo $remain; ?> Days</p>
 
 
     <h2>Total Balance To Date</h2>
@@ -32,27 +32,21 @@ if (isset($records)) : foreach ($records as $row) : ?>
     $p = 0;
     $i = $row->interest;
     $c = $row->compound_frequency;
-    $n = (int)$date1->diff($date2)->format("%m"); // need to get this working
-//    $n = 1;
+    $n = (int)$date1->diff($date2)->format("%m");
     $r = $row->monthly_deposits;
 
-//    $x = $i / $c;
-//    $z = $n / 12;
-//    $y = pow((1 + $x), ($z * $c));
-//
-//    $vf = $p * $y + ($r * ($y - 1) / $x);
+    $x = $i / $c;
+    $z = $n / 12;
+    $y = pow((1 + $x), ($z * $c));
 
     if($p!=0)
     {
-//regular formula
-        $FV = ($p(1+($i/$c)^($n*$c))) + ($r((1+($i/$c)^($n*$c)-1)*($i/$c)));
-}
-else
+        $vf = $p * $y + ($r * ($y - 1) / $x);
+    }
+    else
     {
-//normal formula without $p
-        $FV = (1+($i/$c)^($n*$c)) + ($r((1+($i/$c)^($n*$c)-1)*($i/$c)));
-}
-
+        $vf = 1 + $y + ($r * ($y - 1) / $x);
+    }
     ?>
     <p>£<?php echo $vf; ?></p>
 
