@@ -70,7 +70,7 @@ if (isset($records)) : foreach ($records as $row) : ?>
             </td>
 
             <td>
-                <?php echo $remain; ?>
+<!--                --><?php //echo $remain; ?>
             </td>
 
             <td>
