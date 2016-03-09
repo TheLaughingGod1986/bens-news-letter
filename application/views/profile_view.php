@@ -89,8 +89,8 @@ if (isset($records)) : foreach ($records as $row) : ?>
             </td>
 
             <td>
-<!--                --><?php //echo round($Total_Balance, 2, PHP_ROUND_HALF_UP); ?>
-                <?php echo $vf; ?>
+                <?php echo round($vf, 2, PHP_ROUND_HALF_UP); ?>
+
             </td>
 
             <td>
