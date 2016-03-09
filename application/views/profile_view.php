@@ -31,7 +31,8 @@ if (isset($records)) : foreach ($records as $row) : ?>
     $p = $row->start_amount;
     $i = 0.06; // Interest rate
     $c = 12; // compound frequency set to monthly
-    $n = 2/12; // Current time invested set to 6 months
+//    $n = 9/12; // Current time invested set to 6 months
+    $n = (int)$date1->diff($date2)->format("%m");
     $r = $row->monthly_deposits;
 
     $x = $i / $c;
