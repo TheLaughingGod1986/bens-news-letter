@@ -42,7 +42,7 @@ if (isset($records)) : foreach ($records as $row) :
             <td>monthly deposit</td>
             <td>Account Opened</td>
             <td>Current Balance</td>
-            <td>~~~~~~~</td>
+            <td>Expiry Of Account</td>
             <td>Current Interest</td>
 
         </tr>
