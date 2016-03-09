@@ -72,7 +72,7 @@ if (isset($records)) : foreach ($records as $row) : ?>
             <td>total</td>
             <td>total iontrest</td>
         </tr>
-       results<tr>
+       <tr>
             <td><?php echo $row->bank_name; ?></td>
             <td><?php echo $row->interest; ?></td>
             <td><?php echo $row->monthly_deposits; ?></td>
