@@ -13,7 +13,7 @@ if (isset($records)) : foreach ($records as $row) : ?>
     ?>
 
     <?php
-    $p = 0;
+    $p = $row->start_amount;
     $i = $row->interest;
     $c = $row->compound_frequency;
     $n = (int)$date1->diff($date2)->format("%m");
