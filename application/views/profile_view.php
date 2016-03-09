@@ -3,31 +3,15 @@
 <?php
 if (isset($records)) : foreach ($records as $row) : ?>
 
-    <h2>Account Name</h2>
-    <p><?php echo $row->bank_name; ?></p>
-
-    <h2>Interest Rate</h2>
-    <p><?php echo $row->interest; ?>%</p>
-
-    <h2>Monthly Deposits</h2>
-    <p>£<?php echo $row->monthly_deposits; ?></p>
-
-    <h2>Age Of Account</h2>
     <?php
     $start_time = $row->start_date;
     $date1 = new DateTime('now');
-    $date2 = new DateTime($start_time);
-    echo $date1->diff($date2)->format
-    ("%y years, %m months, %d days, %h hours, %i minuets and %s seconds");
-    ?>
-    <h2>Account Maturity</h2>
+    $date2 = new DateTime($start_time); ?>
+
     <?php
     $remain = $row->length - (int)$date1->diff($date2)->format("%d");
     ?>
-    <p>Days Till Account Maturity = <?php echo $remain; ?> Days</p>
 
-
-    <h2>Total Balance To Date</h2>
     <?php
     $p = 0;
     $i = $row->interest;
@@ -48,19 +32,13 @@ if (isset($records)) : foreach ($records as $row) : ?>
         $vf = 1 + $y + ($r * ($y - 1) / $x);
     }
 
-//    $vf = ceil(1.1);
     ?>
 
-    <p>£<?php echo round($vf, 2, PHP_ROUND_HALF_UP); ?></p>
-
-    <h2>Interest Earned To Date</h2>
     <?php
      $total_int = $row->monthly_deposits * (int)$date1->diff($date2)->format("%m");
-    $w =  $vf - $total_int;
+    $w =  $vf - $total_int; ?>
 
-    echo round($w, 2, PHP_ROUND_HALF_UP); ?>
-
-
+    
     <table border="1">
         <tbody>
         <tr>
@@ -73,18 +51,29 @@ if (isset($records)) : foreach ($records as $row) : ?>
             <td>total iontrest</td>
         </tr>
        <tr>
-            <td><?php echo $row->bank_name; ?></td>
+            <td>
+                <?php echo $row->bank_name; ?>
+            </td>
 
-            <td><?php echo $row->interest; ?></td>
+            <td>
+                <?php echo $row->interest; ?>
+            </td>
 
-            <td><?php echo $row->monthly_deposits; ?></td>
+            <td>
+                <?php echo $row->monthly_deposits; ?>
+            </td>
 
-            <td><?php echo $date1->diff($date2)->format
-                ("%y years, %m months, %d days, %h hours, %i minuets and %s seconds"); ?></td>
+            <td>
+                <?php echo $date1->diff($date2)->format ("%y years, %m months, %d days, %h hours, %i minuets and %s seconds"); ?>
+            </td>
 
-            <td><?php echo $remain; ?></td>
+            <td>
+                <?php echo $remain; ?>
+            </td>
 
-            <td><?php echo round($vf, 2, PHP_ROUND_HALF_UP); ?></td>
+            <td>
+                <?php echo round($vf, 2, PHP_ROUND_HALF_UP); ?>
+            </td>
 
             <td>
                <?php echo round($w, 2, PHP_ROUND_HALF_UP); ?></td>
