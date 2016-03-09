@@ -40,11 +40,11 @@ if (isset($records)) : foreach ($records as $row) : ?>
 
     if($p!=0)
     {
-        $vf = $p * $y + ($r * ($y - 1) / $x);
+        $Total_balance = $p * $y + ($r * ($y - 1) / $x);
     }
     else
     {
-        $vf = 1 + $y + ($r * ($y - 1) / $x);
+        $Total_balance = 1 + $y + ($r * ($y - 1) / $x);
     }
     ?>
 
@@ -69,9 +69,6 @@ if (isset($records)) : foreach ($records as $row) : ?>
         <h3><?php echo $row->bank_name; ?></h3>
         <tr style="background-color: deeppink;">
             <br>
-<!--            <td>-->
-<!--                --><?php //echo $row->bank_name; ?>
-<!--            </td>-->
 
             <td>
                 <?php echo $row->interest * 100; ?>
@@ -91,7 +88,7 @@ if (isset($records)) : foreach ($records as $row) : ?>
             </td>
 
             <td>
-                <?php echo round($vf, 2, PHP_ROUND_HALF_UP); ?>
+                <?php echo round($Total_balance, 2, PHP_ROUND_HALF_UP); ?>
 
             </td>
 
