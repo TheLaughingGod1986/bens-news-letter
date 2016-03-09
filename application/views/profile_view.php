@@ -98,7 +98,7 @@ if (isset($records)) : foreach ($records as $row) : ?>
             </td>
 
             <td>
-                <!--               --><?php //echo round($w, 2, PHP_ROUND_HALF_UP); ?><!--</td>-->
+                               <?php echo round($w, 2, PHP_ROUND_HALF_UP); ?></td>
         </tr>
         <?php
         ?>
