@@ -61,6 +61,45 @@ if (isset($records)) : foreach ($records as $row) : ?>
     echo round($w, 2, PHP_ROUND_HALF_UP); ?>
 
 
+    <table border="1">
+        <tbody>
+        <tr>
+            <td>Acc Name</td>
+            <td>INT rate</td>
+            <td>monthly deposit</td>
+            <td>age</td>
+            <td>maturity</td>
+            <td>total</td>
+            <td>total iontrest</td>
+        </tr>
+        <?php
+        foreach ($h->result() as $row)
+        {
+            ?><tr>
+            <td><?php echo $row->bank_name; ?></td>
+            <td><?php echo $row->interest; ?></td>
+            <td><?php echo $row->monthly_deposits; ?></td>
+            <td><?php
+                $start_time = $row->start_date;
+                $date1 = new DateTime('now');
+                $date2 = new DateTime($start_time);
+                echo $date1->diff($date2)->format
+                ("%y years, %m months, %d days, %h hours, %i minuets and %s seconds");
+                ?></td>
+            <td><?php echo $remain; ?></td>
+            <td><?php echo round($vf, 2, PHP_ROUND_HALF_UP); ?></td>
+            <td><?php
+                $total_int = $row->monthly_deposits * (int)$date1->diff($date2)->format("%m");
+                $w =  $vf - $total_int;
+
+                echo round($w, 2, PHP_ROUND_HALF_UP); ?></td>
+            </tr>
+        <?php }
+        ?>
+        </tbody>
+    </table>
+
+
 <?php endforeach; ?>
 
 <?php else : ?>
