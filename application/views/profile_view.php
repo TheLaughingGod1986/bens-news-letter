@@ -49,8 +49,11 @@ if (isset($records)) : foreach ($records as $row) : ?>
     }
 
 //    $vf = ceil(1.1);
+
+    $k = $vf / 100;
+    echo ceil ("{$k}"); // results 102.16
     ?>
-    <p>£<?php echo round_up($vf); ?></p>
+    <p>£<?php echo ceil ("{$k}"); ?></p>
 
     <h2>Interest Earned To Date</h2>
     <?php
