@@ -14,7 +14,7 @@ class Bank_model extends CI_Model {
         $new_bank_acc_insert_data = array(
             'bank_name' => $this->input->post('bank_name'),
             'interest' => ($this->input->post('interest') / 100),
-            'start_amount' => $this->input->post('start_amount'),
+            0 => $this->input->post('start_amount'),
             'length' => $this->input->post('length'),
             'start_date' => date('Y-m-d',strtotime($this->input->post('start_date'))),
             'mem_id' => $this->session->userdata('id'),
