@@ -32,7 +32,7 @@ if (isset($records)) : foreach ($records as $row) : ?>
     $i = $row->interest;
     $c = 12; // compound frequency set to monthly
 //    $n = 10/12; // Current time invested set to 6 months
-    $n = (int)$date1->diff($date2)->format("%m");
+    $n = $date1->diff($date2)->format("%m");
     $r = $row->monthly_deposits;
 
     $x = $i / $c;
@@ -57,40 +57,40 @@ if (isset($records)) : foreach ($records as $row) : ?>
     <table border="1">
         <tbody>
         <tr>
-            <td>Account Name</td>
-            <td>Interest Rate</td>
-            <td>Opening Balance</td>
-            <td>monthly deposit</td>
-            <td>Age Of Account</td>
-            <td>Current Balance</td>
+            <td>Account Name</td> //1
+            <td>Interest Rate</td> //2
+            <td>Opening Balance</td> //3
+            <td>monthly deposit</td> //4
+            <td>Age Of Account</td> //5
+            <td>Current Balance</td> //6
             <!--            <td>Current Interest Earned</td>-->
         </tr>
         <tr>
             <td>
-                <?php echo $row->bank_name; ?>
+                <?php echo $row->bank_name; ?> //1
             </td>
 
             <td>
 <!--                --><?php //echo $row->interest * 100; ?>
-                <?php echo $row->interest; ?>
+                <?php echo $row->interest; ?> //2
 
             </td>
 
             <td>
-                <?php echo $row->start_amount; ?>
+                <?php echo $row->start_amount; ?> //3
 
             </td>
 
             <td>
-                <?php echo $row->monthly_deposits; ?>
+                <?php echo $row->monthly_deposits; ?> //4
             </td>
 
             <td>
-                <?php echo $date1->diff($date2)->format("%y years, %m months"); ?>
+                <?php echo $date1->diff($date2)->format("%y years, %m months"); ?> //5
             </td>
 
             <td>
-<!--                --><?php //echo round($Total_Balance, 2, PHP_ROUND_HALF_UP); ?>
+<!--                --><?php //echo round($Total_Balance, 2, PHP_ROUND_HALF_UP); ?> //6
                 <?php echo $vf; ?>
             </td>
 
