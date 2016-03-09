@@ -28,7 +28,7 @@ if (isset($records)) : foreach ($records as $row) : ?>
 //    }
 
 
-    $p = 300; // Starting amount
+    $p = $row->start_amount;
     $i = 0.06; // Interest rate
     $c = 12; // compound frequency set to monthly
     $n = 5/12; // Current time invested set to 6 months
