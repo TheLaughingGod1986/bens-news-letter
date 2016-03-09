@@ -29,15 +29,14 @@ if (isset($records)) : foreach ($records as $row) : ?>
     }
     ?>
 
+
     <?php
     $remain = $row->length - (int)$date1->diff($date2)->format("%d");
     ?>
 
     <?php
-     $Total_Interest = ($row->monthly_deposits + $row->start_amount) * (int)$date1->diff($date2)->format("%m");
-
-     $w =  $Total_Balance - $Total_Interest;
-    ?>
+     $total_int = ($row->monthly_deposits + $row->start_amount) * (int)$date1->diff($date2)->format("%m");
+    $w =  $Total_Balance - $total_int; ?>
 
 
     <table border="1">
@@ -78,11 +77,11 @@ if (isset($records)) : foreach ($records as $row) : ?>
             </td>
 
             <td>
-                <?php echo round($Total_Balance, 2, PHP_ROUND_HALF_UP); ?>
+                <?php echo round($vf, 2, PHP_ROUND_HALF_UP); ?>
             </td>
 
             <td>
-               <?php echo round($Total_Interest, 2, PHP_ROUND_HALF_UP); ?></td>
+               <?php echo round($w, 2, PHP_ROUND_HALF_UP); ?></td>
             </tr>
         <?php
         ?>
