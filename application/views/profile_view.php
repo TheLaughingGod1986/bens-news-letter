@@ -57,7 +57,7 @@ if (isset($records)) : foreach ($records as $row) : ?>
      $total_int = $row->monthly_deposits * (int)$date1->diff($date2)->format("%m");
     $w =  $vf - $total_int;
 
-    echo $w;
+    echo ceil($w);
     ?>
 
 
