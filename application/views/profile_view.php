@@ -74,8 +74,11 @@ if (isset($records)) : foreach ($records as $row) : ?>
         </tr>
        <tr>
             <td><?php echo $row->bank_name; ?></td>
+
             <td><?php echo $row->interest; ?></td>
+
             <td><?php echo $row->monthly_deposits; ?></td>
+
             <td><?php
                 $start_time = $row->start_date;
                 $date1 = new DateTime('now');
@@ -83,15 +86,15 @@ if (isset($records)) : foreach ($records as $row) : ?>
                 echo $date1->diff($date2)->format
                 ("%y years, %m months, %d days, %h hours, %i minuets and %s seconds");
                 ?></td>
-            <td><?php echo $remain; ?></td>
-            <td><?php echo round($vf, 2, PHP_ROUND_HALF_UP); ?></td>
-            <td><?php
-                $total_int = $row->monthly_deposits * (int)$date1->diff($date2)->format("%m");
-                $w =  $vf - $total_int;
 
-                echo round($w, 2, PHP_ROUND_HALF_UP); ?></td>
+            <td><?php echo $remain; ?></td>
+
+            <td><?php echo round($vf, 2, PHP_ROUND_HALF_UP); ?></td>
+
+            <td>
+               <?php echo round($w, 2, PHP_ROUND_HALF_UP); ?></td>
             </tr>
-        <?php 
+        <?php
         ?>
         </tbody>
     </table>
