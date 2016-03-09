@@ -19,12 +19,9 @@ if (isset($records)) : foreach ($records as $row) : ?>
     $z = $n / 12;
     $y = pow((1 + $x), ($z * $c));
 
-    if($p!=0)
-    {
+    if ($p != 0) {
         $Total_Balance = $p * $y + ($r * ($y - 1) / $x);
-    }
-    else
-    {
+    } else {
         $Total_Balance = 1 + $y + ($r * ($y - 1) / $x);
     }
     ?>
@@ -33,7 +30,6 @@ if (isset($records)) : foreach ($records as $row) : ?>
     <?php
     $remain = $row->length - (int)$date1->diff($date2)->format("%m, %d");
     ?>
-
 
 
     <table border="1">
@@ -45,9 +41,9 @@ if (isset($records)) : foreach ($records as $row) : ?>
             <td>monthly deposit</td>
             <td>Age Of Account</td>
             <td>Current Balance</td>
-            <td>Current Interest Earned</td>
+            <!--            <td>Current Interest Earned</td>-->
         </tr>
-       <tr>
+        <tr>
             <td>
                 <?php echo $row->bank_name; ?>
             </td>
@@ -60,25 +56,25 @@ if (isset($records)) : foreach ($records as $row) : ?>
                 <?php echo $row->monthly_deposits; ?>
             </td>
 
-           <td>
-               <?php echo $row->start_amount; ?>
-           </td>
-
             <td>
-                <?php echo $date1->diff($date2)->format ("%y years, %m months, %d days"); ?>
+                <?php echo $row->start_amount; ?>
             </td>
 
             <td>
-<!--                --><?php //echo $remain; ?>
+                <?php echo $date1->diff($date2)->format("%y years, %m months, %d days"); ?>
             </td>
 
             <td>
-                <?php echo round($Total_Balance , 2, PHP_ROUND_HALF_UP); ?>
+                <?php echo round($Total_Balance, 2, PHP_ROUND_HALF_UP); ?>
             </td>
 
             <td>
-<!--               --><?php //echo round($w, 2, PHP_ROUND_HALF_UP); ?><!--</td>-->
-            </tr>
+                <!--                --><?php //echo $remain; ?>
+            </td>
+
+            <td>
+                <!--               --><?php //echo round($w, 2, PHP_ROUND_HALF_UP); ?><!--</td>-->
+        </tr>
         <?php
         ?>
         </tbody>
