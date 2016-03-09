@@ -51,17 +51,14 @@ if (isset($records)) : foreach ($records as $row) : ?>
 //    $vf = ceil(1.1);
     ?>
 
-    <p>£<?php echo round($vf, 2); ?></p>
-    <p>£<?php echo $vf; ?></p>
-
+    <p>£<?php echo round($vf, 2, PHP_ROUND_HALF_UP); ?></p>
 
     <h2>Interest Earned To Date</h2>
     <?php
      $total_int = $row->monthly_deposits * (int)$date1->diff($date2)->format("%m");
     $w =  $vf - $total_int;
 
-    echo ceil($w);
-    ?>
+    echo round($w, 2, PHP_ROUND_HALF_UP); ?>
 
 
 <?php endforeach; ?>
