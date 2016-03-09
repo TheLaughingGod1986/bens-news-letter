@@ -32,7 +32,7 @@ if (isset($records)) : foreach ($records as $row) : ?>
     $i = $row->interest;
     $c = 12; // compound frequency set to monthly
 //    $n = 10/12; // Current time invested set to 6 months
-    $n = $date1->diff($date2)->format("%m");
+    $n = ((int) $date1->diff($date2)->format("%m")) / 12;
     $r = $row->monthly_deposits;
 
     $x = $i / $c;
@@ -90,7 +90,7 @@ if (isset($records)) : foreach ($records as $row) : ?>
             </td>
 
             <td>
-<!--                --><?php //echo round($Total_Balance, 2, PHP_ROUND_HALF_UP); ?> 
+<!--                --><?php //echo round($Total_Balance, 2, PHP_ROUND_HALF_UP); ?>
                 <?php echo $vf; ?>
             </td>
 
