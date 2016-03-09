@@ -57,40 +57,40 @@ if (isset($records)) : foreach ($records as $row) : ?>
     <table border="1">
         <tbody>
         <tr>
-            <td>Account Name</td> //1
-            <td>Interest Rate</td> //2
-            <td>Opening Balance</td> //3
-            <td>monthly deposit</td> //4
-            <td>Age Of Account</td> //5
-            <td>Current Balance</td> //6
+            <td>Account Name</td>
+            <td>Interest Rate</td>
+            <td>Opening Balance</td>
+            <td>monthly deposit</td>
+            <td>Age Of Account</td>
+            <td>Current Balance</td>
             <!--            <td>Current Interest Earned</td>-->
         </tr>
         <tr>
             <td>
-                <?php echo $row->bank_name; ?> //1
+                <?php echo $row->bank_name; ?>
             </td>
 
             <td>
 <!--                --><?php //echo $row->interest * 100; ?>
-                <?php echo $row->interest; ?> //2
+                <?php echo $row->interest; ?>
 
             </td>
 
             <td>
-                <?php echo $row->start_amount; ?> //3
+                <?php echo $row->start_amount; ?>
 
             </td>
 
             <td>
-                <?php echo $row->monthly_deposits; ?> //4
+                <?php echo $row->monthly_deposits; ?>
             </td>
 
             <td>
-                <?php echo $date1->diff($date2)->format("%y years, %m months"); ?> //5
+                <?php echo $date1->diff($date2)->format("%y years, %m months"); ?>
             </td>
 
             <td>
-<!--                --><?php //echo round($Total_Balance, 2, PHP_ROUND_HALF_UP); ?> //6
+<!--                --><?php //echo round($Total_Balance, 2, PHP_ROUND_HALF_UP); ?> 
                 <?php echo $vf; ?>
             </td>
 
