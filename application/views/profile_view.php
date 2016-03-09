@@ -29,8 +29,8 @@ if (isset($records)) : foreach ($records as $row) :
     $remain = $row->length - (int)$date1->diff($date2)->format("%y years, %m months, %d days");
 
 
-     $total_int = $row->monthly_deposits * (int)$date1->diff($date2)->format("%m");
-    $w =  $Total_balance - $total_int;
+     $Int = ($row->monthly_deposits - $p)  * (int)$date1->diff($date2)->format("%m");
+    $Total_Int =  $Total_balance - $Int;
     ?>
 
 
@@ -75,7 +75,7 @@ if (isset($records)) : foreach ($records as $row) :
             </td>
 
             <td>
-                               <?php echo round($w, 2, PHP_ROUND_HALF_UP); ?>
+                               <?php echo round($Total_Int, 2, PHP_ROUND_HALF_UP); ?>
             </td>
         </tr>
         </tbody>
