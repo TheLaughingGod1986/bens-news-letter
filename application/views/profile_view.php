@@ -1,9 +1,9 @@
 <h2>My Regular Savings Accounts</h2>
 <hr>
 <?php
-if (isset($records)) : foreach ($records as $row) : ?>
+if (isset($records)) : foreach ($records as $row) :
 
-    <?php
+
     $join_date = $row->start_date;
     $date1 = new DateTime('now');
     $date2 = new DateTime($join_date);
@@ -27,6 +27,10 @@ if (isset($records)) : foreach ($records as $row) : ?>
     }
 
     $remain = $row->length - (int)$date1->diff($date2)->format("%y years, %m months, %d days");
+
+
+     $total_int = $row->monthly_deposits * (int)$date1->diff($date2)->format("%m");
+    $w =  $Total_balance - $total_int;
     ?>
 
 
@@ -39,8 +43,6 @@ if (isset($records)) : foreach ($records as $row) : ?>
             <td>Age Of Account</td>
             <td>Current Balance</td>
 
-
-            <!--            <td>Current Interest Earned</td>-->
         </tr>
         <h3><?php echo $row->bank_name; ?></h3>
         <tr style="background-color: deeppink;">
@@ -73,7 +75,7 @@ if (isset($records)) : foreach ($records as $row) : ?>
             </td>
 
             <td>
-<!--                               --><?php //echo round($w, 2, PHP_ROUND_HALF_UP); ?>
+                               <?php echo round($w, 2, PHP_ROUND_HALF_UP); ?>
             </td>
         </tr>
         </tbody>
