@@ -32,7 +32,7 @@ if (isset($records)) : foreach ($records as $row) : ?>
     $i = 0.06; // Interest rate
     $c = 12; // compound frequency set to monthly
     $n = 5/12; // Current time invested set to 6 months
-    $r = 200; // Monthly investment is 200
+    $r = $row->monthly_deposits;
 
     $x = $i / $c;
     $y = pow((1 + $x), ($n * $c));
