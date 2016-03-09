@@ -9,10 +9,6 @@ if (isset($records)) : foreach ($records as $row) : ?>
     $date2 = new DateTime($start_time); ?>
 
     <?php
-    $remain = $row->length - (int)$date1->diff($date2)->format("%d");
-    ?>
-
-    <?php
     $p = $row->start_amount;
     $i = $row->interest;
     $c = $row->compound_frequency;
@@ -25,18 +21,23 @@ if (isset($records)) : foreach ($records as $row) : ?>
 
     if($p!=0)
     {
-        $vf = $p * $y + ($r * ($y - 1) / $x);
+        $Total_Balance = $p * $y + ($r * ($y - 1) / $x);
     }
     else
     {
-        $vf = 1 + $y + ($r * ($y - 1) / $x);
+        $Total_Balance = 1 + $y + ($r * ($y - 1) / $x);
     }
-
     ?>
 
     <?php
-     $total_int = ($row->monthly_deposits + $row->start_amount) * (int)$date1->diff($date2)->format("%m");
-    $w =  $vf - $total_int; ?>
+    $remain = $row->length - (int)$date1->diff($date2)->format("%d");
+    ?>
+
+    <?php
+     $Total_Interest = ($row->monthly_deposits + $row->start_amount) * (int)$date1->diff($date2)->format("%m");
+
+     $w =  $Total_Balance - $Total_Interest;
+    ?>
 
 
     <table border="1">
@@ -77,11 +78,11 @@ if (isset($records)) : foreach ($records as $row) : ?>
             </td>
 
             <td>
-                <?php echo round($vf, 2, PHP_ROUND_HALF_UP); ?>
+                <?php echo round($Total_Balance, 2, PHP_ROUND_HALF_UP); ?>
             </td>
 
             <td>
-               <?php echo round($w, 2, PHP_ROUND_HALF_UP); ?></td>
+               <?php echo round($Total_Interest, 2, PHP_ROUND_HALF_UP); ?></td>
             </tr>
         <?php
         ?>
