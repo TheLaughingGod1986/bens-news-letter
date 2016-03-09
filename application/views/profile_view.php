@@ -14,7 +14,7 @@ if (isset($records)) : foreach ($records as $row) : ?>
 //    $c = $row->compound_frequency;
 $c = 12;
 //    $n = (int)$date1->diff($date2)->format("%m");
-$n =2/12;
+$n =2;
     $r = $row->monthly_deposits;
 
     $x = $i / $c;
