@@ -60,8 +60,9 @@ if (isset($records)) : foreach ($records as $row) : ?>
             <td>Interest Rate</td>
             <td>Opening Balance</td>
             <td>monthly deposit</td>
-            <td>Current Balance</td>
             <td>Age Of Account</td>
+            <td>Current Balance</td>
+
 
             <!--            <td>Current Interest Earned</td>-->
         </tr>
