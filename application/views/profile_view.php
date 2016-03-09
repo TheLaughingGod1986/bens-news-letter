@@ -50,7 +50,7 @@ if (isset($records)) : foreach ($records as $row) : ?>
 
 //    $vf = ceil(1.1);
     ?>
-    <p>£<?php echo (double)$vf; ?></p>
+    <p>£<?php echo (int)$vf; ?></p>
 
     <h2>Interest Earned To Date</h2>
     <?php
