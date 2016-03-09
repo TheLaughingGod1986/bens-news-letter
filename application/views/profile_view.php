@@ -38,49 +38,40 @@ if (isset($records)) : foreach ($records as $row) : ?>
 
     <table border="1">
         <tbody>
-
-
-
-
-
-
-
-
-     
-       <tr>
-           <td>Account Name</td>
-        </tr>
         <tr>
+            <td>Account Name</td>
+            <td>Interest Rate</td>
+            <td>Opening Balance</td>
+            <td>monthly deposit</td>
+            <td>Days/Months Till Maturity</td>
+            <td>Current Balance</td>
+            <td>Current Interest Earned</td>
+        </tr>
+       <tr>
             <td>
                 <?php echo $row->bank_name; ?>
             </td>
 
-           <td>Interest Rate</td>
             <td>
                 <?php echo $row->interest; ?>
             </td>
 
-           <td>Opening Balance</td>
             <td>
                 <?php echo $row->monthly_deposits; ?>
             </td>
 
-           <td>monthly deposit</td>
            <td>
                <?php echo $row->start_amount; ?>
            </td>
 
-           <td>Days/Months Till Maturity</td>
 <!--            <td>-->
 <!--                --><?php //echo $date1->diff($date2)->format ("%y years, %m months, %d days"); ?>
 <!--            </td>-->
 
-           <td>Current Balance</td>
             <td>
 <!--                --><?php //echo $remain; ?>
             </td>
 
-           <td>Current Interest Earned</td>
             <td>
                 <?php echo round($Total_Balance , 2, PHP_ROUND_HALF_UP); ?>
             </td>
