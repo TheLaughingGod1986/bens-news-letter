@@ -54,7 +54,7 @@ if (isset($records)) : foreach ($records as $row) : ?>
     ?>
 
 
-    <table border="1">
+    <table>
         <tbody>
         <tr>
             <td>Account Name</td>
