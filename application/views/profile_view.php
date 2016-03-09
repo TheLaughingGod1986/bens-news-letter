@@ -34,7 +34,7 @@ if (isset($records)) : foreach ($records as $row) : ?>
     $remain = $row->length - (int)$date1->diff($date2)->format("%d");
     ?>
 
-   
+
 
     <table border="1">
         <tbody>
@@ -74,11 +74,11 @@ if (isset($records)) : foreach ($records as $row) : ?>
             </td>
 
             <td>
-                <?php echo round($vf, 2, PHP_ROUND_HALF_UP); ?>
+                <?php echo round($Total_Balance , 2, PHP_ROUND_HALF_UP); ?>
             </td>
 
             <td>
-               <?php echo round($w, 2, PHP_ROUND_HALF_UP); ?></td>
+<!--               --><?php //echo round($w, 2, PHP_ROUND_HALF_UP); ?><!--</td>-->
             </tr>
         <?php
         ?>
