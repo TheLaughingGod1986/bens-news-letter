@@ -51,7 +51,9 @@ $n =2;
             </td>
 
             <td>
-                <?php echo $row->interest * 100; ?>
+<!--                --><?php //echo $row->interest * 100; ?>
+                <?php echo $row->interest; ?>
+
             </td>
 
             <td>
