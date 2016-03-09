@@ -38,7 +38,6 @@ if (isset($records)) : foreach ($records as $row) : ?>
 
     <table border="1">
         <tbody>
-        <tr>
 
 
 
@@ -46,9 +45,12 @@ if (isset($records)) : foreach ($records as $row) : ?>
 
 
 
-        </tr>
+
+     
        <tr>
            <td>Account Name</td>
+        </tr>
+        <tr>
             <td>
                 <?php echo $row->bank_name; ?>
             </td>
