@@ -17,14 +17,16 @@ if (isset($records)) : foreach ($records as $row) :
     $x = $i / $c;
     $y = pow((1 + $x), ($n * $c));
 
-    if($p!=0)
-    {
-        $Total_balance = $p * $y + ($r * ($y - 1) / $x);
-    }
-    else
-    {
-        $Total_balance = 1 + $y + ($r * ($y - 1) / $x);
-    }
+//    if($p!=0)
+//    {
+//        $Total_balance = $p * $y + ($r * ($y - 1) / $x);
+//    }
+//    else
+//    {
+//        $Total_balance = 1 + $y + ($r * ($y - 1) / $x);
+//    }
+
+    $vf = $p * $y + ($r * (1 + $x) * ($y - 1) / $x);
 
     $remain = 365 - $date1->diff($date2)->format("%a days");
 
