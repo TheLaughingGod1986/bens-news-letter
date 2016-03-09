@@ -52,6 +52,7 @@ if (isset($records)) : foreach ($records as $row) : ?>
     ?>
 
     <p>£<?php echo round($vf, 2, PHP_ROUND_HALF_UP); ?></p>
+    <p>£<?php echo $vf; ?></p>
 
 
     <h2>Interest Earned To Date</h2>
