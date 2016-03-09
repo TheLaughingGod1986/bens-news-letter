@@ -67,7 +67,7 @@ $c = 12;
 
             <td>
 <!--                --><?php //echo round($Total_Balance, 2, PHP_ROUND_HALF_UP); ?>
-                <?php $Total_Balance; ?>
+                <?php echo $Total_Balance; ?>
             </td>
 
             <td>
