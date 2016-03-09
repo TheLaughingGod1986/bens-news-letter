@@ -54,15 +54,15 @@ if (isset($records)) : foreach ($records as $row) : ?>
     ?>
 
 
-    <table>
+    <table border="1">
         <tbody>
         <tr>
-            <td><h3>Account Name</h3></td>
-            <td><h3>Interest Rate</h3></td>
-            <td><h3>Opening Balance</h3></td>
-            <td><h3>monthly deposit</h3></td>
-            <td><h3>Age Of Account</h3></td>
-            <td><h3>Current Balance</h3></td>
+            <td>Account Name</td>
+            <td>Interest Rate</td>
+            <td>Opening Balance</td>
+            <td>monthly deposit</td>
+            <td>Age Of Account</td>
+            <td>Current Balance</td>
             <!--            <td>Current Interest Earned</td>-->
         </tr>
         <tr>
