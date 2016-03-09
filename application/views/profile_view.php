@@ -59,8 +59,8 @@ if (isset($records)) : foreach ($records as $row) : ?>
         <tr>
             <td>Account Name</td>
             <td>Interest Rate</td>
-            <td>monthly deposit</td>
             <td>Opening Balance</td>
+            <td>monthly deposit</td>
             <td>Age Of Account</td>
             <td>Current Balance</td>
             <!--            <td>Current Interest Earned</td>-->
@@ -77,11 +77,12 @@ if (isset($records)) : foreach ($records as $row) : ?>
             </td>
 
             <td>
-                <?php echo $row->monthly_deposits; ?>
+                <?php echo $row->start_amount; ?>
+
             </td>
 
             <td>
-                <?php echo $row->start_amount; ?>
+                <?php echo $row->monthly_deposits; ?>
             </td>
 
             <td>
