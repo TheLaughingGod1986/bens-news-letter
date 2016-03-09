@@ -65,7 +65,7 @@ if (isset($records)) : foreach ($records as $row) : ?>
             <td>Current Balance</td>
             <!--            <td>Current Interest Earned</td>-->
         </tr>
-        <tr>
+        <tr style="background: #939a83;">>
             <td>
                 <?php echo $row->bank_name; ?>
             </td>
