@@ -47,6 +47,8 @@ if (isset($records)) : foreach ($records as $row) : ?>
     {
         $vf = 1 + $y + ($r * ($y - 1) / $x);
     }
+
+    $vf = ceil(1.1);
     ?>
     <p>£<?php echo $vf; ?></p>
 
