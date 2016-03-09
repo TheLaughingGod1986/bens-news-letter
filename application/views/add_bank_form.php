@@ -17,11 +17,11 @@
     echo form_dropdown('compound_frequency', $compound_options);
 
     $valid_options = array(
-        '1' => '1 yeah',
-        '2' => '2 yeah',
-        '3' => '3 year',
-        '4' => '4 year',
-        '5' => '5 year'
+        '365' => '1 yeah',
+        '730' => '2 yeah',
+        '1095' => '3 year',
+        '1460' => '4 year',
+        '1825' => '5 year'
     );
     echo "<h4>Account Fixed Term</h4>";
     echo form_dropdown('length', $valid_options);
