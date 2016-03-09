@@ -35,7 +35,7 @@ if (isset($records)) : foreach ($records as $row) : ?>
     ?>
 
     <?php
-     $total_int = $row->monthly_deposits * (int)$date1->diff($date2)->format("%m");
+     $total_int = ($row->monthly_deposits + $row->start_amount) * (int)$date1->diff($date2)->format("%m");
     $w =  $vf - $total_int; ?>
 
 
