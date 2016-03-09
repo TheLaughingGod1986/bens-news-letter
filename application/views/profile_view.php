@@ -58,8 +58,8 @@ if (isset($records)) : foreach ($records as $row) : ?>
         <tr>
             <td>Account Name</td>
             <td>Interest Rate</td>
-            <td>Opening Balance</td>
             <td>monthly deposit</td>
+            <td>Opening Balance</td>
             <td>Age Of Account</td>
             <td>Current Balance</td>
             <!--            <td>Current Interest Earned</td>-->
