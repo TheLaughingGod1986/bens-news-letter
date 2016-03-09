@@ -44,6 +44,7 @@ if (isset($records)) : foreach ($records as $row) : ?>
         <tr>
             <td>Acc Name</td>
             <td>INT rate</td>
+            <td>Initial deposit</td>
             <td>monthly deposit</td>
             <td>age</td>
             <td>maturity</td>
@@ -62,6 +63,10 @@ if (isset($records)) : foreach ($records as $row) : ?>
             <td>
                 <?php echo $row->monthly_deposits; ?>
             </td>
+
+           <td>
+               <?php echo $row->start_amount; ?>
+           </td>
 
             <td>
                 <?php echo $date1->diff($date2)->format ("%y years, %m months, %d days, %h hours, %i minuets and %s seconds"); ?>
