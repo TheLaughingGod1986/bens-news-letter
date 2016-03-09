@@ -42,6 +42,8 @@ if (isset($records)) : foreach ($records as $row) :
             <td>monthly deposit</td>
             <td>Age Of Account</td>
             <td>Current Balance</td>
+            <td>~~~~~~~</td>
+            <td>Current Interest</td>
 
         </tr>
         <h3><?php echo $row->bank_name; ?></h3>
