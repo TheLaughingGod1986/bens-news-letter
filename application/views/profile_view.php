@@ -50,7 +50,7 @@ $c = 12;
             </td>
 
             <td>
-                <?php echo $row->interest; ?>
+                <?php echo $row->interest * 100; ?>
             </td>
 
             <td>
