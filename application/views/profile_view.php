@@ -31,7 +31,7 @@ if (isset($records)) : foreach ($records as $row) : ?>
 
 
     <?php
-    $remain = $row->length - (int)$date1->diff($date2)->format("%d");
+    $remain = $row->length - (int)$date1->diff($date2)->format("%m, %d");
     ?>
 
 
@@ -39,14 +39,13 @@ if (isset($records)) : foreach ($records as $row) : ?>
     <table border="1">
         <tbody>
         <tr>
-            <td>Acc Name</td>
-            <td>INT rate</td>
-            <td>Initial deposit</td>
+            <td>Account Name</td>
+            <td>Interest Rate</td>
+            <td>Opening Balance</td>
             <td>monthly deposit</td>
-            <td>age</td>
-            <td>maturity</td>
-            <td>total</td>
-            <td>total iontrest</td>
+            <td>Days/Months Till Maturity</td>
+            <td>Current Balance</td>
+            <td>Current Interest Earned</td>
         </tr>
        <tr>
             <td>
@@ -65,12 +64,12 @@ if (isset($records)) : foreach ($records as $row) : ?>
                <?php echo $row->start_amount; ?>
            </td>
 
-            <td>
-                <?php echo $date1->diff($date2)->format ("%y years, %m months, %d days"); ?>
-            </td>
+<!--            <td>-->
+<!--                --><?php //echo $date1->diff($date2)->format ("%y years, %m months, %d days"); ?>
+<!--            </td>-->
 
             <td>
-<!--                --><?php //echo $remain; ?>
+                <?php echo $remain; ?>
             </td>
 
             <td>
