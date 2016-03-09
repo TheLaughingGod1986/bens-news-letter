@@ -51,7 +51,7 @@ if (isset($records)) : foreach ($records as $row) : ?>
 //    $vf = ceil(1.1);
     ?>
 
-    <p>£<?php echo round($vf, 2, PHP_ROUND_HALF_UP); ?></p>
+    <p>£<?php echo round($vf, 2); ?></p>
     <p>£<?php echo $vf; ?></p>
 
 
