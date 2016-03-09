@@ -56,7 +56,7 @@ if (isset($records)) : foreach ($records as $row) : ?>
 
     <table border="1">
         <tbody>
-        <tr>
+        <tr style="background: #00cccc;">
             <td>Account Name</td>
             <td>Interest Rate</td>
             <td>Opening Balance</td>
