@@ -4,9 +4,9 @@
 if (isset($records)) : foreach ($records as $row) : ?>
 
     <?php
-    $start_time = $row->start_date;
+    $join_date = $row->start_date;
     $date1 = new DateTime('now');
-    $date2 = new DateTime($start_time); ?>
+    $date2 = new DateTime($join_date); ?>
 
     <?php
 //    $p = $row->start_amount;
