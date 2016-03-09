@@ -79,13 +79,8 @@ if (isset($records)) : foreach ($records as $row) : ?>
 
             <td><?php echo $row->monthly_deposits; ?></td>
 
-            <td><?php
-                $start_time = $row->start_date;
-                $date1 = new DateTime('now');
-                $date2 = new DateTime($start_time);
-                echo $date1->diff($date2)->format
-                ("%y years, %m months, %d days, %h hours, %i minuets and %s seconds");
-                ?></td>
+            <td><?php echo $date1->diff($date2)->format
+                ("%y years, %m months, %d days, %h hours, %i minuets and %s seconds"); ?></td>
 
             <td><?php echo $remain; ?></td>
 
