@@ -17,8 +17,8 @@ class Profile extends CI_Controller
         if (!empty($query)) {
             $data['records'] = $query;
         }
-        $data['main_content'] = 'profile_view';
-        $this->load->view('includes/template', $data);
+
+        $this->load->view('profile_view', $data);
     }
 
     public function account_data()
