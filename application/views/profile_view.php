@@ -6,32 +6,11 @@ if (isset($records)) : foreach ($records as $row) : ?>
     <?php
     $join_date = $row->start_date;
     $date1 = new DateTime('now');
-    $date2 = new DateTime($join_date); ?>
-
-    <?php
-//    $p = $row->start_amount;
-//    $i = $row->interest;
-////    $c = $row->compound_frequency;
-//$c = 12;
-////    $n = (int)$date1->diff($date2)->format("%m");
-//$n =2;
-//    $r = $row->monthly_deposits;
-//
-//    $x = $i / $c;
-//    $z = $n / 12;
-//    $y = pow((1 + $x), ($z * $c));
-//
-//    if ($p != 0) {
-//        $Total_Balance = $p * $y + ($r * ($y - 1) / $x);
-//    } else {
-//        $Total_Balance = 1 + $y + ($r * ($y - 1) / $x);
-//    }
-
+    $date2 = new DateTime($join_date);
 
     $p = $row->start_amount;
     $i = $row->interest;
     $c = 12; // compound frequency set to monthly
-//    $n = 10/12; // Current time invested set to 6 months
     $n = ((int) $date1->diff($date2)->format("%m")) / 12;
     $r = $row->monthly_deposits;
 
@@ -46,11 +25,8 @@ if (isset($records)) : foreach ($records as $row) : ?>
     {
         $Total_balance = 1 + $y + ($r * ($y - 1) / $x);
     }
-    ?>
 
-
-    <?php
-    $remain = $row->length - (int)$date1->diff($date2)->format("%m, %d");
+    $remain = $row->length - (int)$date1->diff($date2)->format("%d");
     ?>
 
 
@@ -97,7 +73,8 @@ if (isset($records)) : foreach ($records as $row) : ?>
             </td>
 
             <td>
-<!--                               --><?php //echo round($w, 2, PHP_ROUND_HALF_UP); ?><!--</td>-->
+                               <?php echo round($w, 2, PHP_ROUND_HALF_UP); ?>
+            </td>
         </tr>
         </tbody>
     </table>
