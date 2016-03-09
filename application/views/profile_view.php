@@ -34,10 +34,7 @@ if (isset($records)) : foreach ($records as $row) : ?>
     $remain = $row->length - (int)$date1->diff($date2)->format("%d");
     ?>
 
-    <?php
-     $total_int = ($row->monthly_deposits + $row->start_amount) * (int)$date1->diff($date2)->format("%m");
-    $w =  $Total_Balance - $total_int; ?>
-
+   
 
     <table border="1">
         <tbody>
