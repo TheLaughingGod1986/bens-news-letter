@@ -22,7 +22,7 @@ if (isset($records)) : foreach ($records as $row) : ?>
     ?>
     <h2>Account Maturity</h2>
     <?php
-    $remain = 365 - (int)$date1->diff($date2)->format("%d"); // will need to change fom 365 to a variable
+    $remain = $row->length - (int)$date1->diff($date2)->format("%d"); // will need to change fom 365 to a variable
     ?>
     <p>Days Till Account Maturity = <?php echo $remain; ?></p>
 
@@ -36,11 +36,23 @@ if (isset($records)) : foreach ($records as $row) : ?>
 //    $n = 1;
     $r = $row->monthly_deposits;
 
-    $x = $i / $c;
-    $z = $n / 12;
-    $y = pow((1 + $x), ($z * $c));
+//    $x = $i / $c;
+//    $z = $n / 12;
+//    $y = pow((1 + $x), ($z * $c));
+//
+//    $vf = $p * $y + ($r * ($y - 1) / $x);
 
-    $vf = $p * $y + ($r * ($y - 1) / $x);
+    if($p!=0)
+    {
+//regular formula
+        $FV = ($p(1+($i/$c)^($n*$c))) + ($r((1+($i/$c)^($n*$c)-1)*($i/$c)));
+}
+else
+    {
+//normal formula without $p
+        $FV = (1+($i/$c)^($n*$c)) + ($r((1+($i/$c)^($n*$c)-1)*($i/$c)));
+}
+
     ?>
     <p>£<?php echo $vf; ?></p>
 
