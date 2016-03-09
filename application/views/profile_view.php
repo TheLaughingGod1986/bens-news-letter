@@ -61,8 +61,9 @@ if (isset($records)) : foreach ($records as $row) : ?>
             <td>Interest Rate</td>
             <td>Opening Balance</td>
             <td>monthly deposit</td>
-            <td>Age Of Account</td>
             <td>Current Balance</td>
+            <td>Age Of Account</td>
+
             <!--            <td>Current Interest Earned</td>-->
         </tr>
         <h3><?php echo $row->bank_name; ?></h3>
@@ -101,7 +102,6 @@ if (isset($records)) : foreach ($records as $row) : ?>
             <td>
 <!--                               --><?php //echo round($w, 2, PHP_ROUND_HALF_UP); ?><!--</td>-->
         </tr>
-        <hr>
         </tbody>
     </table>
 
