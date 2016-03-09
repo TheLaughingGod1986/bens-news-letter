@@ -64,9 +64,9 @@ if (isset($records)) : foreach ($records as $row) : ?>
                <?php echo $row->start_amount; ?>
            </td>
 
-<!--            <td>-->
-<!--                --><?php //echo $date1->diff($date2)->format ("%y years, %m months, %d days"); ?>
-<!--            </td>-->
+            <td>
+                <?php echo $date1->diff($date2)->format ("%y years, %m months, %d days"); ?>
+            </td>
 
             <td>
 <!--                --><?php //echo $remain; ?>
