@@ -26,7 +26,7 @@ if (isset($records)) : foreach ($records as $row) :
         $Total_balance = 1 + $y + ($r * ($y - 1) / $x);
     }
 
-    $remain = $date1->diff($date2)->format("%a days");
+    $remain = 365 - $date1->diff($date2)->format("%a days");
 
 
      $Int = $row->monthly_deposits  * (int)$date1->diff($date2)->format("%m");
