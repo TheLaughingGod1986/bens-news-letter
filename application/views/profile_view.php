@@ -29,7 +29,7 @@ if (isset($records)) : foreach ($records as $row) :
     $remain = $row->length - (int)$date1->diff($date2)->format("%y years, %m months, %d days");
 
 
-     $Int = ($row->monthly_deposits - $p)  * (int)$date1->diff($date2)->format("%m");
+     $Int = ($row->monthly_deposits  * (int)$date1->diff($date2)->format("%m")) - $row->start_amount;
     $Total_Int =  $Total_balance - $Int;
     ?>
 
