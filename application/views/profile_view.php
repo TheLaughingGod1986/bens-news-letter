@@ -72,9 +72,7 @@ if (isset($records)) : foreach ($records as $row) : ?>
             </td>
 
             <td>
-<!--                --><?php //echo $row->interest * 100; ?>
-                <?php echo $row->interest; ?>
-
+                <?php echo $row->interest * 100; ?>
             </td>
 
             <td>
