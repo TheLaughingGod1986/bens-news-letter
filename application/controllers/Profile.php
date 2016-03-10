@@ -17,7 +17,7 @@ class Profile extends CI_Controller
         if (!empty($query)) {
             $data['records'] = $query;
         }
-        $this->bank->layout();
+        $this->load->controller('bank');
         $this->middle = 'profile_view'; // passing middle to function. change this for different views.
     }
 
