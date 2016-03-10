@@ -28,11 +28,11 @@ class Profile extends CI_Controller
         if (!empty($query)) {
             $data['records'] = $query;
         }
-
-        $this->middle = 'profile_view'; // passing middle to function. change this for different views.
+        $text = $this->load->view('profile_view', $data);
+        $this->middle = $text; // passing middle to function. change this for different views.
         $this->layout();
 
-        $this->load->view($data);
+
     }
 
     public function account_data()
