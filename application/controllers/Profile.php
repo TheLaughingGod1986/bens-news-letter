@@ -10,7 +10,7 @@ class Profile extends CI_Controller
 
     var $Front_End_data = array();
     var $template = array();
-    
+
     public function layout () {
         $this->template['header'] = $this->load->view('layout/header', $this->Front_End_data, true);
         $this->template['left'] = $this->load->view('layout/left', $this->Front_End_data, true);
@@ -29,7 +29,10 @@ class Profile extends CI_Controller
             $data['records'] = $query;
         }
 
-        $this->load->view('profile_view', $data);
+        $this->middle = ('profile_view , $data'); // passing middle to function. change this for different views.
+        $this->layout();
+
+//        $this->load->view('profile_view', $data);
     }
 
     public function account_data()
