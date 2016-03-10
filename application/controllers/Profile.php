@@ -30,7 +30,7 @@ class Profile extends CI_Controller
         }
 
 //        $this->middle = 'profile_view'; // passing middle to function. change this for different views.
-//        $this->layout();
+        $this->layout();
 
         $this->load->view('profile_view', $data);
     }
