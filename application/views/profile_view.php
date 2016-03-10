@@ -26,7 +26,7 @@ if (isset($records)) : foreach ($records as $row) :
 //        $Total_balance = 1 + $y + ($r * ($y - 1) / $x);
 //    }
 
-    $vf = $p * $y + ($r * (1 + $x) * ($y - 1) / $x);
+    $Total_balance = $p * $y + ($r * (1 + $x) * ($y - 1) / $x);
 
     $remain = 365 - $date1->diff($date2)->format("%a days");
 
