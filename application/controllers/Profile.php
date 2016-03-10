@@ -18,7 +18,8 @@ class Profile extends CI_Controller
             $data['records'] = $query;
         }
 
-        $this->load->view('profile_view', $data);
+        $this->middle = 'profile_view'; // passing middle to function. change this for different views.
+        $this->layout();
     }
 
     public function account_data()
