@@ -26,4 +26,29 @@ class Bank_model extends CI_Model {
         $insert = $this->db->insert('bank', $new_bank_acc_insert_data);
         return $insert;
     }
+
+    function bank_math()
+    {
+        if (isset($records)) : foreach ($records as $row) :
+        $join_date = $row->start_date;
+    $date1 = new DateTime('now');
+    $date2 = new DateTime($join_date);
+
+    $p = 0;
+    $i = $row->interest;
+    $c = 12; // compound frequency set to monthly
+    $n = ((int)$date1->diff($date2)->format("%m")) / 12;
+    $r = $row->monthly_deposits;
+
+    $x = $i / $c;
+    $y = pow((1 + $x), ($n * $c));
+
+    $Total_balance = $p * $y + ($r * (1 + $x) * ($y - 1) / $x);
+
+    $remain = 365 - $date1->diff($date2)->format("%a days");
+
+
+    $Int = $row->monthly_deposits * (int)$date1->diff($date2)->format("%m");
+    $Total_Int = $Total_balance - $Int;
+    }
 }
