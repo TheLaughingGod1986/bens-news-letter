@@ -33,7 +33,7 @@ if (isset($records)) : foreach ($records as $row) :
             <td>Initial Deposit Date</td>
             <td>Current Balance</td>
             <td>Days Till Account Maturity</td>
-            <td>Interest At<?php echo $date1->diff($date2)->format("Month %m"); ?></td>
+            <td>Current Interest At <strong><?php echo $date1->diff($date2)->format("Month %m"); ?></strong></td>
 
         </tr>
         <h3><?php echo $row->bank_name; ?></h3>
