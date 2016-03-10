@@ -2,11 +2,13 @@
 
 class Profile extends CI_Controller
 {
+
     function __construct()
     {
+        $this->load->library('../controllers/bank');
+
         parent::__construct();
         $this->is_logged_in();
-        $this->load->controller('bank');
     }
 
     function index()
@@ -19,6 +21,7 @@ class Profile extends CI_Controller
             $data['records'] = $query;
         }
 
+        $this->bank->layout();
         $this->middle = 'profile_view'; // passing middle to function. change this for different views.
     }
 
