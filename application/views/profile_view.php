@@ -43,12 +43,12 @@ if (isset($records)) : foreach ($records as $row) :
             <br>
 
             <td>
-                %<?php echo $row->interest * 100; ?> Interest
+                <?php echo $row->interest * 100; ?>% Interest
             </td>
 
 
             <td>
-                £<?php echo $row->monthly_deposits; ?> Each Month
+                £<?php echo $row->monthly_deposits; ?> (PCM)
             </td>
 
             <td>
@@ -62,11 +62,11 @@ if (isset($records)) : foreach ($records as $row) :
             </td>
 
             <td>
-                <?php echo $remain; ?> Days Till Maturity
+                <?php echo $remain; ?> Days Left
             </td>
 
             <td>
-                               £<?php echo round($Total_Int, 2, PHP_ROUND_HALF_UP); ?> Earned So Far
+                               £<?php echo round($Total_Int, 2, PHP_ROUND_HALF_UP); ?> Interest
             </td>
         </tr>
         </tbody>
