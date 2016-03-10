@@ -18,10 +18,10 @@ if (isset($records)) : foreach ($records as $row) :
 
     $Total_balance = $p * $y + ($r * (1 + $x) * ($y - 1) / $x);
 
-    $remain = 365 - $date1->diff($date2)->format("%m, %a days %h");
+    $remain = 365 - $date1->diff($date2)->format("%m Months, %d days %h");
 
-    $total_monthly_deposits = ($row->monthly_deposits * (int)$date1->diff($date2)->format("%m")) + $row->start_amount;
-    $Total_Int = $Total_balance - $total_monthly_deposits;
+    $Total_Deposits = ($row->monthly_deposits * (int)$date1->diff($date2)->format("%m")) + $row->start_amount;
+    $Total_Int = $Total_balance - $Total_Deposits;
     ?>
 
 
@@ -50,7 +50,7 @@ if (isset($records)) : foreach ($records as $row) :
 
             <td>
 <!--                --><?php //echo $date1->diff($date2)->format("%m months, %d days"); ?>
-                <?php $row->start_date; ?>
+                <?php echo $row->start_date; ?>
             </td>
 
             <td>
