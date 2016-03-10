@@ -2,15 +2,15 @@
 
 class Profile extends CI_Controller
 {
-    var $Front_End = array();
+    var $Front_End_Data = array();
 
     var $template = array();
 
     public function layout () {
-        $this->template['header'] = $this->load->view('layout/header', $this->Front_End, true);
-        $this->template['left'] = $this->load->view('layout/left', $this->Front_End, true);
-        $this->template['middle'] = $this->load->view($this->middle, $this->Front_End, true);
-        $this->template['footer'] = $this->load->view('layout/footer', $this->Front_End, true);
+        $this->template['header'] = $this->load->view('layout/header', $this->Front_End_Data, true);
+        $this->template['left'] = $this->load->view('layout/left', $this->Front_End_Data, true);
+        $this->template['middle'] = $this->load->view($this->middle, $this->Front_End_Data, true);
+        $this->template['footer'] = $this->load->view('layout/footer', $this->Front_End_Data, true);
         $this->load->view('layout/index', $this->template);
     }
 
