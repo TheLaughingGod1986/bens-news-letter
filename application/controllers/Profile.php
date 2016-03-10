@@ -1,12 +1,10 @@
 <?php
-
+$this->load->library('../controllers/bank');
 class Profile extends CI_Controller
 {
 
     function __construct()
     {
-        $this->load->library('../controllers/bank');
-
         parent::__construct();
         $this->is_logged_in();
     }
