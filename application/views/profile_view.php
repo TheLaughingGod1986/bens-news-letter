@@ -29,7 +29,8 @@ if (isset($records)) : foreach ($records as $row) :
         <tbody>
         <tr style="background: #00cccc;">
             <td>Interest Rate</td>
-            <td>Monthly deposit</td>
+            <td>Monthly Deposit</td>
+            <td>Initial Deposit</td>
             <td>Initial Deposit Date</td>
             <td>Current Balance</td>
             <td>Days Till Account Maturity</td>
@@ -46,6 +47,10 @@ if (isset($records)) : foreach ($records as $row) :
 
             <td>
                 £<?php echo $row->monthly_deposits; ?> (PCM)
+            </td>
+
+            <td>
+                £<?php echo $row->start_amount; ?> (PCM)
             </td>
 
             <td>
