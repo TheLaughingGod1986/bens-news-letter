@@ -24,7 +24,7 @@ if (isset($records)) : foreach ($records as $row) :
     $Total_Int = $Total_balance - $Total_Deposits;
 
     $originalDate = $row->start_date;
-    $newDate = date("%d %b %y", strtotime($originalDate));
+    $newDate = date("l jS \of F Y", strtotime($originalDate));
     ?>
 
 
