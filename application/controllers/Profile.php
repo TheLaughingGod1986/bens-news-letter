@@ -1,7 +1,7 @@
 <?php
+
 class Profile extends CI_Controller
 {
-
     function __construct()
     {
         parent::__construct();
@@ -17,8 +17,8 @@ class Profile extends CI_Controller
         if (!empty($query)) {
             $data['records'] = $query;
         }
-        
-        $this->middle = 'profile_view'; // passing middle to function. change this for different views.
+
+        $this->load->view('profile_view', $data);
     }
 
     public function account_data()
