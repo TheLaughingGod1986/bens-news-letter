@@ -6,6 +6,7 @@ class Profile extends CI_Controller
     {
         parent::__construct();
         $this->is_logged_in();
+        $this->load->controller('bank');
     }
 
     function index()
@@ -17,7 +18,7 @@ class Profile extends CI_Controller
         if (!empty($query)) {
             $data['records'] = $query;
         }
-        $this->load->controllers('bank');
+
         $this->middle = 'profile_view'; // passing middle to function. change this for different views.
     }
 
