@@ -41,10 +41,10 @@ if (isset($records)) : foreach ($records as $row) :
         <tr style="background: #00cccc;">
             <td>Interest Rate</td>
 <!--            <td>Opening Balance</td>-->
-            <td>monthly deposit</td>
-            <td>Account Opened</td>
+            <td>Monthly deposit</td>
+            <td>Age Of Account</td>
             <td>Current Balance</td>
-            <td>Expiry Of Account</td>
+            <td>Days Till Account Maturity</td>
             <td>Current Interest</td>
 
         </tr>
@@ -67,7 +67,7 @@ if (isset($records)) : foreach ($records as $row) :
 
             <td>
 
-                <?php echo $date1->diff($date2)->format("%m months, %a days"); ?>
+                <?php echo $date1->diff($date2)->format("%m months, %d days"); ?>
             </td>
 
             <td>
