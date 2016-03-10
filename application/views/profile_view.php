@@ -8,7 +8,7 @@ if (isset($records)) : foreach ($records as $row) :
     $date1 = new DateTime('now');
     $date2 = new DateTime($join_date);
 
-    $p = 0;
+    $p = $row->start_amount;
     $i = $row->interest;
     $c = 12; // compound frequency set to monthly
     $n = ((int) $date1->diff($date2)->format("%m")) / 12;
