@@ -2,10 +2,23 @@
 
 class Banks extends CI_Controller
 {
+    var $data = array();
+
+    var $template = array();
+
+    public function layout () {
+        $this->template['header'] = $this->load->view('layout/header', $this->data, true);
+        $this->template['left'] = $this->load->view('layout/left', $this->data, true);
+        $this->template['middle'] = $this->load->view($this->middle, $this->data, true);
+        $this->template['footer'] = $this->load->view('layout/footer', $this->data, true);
+        $this->load->view('layout/index', $this->template);
+    }
+
     function index()
     {
-        $data['main_content'] = 'member_pages/bank_view';
-        $this->load->view('includes/template', $data);
+
+        $this->middle = 'member_pages/bank_view'; // passing middle to function. change this for different views.
+        $this->layout();
     }
 
     function __construct()
