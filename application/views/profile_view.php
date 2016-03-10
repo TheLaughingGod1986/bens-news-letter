@@ -17,15 +17,6 @@ if (isset($records)) : foreach ($records as $row) :
     $x = $i / $c;
     $y = pow((1 + $x), ($n * $c));
 
-//    if($p!=0)
-//    {
-//        $Total_balance = $p * $y + ($r * ($y - 1) / $x);
-//    }
-//    else
-//    {
-//        $Total_balance = 1 + $y + ($r * ($y - 1) / $x);
-//    }
-
     $Total_balance = $p * $y + ($r * (1 + $x) * ($y - 1) / $x);
 
     $remain = 365 - $date1->diff($date2)->format("%a days");
@@ -40,7 +31,6 @@ if (isset($records)) : foreach ($records as $row) :
         <tbody>
         <tr style="background: #00cccc;">
             <td>Interest Rate</td>
-<!--            <td>Opening Balance</td>-->
             <td>Monthly deposit</td>
             <td>Age Of Account</td>
             <td>Current Balance</td>
@@ -53,16 +43,12 @@ if (isset($records)) : foreach ($records as $row) :
             <br>
 
             <td>
-                <?php echo $row->interest * 100; ?>
+                %<?php echo $row->interest * 100; ?> Interest
             </td>
 
-<!--            <td>-->
-<!--                --><?php //echo $row->start_amount; ?>
-<!---->
-<!--            </td>-->
 
             <td>
-                <?php echo $row->monthly_deposits; ?>
+                £<?php echo $row->monthly_deposits; ?> Each Month
             </td>
 
             <td>
@@ -71,16 +57,16 @@ if (isset($records)) : foreach ($records as $row) :
             </td>
 
             <td>
-                <?php echo round($Total_balance, 2, PHP_ROUND_HALF_UP); ?>
+                £<?php echo round($Total_balance, 2, PHP_ROUND_HALF_UP); ?>
 
             </td>
 
             <td>
-                <?php echo $remain; ?>
+                <?php echo $remain; ?> Days Till Maturity
             </td>
 
             <td>
-                               <?php echo round($Total_Int, 2, PHP_ROUND_HALF_UP); ?>
+                               £<?php echo round($Total_Int, 2, PHP_ROUND_HALF_UP); ?> Earned So Far
             </td>
         </tr>
         </tbody>
