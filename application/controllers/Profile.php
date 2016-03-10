@@ -1,5 +1,5 @@
 <?php
-$this->load->library('../controllers/bank');
+$this->load->library('../controller/bank');
 class Profile extends CI_Controller
 {
 
