@@ -22,6 +22,9 @@ if (isset($records)) : foreach ($records as $row) :
 
     $Total_Deposits = ($row->monthly_deposits * (int)$date1->diff($date2)->format("%m")) + $row->start_amount;
     $Total_Int = $Total_balance - $Total_Deposits;
+
+    $originalDate = $row->start_date;
+    $newDate = date("d-m-Y", strtotime($originalDate));
     ?>
 
 
@@ -33,14 +36,15 @@ if (isset($records)) : foreach ($records as $row) :
             <td>Monthly Deposit</td>
             <td>Days Till Account Maturity</td>
             <td>Total Interest After <strong><?php echo $date1->diff($date2)->format("%m"); ?></strong> Months</td>
-            <td>Total Balance After <strong><?php echo $date1->diff($date2)->format("%m"); ?></strong> Months</td>
+            <td>Total Balance After <strong><?php echo $date1->diff($date2)->format("%m"); ?></strong> Months Of Interest</td>
 
         </tr>
         <h3><?php echo $row->bank_name; ?></h3>
         <tr style="background-color: deeppink;">
 
             <td>
-                <strong><?php echo $row->start_date; ?></strong>
+                <strong><?php echo $newDate ; ?></strong>
+
             </td>
 
             <td>
