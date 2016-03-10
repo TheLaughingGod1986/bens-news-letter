@@ -2,6 +2,18 @@
 
 class Profile extends CI_Controller
 {
+    var $data = array();
+
+    var $template = array();
+
+    public function layout () {
+        $this->template['header'] = $this->load->view('layout/header', $this->data, true);
+        $this->template['left'] = $this->load->view('layout/left', $this->data, true);
+        $this->template['middle'] = $this->load->view($this->middle, $this->data, true);
+        $this->template['footer'] = $this->load->view('layout/footer', $this->data, true);
+        $this->load->view('layout/index', $this->template);
+    }
+    
     function __construct()
     {
         parent::__construct();
