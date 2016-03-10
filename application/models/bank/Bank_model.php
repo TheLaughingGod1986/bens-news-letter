@@ -29,7 +29,6 @@ class Bank_model extends CI_Model {
 
     function bank_math()
     {
-        if (isset($records)) : foreach ($records as $row) :
         $join_date = $row->start_date;
     $date1 = new DateTime('now');
     $date2 = new DateTime($join_date);
