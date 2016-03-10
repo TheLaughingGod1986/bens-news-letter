@@ -2,15 +2,14 @@
 
 class Banks extends CI_Controller
 {
-    var $data = array();
-
+    var $Front_End_data = array();
     var $template = array();
 
     public function layout () {
-        $this->template['header'] = $this->load->view('layout/header', $this->data, true);
-        $this->template['left'] = $this->load->view('layout/left', $this->data, true);
-        $this->template['middle'] = $this->load->view($this->middle, $this->data, true);
-        $this->template['footer'] = $this->load->view('layout/footer', $this->data, true);
+        $this->template['header'] = $this->load->view('layout/header', $this->Front_End_data, true);
+        $this->template['left'] = $this->load->view('layout/left', $this->Front_End_data, true);
+        $this->template['middle'] = $this->load->view($this->middle, $this->Front_End_data, true);
+        $this->template['footer'] = $this->load->view('layout/footer', $this->Front_End_data, true);
         $this->load->view('layout/index', $this->template);
     }
 
