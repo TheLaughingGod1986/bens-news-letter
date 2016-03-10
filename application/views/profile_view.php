@@ -28,17 +28,20 @@ if (isset($records)) : foreach ($records as $row) :
     <table border="1">
         <tbody>
         <tr style="background: #00cccc;">
+            <td>Initial Deposit Date</td>
             <td>Interest Rate</td>
             <td>Monthly Deposit</td>
-            <td>Initial Deposit Date</td>
-            <td>Current Balance After <strong><?php echo $date1->diff($date2)->format("%m"); ?></strong> Months</td>
             <td>Days Till Account Maturity</td>
-            <td>Current Interest After <strong><?php echo $date1->diff($date2)->format("%m"); ?></strong> Months</td>
+            <td>Total Interest After <strong><?php echo $date1->diff($date2)->format("%m"); ?></strong> Months</td>
+            <td>Total Balance After <strong><?php echo $date1->diff($date2)->format("%m"); ?></strong> Months</td>
 
         </tr>
         <h3><?php echo $row->bank_name; ?></h3>
         <tr style="background-color: deeppink;">
-            <br>
+
+            <td>
+                <strong><?php echo $row->start_date; ?></strong>
+            </td>
 
             <td>
                 <strong><?php echo $row->interest * 100; ?>%</strong> Interest
@@ -49,21 +52,17 @@ if (isset($records)) : foreach ($records as $row) :
             </td>
 
             <td>
-
-                <?php echo $row->start_date; ?>
-            </td>
-
-            <td>
-                <strong>£<?php echo round($Total_balance, 2, PHP_ROUND_HALF_UP); ?></strong>
-            </td>
-
-            <td>
                 <strong><?php echo $remain; ?></strong> Days Left
             </td>
 
             <td>
                 <strong>£<?php echo round($Total_Int, 2, PHP_ROUND_HALF_UP); ?></strong> Interest
             </td>
+
+            <td>
+                <strong>£<?php echo round($Total_balance, 2, PHP_ROUND_HALF_UP); ?></strong>
+            </td>
+
         </tr>
         </tbody>
     </table>
