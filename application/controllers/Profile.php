@@ -32,7 +32,7 @@ class Profile extends CI_Controller
         $this->layout();
 //        $this->layout($data);
 
-        $this->load->view($data);
+        $this->load->view($this->middle,$data);
     }
 
     public function account_data()
