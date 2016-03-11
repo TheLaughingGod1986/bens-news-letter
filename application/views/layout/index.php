@@ -15,9 +15,9 @@
     <?php if ($header) echo $header; ?>
 <!--</div>-->
 
-<div class="col-sm-3 col-md-2 sidebar no-padding ">
+
     <?php if ($left) echo $left; ?>
-</div>
+
 
 <div class="col-sm-10 ">
     <?php if ($middle) echo $middle; ?>
