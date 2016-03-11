@@ -11,11 +11,11 @@
 </head>
 <body>
 
-<div class="col-sm-12 no-padding-left">
+<!--<div class="col-sm-12 no-padding-left">-->
     <?php if ($header) echo $header; ?>
-</div>
+<!--</div>-->
 
-<div class="col-sm-2 no-padding ">
+<div class="col-sm-3 col-md-2 sidebar no-padding ">
     <?php if ($left) echo $left; ?>
 </div>
 
