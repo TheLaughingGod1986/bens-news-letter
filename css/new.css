@@ -1,15 +1,15 @@
-/*footer {*/
-    /*position:fixed;*/
-    /*left:0;*/
-    /*bottom:0;*/
-    /*!*height:30px;*!*/
-    /*width:100%;*/
-    /*background:#999;*/
-/*}*/
+footer {
+    position:fixed;
+    left:0;
+    bottom:0;
+    /*height:30px;*/
+    width:100%;
+    background:#999;
+}
 
-/*.navbar-inverse-light {*/
-    /*background-color: #8b9dc3;*/
-/*}*/
+.navbar-inverse-light {
+    background-color: #8b9dc3;
+}
 
 
 /*
