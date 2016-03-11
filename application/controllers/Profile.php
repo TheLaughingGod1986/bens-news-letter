@@ -16,7 +16,7 @@ class Profile extends CI_Controller
         $this->template['left'] = $this->load->view('layout/left', $this->Front_End_data, true);
         $this->template['middle'] = $this->load->view($this->middle, $this->Front_End_data, true);
         $this->template['footer'] = $this->load->view('layout/footer', $this->Front_End_data, true);
-//        $this->load->view('layout/index', $this->template);
+        $this->load->view('layout/index', $this->template);
     }
 
     function index()
@@ -28,9 +28,11 @@ class Profile extends CI_Controller
         if (!empty($query)) {
             $data['records'] = $query;
         }
-//        $this->middle = 'profile_view';
-        $this->load->view($this->middle = 'profile_view',$data);
+
+        $this->middle = 'profile_view',$data;
         $this->layout();
+
+//        $this->middle = 'profile_view';
 //        $this->layout($data);
     }
 
