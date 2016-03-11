@@ -29,7 +29,8 @@ class Profile extends CI_Controller
             $data['records'] = $query;
         }
         $this->middle = 'profile_view';
-        $this->layout($data);
+        $this->layout('data');
+//        $this->layout($data);
 
 //        $this->load->view('profile_view', $data);
     }
