@@ -15,13 +15,11 @@
     <?php if ($header) echo $header; ?>
 <!--</div>-->
 
-<div class="container-fluid">
-    <div class="row">
+
         <div class="col-sm-3 col-md-2 sidebar">
     <?php if ($left) echo $left; ?>
 </div>
-        </div>
-    </div>
+       
 
 <div class="col-sm-9">
     <?php if ($middle) echo $middle; ?>
