@@ -10,9 +10,7 @@
 <!--    <li role="presentation"><a href="#">Write / View Response</a></li>-->
 <!--    <li role="presentation"><a href="#">Logout</a></li>-->
 <!--</ul>-->
-<div class="container-fluid">
-    <div class="row">
-        <div class="col-sm-3 col-md-2 sidebar">
+
 
     <ul class="nav nav-sidebar">
         <li class="active"><a href="#">Overview <span class="sr-only">(current)</span></a></li>
@@ -27,6 +25,3 @@
         <li><a href="">Another nav item</a></li>
         <li><a href="">More navigation</a></li>
     </ul>
-            </div>
-        </div>
-    </div>
