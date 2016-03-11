@@ -1,5 +1,5 @@
 <!--<h2>My Regular Savings Accounts</h2>-->
-<hr>
+<!--<hr>-->
 <?php
 if (isset($records)) : foreach ($records as $row) :
 
