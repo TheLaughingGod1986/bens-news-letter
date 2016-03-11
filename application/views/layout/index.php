@@ -17,6 +17,10 @@
     <?php if ($header) echo $header; ?>
 </div>
 
+<div class="col-sm-10 no-padding-left">
+    <?php if ($header) echo $header; ?>
+</div>
+
 <div class="col-sm-10 ">
     <?php if ($middle) echo $middle; ?>
 </div>
