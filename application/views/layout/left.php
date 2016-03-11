@@ -1,5 +1,5 @@
 <ul class="nav navbar-inverse-light li-change">
-    <li class="blue"> <img border="0" alt="boo" src="img/greenwich_logo.png" width="100" height="70"></li>
+    <li class="blue"> <img border="0" alt="boo" src="http://lorempixel.com/100/70/animals"></li>
     <li class="grey"></li>
     <li role="presentation"><?php echo anchor('main/index', 'Home'); ?></li>
     <li role="presentation"><a href="#">Reports</a></li>
