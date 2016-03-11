@@ -7,24 +7,6 @@ footer {
     background:#999;
 }
 
-
-
-div#left-sidebar{
-    position:absolute;
-    top:0;
-    left:0;
-    width:<length>;
-    height:100%;
-}
-@media screen{
-    body>div#left-sidebar{
-        position:fixed;
-    }
-}
-* html body{
-    overflow:hidden;
-}
-* html div#content{
-    height:100%;
-    overflow:auto;
+.navbar-inverse-light {
+    background-color: #8b9dc3;
 }
