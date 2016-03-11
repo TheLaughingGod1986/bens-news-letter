@@ -13,6 +13,9 @@
 
 <body>
 
+<div class="container-fluid">
+    <div class="row">
+
 <div class="col-sm-12 no-padding-left">
     <?php if ($header) echo $header; ?>
 </div>
@@ -28,6 +31,8 @@
 <div class="col-sm-12">
     <?php if ($footer) echo $footer; ?>
 </div>
+        </div>
+    </div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>

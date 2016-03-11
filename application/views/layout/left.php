@@ -26,5 +26,5 @@
         <li><a href="">Another nav item</a></li>
         <li><a href="">More navigation</a></li>
     </ul>
-    
+
 </div>
