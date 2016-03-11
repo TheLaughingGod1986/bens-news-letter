@@ -1,4 +1,4 @@
-<ul class="nav navbar-inverse-light side-bar li-change">
+<ul class="nav navbar-inverse-light li-change">
     <li class="blue"> <img border="0" alt="boo" src="img/greenwich_logo.png" width="100" height="70"></li>
     <li class="grey"></li>
     <li role="presentation"><?php echo anchor('main/index', 'Home'); ?></li>
