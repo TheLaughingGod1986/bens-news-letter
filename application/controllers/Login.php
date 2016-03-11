@@ -19,16 +19,16 @@ class Login extends CI_Controller
                 'username' => $query->username,
                 'id' => $query->id,
                 'password' => $query->password,
-                'first_name'=>$query->first_name,
-                'last_name'=>$query->last_name,
-                'email_address'=>$query->email_address,
-        'is_logged_in' => true
-    );
+                'first_name' => $query->first_name,
+                'last_name' => $query->last_name,
+                'email_address' => $query->email_address,
+                'is_logged_in' => true
+            );
 
-    $this->session->set_userdata($data);
+            $this->session->set_userdata($data);
 
-    redirect('members/members_area');
- } else {
+            redirect('members/members_area');
+        } else {
             $this->index();
             echo 'Incorrect Password or Username';
         }
@@ -53,18 +53,14 @@ class Login extends CI_Controller
         $this->form_validation->set_rules('password', 'Password', 'trim|required|min_length[4]|max_length[32]');
         $this->form_validation->set_rules('password2', 'Password Confirmation', 'trim|required|matches[password]');
 
-        if ($this->form_validation->run() == FALSE)
-        {
+        if ($this->form_validation->run() == FALSE) {
             $this->load->view('signup_form');
-        } else
-        {
+        } else {
             $this->load->model('members/member_model');
             if ($query = $this->member_model->create_member()) {
                 $data['main_content'] = 'signup_successfull';
                 $this->load->view('includes/template', $data);
-                            }
-            else
-            {
+            } else {
                 $this->load->view('signup_form');
             }
         }
