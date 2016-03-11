@@ -108,3 +108,8 @@ footer {
     display: inline-block;
     border-radius: 50%;
 }
+
+.no-padding {
+    padding-right: 0;!important;
+    padding-left: 0 !important;
+}

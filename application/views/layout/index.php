@@ -15,7 +15,7 @@
     <?php if ($header) echo $header; ?>
 </div>
 
-<div class="col-sm-2 no-padding-right">
+<div class="col-sm-2 no-padding ">
     <?php if ($left) echo $left; ?>
 </div>
 
