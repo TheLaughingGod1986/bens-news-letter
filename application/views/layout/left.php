@@ -10,8 +10,6 @@
 <!--    <li role="presentation"><a href="#">Write / View Response</a></li>-->
 <!--    <li role="presentation"><a href="#">Logout</a></li>-->
 <!--</ul>-->
-
-
 <div class="sidebar">
     <ul class="nav nav-sidebar">
         <li class="active"><a href="#">Overview <span class="sr-only">(current)</span></a></li>
