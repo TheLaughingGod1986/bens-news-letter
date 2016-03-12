@@ -7,7 +7,7 @@
                 <span class="icon-bar">2</span>
                 <span class="icon-bar">3</span>
             </button>
-            <a href="base_url()"><img class="navbar-brand" border="0" alt="Servare" src="<?php echo base_url();?>/img/Servare.png"></a>
+            <?php echo anchor('home/index'); ?><img class="navbar-brand" border="0" alt="Servare" src="<?php echo base_url();?>/img/Servare.png">
         </div>
         <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
