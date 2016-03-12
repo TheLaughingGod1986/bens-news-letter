@@ -119,5 +119,5 @@ footer {
 }
 
 .push-left {
-    padding-left: 40px;
+    padding-left: 40px !important;
 }
