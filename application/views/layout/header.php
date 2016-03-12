@@ -7,7 +7,7 @@
                 <span class="icon-bar">2</span>
                 <span class="icon-bar">3</span>
             </button>
-            <a class="navbar-brand" href="#"><img border="0" alt="W3Schools" src="<?php echo base_url();?>/img/Servare.png" width="100" height="100"> Servare</a>
+            <a href="base_url()"><img class="navbar-brand" border="0" alt="Servare" src="<?php echo base_url();?>/img/Servare.png"></a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
