@@ -21,7 +21,7 @@
 </div>
 
 
-<div class="col-sm-9 push-top">
+<div class="col-sm-9 push-top push-left">
     <?php if ($middle) echo $middle; ?>
 </div>
 
