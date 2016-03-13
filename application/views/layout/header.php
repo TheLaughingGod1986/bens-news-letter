@@ -8,7 +8,7 @@
                 <span class="icon-bar">Help</span>
             </button>
             <?php $path = 'home';
-            $img = '<img src="'<?php echo base_url();?>'.img/servare.png" alt="">';
+            $img = '<img src="../img/servare.png" alt="">';
             echo anchor($path, $img);
             ?>
         </div>
