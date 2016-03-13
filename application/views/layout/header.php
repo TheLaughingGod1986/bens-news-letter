@@ -10,7 +10,7 @@
             </button>
 
             <?php $path = 'home';
-            $img = '<img src="" alt="">';
+            $img = '<img src="img/servare.png" alt="">';
             echo anchor($path, $img);
             ?>
 
