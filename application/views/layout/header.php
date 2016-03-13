@@ -10,10 +10,10 @@
             </button>
 
             <?php $path = 'home/imdex';
-            $img = '<img src="../img/Servare.png" alt="">';
+            $img = '<img src="img/servare.png" alt="">';
             echo anchor($path, $img);
             ?>
-            
+
         </div>
 
     </div>
