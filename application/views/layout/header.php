@@ -9,7 +9,7 @@
             </button>
 <!--            --><?php //echo anchor('home/index'); ?><!--<img class="navbar-brand" border="0" alt="Servare" src="--><?php //echo base_url();?><!--/home/index">-->
            <?php $path = 'home/imdex' .$list['id'];
-            $img = '<img src="../home/index" alt="">';
+            $img = '<img src="../img/Servare.png" alt="">';
             echo anchor($path, $img); ?>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
