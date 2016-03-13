@@ -9,10 +9,10 @@
                 <span class="icon-bar">Help</span>
             </button>
 
-            <?php $path = 'home';
-            $img = '<img src="img/servare.png" alt="">';
-            echo anchor($path, $img);
-            ?>
+<!--            --><?php //$path = 'home';
+//            $img = '<img src="img/servare.png" alt="">';
+//            echo anchor($path, $img);
+//            ?>
 
         </div>
 
