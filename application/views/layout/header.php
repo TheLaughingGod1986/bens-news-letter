@@ -9,8 +9,8 @@
                 <span class="icon-bar">Help</span>
             </button>
 
-            <?php $path = 'home/imdex';
-            $img = '<img src="img/servare.png" alt="">';
+            <?php $path = 'home';
+            $img = '<img src="" alt="">';
             echo anchor($path, $img);
             ?>
 
