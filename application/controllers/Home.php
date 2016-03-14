@@ -19,13 +19,13 @@ class Home extends CI_Controller
     {
 
         if( !isset($_SESSION) ){
+            echo "nope";
+        }
+        else {
             $data['main_content'] = 'home_view';
 //        $this->load->view('includes/template', $data);
             $this->template['middle'] = $this->load->view ($this->middle = 'login_form',$data, true);
             $this->layout();
-        }
-        else {
-            echo "nope";
         }
 
     }
