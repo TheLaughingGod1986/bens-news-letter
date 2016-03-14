@@ -11,8 +11,9 @@
 $this->load->helper('url'); // Load URL Helper for base_url()
 $this->load->helper('html'); // Load HTML Helper for img()
 
-$path= base_url('img/Servare.png'); // generates text: siteroot/img/servare.png
-echo anchor(Home, img($path));
+$img= base_url('img/Servare.png'); // generates text: siteroot/img/servare.png
+$path = 'home';
+echo anchor($path, img($img));
 ?>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
