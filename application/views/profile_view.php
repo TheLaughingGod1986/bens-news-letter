@@ -30,7 +30,7 @@ if (isset($records)) : foreach ($records as $row) :
 
     <table border="1">
         <tbody>
-        <tr style="background: #00cccc;">
+        <tr style="background: #858bf0;">
             <td>Initial Deposit Date</td>
             <td>Interest Rate</td>
             <td>Monthly Deposit</td>
@@ -40,7 +40,7 @@ if (isset($records)) : foreach ($records as $row) :
 
         </tr>
         <h3><?php echo $row->bank_name; ?></h3>
-        <tr style="background-color: deeppink;">
+        <tr style="background-color: #5eff81;">
 
             <td>
                 <strong><?php echo $newDate ; ?></strong>
