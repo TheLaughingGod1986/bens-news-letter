@@ -28,6 +28,17 @@ class Home extends CI_Controller
             $this->layout();
         }
 
+        if( !isset($_SESSION) )
+        {
+            echo "no";
+            }
+
+        else
+        {
+            echo "yes";
+        }
+
+
     }
 
 }
