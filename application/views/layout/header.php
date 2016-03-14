@@ -24,10 +24,11 @@
                 <li><?php echo anchor('members/members_area', 'Dashboard'); ?></li>
                 <li><?php echo anchor('login/logout', 'Logout'); ?></li>
                 <li><?php
-                    if($this->session->userdata('id')) {echo "yes";}
-
-                    else{
-                        echo "session set";
+                    if ($this->session->userdata('id')) {
+                        echo "Logged In";
+                    }
+                    else {
+                        echo "Logged Out";
                     }
                     ?>
                 </li>
