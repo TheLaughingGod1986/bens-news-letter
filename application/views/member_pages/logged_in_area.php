@@ -1,10 +1,10 @@
-<?php function __construct()
-{
-parent::__construct();
-$this->is_logged_in();
-}
-?>
-<!DOCTYPE html>
+<?php //function __construct()
+//{
+//parent::__construct();
+//$this->is_logged_in();
+//}
+//?>
+<!--<!DOCTYPE html>-->
 <html lang="en">
 
 
@@ -35,18 +35,6 @@ $this->is_logged_in();
 <!--    <li>--><?php //echo anchor('login/logout', 'Logout'); ?><!--</li>-->
 <!---->
 <!--</ul>-->
-<?php
-if(is_logged_in())
-{
-echo anchor('yes','Admin yes');
-}
 
-
-else
-{
-echo anchor('user/login','Login');
-echo anchor('user/signup','Signup');
-}
-?>
 </body>
 </html>
