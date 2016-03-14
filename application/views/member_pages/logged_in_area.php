@@ -41,16 +41,12 @@ if(is_logged_in())
 echo anchor('yes','Admin yes');
 }
 
-echo anchor('user/logout','Logout');
-echo anchor('users/profile','Profile' . '&nbsp;[' . $_SESSION['user_name'] . ']');
 
 else
 {
 echo anchor('user/login','Login');
 echo anchor('user/signup','Signup');
 }
-
-echo '&nbsp;' . anchor(base_url(),'Home');
 ?>
 </body>
 </html>
