@@ -14,10 +14,12 @@
 
             $img = base_url('img/Servare.png');
             $path = 'home';
-            
+            ?>
+            <div class="logo-img">
+                <?php
                 echo anchor($path, img($img));
                 ?>
-
+            </div>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
