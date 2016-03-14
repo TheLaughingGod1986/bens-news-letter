@@ -9,7 +9,6 @@
                 <span class="icon-bar">3</span>
             </button>
             <?php
-            $this->load->helper('url'); // Load URL Helper for base_url()
             $this->load->helper('html'); // Load HTML Helper for img()
 
             $img = base_url('img/Servare.png'); // generates text: siteroot/img/servare.png
