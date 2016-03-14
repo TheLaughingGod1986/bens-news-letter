@@ -14,6 +14,17 @@ class Members extends CI_Controller
         $this->is_logged_in();
     }
 
+    var $Front_End_data = array();
+    var $template = array();
+
+    public function layout () {
+        $this->template['header'] = $this->load->view('layout/header', $this->Front_End_data, true);
+        $this->template['left'] = $this->load->view('layout/left', $this->Front_End_data, true);
+//        $this->template['middle'] = $this->load->view($this->middle, $this->Front_End_data, true);
+//        $this->template['footer'] = $this->load->view('layout/footer', $this->Front_End_data, true);
+        $this->load->view('layout/index', $this->template);
+    }
+
 
     function index()
     {
@@ -24,7 +35,10 @@ class Members extends CI_Controller
     function members_area()
     {
         $data['main_content'] = 'member_pages/logged_in_area';
-        $this->load->view('includes/template', $data);
+//        $this->load->view('includes/template', $data);
+
+        $this->template['middle'] = $this->load->view ($this->middle = 'profile_view',$data, true);
+        $this->layout();
     }
 
     function add_bank_account()
