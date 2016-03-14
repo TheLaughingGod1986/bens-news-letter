@@ -24,19 +24,6 @@ class Members extends CI_Controller
 //        $this->template['footer'] = $this->load->view('layout/footer', $this->Front_End_data, true);
         $this->load->view('layout/index', $this->template);
 
-if(is_logged_in())
-{
-    echo anchor('yes','Admin yes');
-}
-
-
-else
-{
-    echo anchor('user/login','Login');
-    echo anchor('user/signup','Signup');
-}
-    }
-
 
     function index()
     {
