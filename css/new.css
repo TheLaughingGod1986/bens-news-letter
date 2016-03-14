@@ -121,3 +121,10 @@ footer {
 .push-left {
     padding-left: 40px !important;
 }
+
+.logo-img
+{
+    .img{
+    height: 50px;
+}
+}

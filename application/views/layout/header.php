@@ -12,9 +12,12 @@ $this->load->helper('url'); // Load URL Helper for base_url()
 $this->load->helper('html'); // Load HTML Helper for img()
 
 $img= base_url('img/Servare.png'); // generates text: siteroot/img/servare.png
-$path = 'home'; // link to home controller index
+$path = 'home'; // link to home controller index?>
+            <div class="logo-img">
+            <?php
 echo anchor($path, img($img));
 ?>
+            </div>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
