@@ -44,7 +44,8 @@ class Members extends CI_Controller
     function add_bank_account()
     {
         $data['main_content'] = 'add_bank_form';
-        $this->load->view('includes/template', $data);
+        $this->template['middle'] = $this->load->view ($this->middle = 'add_bank_form',$data, true);
+        $this->layout();
     }
 
 

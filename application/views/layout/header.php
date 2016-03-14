@@ -22,7 +22,6 @@ echo anchor($path, img($img));
         <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
                 <li><?php echo anchor('members/members_area', 'Dashboard'); ?></li>
-                <li><?php echo anchor('member_pages/logged_in_area', 'Profile'); ?></li>
                 <li><?php echo anchor('login/logout', 'Logout'); ?></li>
             </ul>
         </div>
