@@ -37,7 +37,7 @@ class Members extends CI_Controller
         $data['main_content'] = 'member_pages/logged_in_area';
 //        $this->load->view('includes/template', $data);
 
-        $this->template['middle'] = $this->load->view ($this->middle = 'profile_view',$data, true);
+        $this->template['middle'] = $this->load->view ($this->middle = 'logged_in_area',$data, true);
         $this->layout();
     }
 
