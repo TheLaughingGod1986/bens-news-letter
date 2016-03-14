@@ -8,10 +8,11 @@
                 <span class="icon-bar">3</span>
             </button>
 <?php
-$this->load->helper('url');
-$path = 'home';
-$img = '<img src="<?php echo base_url('img/servare.png');?>" alt="">';
-    echo anchor($path, $img);
+$this->load->helper('url'); // Load URL Helper for base_url()
+$this->load->helper('html'); // Load HTML Helper for img()
+
+$path= base_url('img/servare.png'); // generates text: siteroot/img/servare.png
+echo anchor($path, img($path));
 ?>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
