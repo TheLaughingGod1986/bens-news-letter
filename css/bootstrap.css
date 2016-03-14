@@ -5703,12 +5703,12 @@ fieldset[disabled] .navbar-default .btn-link:focus {
 .navbar-inverse .navbar-nav > .open > a:hover,
 .navbar-inverse .navbar-nav > .open > a:focus {
     color: #fff;
-    background-color: #080808;
+    background-color: #F5F5F5;
 }
 
 @media (max-width: 767px) {
     .navbar-inverse .navbar-nav .open .dropdown-menu > .dropdown-header {
-        border-color: #080808;
+        /*border-color: #080808;*/
     }
 
     .navbar-inverse .navbar-nav .open .dropdown-menu .divider {
