@@ -26,9 +26,12 @@
                     <li><?php echo anchor('members/members_area', 'Dashboard'); ?></li>
                     <li><?php echo anchor('login/logout', 'Logout'); ?></li>
                     <?php
-                } else { ?>
+                }
+
+                else
+                { ?>
                 <li><?php echo anchor('login/login_form', 'Login'); ?></li>
-                <li><?php echo anchor('login/signup', 'Sign up'); ?></li>
+                <li><?php echo anchor('login/signup', 'Sign up'); ?></li><?php
                 }
                 ?>
         </div>
