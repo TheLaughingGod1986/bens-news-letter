@@ -126,3 +126,7 @@ footer {
 {
     height: 50px;
 }
+
+.navbar-inverse-light {
+    background-color: #8b9dc3;
+}
