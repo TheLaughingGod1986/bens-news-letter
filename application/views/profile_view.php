@@ -70,7 +70,7 @@ if (isset($records)) : foreach ($records as $row) :
 
         <tr>
             <td>
-               <?php $table_row_count = $this->db->count_all($Total_balance); ?>
+               <?php echo $this->db->count_all($Total_balance); ?>
             </td>
         </tr>
         </tbody>
