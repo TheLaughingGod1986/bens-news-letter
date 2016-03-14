@@ -29,7 +29,7 @@
                 }
 
                 else { ?>
-                <li><?php echo anchor('login/login_form', 'Login'); ?></li>
+                <li><?php echo anchor('login', 'Login'); ?></li>
                 <li><?php echo anchor('login/signup', 'Sign up'); ?></li>
                 <?php
                 }
