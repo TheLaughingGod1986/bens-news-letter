@@ -1,3 +1,23 @@
+
+<?php
+function __construct()
+{
+parent::__construct();
+$this->is_logged_in();
+}
+
+function is_logged_in()
+{
+    $is_logged_in = $this->session->userdata('is_logged_in');
+
+    if (!isset($is_logged_in) || $is_logged_in != true) {
+        echo 'lol, try again. this area is secure. MEMBERS ONLY !. please ';
+        echo anchor('login/index', 'Login');
+        die();
+    }
+}
+?>
+
 <nav class="navbar navbar-inverse-light-grey navbar-fixed-top">
     <div class="container-fluid">
         <div class="navbar-header">
@@ -25,10 +45,14 @@ echo anchor($path, img($img));
                 <li><?php echo anchor('login/logout', 'Logout'); ?></li>
                 <li>    <?php
 
-                    if( !isset($_SESSION) ){
+                    if(is_logged_in())
+
+                    {
                         echo "yes";
                     }
-                    else {
+
+                    else
+                    {
                         echo "no";
                     }
                     ?></li>
