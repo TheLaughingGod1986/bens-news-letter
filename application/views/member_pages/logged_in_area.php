@@ -1,10 +1,15 @@
-<?php //function __construct()
-//{
-//parent::__construct();
-//$this->is_logged_in();
-//}
-//?>
-<!--<!DOCTYPE html>-->
+<div id='nav'>
+    <?php
+
+    if( !isset($_SESSION) ){
+      echo "yes";
+    }
+    else {
+        echo "no";
+    }
+    ?>
+
+</div>
 <html lang="en">
 
 
