@@ -2,6 +2,12 @@
 
 class Banks extends CI_Controller
 {
+    function __construct()
+    {
+        parent::__construct();
+        $this->is_logged_in();
+    }
+
     var $Front_End_data = array();
     var $template = array();
 
@@ -9,33 +15,24 @@ class Banks extends CI_Controller
         $this->template['header'] = $this->load->view('layout/header', $this->Front_End_data, true);
         $this->template['left'] = $this->load->view('layout/left', $this->Front_End_data, true);
         $this->template['middle'] = $this->load->view($this->middle, $this->Front_End_data, true);
-//        $this->template['footer'] = $this->load->view('layout/footer', $this->Front_End_data, true);
         $this->load->view('layout/index', $this->template);
     }
 
     function index()
     {
 
-        $this->middle = 'member_pages/bank_view'; // passing middle to function. change this for different views.
+        $this->middle = 'member_pages/bank_view';
         $this->layout();
-    }
-
-    function __construct()
-    {
-        parent::__construct();
-        $this->is_logged_in();
     }
 
     function profile()
     {
         $this->load->view('member_pages/logged_in_area');
-//        $this->load->model('members_area');
     }
 
     function create_bank()
     {
         $this->load->library('form_validation');
-        // field name, error message, validation rules
 
         $this->form_validation->set_rules('bank_name', 'Name', 'trim|required');
 
