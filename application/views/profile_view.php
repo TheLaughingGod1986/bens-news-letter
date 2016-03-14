@@ -66,7 +66,12 @@ if (isset($records)) : foreach ($records as $row) :
             <td>
                 <strong>£<?php echo round($Total_balance, 2, PHP_ROUND_HALF_UP); ?></strong>
             </td>
+        </tr>
 
+        <tr>
+            <td>
+               <?php $table_row_count = $this->db->count_all('Total_balance'); ?>
+            </td>
         </tr>
         </tbody>
     </table>
