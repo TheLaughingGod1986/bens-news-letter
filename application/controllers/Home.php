@@ -20,7 +20,7 @@ class Home extends CI_Controller
 //        $this->load->view('includes/template', $data);
 
         $this->template['middle'] = $this->load->view ($this->middle = 'login_form',$data, true);
-        $this->layout();
+//        $this->layout();
     }
 
 }
