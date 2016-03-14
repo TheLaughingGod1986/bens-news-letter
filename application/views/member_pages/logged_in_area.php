@@ -1,7 +1,12 @@
-<?php //$this->load->view('includes/template'); ?>
-
+<?php function __construct()
+{
+parent::__construct();
+$this->is_logged_in();
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
+
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -30,5 +35,23 @@
 <!--    <li>--><?php //echo anchor('login/logout', 'Logout'); ?><!--</li>-->
 <!---->
 <!--</ul>-->
+<?php
+if(is_logged_in())
+{
+echo anchor('yes','Admin yes');
+}
+
+echo anchor('user/logout','Logout');
+echo anchor('users/profile','Profile' . '&nbsp;[' . $_SESSION['user_name'] . ']');
+
+}
+else
+{
+echo anchor('user/login','Login');
+echo anchor('user/signup','Signup');
+}
+
+echo '&nbsp;' . anchor(base_url(),'Home');
+?>
 </body>
 </html>
