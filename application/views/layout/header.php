@@ -11,7 +11,7 @@
 $this->load->helper('url'); // Load URL Helper for base_url()
 $this->load->helper('html'); // Load HTML Helper for img()
 
-$path= base_url('img/servare.png'); // generates text: siteroot/img/servare.png
+$path= base_url('img/Servare.png'); // generates text: siteroot/img/servare.png
 echo anchor($path, img($path));
 ?>
         </div>
