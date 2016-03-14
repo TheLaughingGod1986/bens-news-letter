@@ -1446,6 +1446,7 @@ figure {
 
 img {
     vertical-align: middle;
+    height: 50px;
 }
 
 .img-responsive,

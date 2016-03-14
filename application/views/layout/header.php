@@ -12,7 +12,7 @@ $this->load->helper('url'); // Load URL Helper for base_url()
 $this->load->helper('html'); // Load HTML Helper for img()
 
 $img= base_url('img/Servare.png'); // generates text: siteroot/img/servare.png
-$path = 'home';
+$path = 'home'; // link to home controller index
 echo anchor($path, img($img));
 ?>
         </div>
