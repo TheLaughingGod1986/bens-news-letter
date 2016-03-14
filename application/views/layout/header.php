@@ -24,8 +24,8 @@
                 <li><?php echo anchor('members/members_area', 'Dashboard'); ?></li>
                 <li></li>
                 <li><?php
-                    if ($this->session->userdata('id')) {?>
-                    <li><?php echo anchor('members/members_area', 'Dashboard'); ?></li><?php
+                    if ($this->session->userdata('id')) { ?>
+                    <?php echo anchor('login/logout', 'Logout'); 
                     }
                     else {
                         echo "Logged Out";
