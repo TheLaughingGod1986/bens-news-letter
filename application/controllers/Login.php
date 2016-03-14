@@ -4,7 +4,7 @@ class Login extends CI_Controller
 {
     function index()
     {
-        $data['main_content'] = 'home/';
+        $data['main_content'] = 'login_form';
         $this->load->view('includes/template', $data);
     }
 
@@ -69,6 +69,7 @@ class Login extends CI_Controller
     function logout()
     {
         $this->session->sess_destroy();
+        redirect('home');
         $this->index();
     }
 
