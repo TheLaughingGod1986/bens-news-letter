@@ -23,6 +23,7 @@ class Members extends CI_Controller
 //        $this->template['middle'] = $this->load->view($this->middle, $this->Front_End_data, true);
 //        $this->template['footer'] = $this->load->view('layout/footer', $this->Front_End_data, true);
         $this->load->view('layout/index', $this->template);
+    }
 
 
     function index()
@@ -43,8 +44,7 @@ class Members extends CI_Controller
     function add_bank_account()
     {
         $data['main_content'] = 'add_bank_form';
-        $this->template['middle'] = $this->load->view ($this->middle = 'add_bank_form',$data, true);
-        $this->layout();
+        $this->load->view('includes/template', $data);
     }
 
 
