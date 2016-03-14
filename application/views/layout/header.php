@@ -21,18 +21,19 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
-                <li><?php echo anchor('members/members_area', 'Dashboard'); ?></li>
-                <li></li>
-                <li><?php
+
+
+                <?php
                     if ($this->session->userdata('id')) { ?>
-                    <?php echo anchor('login/logout', 'Logout'); 
+                   <li><?php echo anchor('login/logout', 'Logout'); ?></li>
+                <li><?php echo anchor('members/members_area', 'Dashboard'); ?></li>
+                <?php
                     }
                     else {
-                        echo "Logged Out";
+                        echo "Logged Out, please log in";
                     }
                     ?>
-                </li>
-            </ul>
+
         </div>
     </div>
 </nav>
