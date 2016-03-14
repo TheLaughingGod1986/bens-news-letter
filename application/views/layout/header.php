@@ -21,7 +21,7 @@ echo anchor($path, img($img));
         </div>
         <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="#">Dashboard</a></li>
+                <li><?php echo anchor('main/update', 'Dashboard'); ?></li>
                 <li><a href="#">Profile</a></li>
                 <li><a href="#">Help</a></li>
             </ul>
