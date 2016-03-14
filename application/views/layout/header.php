@@ -22,10 +22,10 @@
         <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
                 <li><?php echo anchor('members/members_area', 'Dashboard'); ?></li>
-                <li><?php echo anchor('login/logout', 'Logout'); ?></li>
+                <li></li>
                 <li><?php
-                    if ($this->session->userdata('id')) {
-                        echo "Logged In";
+                    if ($this->session->userdata('id')) {?>
+                    <li><?php echo anchor('members/members_area', 'Dashboard'); ?></li><?php
                     }
                     else {
                         echo "Logged Out";
