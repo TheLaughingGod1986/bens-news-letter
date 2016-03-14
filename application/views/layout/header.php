@@ -23,14 +23,16 @@
             <ul class="nav navbar-nav navbar-right">
                 <li><?php echo anchor('members/members_area', 'Dashboard'); ?></li>
                 <li><?php echo anchor('login/logout', 'Logout'); ?></li>
-                <li><?php
-if (isset($_SESSION)){
-                    echo "yes";
+                <li><?php $session_id = $this->session->userdata('id');
+
+                    if($session_id=""){
+                        echo "session not set";
                     }
-                    else {
-                        echo "no";
+                    else{
+                        echo "session set";
                     }
-?>
+
+                    ?>
                 </li>
             </ul>
         </div>
