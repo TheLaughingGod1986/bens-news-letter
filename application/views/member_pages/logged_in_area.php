@@ -1,14 +1,4 @@
 <div id='nav'>
-    <?php
-
-    if( !isset($_SESSION) ){
-      echo "yes";
-    }
-    else {
-        echo "no";
-    }
-    ?>
-
 </div>
 <html lang="en">
 

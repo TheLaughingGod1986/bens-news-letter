@@ -23,6 +23,15 @@ echo anchor($path, img($img));
             <ul class="nav navbar-nav navbar-right">
                 <li><?php echo anchor('members/members_area', 'Dashboard'); ?></li>
                 <li><?php echo anchor('login/logout', 'Logout'); ?></li>
+                <li>    <?php
+
+                    if( !isset($_SESSION) ){
+                        echo "yes";
+                    }
+                    else {
+                        echo "no";
+                    }
+                    ?></li>
             </ul>
         </div>
     </div>
