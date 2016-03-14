@@ -1,6 +1,6 @@
     <ul class="nav nav-sidebar">
-        <li class="active"><a href="#">Overview<span class="sr-only">(current)</span></a></li>
-        <li><a href="#">Regular Savers</a></li>
+        <li class="active"><?php echo anchor('profile', 'Add Regular Savings'); ?>(current)</span></a></li>
+        <li><?php echo anchor('members/add_bank_account', 'Add Regular Savings'); ?></li>
         <li><a href="#">Notification Accounts</a></li>
         <li><a href="#">Fixed rate Bonds</a></li>
     </ul>
