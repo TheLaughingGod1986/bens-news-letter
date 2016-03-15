@@ -68,11 +68,11 @@ if (isset($records)) : foreach ($records as $row) :
             </td>
         </tr>
 
-        <tr>
-            <td>
-               <?php echo $this->db->count_all('bank'); ?>
-            </td>
-        </tr>
+<!--        <tr>-->
+<!--            <td>-->
+<!--               --><?php //echo $this->db->count_all('bank'); ?>
+<!--            </td>-->
+<!--        </tr>-->
         </tbody>
     </table>
 

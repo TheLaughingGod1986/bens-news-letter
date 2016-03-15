@@ -20,7 +20,7 @@
             <ul class="nav navbar-nav navbar-right">
                 <?php
                 if ($this->session->userdata('id')) { ?>
-                    <li><?php echo anchor('members/members_area', 'Dashboard'); ?></li>
+                    <li><?php echo anchor('members/members_area', 'Profile'); ?></li>
                     <li><?php echo anchor('login/logout', 'Logout'); ?></li>
                     <?php
                 }
