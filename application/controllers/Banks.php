@@ -27,7 +27,8 @@ class Banks extends CI_Controller
 
     function profile()
     {
-        $this->load->view('member_pages/logged_in_area');
+        $this->middle = 'member_pages/logged_in_area';
+        $this->layout();
     }
 
     function create_bank()
@@ -60,6 +61,7 @@ class Banks extends CI_Controller
             {
                 $data['main_content'] = 'add_bank_successfull';
                 $this->load->view('includes/template', $data);
+                //need to add new template
             }
             else
             {

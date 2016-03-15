@@ -12,24 +12,20 @@
 </head>
 <body>
 
-<!--<div class="col-sm-12 no-padding-left">-->
-    <?php if ($header) echo $header; ?>
-<!--</div>-->
+<?php if ($header) echo $header; ?>
 
 <?php
-if ($this->session->userdata('id')) { ?>
-        <div class="col-sm-3 col-md-2 sidebar">
-    <?php if ($left) echo $left; ?>
-</div>
-<?php }?>
+if ($this->session->userdata('id'))
+{
+   echo '<div class="col-sm-3 col-md-2 sidebar">';
+    if ($left) echo $left;
+    echo '</div>';
+ }
+?>
 
 <div class="col-sm-9 push-top push-left">
     <?php if ($middle) echo $middle; ?>
 </div>
-
-<!--<div class="col-sm-12">-->
-<!--    --><?php //if ($footer) echo $footer; ?>
-<!--</div>-->
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
