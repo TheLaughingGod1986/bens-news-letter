@@ -97,7 +97,7 @@ if (isset($records)) : foreach ($records as $row) :
     <tr>
         <td></td>
         <td></td>
-        <td><?php $grandTotal; ?></td>
+        <td><?php echo $grandTotal; ?></td>
     </tr>
 
 <?php else : ?>
