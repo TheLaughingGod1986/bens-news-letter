@@ -1,5 +1,6 @@
 <!--<h2>My Regular Savings Accounts</h2>-->
 <!--<hr>-->
+<?php $grandTotal = 0; ?>
 <?php
 if (isset($records)) : foreach ($records as $row) :
 
@@ -29,27 +30,36 @@ if (isset($records)) : foreach ($records as $row) :
 
 
     <table border="1">
+        <tread>
+            <tr style="background: #858bf0;">
+                <td>Initial Deposit Date</td>
+                <td>Interest Rate</td>
+                <td>Monthly Deposit</td>
+                <td>Days Till Account Maturity</td>
+                <td>Total Interest After <strong><?php echo $date1->diff($date2)->format("%m"); ?></strong> Months</td>
+                <td>Total Balance After <strong><?php echo $date1->diff($date2)->format("%m"); ?></strong> Months Of Interest</td>
+            </tr>
+        </tread>
         <tbody>
-        <tr style="background: #858bf0;">
-            <td>Initial Deposit Date</td>
-            <td>Interest Rate</td>
-            <td>Monthly Deposit</td>
-            <td>Days Till Account Maturity</td>
-            <td>Total Interest After <strong><?php echo $date1->diff($date2)->format("%m"); ?></strong> Months</td>
-            <td>Total Balance After <strong><?php echo $date1->diff($date2)->format("%m"); ?></strong> Months Of Interest</td>
-        </tr>
-<!---->
-<!--    --><?php //$grandTotal = 0; ?>
 
-    <?php
-    // Add field values to get row total
-//    $rowTotal = $Total_balance;
-//
-//    // Add row total to grand total
-    $table_row_count = $this->db->count_all('bank');
-    $grandTotal = $Total_balance += $table_row_count;
-    echo $grandTotal;
-    ?>
+        <?php
+        // Add field values to get row total
+        $rowTotal = $Total_balance;
+        ?>
+        <?php
+        // Add row total to grand total
+        $grandTotal += $rowTotal;
+        ?>
+
+<!--    --><?php
+//    // Add field values to get row total
+////    $rowTotal = $Total_balance;
+////
+////    // Add row total to grand total
+//    $table_row_count = $this->db->count_all('bank');
+//    $grandTotal = $Total_balance += $table_row_count;
+//    echo $grandTotal;
+//    ?>
         <h3><?php echo $row->bank_name; ?></h3>
         <tr style="background-color: #5eff81;">
 
@@ -83,6 +93,12 @@ if (isset($records)) : foreach ($records as $row) :
     </table>
 
 <?php endforeach; ?>
+
+    <tr>
+        <td></td>
+        <td></td>
+        <td><?php $grandTotal; ?></td>
+    </tr>
 
 <?php else : ?>
     <h3>You Have No Accounts</h3>
