@@ -38,7 +38,6 @@ if (isset($records)) : foreach ($records as $row) :
                 <td>Days Till Account Maturity</td>
                 <td>Total Interest After <strong><?php echo $date1->diff($date2)->format("%m"); ?></strong> Months</td>
                 <td>Total Balance After <strong><?php echo $date1->diff($date2)->format("%m"); ?></strong> Months Of Interest</td>
-                <td>Grand Total</td>
             </tr>
         </tread>
         <tbody>
@@ -46,21 +45,11 @@ if (isset($records)) : foreach ($records as $row) :
         <?php
         // Add field values to get row total
         $rowTotal = $Total_balance;
-        ?>
-        <?php
+
         // Add row total to grand total
         $grandTotal += $rowTotal;
         ?>
 
-<!--    --><?php
-//    // Add field values to get row total
-////    $rowTotal = $Total_balance;
-////
-////    // Add row total to grand total
-//    $table_row_count = $this->db->count_all('bank');
-//    $grandTotal = $Total_balance += $table_row_count;
-//    echo $grandTotal;
-//    ?>
         <h3><?php echo $row->bank_name; ?></h3>
         <tr style="background-color: #5eff81;">
 
@@ -96,7 +85,7 @@ if (isset($records)) : foreach ($records as $row) :
 <?php endforeach; ?>
 
     <tr>
-        <td><h3>Total<?php echo $grandTotal; ?></h3></td>
+        <td><h3>Total £<?php echo round($grandTotal, 2, PHP_ROUND_HALF_UP); ?></h3></td>
     </tr>
 
 <?php else : ?>
