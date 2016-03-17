@@ -38,8 +38,8 @@ if (isset($records)) : foreach ($records as $row) :
             <td>Total Interest After <strong><?php echo $date1->diff($date2)->format("%m"); ?></strong> Months</td>
             <td>Total Balance After <strong><?php echo $date1->diff($date2)->format("%m"); ?></strong> Months Of Interest</td>
         </tr>
-
-    <?php $grandTotal = 0; ?>
+<!---->
+<!--    --><?php //$grandTotal = 0; ?>
 
     <?php
     // Add field values to get row total
