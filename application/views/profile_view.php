@@ -43,11 +43,11 @@ if (isset($records)) : foreach ($records as $row) :
 
     <?php
     // Add field values to get row total
-    $rowTotal = $Total_balance;
+//    $rowTotal = $Total_balance;
 //
 //    // Add row total to grand total
-//    $table_row_count = $this->db->count_all('bank');
-    $grandTotal = $Total_balance += $rowTotal;
+    $table_row_count = $this->db->count_all('bank');
+    $grandTotal = $Total_balance += $table_row_count;
     echo $grandTotal;
     ?>
         <h3><?php echo $row->bank_name; ?></h3>
