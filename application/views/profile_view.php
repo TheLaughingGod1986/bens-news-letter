@@ -38,6 +38,7 @@ if (isset($records)) : foreach ($records as $row) :
                 <td>Days Till Account Maturity</td>
                 <td>Total Interest After <strong><?php echo $date1->diff($date2)->format("%m"); ?></strong> Months</td>
                 <td>Total Balance After <strong><?php echo $date1->diff($date2)->format("%m"); ?></strong> Months Of Interest</td>
+                <td>Grand Total</td>
             </tr>
         </tread>
         <tbody>
@@ -95,9 +96,7 @@ if (isset($records)) : foreach ($records as $row) :
 <?php endforeach; ?>
 
     <tr>
-        <td></td>
-        <td></td>
-        <td><?php echo $grandTotal; ?></td>
+        <td><h3>Total<?php echo $grandTotal; ?></h3></td>
     </tr>
 
 <?php else : ?>
