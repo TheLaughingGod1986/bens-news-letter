@@ -25,8 +25,6 @@ if (isset($records)) : foreach ($records as $row) :
 
     $originalDate = $row->start_date;
     $newDate = date("jS \of F Y", strtotime($originalDate));
-
-    $grandTotal = 0;
     ?>
 
 
@@ -44,13 +42,16 @@ if (isset($records)) : foreach ($records as $row) :
     </tread>
         <tbody>
 
+    <?php $grandTotal = 0; ?>
+    <?php foreach ($records as $row) : ?>
     <?php
     // Add field values to get row total
-    $rowTotal = $Total_balance + $Total_Int;
+    $rowTotal = $Total_balance;
     ?>
     <?php
     // Add row total to grand total
-    $grandTotal += $rowTotal;
+    $table_row_count = $this->db->count_all('bank');
+    $grandTotal = $rowTotal * $table_row_count;
     ?>
 
         <h3><?php echo $row->bank_name; ?></h3>
@@ -94,6 +95,7 @@ if (isset($records)) : foreach ($records as $row) :
 
         </tbody>
     </table>
+<?php echo $grandTotal; ?>
 
 <?php else : ?>
 <h3>You Have No Account</h3>
