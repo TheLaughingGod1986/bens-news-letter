@@ -15,12 +15,11 @@
 <?php if ($header) echo $header; ?>
 
 <?php
-if ($this->session->userdata('id'))
-{
-   echo '<div class="col-sm-3 col-md-2 sidebar">';
+if ($this->session->userdata('id')) {
+    echo '<div class="col-sm-3 col-md-2 sidebar">';
     if ($left) echo $left;
     echo '</div>';
- }
+}
 ?>
 
 <div class="col-sm-9 push-top push-left">
