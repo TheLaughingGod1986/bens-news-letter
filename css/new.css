@@ -31,7 +31,6 @@
 /* Hide for mobile, show later */
 .sidebar {
     display: none;
-    height: 100%;
 }
 
 @media (min-width: 768px) {
@@ -134,5 +133,4 @@
 
 .main_content {
     background-color: #f8fff1;
-    height: 100%;
 }
