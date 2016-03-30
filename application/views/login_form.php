@@ -1,4 +1,4 @@
-<div id="mediawoop">
+<div id="login_form">
     <h1>login to this page</h1>
     <?php
     echo form_open('login/validate_credentials');

@@ -134,11 +134,3 @@
 .main_content {
     background-color: #f8fff1;
 }
-
-@media screen and (min-width: 0px) and (max-width: 400px) {
-    #mediawoop { display: block; }  /* show it on small screens */
-}
-
-@media screen and (min-width: 401px) and (max-width: 1024px) {
-    #mediawoop { display: none; }   /* hide it elsewhere */
-}
