@@ -22,9 +22,21 @@ if ($this->session->userdata('id')) {
 }
 ?>
 
-<div class="col-sm-9 push-top push-left main_content">
-    <?php if ($middle) echo $middle; ?>
-</div>
+<?php
+if ($this->session->userdata('id')) {
+    echo ' <div class="col-sm-9 push-top push-left main_content">';
+    if ($middle) echo $middle;
+    echo '</div>';
+}
+else {
+    echo ' <div class="col-sm-12 push-top push-left main_content">';
+    if ($middle) echo $middle;
+    echo '</div>';
+}
+?>
+
+
+
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
