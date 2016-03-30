@@ -22,7 +22,7 @@ if ($this->session->userdata('id')) {
 }
 ?>
 
-<div class="col-sm-9 push-top push-left">
+<div class="col-sm-9 push-top push-left main_content">
     <?php if ($middle) echo $middle; ?>
 </div>
 

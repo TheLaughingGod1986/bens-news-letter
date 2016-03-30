@@ -31,6 +31,7 @@ footer {
 /* Hide for mobile, show later */
 .sidebar {
     display: none;
+    height: 100%;
 }
 
 @media (min-width: 768px) {
@@ -110,7 +111,8 @@ footer {
 }
 
 .no-padding {
-    padding-right: 0;!important;
+    padding-right: 0;
+!important;
     padding-left: 0 !important;
 }
 
@@ -122,11 +124,14 @@ footer {
     padding-left: 40px !important;
 }
 
-.logo-img img
-{
+.logo-img img {
     height: 50px;
 }
 
 .navbar-inverse-light-grey {
     background-color: #F5F5F5;
+}
+
+.main_content {
+    background-color: #5eff81;
 }
