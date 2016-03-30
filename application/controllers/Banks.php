@@ -10,7 +10,6 @@ class Banks extends MY_Controller
 
     function index()
     {
-
         $this->middle = 'member_pages/bank_view';
         $this->layout();
     }
@@ -49,13 +48,8 @@ class Banks extends MY_Controller
 
             if ($query = $this->bank_model->create_bank())
             {
-//                $data['main_content'] = 'add_bank_successfull';
-//                $this->load->view('includes/template', $data);
-                //need to add new template
-
-//                $this->middle = 'add_bank_successfull';
-//                $this->layout();
-                echo 'you aded a bank';
+                $this->middle = 'add_bank_successfull';
+                $this->layout();
             }
             else
             {

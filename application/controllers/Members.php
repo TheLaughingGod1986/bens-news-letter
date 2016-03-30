@@ -23,18 +23,13 @@ class Members extends MY_Controller
 
     function members_area()
     {
-        $data['main_content'] = 'member_pages/logged_in_area';
-//        $this->load->view('includes/template', $data);
-
-        $this->template['middle'] = $this->load->view ($this->middle = 'member_pages/logged_in_area',$data, true);
+        
+        $this->middle = 'member_pages/logged_in_area';
         $this->layout();
     }
 
     function add_bank_account()
     {
-//        $data['main_content'] = 'add_bank_form';
-//        $this->load->view('includes/template', $data);
-
         $this->middle = 'add_bank_form';
         $this->layout();
     }

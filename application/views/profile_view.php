@@ -1,5 +1,3 @@
-<!--<h2>My Regular Savings Accounts</h2>-->
-<!--<hr>-->
 <?php $grandTotal = 0; ?>
 <?php
 if (isset($records)) : foreach ($records as $row) :
