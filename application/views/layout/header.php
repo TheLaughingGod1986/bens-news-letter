@@ -1,4 +1,4 @@
-<div id="desktop-content">
+
 <nav class="navbar navbar-inverse-light-grey navbar-fixed-top">
     <div class="container-fluid">
         <div class="navbar-header">
@@ -61,7 +61,7 @@
         </div><!--/.nav-collapse -->
     </div><!--/.container-fluid -->
 </nav>
-</div>
+
 
 
 <!---->
