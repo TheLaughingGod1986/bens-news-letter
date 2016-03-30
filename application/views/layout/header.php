@@ -40,6 +40,7 @@
 <!--    </div>-->
 <!--</nav>-->
 
+<nav class="navbar navbar-default">
     <nav class="navbar navbar-inverse-light-grey navbar-fixed-top">
     <div class="container-fluid">
         <div class="navbar-header">
