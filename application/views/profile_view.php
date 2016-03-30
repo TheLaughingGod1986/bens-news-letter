@@ -80,6 +80,29 @@ if (isset($records)) : foreach ($records as $row) :
         </tbody>
     </table>
 
+    <table>
+        <thead>
+        <tr>
+            <th>Initial Deposit Date</th>
+            <th>Savings</th>
+        </tr>
+        </thead>
+        <tfoot>
+        <tr>
+            <td>grand total</td>
+            <td>$180</td>
+        </tr>
+        </tfoot>
+        <tbody>
+        <tr>
+            <td><?php echo $row->bank_name; ?></td>
+        </tr>
+        <tr>
+            <td>February</td>
+        </tr>
+        </tbody>
+    </table>
+
 <?php endforeach; ?>
 
     <tr>
