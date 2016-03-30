@@ -1,17 +1,8 @@
 <?php
 
-class Home extends CI_Controller
+class Home extends MY_Controller
 {
 
-    var $Front_End_data = array();
-    var $template = array();
-
-    public function layout () {
-        $this->template['header'] = $this->load->view('layout/header', $this->Front_End_data, true);
-        $this->template['left'] = $this->load->view('layout/left', $this->Front_End_data, true);
-        $this->load->view('layout/index', $this->template);
-
-    }
 
     function index()
     {

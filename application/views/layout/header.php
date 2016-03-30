@@ -9,7 +9,8 @@
             <?php
             $this->load->helper('html'); // Load HTML Helper for img()
             $img = base_url('img/Servare.png'); // generates text: siteroot/img/servare.png
-            $path = 'home'; // link to home controller index?>
+            $path = 'home'; // link to home controller index
+            ?>
             <div class="logo-img">
                 <?php
                 echo anchor($path, img($img));

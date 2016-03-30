@@ -1,21 +1,11 @@
 <?php
 
-class Banks extends CI_Controller
+class Banks extends MY_Controller
 {
     function __construct()
     {
         parent::__construct();
         $this->is_logged_in();
-    }
-
-    var $Front_End_data = array();
-    var $template = array();
-
-    public function layout () {
-        $this->template['header'] = $this->load->view('layout/header', $this->Front_End_data, true);
-        $this->template['left'] = $this->load->view('layout/left', $this->Front_End_data, true);
-        $this->template['middle'] = $this->load->view($this->middle, $this->Front_End_data, true);
-        $this->load->view('layout/index', $this->template);
     }
 
     function index()
