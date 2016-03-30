@@ -38,6 +38,10 @@ if (isset($records)) : foreach ($records as $row) :
         $grandTotal += $rowTotal;
         ?>
 
+
+
+<?php endforeach; ?>
+
                 <h3>Total Savings To Date £<?php echo round($grandTotal, 2, PHP_ROUND_HALF_UP); ?></h3>
 
 
