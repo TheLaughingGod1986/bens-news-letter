@@ -7,4 +7,6 @@
     echo form_submit('submit', 'Login');
     echo anchor('login/signup', 'Create Account');
     ?>
+
+    <?php echo validation_errors('<p class="error"/>'); ?>
 </div>
