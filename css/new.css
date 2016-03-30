@@ -135,18 +135,18 @@
     background-color: #f8fff1;
 }
 
-@media screen and (min-width: 0px) and (max-width: 200px) {
+@media screen and (min-width: 0px) and (max-width: 600px) {
     #mobile-content { display: block; }  /* show it on small screens */
 }
 
-@media screen and (min-width: 201px) and (max-width: 1024px) {
+@media screen and (min-width: 601px)  {
     #mobile-content { display: none; }   /* hide it elsewhere */
 }
 
-@media screen and (min-width: 0px) and (max-width: 200px) {
-    #desktop-content { display: none; }  /* hide it on small screens */
+@media screen and (min-width: 0px) and (max-width: 600px) {
+    #desktop-content { display: none; }  /* hide iton small screens */
 }
 
-@media screen and (min-width: 201px) and (max-width: 1024px) {
+@media screen and (min-width: 601px) {
     #desktop-content { display: block; }   /* show it elsewhere */
 }
