@@ -6,7 +6,7 @@
  * Date: 05/02/2016
  * Time: 06:48
  */
-class Members extends CI_Controller
+class Members extends MY_Controller
 {
     function __construct()
     {
