@@ -1,3 +1,4 @@
+<div id="login_form">
 <h1>Create an Account</h1>
 
 <fieldset>
@@ -21,3 +22,4 @@
 
     <?php echo validation_errors('<p class="error"/>'); ?>
 </fieldset>
+    </div>
