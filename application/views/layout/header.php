@@ -55,6 +55,11 @@
             $img = base_url('img/Servare.png'); // generates text: siteroot/img/servare.png
             $path = 'home'; // link to home controller index
             ?>
+            <div class="logo-img">
+                <?php
+                echo anchor($path, img($img));
+                ?>
+            </div>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
 <!--            <ul class="nav navbar-nav">-->
