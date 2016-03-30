@@ -26,7 +26,8 @@
             <ul class="nav navbar-nav navbar-right">
                 <?php
                 if ($this->session->userdata('id')) { ?>
-                    <li><?php echo anchor('login/logout', 'Logout'); ?></li>
+<!--                    <li>--><?php //echo anchor('login/logout', 'Logout'); ?><!--</li>-->
+                    <li>desktop</li>
                     <?php
                 }
 
@@ -44,7 +45,7 @@
                 <ul class="nav navbar-nav navbar-right">
                     <?php
                     if ($this->session->userdata('id')) { ?>
-                        <li><?php echo anchor('login/logout', 'Logout'); ?></li>
+                        <li>mobile</li>
                         <?php
                     }
 
@@ -56,10 +57,6 @@
                     ?>
                 </ul>
             </div>
-
-            <div id="mobile-my-content">
-                <li>mobile</li>
-                </div>
 
         </div><!--/.nav-collapse -->
     </div><!--/.container-fluid -->
