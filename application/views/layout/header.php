@@ -61,10 +61,3 @@
     </div><!--/.container-fluid -->
 </nav>
 
-    <div id="desktop-content">
-        desktop
-    </div>
-
-    <div id="mobile-content">
-        mobile
-    </div>
