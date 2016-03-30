@@ -5560,21 +5560,21 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 
 .navbar-default .navbar-toggle {
-    border-color: #ddd;
+    border-color: #3140dd;
 }
 
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
-    background-color: #ddd;
+    background-color: #ff484a;
 }
 
 .navbar-default .navbar-toggle .icon-bar {
-    background-color: #888;
+    background-color: #ff484a;
 }
 
 .navbar-default .navbar-collapse,
 .navbar-default .navbar-form {
-    border-color: #e7e7e7;
+    border-color: #284077;
 }
 
 .navbar-default .navbar-nav > .open > a,
