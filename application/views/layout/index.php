@@ -24,7 +24,7 @@ if ($this->session->userdata('id')) {
 
 <?php
 if ($this->session->userdata('id')) {
-    echo ' <div class="col-sm-9 push-top push-left main_content">';
+    echo ' <div class="col-sm-10 push-top push-left main_content">';
     if ($middle) echo $middle;
     echo '</div>';
 }
@@ -39,6 +39,5 @@ else {
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
 </body>
 </html>
