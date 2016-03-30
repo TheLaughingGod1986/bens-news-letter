@@ -74,10 +74,12 @@
 
 
 <!-- Fixed navbar -->
-
-    <nav id="desktop-content" class="navbar navbar-inverse-light-grey navbar-fixed-top">
-        <nav id="mobile-content" class="navbar navbar-inverse-light-grey navbar-fixed-top">
-
+<div id="desktop-content">
+    <nav class="navbar navbar-inverse-light-grey navbar-fixed-top">
+</div>
+<div id="mobile-content">
+    <nav class="navbar navbar-inverse-light-grey navbar-fixed-top">
+</div>
 <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container">
         <div class="navbar-header">
