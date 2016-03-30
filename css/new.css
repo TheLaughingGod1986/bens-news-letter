@@ -144,9 +144,9 @@
 }
 
 @media screen and (min-width: 0px) and (max-width: 200px) {
-    #desktop-content { display: none; }  /* show it on small screens */
+    #desktop-content { display: none; }  /* hide it on small screens */
 }
 
 @media screen and (min-width: 201px) and (max-width: 1024px) {
-    #desktop-content { display: block; }   /* hide it elsewhere */
+    #desktop-content { display: block; }   /* show it elsewhere */
 }

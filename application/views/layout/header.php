@@ -27,7 +27,7 @@
                 <?php
                 if ($this->session->userdata('id')) { ?>
 <!--                    <li>--><?php //echo anchor('login/logout', 'Logout'); ?><!--</li>-->
-                    <li>Mobile view</li>
+                    <li>Desktop view</li>
                     <?php
                 }
 
@@ -45,7 +45,7 @@
                 <ul class="nav navbar-nav navbar-right">
                     <?php
                     if ($this->session->userdata('id')) { ?>
-                        <li>Desktop</li>
+                        <li>Mobile</li>
                         <?php
                     }
 
