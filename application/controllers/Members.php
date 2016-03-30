@@ -18,6 +18,14 @@ class Members extends MY_Controller
 //        $this->middle = 'member_pages/logged_in_area';
 //        $this->layout();
 
+        $data = array();
+        $this->load->model('user_profile/profiles_model');
+        $query = $this->profiles_model->get_bank();
+
+        if (!empty($query)) {
+            $data['records'] = $query;
+        }
+
         $this->template['middle'] = $this->load->view ($this->middle = 'member_pages/logged_in_area',$data, true);
         $this->layout();
     }
