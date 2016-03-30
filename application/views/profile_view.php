@@ -75,20 +75,28 @@ if (isset($records)) : foreach ($records as $row) :
             <td>
                 <strong>£<?php echo round($Total_balance, 2, PHP_ROUND_HALF_UP); ?></strong>
             </td>
+        </tr>
 
-
-
+        </tbody>
+    </table>
 
 <?php endforeach; ?>
+    <table border="1">
+        <tread>
+            <tr style="background: #858bf0;">
+                <td>Grand Total</td>
+            </tr>
+        </tread>
+        <tbody>
 
-
+    <tr>
         <td>
             <h3>Total £<?php echo round($grandTotal, 2, PHP_ROUND_HALF_UP); ?></h3>
         </td>
     </tr>
-
-    </tbody>
+        </tbody>
     </table>
+
 <?php else : ?>
     <h3>You Have No Accounts</h3>
     <h4>Why No Add A Account?</h4>
