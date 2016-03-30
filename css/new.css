@@ -136,17 +136,17 @@
 }
 
 @media screen and (min-width: 0px) and (max-width: 200px) {
-    #mobile-my-content { display: block; }  /* show it on small screens */
+    #mobile-content { display: block; }  /* show it on small screens */
 }
 
 @media screen and (min-width: 201px) and (max-width: 1024px) {
-    #mobile-my-content { display: none; }   /* hide it elsewhere */
+    #mobile-content { display: none; }   /* hide it elsewhere */
 }
 
 @media screen and (min-width: 0px) and (max-width: 200px) {
-    #desktop-my-content { display: none; }  /* show it on small screens */
+    #desktop-content { display: none; }  /* show it on small screens */
 }
 
 @media screen and (min-width: 201px) and (max-width: 1024px) {
-    #desktop-my-content { display: block; }   /* hide it elsewhere */
+    #desktop-content { display: block; }   /* hide it elsewhere */
 }

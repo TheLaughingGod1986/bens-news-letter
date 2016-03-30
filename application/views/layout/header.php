@@ -22,7 +22,7 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
 
-            <div id="desktop-my-content">
+            <div id="desktop-content">
             <ul class="nav navbar-nav navbar-right">
                 <?php
                 if ($this->session->userdata('id')) { ?>
@@ -41,7 +41,7 @@
             </ul>
                 </div>
 
-            <div id="mobile-my-content">
+            <div id="mobile-content">
                 <ul class="nav navbar-nav navbar-right">
                     <?php
                     if ($this->session->userdata('id')) { ?>
