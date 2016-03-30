@@ -69,17 +69,12 @@
 <!--        </div><!--/.nav-collapse -->-->
 <!--    </div><!--/.container-fluid -->-->
 <!--</nav>-->
-
+<!---->
 
 
 
 <!-- Fixed navbar -->
-<div id="desktop-content">
     <nav class="navbar navbar-inverse-light-grey navbar-fixed-top">
-</div>
-<div id="mobile-content">
-    <nav class="navbar navbar-inverse-light-grey navbar-fixed-top">
-</div>
 <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container">
         <div class="navbar-header">
@@ -89,7 +84,16 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">Project name</a>
+            <?php
+            $this->load->helper('html'); // Load HTML Helper for img()
+            $img = base_url('img/Servare.png'); // generates text: siteroot/img/servare.png
+            $path = 'home'; // link to home controller index
+            ?>
+            <div class="logo-img">
+                <?php
+                echo anchor($path, img($img));
+                ?>
+            </div>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
