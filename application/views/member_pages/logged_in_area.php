@@ -32,7 +32,7 @@ if (isset($records)) : foreach ($records as $row) :
     $newDate = date("jS \of F Y", strtotime($originalDate));
     ?>
 
-    
+
 
         <?php
         // Add field values to get row total
@@ -45,25 +45,12 @@ if (isset($records)) : foreach ($records as $row) :
 
 
 <?php endforeach; ?>
-    <table border="1">
-        <tread>
-            <tr style="background: #858bf0;">
 
-            </tr>
-        </tread>
-        <tbody>
-
-        <tr>
-            <td>
                 <h3>Total Savings To Date £<?php echo round($grandTotal, 2, PHP_ROUND_HALF_UP); ?></h3>
-            </td>
-        </tr>
-        </tbody>
-    </table>
+
 
 <?php else : ?>
-    <h3>You Have No Accounts</h3>
-    <h4>Why No Add A Account?</h4>
+    <h3>No Savings.</h3>
 <?php endif; ?>
 
 
