@@ -32,19 +32,7 @@ if (isset($records)) : foreach ($records as $row) :
     $newDate = date("jS \of F Y", strtotime($originalDate));
     ?>
 
-
-    <table border="1">
-        <tread>
-            <tr style="background: #858bf0;">
-                <td>Initial Deposit Date</td>
-                <td>Interest Rate</td>
-                <td>Monthly Deposit</td>
-                <td>Days Till Account Maturity</td>
-                <td>Total Interest After <strong><?php echo $date1->diff($date2)->format("%m"); ?></strong> Months</td>
-                <td>Total Balance After <strong><?php echo $date1->diff($date2)->format("%m"); ?></strong> Months Of Interest</td>
-            </tr>
-        </tread>
-        <tbody>
+    
 
         <?php
         // Add field values to get row total
@@ -54,37 +42,7 @@ if (isset($records)) : foreach ($records as $row) :
         $grandTotal += $rowTotal;
         ?>
 
-        <h3><?php echo $row->bank_name; ?></h3>
-        <tr style="background-color: #5eff81;">
 
-            <td>
-                <strong><?php echo $newDate ; ?></strong>
-
-            </td>
-
-            <td>
-                <strong><?php echo $row->interest * 100; ?>%</strong> Interest
-            </td>
-
-            <td>
-                <strong>£<?php echo $row->monthly_deposits; ?></strong> (PCM)
-            </td>
-
-            <td>
-                <strong><?php echo $remain; ?></strong> Days Left
-            </td>
-
-            <td>
-                <strong>£<?php echo round($Total_Int, 2, PHP_ROUND_HALF_UP); ?></strong> Interest
-            </td>
-
-            <td>
-                <strong>£<?php echo round($Total_balance, 2, PHP_ROUND_HALF_UP); ?></strong>
-            </td>
-        </tr>
-
-        </tbody>
-    </table>
 
 <?php endforeach; ?>
     <table border="1">
