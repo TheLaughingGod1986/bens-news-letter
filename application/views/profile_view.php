@@ -84,14 +84,14 @@ if (isset($records)) : foreach ($records as $row) :
     <table border="1">
         <tread>
             <tr style="background: #858bf0;">
-                
+
             </tr>
         </tread>
         <tbody>
 
     <tr>
         <td>
-            <h3>Total £<?php echo round($grandTotal, 2, PHP_ROUND_HALF_UP); ?></h3>
+            <h3>Total Savings To Date £<?php echo round($grandTotal, 2, PHP_ROUND_HALF_UP); ?></h3>
         </td>
     </tr>
         </tbody>
