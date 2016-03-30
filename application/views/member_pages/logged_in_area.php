@@ -30,21 +30,13 @@ if (isset($records)) : foreach ($records as $row) :
 
     $originalDate = $row->start_date;
     $newDate = date("jS \of F Y", strtotime($originalDate));
-    ?>
 
-
-
-        <?php
         // Add field values to get row total
         $rowTotal = $Total_balance;
 
         // Add row total to grand total
         $grandTotal += $rowTotal;
         ?>
-
-
-
-<?php endforeach; ?>
 
                 <h3>Total Savings To Date £<?php echo round($grandTotal, 2, PHP_ROUND_HALF_UP); ?></h3>
 
