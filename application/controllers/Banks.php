@@ -14,12 +14,6 @@ class Banks extends MY_Controller
         $this->layout();
     }
 
-//    function profile()
-//    {
-//        $this->middle = 'member_pages/logged_in_area';
-//        $this->layout();
-//    }
-
     function create_bank()
     {
         $this->load->library('form_validation');
@@ -33,8 +27,6 @@ class Banks extends MY_Controller
         $this->form_validation->set_rules('length', 'trim|required');
 
         $this->form_validation->set_rules('start_date', 'trim|required');
-
-
 
         if ($this->form_validation->run() == FALSE)
         {

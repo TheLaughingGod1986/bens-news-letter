@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Created by PhpStorm.
  * User: Ben
@@ -19,13 +18,6 @@ class Members extends MY_Controller
         $this->middle = 'member_pages/logged_in_area';
         $this->layout();
     }
-
-//    function add_bank_account()
-//    {
-//        $this->middle = 'add_bank_form';
-//        $this->layout();
-//    }
-
 
     function is_logged_in()
     {

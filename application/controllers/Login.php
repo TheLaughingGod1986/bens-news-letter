@@ -36,14 +36,13 @@ class Login extends MY_Controller
 
     function signup()
     {
-        $data['main_content'] = 'signup_form';
-        $this->load->view('includes/template', $data);
+        $this->middle = 'signup_form';
+        $this->layout();
     }
 
     function create_member()
     {
         $this->load->library('form_validation');
-        // field name, error message, validation rules
 
         $this->form_validation->set_rules('first_name', 'Name', 'trim|required');
         $this->form_validation->set_rules('last_name', 'Last Name', 'trim|required');
@@ -54,14 +53,16 @@ class Login extends MY_Controller
         $this->form_validation->set_rules('password2', 'Password Confirmation', 'trim|required|matches[password]');
 
         if ($this->form_validation->run() == FALSE) {
-            $this->load->view('signup_form');
+            $this->middle = 'signup_form';
+            $this->layout();
         } else {
             $this->load->model('members/member_model');
             if ($query = $this->member_model->create_member()) {
-                $data['main_content'] = 'signup_successfull';
-                $this->load->view('includes/template', $data);
+                $this->middle = 'signup_successfull';
+                $this->layout();
             } else {
-                $this->load->view('signup_form');
+                $this->middle = 'signup_form';
+                $this->layout();
             }
         }
     }
