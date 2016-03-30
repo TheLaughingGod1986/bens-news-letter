@@ -40,15 +40,15 @@
 <!--    </div>-->
 <!--</nav>-->
 
-<nav class="navbar navbar-default">
+<nav class="navbar navbar-inverse-light-grey navbar-fixed-top">
     <nav class="navbar navbar-inverse-light-grey navbar-fixed-top">
     <div class="container-fluid">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
                 <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar">1</span>
-                <span class="icon-bar">2</span>
-                <span class="icon-bar">3</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
             </button>
             <?php
             $this->load->helper('html'); // Load HTML Helper for img()
