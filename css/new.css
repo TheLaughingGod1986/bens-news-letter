@@ -134,10 +134,19 @@
 .main_content {
     background-color: #f8fff1;
 }
+
 @media screen and (min-width: 0px) and (max-width: 200px) {
-    #my-content { display: block; }  /* show it on small screens */
+    #mobile-my-content { display: block; }  /* show it on small screens */
 }
 
 @media screen and (min-width: 201px) and (max-width: 1024px) {
-    #my-content { display: none; }   /* hide it elsewhere */
+    #mobile-my-content { display: none; }   /* hide it elsewhere */
+}
+
+@media screen and (min-width: 0px) and (max-width: 200px) {
+    #desktop-my-content { display: none; }  /* show it on small screens */
+}
+
+@media screen and (min-width: 201px) and (max-width: 1024px) {
+    #desktop-my-content { display: block; }   /* hide it elsewhere */
 }
