@@ -84,7 +84,7 @@ if (isset($records)) : foreach ($records as $row) :
     <table border="1">
         <tread>
             <tr style="background: #858bf0;">
-                <td>Grand Total</td>
+                
             </tr>
         </tread>
         <tbody>
