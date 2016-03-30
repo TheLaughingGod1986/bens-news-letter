@@ -15,7 +15,10 @@ class Members extends MY_Controller
 
     function index()
     {
-        $this->middle = 'member_pages/logged_in_area';
+//        $this->middle = 'member_pages/logged_in_area';
+//        $this->layout();
+
+        $this->template['middle'] = $this->load->view ($this->middle = 'member_pages/logged_in_area',$data, true);
         $this->layout();
     }
 
