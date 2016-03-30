@@ -27,14 +27,14 @@
                 <?php
                 if ($this->session->userdata('id')) { ?>
 <!--                    <li>--><?php //echo anchor('login/logout', 'Logout'); ?><!--</li>-->
-                    <li>desktop</li>
+                    <li>Mobile view</li>
                     <?php
                 }
 
                 else { ?>
 <!--                    <li>--><?php //echo anchor('login', 'Login'); ?><!--</li>-->
 <!--                    <li>--><?php //echo anchor('login/signup', 'Sign up'); ?><!--</li>-->
-                    <li>desktop</li>
+
                     <?php
                 }
                 ?>
@@ -45,13 +45,12 @@
                 <ul class="nav navbar-nav navbar-right">
                     <?php
                     if ($this->session->userdata('id')) { ?>
-                        <li>mobile</li>
+                        <li>Desktop</li>
                         <?php
                     }
 
                     else { ?>
-                        <li>mobile</li>
-                        <li>mobile</li>
+
                         <?php
                     }
                     ?>
