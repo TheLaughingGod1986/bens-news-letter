@@ -6,28 +6,8 @@
     echo form_open('banks/create_bank');
     echo form_input('bank_name', set_value('bank_name', 'Account Name'));
     echo form_input('interest', set_value('interest', 'Interest Rate'));
-//     echo form_input('start_amount', set_value('start_amount', 'First Months Deposit'));
     echo form_input('monthly_deposits', set_value('monthly_deposits', 'Monthly Deposits'));
-
-//    $compound_options = array(
-//        '1' => 'Yearly',
-//        '12' => 'Monthly',
-//        '365' => 'Daily'
-//    );
-//    echo "<h4>Compound Rate</h4>";
-//    echo form_dropdown('compound_frequency', $compound_options);
-//
-//    $valid_options = array(
-//        '365' => '1 yeah',
-//        '730' => '2 yeah',
-//        '1095' => '3 year',
-//        '1460' => '4 year',
-//        '1825' => '5 year'
-//    );
-//    echo "<h4>Account Fixed Term</h4>";
-//    echo form_dropdown('length', $valid_options);
-//
-//    ?>
+    ?>
 
     <label>Select Date Of First Deposit</label>
     <input type="date" data-date-format="DD MMMM YYYY" name="start_date">
