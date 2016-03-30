@@ -1,5 +1,11 @@
-
+<div id="desktop-content">
 <nav class="navbar navbar-inverse-light-grey navbar-fixed-top">
+    </div>
+
+<div id="mobile-content">
+    <nav class="navbar navbar-default navbar-fixed-top">
+    </div>
+
     <nav class="navbar navbar-inverse-light-grey navbar-fixed-top">
     <div class="container-fluid">
         <div class="navbar-header">
@@ -26,14 +32,13 @@
             <ul class="nav navbar-nav navbar-right">
                 <?php
                 if ($this->session->userdata('id')) { ?>
-<!--                    <li>--><?php //echo anchor('login/logout', 'Logout'); ?><!--</li>-->
-                    <li>Desktop view</li>
+                    <li><?php echo anchor('login/logout', 'Logout'); ?></li>
                     <?php
                 }
 
                 else { ?>
-<!--                    <li>--><?php //echo anchor('login', 'Login'); ?><!--</li>-->
-<!--                    <li>--><?php //echo anchor('login/signup', 'Sign up'); ?><!--</li>-->
+                    <li><?php echo anchor('login', 'Login'); ?></li>
+                    <li><?php echo anchor('login/signup', 'Sign up'); ?></li>
 
                     <?php
                 }
@@ -45,7 +50,11 @@
                 <ul class="nav navbar-nav navbar-right">
                     <?php
                     if ($this->session->userdata('id')) { ?>
-                        <li>Mobile</li>
+                        <li><?php echo anchor('members', 'Your Dashboard'); ?></li>
+                        <li><?php echo anchor('profile', 'Account Overview'); ?></li>
+                        <li><?php echo anchor('banks', 'Add Regular Savings'); ?></li>
+                        <li><a href="#">Notification Accounts<br>(coming soon)</a></li>
+                        <li><a href="#">Fixed rate Bonds<br>(coming soon)</a></li>
                         <?php
                     }
 
