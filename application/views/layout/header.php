@@ -3,7 +3,7 @@
         <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
                     aria-expanded="false" aria-controls="navbar">
-                <ul>
+                <ul class="nav navbar-nav navbar-right">
                 <li><?php echo anchor('members', 'Your Dashboard'); ?></li>
                 <li><?php echo anchor('profile', 'Account Overview'); ?></li>
                 <li><?php echo anchor('banks', 'Add Regular Savings'); ?></li>
