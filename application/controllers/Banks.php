@@ -49,9 +49,12 @@ class Banks extends MY_Controller
 
             if ($query = $this->bank_model->create_bank())
             {
-                $data['main_content'] = 'add_bank_successfull';
-                $this->load->view('includes/template', $data);
+//                $data['main_content'] = 'add_bank_successfull';
+//                $this->load->view('includes/template', $data);
                 //need to add new template
+
+                $this->middle = 'add_bank_successfull';
+                $this->layout();
             }
             else
             {
