@@ -1,3 +1,4 @@
+<div id="login_form">
 <h1>Create Bank Account</h1>
 
 <fieldset>
@@ -15,3 +16,4 @@
 </fieldset>
 
 <?php echo validation_errors('<p class="error"/>'); ?>
+    </div>
