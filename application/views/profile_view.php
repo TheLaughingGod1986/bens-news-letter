@@ -75,14 +75,16 @@ if (isset($records)) : foreach ($records as $row) :
             <td>
                 <strong>£<?php echo round($Total_balance, 2, PHP_ROUND_HALF_UP); ?></strong>
             </td>
-        </tr>
+
 
 
 
 <?php endforeach; ?>
 
-    <tr>
-        <td><h3>Total £<?php echo round($grandTotal, 2, PHP_ROUND_HALF_UP); ?></h3></td>
+
+        <td>
+            <h3>Total £<?php echo round($grandTotal, 2, PHP_ROUND_HALF_UP); ?></h3>
+        </td>
     </tr>
 
     </tbody>
