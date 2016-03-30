@@ -27,7 +27,7 @@ class Login extends MY_Controller
 
             $this->session->set_userdata($data);
 
-            redirect('members/members_area');
+            redirect('members/index');
         } else {
             $this->index();
             echo 'Incorrect Password or Username';

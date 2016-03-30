@@ -10,15 +10,15 @@ class Banks extends MY_Controller
 
     function index()
     {
-        $this->middle = 'member_pages/bank_view';
+        $this->middle = 'add_bank_form';
         $this->layout();
     }
 
-    function profile()
-    {
-        $this->middle = 'member_pages/logged_in_area';
-        $this->layout();
-    }
+//    function profile()
+//    {
+//        $this->middle = 'member_pages/logged_in_area';
+//        $this->layout();
+//    }
 
     function create_bank()
     {

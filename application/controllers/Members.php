@@ -14,25 +14,17 @@ class Members extends MY_Controller
         $this->is_logged_in();
     }
 
-
     function index()
     {
-        $data['main_content'] = 'member_pages/members_view';
-        $this->load->view('includes/template', $data);
-    }
-
-    function members_area()
-    {
-        
         $this->middle = 'member_pages/logged_in_area';
         $this->layout();
     }
 
-    function add_bank_account()
-    {
-        $this->middle = 'add_bank_form';
-        $this->layout();
-    }
+//    function add_bank_account()
+//    {
+//        $this->middle = 'add_bank_form';
+//        $this->layout();
+//    }
 
 
     function is_logged_in()
