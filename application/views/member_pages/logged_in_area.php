@@ -1,4 +1,5 @@
 <h2>Your Dashboard</h2>
+<hr>
 <h3>Welcome Back, <?php echo $this->session->userdata('username'); ?>!</h3>
 <h3>Your Surname, <?php echo $this->session->userdata('last_name'); ?></h3>
 <h3>Your First Name, <?php echo $this->session->userdata('first_name'); ?></h3>
@@ -42,7 +43,7 @@ if (isset($records)) : foreach ($records as $row) :
 
 <?php endforeach; ?>
 
-                <h3>Total Savings To Date £<?php echo round($grandTotal, 2, PHP_ROUND_HALF_UP); ?></h3>
+                <h3>Total Savings To Date <strong>£<?php echo round($grandTotal, 2, PHP_ROUND_HALF_UP); ?></strong></h3>
 
 
 <?php else : ?>
