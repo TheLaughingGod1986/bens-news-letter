@@ -1,9 +1,9 @@
 <h2>Home Page, nothing to see here.</h2>
 
 <div id="desktop-content">
-    desktop
+    desktop view test
 </div>
 
 <div id="mobile-content">
-    mobile
+    mobile view text
 </div>
