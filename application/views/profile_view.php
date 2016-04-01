@@ -26,7 +26,7 @@ if (isset($records)) : foreach ($records as $row) :
     $newDate = date("jS \of F Y", strtotime($originalDate));
     ?>
 
-
+    <div id="desktop-content">
     <table border="1">
         <tread>
             <tr style="background: #858bf0;">
@@ -79,6 +79,11 @@ if (isset($records)) : foreach ($records as $row) :
 
         </tbody>
     </table>
+        </div>
+
+    <div id="mobile-content">
+        mobile view text
+    </div>
 
 <?php endforeach; ?>
     <table border="1">
