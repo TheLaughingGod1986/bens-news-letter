@@ -84,9 +84,9 @@ if (isset($records)) : foreach ($records as $row) :
         <table border="1">
             <tread>
                 <tr style="background: #858bf0;">
-                    <td>Days Remaining</td>
-                    <td>Total Interest</td>
-                    <td>Total Balance</td>
+                    <td>Maturity</td>
+                    <td>Total</td>
+                    <td>Total</td>
                 </tr>
             </tread>
             <tbody>
@@ -111,12 +111,12 @@ if (isset($records)) : foreach ($records as $row) :
                 </td>
 
                 <td>
-                    <strong>£<?php echo round($Total_balance, 2, PHP_ROUND_HALF_UP); ?></strong>
+                    <strong>£<?php echo round($Total_balance, 2, PHP_ROUND_HALF_UP); ?></strong> Balance
                 </td>
             </tr>
-
             </tbody>
         </table>
+        <h3>For full breakdown of your accounts please view on a tablet or Desktop</h3>
     </div>
 
 <?php endforeach; ?>
