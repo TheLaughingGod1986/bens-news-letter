@@ -76,13 +76,47 @@ if (isset($records)) : foreach ($records as $row) :
                 <strong>£<?php echo round($Total_balance, 2, PHP_ROUND_HALF_UP); ?></strong>
             </td>
         </tr>
-
         </tbody>
     </table>
         </div>
 
     <div id="mobile-content">
-        mobile view text
+        <table border="1">
+            <tread>
+                <tr style="background: #858bf0;">
+                    <td>Days Remaining</td>
+                    <td>Total Interest</td>
+                    <td>Total Balance</td>
+                </tr>
+            </tread>
+            <tbody>
+
+            <?php
+            // Add field values to get row total
+            $rowTotal = $Total_balance;
+
+            // Add row total to grand total
+            $grandTotal += $rowTotal;
+            ?>
+
+            <h3><?php echo $row->bank_name; ?></h3>
+            <tr style="background-color: #5eff81;">
+
+                <td>
+                    <strong><?php echo $remain; ?></strong> Days Left
+                </td>
+
+                <td>
+                    <strong>£<?php echo round($Total_Int, 2, PHP_ROUND_HALF_UP); ?></strong> Interest
+                </td>
+
+                <td>
+                    <strong>£<?php echo round($Total_balance, 2, PHP_ROUND_HALF_UP); ?></strong>
+                </td>
+            </tr>
+
+            </tbody>
+        </table>
     </div>
 
 <?php endforeach; ?>
