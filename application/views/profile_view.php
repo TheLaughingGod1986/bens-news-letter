@@ -125,6 +125,8 @@ if (isset($records)) : foreach ($records as $row) :
     </div>
 
 <div id="desktop-content">
+    <table>
+        <tbody>
     <tr>
         <td>
             <h3>Total Savings To Date £<?php echo round($grandTotal, 2, PHP_ROUND_HALF_UP); ?></h3>
