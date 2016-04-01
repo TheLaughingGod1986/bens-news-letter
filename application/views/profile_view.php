@@ -116,25 +116,23 @@ if (isset($records)) : foreach ($records as $row) :
             </tr>
             </tbody>
         </table>
-        <h3>For full breakdown of your accounts please view on a tablet or Desktop</h3>
     </div>
 
 <?php endforeach; ?>
-    <table border="1">
-        <tread>
-            <tr style="background: #858bf0;">
+<div id="mobile-content">
+            <h3>Total Savings To Date £<?php echo round($grandTotal, 2, PHP_ROUND_HALF_UP); ?></h3>
+    <h3>For full breakdown of your accounts please view on a tablet or Desktop</h3>
+    </div>
 
-            </tr>
-        </tread>
-        <tbody>
-
+<div id="desktop-content">
     <tr>
         <td>
             <h3>Total Savings To Date £<?php echo round($grandTotal, 2, PHP_ROUND_HALF_UP); ?></h3>
         </td>
     </tr>
-        </tbody>
+    </tbody>
     </table>
+    </div>
 
 <?php else : ?>
     <h3>You Have No Accounts</h3>
