@@ -41,6 +41,7 @@
         left: 0;
         z-index: 1000;
         display: block;
+        height: 100%;
         padding: 20px;
         overflow-x: hidden;
         overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
