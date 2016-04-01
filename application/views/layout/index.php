@@ -25,12 +25,12 @@ if ($this->session->userdata('id')) {
 <div id="desktop-content">
 <?php
 if ($this->session->userdata('id')) {
-    echo ' <div class="col-sm-10 push-top push-left main_content">';
+    echo ' <div class="col-sm-10 push-top main_content">';
     if ($middle) echo $middle;
     echo '</div>';
 }
 else {
-    echo ' <div class="col-sm-12 push-top push-left main_content">';
+    echo ' <div class="col-sm-12 push-top main_content">';
     if ($middle) echo $middle;
     echo '</div>';
 }
