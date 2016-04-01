@@ -96,7 +96,7 @@ if (isset($records)) : foreach ($records as $row) :
             $rowTotal = $Total_balance;
 
             // Add row total to grand total
-            $grandTotal += $rowTotal;
+            $grandTotal += $rowTotal / 2;
             ?>
 
             <h3><?php echo $row->bank_name; ?></h3>
