@@ -96,7 +96,7 @@ if (isset($records)) : foreach ($records as $row) :
             $rowTotal = $Total_balance;
 
             // Add row total to grand total
-            $grandTotal += $rowTotal / 2;
+            $grandTotal += $rowTotal;
             ?>
 
             <h3><?php echo $row->bank_name; ?></h3>
@@ -120,7 +120,7 @@ if (isset($records)) : foreach ($records as $row) :
 
 <?php endforeach; ?>
 <div id="mobile-content">
-            <h3>Total Savings To Date £<?php echo round($grandTotal, 2, PHP_ROUND_HALF_UP); ?></h3>
+            <h3>Total Savings To Date £<?php echo round($grandTotal / 2, 2, PHP_ROUND_HALF_UP); ?></h3>
     <strong>For full breakdown of your accounts please view on a Tablet or Desktop</strong>
     </div>
 
@@ -129,7 +129,7 @@ if (isset($records)) : foreach ($records as $row) :
         <tbody>
     <tr>
         <td>
-            <h3>Total Savings To Date £<?php echo round($grandTotal, 2, PHP_ROUND_HALF_UP); ?></h3>
+            <h3>Total Savings To Date £<?php echo round($grandTotal / 2, 2, PHP_ROUND_HALF_UP); ?></h3>
         </td>
     </tr>
     </tbody>
