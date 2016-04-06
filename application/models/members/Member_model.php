@@ -9,6 +9,12 @@ class Member_model extends CI_Model {
 
     function validate()
     {
+
+        $this->load->library('form_validation');
+
+        $this->form_validation->set_rules('email_address', 'email_address', 'trim|required');
+        $this->form_validation->set_rules('password', 'password', 'trim|required');
+
         $this->db->where('email_address', $this->input->post('email_address'));
         $this->db->where('password', md5($this->input->post('password')));
         $query = $this->db->get('membership');

@@ -13,11 +13,6 @@ class Login extends MY_Controller
         $this->load->model('members/member_model');
         $query = $this->member_model->validate();
 
-        $this->load->library('form_validation');
-
-        $this->form_validation->set_rules('email_address', 'email_address', 'trim|required');
-        $this->form_validation->set_rules('password', 'password', 'trim|required');
-
         if ($query) // if user cred validate the user session start
         {
             $data = array(
@@ -34,7 +29,8 @@ class Login extends MY_Controller
 
             redirect('members/index');
         } else {
-            echo 'Incorrect Password or Username, go back and try again';
+            $this->middle = 'login';
+            $this->layout();
         }
     }
 
