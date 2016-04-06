@@ -12,7 +12,7 @@
 
     <label>Select Date Of First Deposit</label>
 
-    <p>Select Date Of First Deposit<input style="float: left" type="text" name="start_date" id="datepicker" readonly></p>
+    <p>(Regular Savers Only go back 365 Days)<input style="float: left" type="text" name="start_date" id="datepicker" readonly></p>
 
     <?php echo form_submit('submit', 'Add Bank ') ?>
 </fieldset>
