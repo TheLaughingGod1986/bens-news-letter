@@ -10,10 +10,10 @@
     echo form_input('monthly_deposits', set_value('monthly_deposits', 'Monthly Deposits'));
     ?>
 
-    <p>Select Date Of First Deposit</p>
-
+    <label>Select Date Of First Deposit</label>
+    <div class="input-date-cus">
     <input style="float: left" type="text" name="start_date" id="datepicker" readonly>
-
+    </div>
     <?php echo form_submit('submit', 'Add Bank ') ?>
 </fieldset>
 
