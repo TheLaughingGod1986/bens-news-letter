@@ -39,7 +39,9 @@ class Banks extends MY_Controller
             }
             else
             {
-                echo 'Im sorry, something went wrong, go back and try again';
+                echo '<script>alert("Im sorry, something went wrong. Please Try Again.");</script>';
+                $this->middle = 'add_bank_form';
+                $this->layout();
             }
         }
     }

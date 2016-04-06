@@ -52,9 +52,7 @@ class Login extends MY_Controller
                 $this->middle = 'member_pages/logged_in_area';
                 $this->layout();
             } else {
-
-                echo '<script>alert("Incorrect Login Details, Try Again");</script>';
-
+                echo '<script>alert("Incorrect Login Details, Please Try Again.");</script>';
                 $this->middle = 'login_form';
                 $this->layout();
 
@@ -83,7 +81,9 @@ class Login extends MY_Controller
                 $this->middle = 'signup_successfull';
                 $this->layout();
             } else {
-                echo "somthing went wrong";
+                echo '<script>alert("Im sorry, something went wrong. Please Try Again.");</script>';
+                $this->middle = 'signup_form';
+                $this->layout();
             }
         }
     }
