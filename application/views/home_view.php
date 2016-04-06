@@ -1,5 +1,5 @@
 <div id="desktop-content">
-<div class="container">
+<!--<div class="container">-->
     <div class="jumbotron">
         <h1>Servare</h1>
 
@@ -12,7 +12,7 @@
         </p>
     </div>
 </div>
-    </div>
+<!--    </div>-->
 
 <div id="mobile-content">
     mobile view text
