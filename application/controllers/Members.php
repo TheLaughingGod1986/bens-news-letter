@@ -15,9 +15,6 @@ class Members extends MY_Controller
 
     function index()
     {
-//        $this->middle = 'member_pages/logged_in_area';
-//        $this->layout();
-
         $data = array();
         $this->load->model('user_profile/profiles_model');
         $query = $this->profiles_model->get_bank();
@@ -35,7 +32,7 @@ class Members extends MY_Controller
         $is_logged_in = $this->session->userdata('is_logged_in');
 
         if (!isset($is_logged_in) || $is_logged_in != true) {
-            echo 'lol, try again. this area is secure. MEMBERS ONLY !. please ';
+            echo 'This area is secure. MEMBERS ONLY !. please ';
             echo anchor('login/index', 'Login');
             die();
         }
