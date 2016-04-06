@@ -19,7 +19,7 @@
     <div data-bind="datepicker: date, datepickerMinDate: minDate, datepickerMaxDate: maxDate"></div>
 
     <div>
-        La data selezionata è <span data-bind="text: date" />
+        Date Selected: <span data-bind="text: date" />
     </div>
 </fieldset>
 
