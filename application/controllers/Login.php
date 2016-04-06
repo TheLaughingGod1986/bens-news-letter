@@ -49,7 +49,7 @@ class Login extends MY_Controller
                 );
 
                 $this->session->set_userdata($data);
-                $this->middle = 'members';
+                $this->middle = 'member_pages/logged_in_area';
                 $this->layout();
             } else {
                 echo "im sorry somthing when wrong, go back";
