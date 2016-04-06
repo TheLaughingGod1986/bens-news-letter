@@ -1,7 +1,6 @@
 <div id="login_form">
     <h1>Create an Account</h1>
-
-    <fieldset>
+    
 
         <?php
         echo form_open('login/create_member');
