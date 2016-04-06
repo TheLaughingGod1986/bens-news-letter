@@ -10,11 +10,26 @@
         'id' => 'bank_name',
         'placeholder' => 'Account Name'
     );
+
+    $account_interest = array(
+        'name' => 'interest',
+        'id' => 'interest',
+        'placeholder' => 'Interest Rate'
+    );
+
+    $account_deposits = array(
+        'name' => 'monthly_deposits',
+        'id' => 'monthly_deposits (%)',
+        'placeholder' => 'Monthly Deposits (£)'
+    );
+
     echo form_input($account_name);
+    echo form_input($account_interest);
+    echo form_input($account_deposits);
 //    echo form_input('bank_name', set_value('bank_name', 'Account Name'));
 //    echo form_input('bank_name','','placeholder=Account_Name');
-    echo form_input('interest', set_value('interest', 'Interest Rate'));
-    echo form_input('monthly_deposits', set_value('monthly_deposits', 'Monthly Deposits'));
+//    echo form_input('interest', set_value('interest', 'Interest Rate'));
+//    echo form_input('monthly_deposits', set_value('monthly_deposits', 'Monthly Deposits'));
     ?>
 
     <p>(Regular Savers Only go back 365 Days)<input style="float: left" type="text" name="start_date" id="datepicker" placeholder='Date Of First Deposit' readonly></p>
