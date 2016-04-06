@@ -29,7 +29,7 @@ class Login extends MY_Controller
 
             redirect('members/index');
         } else {
-            echo 'Incorrect Password or Username';
+            echo 'Incorrect Password or Username, go back and try again';
         }
     }
 
@@ -45,7 +45,7 @@ class Login extends MY_Controller
 
         $this->form_validation->set_rules('first_name', 'Name', 'trim|required');
         $this->form_validation->set_rules('last_name', 'Last Name', 'trim|required');
-        $this->form_validation->set_rules('email_address', 'Email Address', 'trim|required|valid_email');
+        $this->form_validation->set_rules('email_address', 'Email Address', 'trim|required|valid_email|is_unique[users.email]');
 
         $this->form_validation->set_rules('username', 'Username', 'trim|required|min_length[4]');
         $this->form_validation->set_rules('password', 'Password', 'trim|required|min_length[4]|max_length[32]');
@@ -60,7 +60,7 @@ class Login extends MY_Controller
                 $this->middle = 'signup_successfull';
                 $this->layout();
             } else {
-                echo "somthing went wrong";
+                echo "somthing went wrong, , go back and try again";
             }
         }
     }

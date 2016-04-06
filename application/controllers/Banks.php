@@ -18,20 +18,14 @@ class Banks extends MY_Controller
     {
         $this->load->library('form_validation');
 
-        $this->form_validation->set_rules('bank_name', 'Name', 'trim|required');
-
-        $this->form_validation->set_rules('interest', 'trim|required');
-
-        $this->form_validation->set_rules('start_amount', 'trim|required');
-
-        $this->form_validation->set_rules('length', 'trim|required');
-
-        $this->form_validation->set_rules('start_date', 'trim|required');
+        $this->form_validation->set_rules('bank_name', 'bank_name', 'trim|required');
+        $this->form_validation->set_rules('interest', 'interest', 'trim|required|numeric');
+        $this->form_validation->set_rules('monthly_deposits', 'monthly_deposits', 'trim|required|numeric');
 
         if ($this->form_validation->run() == FALSE)
         {
-            echo 'incorrect bank details';
-            // validation is not working.. everything is validating !!
+            $this->middle = 'add_bank_form'; // return page will validation error
+            $this->layout();
         }
 
         else
@@ -45,7 +39,7 @@ class Banks extends MY_Controller
             }
             else
             {
-                echo 'Im sorry, something went wrong';
+                echo 'Im sorry, something went wrong, go back and try again';
             }
         }
     }
@@ -55,7 +49,7 @@ class Banks extends MY_Controller
         $is_logged_in = $this->session->userdata('is_logged_in');
 
         if (!isset($is_logged_in) || $is_logged_in != true) {
-            echo 'lol, try again. this area is secure. MEMBERS ONLY !. please ';
+            echo 'This area is secure. MEMBERS ONLY !. please ';
             echo anchor('login/index', 'Login');
             die();
         }
