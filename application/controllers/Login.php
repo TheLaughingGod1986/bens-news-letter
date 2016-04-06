@@ -32,7 +32,7 @@ class Login extends MY_Controller
         $this->form_validation->set_rules('password', 'password', 'trim|required');
 
         if ($this->form_validation->run() == FALSE) {
-            $this->middle = 'signup_form'; // return page will validation error
+            $this->middle = 'login_form'; // return page will validation error
             $this->layout();
         }
 
