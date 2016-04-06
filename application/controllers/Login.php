@@ -55,9 +55,10 @@ class Login extends MY_Controller
 
                 echo '<script>alert("Incorrect Login Details, Tray Again");</script>';
 
-                $this->middle = 'login_form';
-                $this->layout();
-//                echo "Incorrect Password or Username, Please Try Again.";
+                echo $this->session->flashdata('message');
+//                $this->middle = 'login_form';
+//                $this->layout();
+
             }
         }
     }
