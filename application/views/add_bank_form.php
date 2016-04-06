@@ -15,6 +15,12 @@
 
     <p>Date: <input type="date" id="datepicker" ></p>
     <?php echo form_submit('submit', 'Add Bank ') ?>
+
+    <div data-bind="datepicker: date, datepickerMinDate: minDate, datepickerMaxDate: maxDate"></div>
+
+    <div>
+        La data selezionata è <span data-bind="text: date" />
+    </div>
 </fieldset>
 
 <?php echo validation_errors('<p class="error"/>'); ?>
