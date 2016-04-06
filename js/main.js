@@ -7,6 +7,10 @@ $(function() {
         showButtonPanel: true,
         buttonText: "Select date",
         inline: true
-
+    });
+    $('#datepicker').keyup(function () {
+        $('#datepicker').val('');
+        $('#to').attr('disabled', 'disabled');
+        alert('Please select date from Calendar');
     });
 });
