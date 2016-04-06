@@ -41,7 +41,7 @@
         'id' => 'password2',
         'placeholder' => 'Password Confirm',
     );
-    echo form_password($your_email);
+    echo form_input($your_email);
     echo form_password($your_password);
     echo form_password($your_password2);
     echo form_submit('submit', 'Create Account');
