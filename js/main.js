@@ -46,8 +46,10 @@ ko.bindingHandlers.datepickerMaxDate = {
 
 var viewModel = {
     date: ko.observable(new Date()),
-    minDate: ko.observable(new Date()),
-    maxDate: ko.observable(new Date())
+    //minDate: ko.observable(new Date()),
+    //maxDate: ko.observable(new Date()),
+    minDate: -365,
+    maxDate: "+0M"
 };
 
 ko.applyBindings(viewModel);
