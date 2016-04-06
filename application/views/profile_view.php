@@ -86,8 +86,9 @@ if (isset($records)) : foreach ($records as $row) :
             <tread>
                 <tr style="background: #858bf0; text-align: center;">
                     <td><h3>Maturity</h3></td>
-                    <td><h3>Interest</h3></td>
-                    <td><h3>Balance</h3></td>
+                    <td><h3>Interest <br>
+                        (Total)</h3></td>
+                    <td><h3>Balance<br>(Total)</h3></td>
                 </tr>
             </tread>
             <tbody>
