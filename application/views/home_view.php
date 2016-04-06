@@ -15,7 +15,7 @@
             <h3>Welcome Back, <strong><?php echo $this->session->userdata('username'); ?></strong>!</h3>
             <?php
             } else { ?>
-                <a class="btn btn-lg btn-primary" <?php echo anchor('login/signup', 'Sign up &raquo;'); ?> role="signup"></a>
+                <a class="btn btn-lg btn-primary" <?php echo anchor('login/signup', 'Sign up &raquo;'); ?> </a>
 
                 <?php
             }
