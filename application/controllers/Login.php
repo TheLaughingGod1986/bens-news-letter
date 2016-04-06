@@ -29,7 +29,7 @@ class Login extends MY_Controller
 
             redirect('members/index');
         } else {
-            $this->middle = 'login';
+            $this->middle = 'login_form';
             $this->layout();
         }
     }
