@@ -1,9 +1,11 @@
 $(function() {
-    $( "#datepicker" ).datepicker({ minDate: -365, maxDate: "+0M",
+    $( "#datepicker" ).datepicker({
         showOn: "button",
-        buttonImage: "images/calendar.gif",
+        buttonImage: "img/Servare.png",
         buttonImageOnly: true,
-        buttonText: "Select date"
+        buttonText: "Select date",
+        minDate: -365,
+        maxDate: "+0M"
     });
 });
 
