@@ -19,3 +19,5 @@
 
 <?php echo validation_errors('<p class="error"/>'); ?>
     </div>
+
+<?php
