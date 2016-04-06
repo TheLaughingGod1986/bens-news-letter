@@ -17,7 +17,7 @@ class Login extends MY_Controller
     function logout()
     {
         $this->session->sess_destroy();
-        $this->middle = 'home';
+        $this->middle = 'home_view';
         $this->index();
     }
 
