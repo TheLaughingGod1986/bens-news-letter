@@ -13,7 +13,7 @@
     <label>Select Date Of First Deposit</label>
     <input type="date" data-date-format="DD MMMM YYYY" name="start_date">
 
-    <p>Date: <input type="text" id="datepicker" readonly='true'></p>
+    <p>Date: <input class="input-date-cus" type="text" name="start_date" id="datepicker" readonly></p>
     <?php echo form_submit('submit', 'Add Bank ') ?>
 
 
