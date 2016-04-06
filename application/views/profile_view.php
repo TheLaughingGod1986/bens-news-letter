@@ -19,6 +19,7 @@ if (isset($records)) : foreach ($records as $row) :
 
     $remain = 365 - $date1->diff($date2)->format("%a days");
 
+
     $Total_Deposits = ($row->monthly_deposits * (int)$date1->diff($date2)->format("%m")) + $row->start_amount;
     $Total_Int = $Total_balance - $Total_Deposits;
 
@@ -29,13 +30,13 @@ if (isset($records)) : foreach ($records as $row) :
     <div id="desktop-content">
     <table border="1">
         <tread>
-            <tr style="background: #858bf0;">
+            <tr style="background: rgba(134, 240, 133, 0.31);">
                 <td>Initial Deposit Date</td>
                 <td>Interest Rate</td>
                 <td>Monthly Deposit</td>
                 <td>Days Till Account Maturity</td>
-                <td>Total Interest After <strong><?php echo $date1->diff($date2)->format("%m"); ?></strong> Months</td>
-                <td>Total Balance After <strong><?php echo $date1->diff($date2)->format("%m"); ?></strong> Months Of Interest</td>
+                <td>Interest After <strong><?php echo $date1->diff($date2)->format("%m"); ?></strong> Months</td>
+                <td>Balance After <strong><?php echo $date1->diff($date2)->format("%m"); ?></strong> Months</td>
             </tr>
         </tread>
         <tbody>
@@ -49,7 +50,7 @@ if (isset($records)) : foreach ($records as $row) :
         ?>
 
         <h3><?php echo $row->bank_name; ?></h3>
-        <tr style="background-color: #5eff81;">
+        <tr style="background-color: rgba(94, 101, 255, 0.29);">
 
             <td>
                 <strong><?php echo $newDate ; ?></strong>
