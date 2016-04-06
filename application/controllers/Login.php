@@ -49,7 +49,7 @@ class Login extends MY_Controller
 
             $this->session->set_userdata($data);
 
-                $this->middle = 'Home_view';
+                $this->middle = 'home_view';
                 $this->layout();
             } else {
                 echo '<script>alert("Incorrect Login Details, Please Try Again.");</script>';
