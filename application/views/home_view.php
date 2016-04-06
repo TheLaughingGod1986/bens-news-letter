@@ -12,7 +12,7 @@
 
                 <?php
                 if ($this->session->userdata('id')) { ?>
-            <h3>Welcome Back, <strong><?php echo $this->session->userdata('username'); ?></strong>!</h3>
+            <strong>Welcome Back, <?php echo $this->session->userdata('username'); ?></strong>
             <?php
             } else { ?>
                 <a class="btn btn-lg btn-primary" <?php echo anchor('login/signup', 'Sign up &raquo;'); ?> </a>
