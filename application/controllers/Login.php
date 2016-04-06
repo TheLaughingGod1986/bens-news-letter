@@ -52,9 +52,12 @@ class Login extends MY_Controller
                 $this->middle = 'member_pages/logged_in_area';
                 $this->layout();
             } else {
-                $this->middle = 'login_form';
-                $this->layout();
-                echo "Incorrect Password or Username, Please Try Again.";
+
+                $this->session->set_flashdata("message","Record Not Updated!");
+                redirect('login_form', 'refresh');
+//                $this->middle = 'login_form';
+//                $this->layout();
+//                echo "Incorrect Password or Username, Please Try Again.";
             }
         }
     }
