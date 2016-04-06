@@ -50,7 +50,7 @@ if (isset($records)) : foreach ($records as $row) :
         ?>
 
         <h3><?php echo $row->bank_name; ?></h3>
-        <tr style="background-color: rgba(94, 101, 255, 0.29);">
+        <tr style="background-color: rgba(94, 101, 255, 0.29); text-align: center;">
 
             <td>
                 <strong><?php echo $newDate ; ?></strong>
@@ -84,7 +84,7 @@ if (isset($records)) : foreach ($records as $row) :
     <div id="mobile-content">
         <table border="1">
             <tread>
-                <tr style="background: #858bf0;">
+                <tr style="background: #858bf0; text-align: center;">
                     <td>Maturity</td>
                     <td>Total</td>
                     <td>Total</td>
