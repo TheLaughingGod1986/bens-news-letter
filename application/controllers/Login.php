@@ -53,7 +53,7 @@ class Login extends MY_Controller
                 $this->layout();
             } else {
 
-                echo '<script>alert("Incorrect Login Details, Tray Again");</script>';
+//                echo '<script>alert("Incorrect Login Details, Tray Again");</script>';
 
                 echo $this->session->flashdata('message');
 //                $this->middle = 'login_form';
