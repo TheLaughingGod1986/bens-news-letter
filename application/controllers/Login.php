@@ -54,7 +54,7 @@ class Login extends MY_Controller
             } else {
 
                 $this->session->set_flashdata("message","Record Not Updated!");
-                redirect('login_form', 'refresh');
+                redirect('login', 'refresh');
 //                $this->middle = 'login_form';
 //                $this->layout();
 //                echo "Incorrect Password or Username, Please Try Again.";
