@@ -1,3 +1,3 @@
 $(function() {
-    $( "#datepicker" ).datepicker({ minDate: -20, maxDate: "+1M +10D" });
+    $( "#datepicker" ).datepicker({ minDate: -20, maxDate: "+12M" });
 });
