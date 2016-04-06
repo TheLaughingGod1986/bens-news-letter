@@ -44,8 +44,8 @@
             'placeholder' => 'Password Confirm',
         );
         echo form_input($your_username);
-        echo form_input($your_password);
-        echo form_input($your_password2);
+        echo form_password($your_password);
+        echo form_password($your_password2);
         echo form_submit('submit', 'Create Account');
 
         echo validation_errors('<p class="error"/>');
