@@ -16,7 +16,7 @@
 
 <?php
 if ($this->session->userdata('id')) {
-    echo '<div class="col-sm-2 col-md-2 sidebar">';
+    echo '<div class="col-sm-3 col-md-2 sidebar">';
     if ($left) echo $left;
     echo '</div>';
 }
