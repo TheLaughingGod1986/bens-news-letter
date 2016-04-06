@@ -53,10 +53,10 @@ class Login extends MY_Controller
                 $this->layout();
             } else {
 
-                echo '<script>alert("You Have Successfully updated this Record!");</script>';
-                redirect('login', 'refresh');
-//                $this->middle = 'login_form';
-//                $this->layout();
+                echo '<script>alert("Incorrect Login Details, Tray Again");</script>';
+
+                $this->middle = 'login_form';
+                $this->layout();
 //                echo "Incorrect Password or Username, Please Try Again.";
             }
         }
