@@ -40,11 +40,7 @@ else {
 <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
 <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
 <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
-
-<script src="http://knockoutjs.com/downloads/knockout-2.2.1.js"></script>
-<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.11/themes/base/jquery-ui.css"></script>
-
-<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+<script src="https://www.google.com/jsapi"></script>
 <script src="<?php echo base_url(); ?>js/bootstrap.min.js"></script>
 <script src="<?php echo base_url(); ?>js/main.js"></script>
 </body>
