@@ -5,12 +5,11 @@ $(function() {
         showOn: "button",
         dateFormat: 'dd-mm-yy',
         showButtonPanel: true,
-        buttonText: "Select date",
+        buttonText: "Calendar",
         inline: true
     });
     $('#datepicker').keyup(function () {
         $('#datepicker').val('');
-        $('#to').attr('disabled', 'disabled');
         alert('Please select date from Calendar');
     });
 });

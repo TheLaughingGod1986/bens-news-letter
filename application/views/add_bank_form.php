@@ -24,7 +24,6 @@
         'name' => 'start_date',
         'id' => 'datepicker',
         'size' =>  '6',
-        'readonly'=>'true',
         'placeholder' => 'date'
 
     );
