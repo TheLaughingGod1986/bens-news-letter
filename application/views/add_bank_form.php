@@ -11,9 +11,7 @@
     echo form_input('monthly_deposits', set_value('monthly_deposits', 'Monthly Deposits'));
     ?>
 
-    <label>Select Date Of First Deposit</label>
-
-    <p>(Regular Savers Only go back 365 Days)<input style="float: left" type="text" name="start_date" id="datepicker" placeholder='Date' readonly></p>
+    <p>(Regular Savers Only go back 365 Days)<input style="float: left" type="text" name="start_date" id="datepicker" placeholder='Date Of First Deposit' readonly></p>
 
     <?php echo form_submit('submit', 'Add Bank ') ?>
 </fieldset>
