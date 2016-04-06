@@ -55,6 +55,7 @@ class Login extends MY_Controller
                 echo "im sorry somthing when wrong, go back";
             }
         }
+    }
 
 
         function create_member()
@@ -84,4 +85,3 @@ class Login extends MY_Controller
         }
 
     }
-}
