@@ -7,8 +7,6 @@
 //    });
 //});
 
-
-
 ko.bindingHandlers.datepicker = {
     init: function(element, valueAccessor, allBindingsAccessor) {
 
