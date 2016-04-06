@@ -53,7 +53,7 @@ class Login extends MY_Controller
                 $this->layout();
             } else {
 
-                $this->session->set_flashdata("message","Record Not Updated!");
+                echo '<script>alert("You Have Successfully updated this Record!");</script>';
                 redirect('login', 'refresh');
 //                $this->middle = 'login_form';
 //                $this->layout();
