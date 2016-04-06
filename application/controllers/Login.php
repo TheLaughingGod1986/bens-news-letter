@@ -29,7 +29,6 @@ class Login extends MY_Controller
 
             redirect('members/index');
         } else {
-            $this->index();
             echo 'Incorrect Password or Username';
         }
     }
@@ -53,7 +52,7 @@ class Login extends MY_Controller
         $this->form_validation->set_rules('password2', 'Password Confirmation', 'trim|required|matches[password]');
 
         if ($this->form_validation->run() == FALSE) {
-            $this->middle = 'signup_form';
+            $this->middle = 'signup_form'; // return page will validation error
             $this->layout();
         } else {
             $this->load->model('members/member_model');
@@ -61,8 +60,7 @@ class Login extends MY_Controller
                 $this->middle = 'signup_successfull';
                 $this->layout();
             } else {
-                $this->middle = 'signup_form';
-                $this->layout();
+                echo "somthing went wrong";
             }
         }
     }
