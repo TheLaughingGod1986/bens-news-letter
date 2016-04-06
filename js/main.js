@@ -8,9 +8,9 @@ $(function() {
         //buttonText: "Calendar",
         //inline: true
         showOtherMonths: true,
-        changeYears: true,
-        selectOtherYears: true,
-        showOtherYears: true,
+        changeYear: true,
+        selectOtherYear: true,
+        showOtherYear: true,
         changeMonth: true,
         selectOtherMonths: true,
         required: true,
