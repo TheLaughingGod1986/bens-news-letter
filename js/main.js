@@ -2,20 +2,15 @@ $(function() {
     $( "#datepicker" ).datepicker({
         minDate: -365,
         maxDate: "+0M",
-        //showOn: "button",
         dateFormat: 'dd-mm-yy',
-        //showButtonPanel: true,
-        //buttonText: "Calendar",
-        //inline: true
         showOtherMonths: true,
-        changeYear: true,
-        selectOtherYear: true,
-        showOtherYear: true,
         changeMonth: true,
         selectOtherMonths: true,
+        showOtherYear: true,
+        changeYear: true,
+        selectOtherYear: true,
         required: true,
-        showOn: "focus",
-        numberOfMonths: 1
+        showOn: "focus"
     });
     $('#datepicker').keyup(function () {
         $('#datepicker').val('');
