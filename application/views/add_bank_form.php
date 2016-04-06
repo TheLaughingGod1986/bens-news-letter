@@ -13,11 +13,7 @@
     <label>Select Date Of First Deposit</label>
     <input type="date" data-date-format="DD MMMM YYYY" name="start_date">
 
-    <div class="input-group input-daterange">
-        <input type="text" class="form-control" value="2012-04-05">
-        <span class="input-group-addon">to</span>
-        <input type="text" class="form-control" value="2012-04-19">
-    </div>
+    <p>Date: <input type="text" id="datepicker"></p>
     <?php echo form_submit('submit', 'Add Bank ') ?>
 </fieldset>
 
