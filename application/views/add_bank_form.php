@@ -13,14 +13,10 @@
     <label>Select Date Of First Deposit</label>
     <input type="date" data-date-format="DD MMMM YYYY" name="start_date">
 
-<!--    <p>Date: <input type="text" id="datepicker" readonly='true'></p>-->
+    <p>Date: <input type="text" id="datepicker" readonly='true'></p>
     <?php echo form_submit('submit', 'Add Bank ') ?>
 
-    <div data-bind="datepicker: date, datepickerMinDate: minDate, datepickerMaxDate: maxDate"></div>
 
-    <div>
-        Date Selected: <span id="datepicker" />
-    </div>
 </fieldset>
 
 <?php echo validation_errors('<p class="error"/>'); ?>

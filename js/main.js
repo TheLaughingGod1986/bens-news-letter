@@ -1,9 +1,13 @@
 $(function() {
     $( "#datepicker" ).datepicker({ minDate: -365, maxDate: "+0M",
         showOn: "button",
-        buttonImage: "img/calendar.gif",
-        buttonImageOnly: true,
-        buttonText: "Select date"
+        dateFormat: 'dd-mm-yy',
+        //buttonImage: "img/calendar.gif",
+        showButtonPanel: true,
+        //buttonImageOnly: true,
+        buttonText: "Select date",
+        inline: true
+
     });
 });
 
