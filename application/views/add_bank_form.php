@@ -8,22 +8,26 @@
     $account_name = array(
         'name' => 'bank_name',
         'id' => 'bank_name',
-        'placeholder' => 'Select Account Name'
+        'placeholder' => 'Select Account Name',
+        'rules'   => 'required'
     );
     $account_interest = array(
         'name' => 'interest',
         'id' => 'interest',
-        'placeholder' => 'Select Interest Rate (%)'
+        'placeholder' => 'Select Interest Rate (%)',
+        'rules'   => 'required'
     );
     $account_deposits = array(
         'name' => 'monthly_deposits',
         'id' => 'monthly_deposits',
-        'placeholder' => 'Select Monthly Deposits (£)'
+        'placeholder' => 'Select Monthly Deposits (£)',
+        'rules'   => 'required'
     );
     $account_date = array(
         'name' => 'start_date',
         'id' => 'datepicker',
-        'placeholder' => 'Select Initial Deposit Date'
+        'placeholder' => 'Select Initial Deposit Date',
+        'rules'   => 'required'
 
     );
     echo form_input($account_name);
