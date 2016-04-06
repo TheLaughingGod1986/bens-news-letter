@@ -18,7 +18,7 @@ class Login extends MY_Controller
     {
         $this->session->sess_destroy();
         $this->middle = 'home_view';
-        $this->index();
+        $this->layout();
     }
 
     function validate_credentials()
