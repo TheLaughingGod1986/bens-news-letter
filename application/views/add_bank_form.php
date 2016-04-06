@@ -11,10 +11,10 @@
     ?>
 
     <label>Select Date Of First Deposit</label>
-    <input type="date" data-date-format="DD MMMM YYYY" name="start_date">
-
-    <p>Date: <input type="date" id="datepicker" ></p>
-    <?php echo form_submit('submit', 'Add Bank ') ?>
+<!--    <input type="date" data-date-format="DD MMMM YYYY" name="start_date">-->
+<!---->
+<!--    <p>Date: <input type="date" id="datepicker" ></p>-->
+<!--    --><?php //echo form_submit('submit', 'Add Bank ') ?>
 
     <div data-bind="datepicker: date, datepickerMinDate: minDate, datepickerMaxDate: maxDate"></div>
 
