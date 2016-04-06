@@ -45,7 +45,7 @@ class Login extends MY_Controller
 
         $this->form_validation->set_rules('first_name', 'Name', 'trim|required');
         $this->form_validation->set_rules('last_name', 'Last Name', 'trim|required');
-        $this->form_validation->set_rules('email_address', 'Email Address', 'trim|required|valid_email|is_unique[users.email]');
+        $this->form_validation->set_rules('email_address', 'Email Address', 'trim|required|valid_email|is_unique[membership.email_address]');
 
         $this->form_validation->set_rules('username', 'Username', 'trim|required|min_length[4]');
         $this->form_validation->set_rules('password', 'Password', 'trim|required|min_length[4]|max_length[32]');
