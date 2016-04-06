@@ -52,7 +52,9 @@ class Login extends MY_Controller
                 $this->middle = 'member_pages/logged_in_area';
                 $this->layout();
             } else {
-                echo "somthing went wrong";
+                $this->middle = 'login_form';
+                $this->layout();
+                echo "Incorrect Password or Username, Please Try Again.";
             }
         }
     }
