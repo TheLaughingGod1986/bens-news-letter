@@ -1,7 +1,7 @@
 $(function() {
     $( "#datepicker" ).datepicker({ minDate: -365, maxDate: "+0M",
         showOn: "button",
-        buttonImage: "images/calendar.gif",
+        buttonImage: "img/calendar.gif",
         buttonText: "Select date"
     });
 });
