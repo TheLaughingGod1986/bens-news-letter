@@ -10,7 +10,6 @@
         'id' => 'bank_name',
         'placeholder' => 'Select Account Name',
         'rules'   => 'required',
-        $this->form_validation->set_rules($account_name)
     );
     $account_interest = array(
         'name' => 'interest',
