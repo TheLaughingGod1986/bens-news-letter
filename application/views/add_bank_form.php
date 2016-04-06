@@ -23,8 +23,10 @@
     $account_date = array(
         'name' => 'start_date',
         'id' => 'datepicker',
-        'placeholder' => 'date',
-         'readonly'=>'true'
+        'size' =>  '6',
+        'readonly'=>'true',
+        'placeholder' => 'date'
+
     );
     echo form_input($account_name);
     echo form_input($account_interest);
