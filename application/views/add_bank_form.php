@@ -1,5 +1,7 @@
+<div id="login_form">
 <h1>Create Bank Account</h1>
-<fieldset id="login_form">
+
+<fieldset>
     <legend>Account Information</legend>
     <?php
     echo form_open('banks/create_bank');
@@ -33,3 +35,5 @@
 
     <?php echo validation_errors('<p class="error"/>'); ?>
 </fieldset>
+    </div>
+
