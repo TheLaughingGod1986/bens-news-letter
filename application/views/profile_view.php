@@ -31,12 +31,12 @@ if (isset($records)) : foreach ($records as $row) :
     <table border="1">
         <tread>
             <tr style="background: rgba(134, 240, 133, 0.31); text-align: center;">
-                <td><h3>Initial Deposit Date</h3></td>
-                <td><h3>Interest Rate</h3></td>
-                <td><h3>Monthly Deposit</h3></td>
-                <td><h3>Days Till Account Maturity</h3></td>
-                <td><h3>Interest After</h3> <strong><?php echo $date1->diff($date2)->format("%m"); ?></strong> Months</td>
-                <td><h3>Balance After</h3> <strong><?php echo $date1->diff($date2)->format("%m"); ?></strong> Months</td>
+                <td>Initial Deposit Date</td>
+                <td>Interest Rate</td>
+                <td>Monthly Deposit</td>
+                <td>Days Till Account Maturity</td>
+                <td>Interest After <strong><?php echo $date1->diff($date2)->format("%m"); ?></strong> Months</td>
+                <td>Balance After <strong><?php echo $date1->diff($date2)->format("%m"); ?></strong> Months</td>
             </tr>
         </tread>
         <tbody>
@@ -85,7 +85,7 @@ if (isset($records)) : foreach ($records as $row) :
         <table border="1">
             <tread>
                 <tr style="background: #858bf0; text-align: center;">
-                    <td><h3>>Maturity</h3></td>
+                    <td><h3>Maturity</h3></td>
                     <td><h3>Interest</h3></td>
                     <td><h3>Balance</h3></td>
                 </tr>
