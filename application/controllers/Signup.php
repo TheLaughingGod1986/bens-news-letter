@@ -1,5 +1,11 @@
 <?php
-function index()
+function signup()
+{
+    $this->middle = 'signup_form';
+    $this->layout();
+}
+
+function create_member()
 {
 $this->load->library('form_validation');
 
