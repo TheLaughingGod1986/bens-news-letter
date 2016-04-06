@@ -28,6 +28,7 @@ if (isset($records)) : foreach ($records as $row) :
     ?>
 
     <div id="desktop-content">
+        <div class="container-fluid">
         <table border="1">
             <tread>
                 <tr style="background: rgba(134, 240, 133, 0.31); text-align: center;">
@@ -79,9 +80,11 @@ if (isset($records)) : foreach ($records as $row) :
             </tr>
             </tbody>
         </table>
+            </div>
     </div>
 
     <div id="mobile-content">
+        <div class="container-fluid">
         <table border="1">
             <tread>
                 <tr style="background: #858bf0; text-align: center;">
@@ -117,15 +120,19 @@ if (isset($records)) : foreach ($records as $row) :
             </tr>
             </tbody>
         </table>
+            </div>
     </div>
 
 <?php endforeach; ?>
     <div id="mobile-content">
+        <div class="container-fluid">
         <h3>Total Savings To Date £<?php echo round($grandTotal / 2, 2, PHP_ROUND_HALF_UP); ?></h3>
         <strong>For full breakdown of your accounts please view on a Tablet or Desktop</strong>
+            </div>
     </div>
 
     <div id="desktop-content">
+        <div class="container-fluid">
         <table>
             <tbody>
             <tr>
@@ -135,6 +142,7 @@ if (isset($records)) : foreach ($records as $row) :
             </tr>
             </tbody>
         </table>
+        </div>
     </div>
 
 <?php else : ?>
