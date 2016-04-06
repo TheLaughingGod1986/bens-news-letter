@@ -28,7 +28,7 @@
     echo form_input($account_name);
     echo form_input($account_interest);
     echo form_input($account_deposits);
-    echo form_label($account_date);
+    echo form_textarea($account_date);
     ?>
 
 <!--    <p>(Regular Savers Only go back 365 Days)<input style="float: left" type="text" name="start_date" id="datepicker" placeholder='Date Of First Deposit' readonly></p>-->
