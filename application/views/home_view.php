@@ -9,7 +9,18 @@
                     can only be viewd on desktop</p>
             </div>
             <p>
-                <a class="btn btn-lg btn-primary" href="" role="signup">Sign Up &raquo;</a>
+
+                <?php
+                if ($this->session->userdata('id')) { ?>
+            <h3>Welcome Back, <strong><?php echo $this->session->userdata('username'); ?></strong>!</h3>
+            <?php
+            } else { ?>
+                <a class="btn btn-lg btn-primary" <?php echo anchor('login/signup', 'Sign up'); ?> role="signup">&raquo;</a>
+
+                <?php
+            }
+            ?>
+
             </p>
         </div>
     </div>
