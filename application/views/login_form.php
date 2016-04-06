@@ -5,7 +5,7 @@
     echo form_input('email_address', 'Email Address');
     echo form_password('password', 'Password');
     echo form_submit('submit', 'Login');
-    echo anchor('signup', 'Create Account');
+    echo anchor('login/signup', 'Create Account');
     ?>
 
     <?php echo validation_errors('<p class="error"/>'); ?>

@@ -30,7 +30,7 @@
                             <?php
                         } else { ?>
                             <li><?php echo anchor('login', 'Login'); ?></li>
-                            <li><?php echo anchor('signup', 'Sign up'); ?></li>
+                            <li><?php echo anchor('login/signup', 'Sign up'); ?></li>
 
                             <?php
                         }
@@ -50,7 +50,7 @@
                             <?php
                         } else { ?>
                             <li><?php echo anchor('login', 'Login'); ?></li>
-                            <li><?php echo anchor('sign', 'Sign up'); ?></li>
+                            <li><?php echo anchor('login/signup', 'Sign up'); ?></li>
 
                             <?php
                         }

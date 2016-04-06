@@ -1,9 +1,3 @@
-<?php
-function index()
-{
-    $this->middle = 'signup_form';
-    $this->layout();
-}
 
 function create_member()
 {

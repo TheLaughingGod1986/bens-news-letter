@@ -34,6 +34,11 @@ class Login extends MY_Controller
         }
     }
 
+    function signup()
+    {
+        $this->middle = 'signup_form';
+        $this->layout();
+    }
 
     function create_member()
     {
