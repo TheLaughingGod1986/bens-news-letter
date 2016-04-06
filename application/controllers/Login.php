@@ -10,8 +10,21 @@ class Login extends MY_Controller
 
     function validate_credentials()
     {
-        $this->load->model('members/member_model');
+
         $query = $this->member_model->validate();
+
+        $this->load->library('form_validation');
+
+        $this->form_validation->set_rules('email_address', 'email_address', 'trim|required');
+        $this->form_validation->set_rules('password', 'password', 'trim|required');
+
+        if ($this->form_validation->run() == FALSE) {
+            $this->middle = 'login_form';
+            $this->layout();
+        }
+
+        else  {
+            $this->load->model('members/member_model');
 
         if ($query) // if user cred validate the user session start
         {
@@ -29,8 +42,7 @@ class Login extends MY_Controller
 
             redirect('members/index');
         } else {
-            $this->middle = 'login_form';
-            $this->layout();
+            echo "im sorry somthing when wrong, go back";
         }
     }
 
