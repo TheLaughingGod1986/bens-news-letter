@@ -1,5 +1,5 @@
 <?php
-function signup()
+function index()
 {
     $this->middle = 'signup_form';
     $this->layout();
