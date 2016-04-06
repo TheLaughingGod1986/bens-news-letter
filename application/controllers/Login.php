@@ -39,6 +39,19 @@ class Login extends MY_Controller
         else {
             $this->load->model('members/member_model');
             if ($query = $this->member_model->validate()) {
+
+                $data = array(
+                'username' => $query->username,
+                'id' => $query->id,
+                'password' => $query->password,
+                'first_name' => $query->first_name,
+                'last_name' => $query->last_name,
+                'email_address' => $query->email_address,
+                'is_logged_in' => true
+            );
+
+            $this->session->set_userdata($data);
+
                 $this->middle = 'member_pages/logged_in_area';
                 $this->layout();
             } else {
