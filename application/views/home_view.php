@@ -54,7 +54,7 @@
                 You can use us on any devise be it your tablet, your smart phone or on your desktop.
                 We give different information depending on what device you are viewing on !
             </p>
-        </div>
+
         <p>
             <?php
             if ($this->session->userdata('id')) { ?>
@@ -66,6 +66,7 @@
             }
             ?>
         </p>
+    </div>
     </div>
     <div id="mobile-content">
         <h1> Welcome to Servare</h1>
