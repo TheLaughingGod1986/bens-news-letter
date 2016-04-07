@@ -1,7 +1,7 @@
-<div id="login_form">
     <div class="container-fluid">
-        <h1>Create an Account</h1>
-
+        <h2>Sign Up Now!</h2>
+        <hr>
+        <div id="login_form">
 
         <?php
         echo form_open('login/create_member');

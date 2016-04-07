@@ -1,6 +1,7 @@
-<div id="login_form">
-    <div class="container-fluid">
-        <h1>login to this page</h1>
+<div class="container-fluid">
+    <h2>Log In Now!</h2>
+    <hr>
+    <div id="login_form">
         <?php
         echo form_open('login/validate_credentials');
         $email_addresse = array(
