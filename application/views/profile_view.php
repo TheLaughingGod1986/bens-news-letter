@@ -62,9 +62,12 @@
         <table class="table table-hover">
             <thead>
             <tr>
-                <th>Account Name</th>
-                <th>Current Interest</th>
-                <th>Current Balance</th>
+                <td>Initial Deposit Date</td>
+                <td>Interest Rate</td>
+                <td>Monthly Deposit</td>
+                <td>Days Till Account Maturity</td>
+<!--                <td>Interest After <strong>--><?php //echo $date1->diff($date2)->format("%m"); ?><!--</strong> Months</td>-->
+<!--                <td>Balance After <strong>--><?php //echo $date1->diff($date2)->format("%m"); ?><!--</strong> Months</td>-->
             </tr>
             </thead>
 
@@ -120,9 +123,9 @@
                 <td>Initial Deposit Date</td>
                 <td>Interest Rate</td>
                 <td>Monthly Deposit</td>
-                <td>Days Till Account Maturity</td>
-                <td>Interest After <strong><?php echo $date1->diff($date2)->format("%m"); ?></strong> Months</td>
-                <td>Balance After <strong><?php echo $date1->diff($date2)->format("%m"); ?></strong> Months</td>
+<!--                <td>Days Till Account Maturity</td>-->
+<!--                <td>Interest After <strong>--><?php //echo $date1->diff($date2)->format("%m"); ?><!--</strong> Months</td>-->
+<!--                <td>Balance After <strong>--><?php //echo $date1->diff($date2)->format("%m"); ?><!--</strong> Months</td>-->
             </tr>
             </thead>
 
