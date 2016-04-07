@@ -3,7 +3,15 @@
     <hr>
     <div id="desktop-content">
         <div class="col-sm-7">
-   here img
+            <?php
+            $this->load->helper('html');
+            $img = base_url('img/Servare.png');
+            $path = 'home';
+            ?>
+            <div class="logo-img">
+                <?php
+                echo anchor($path, img($img));
+                ?>
             </div>
 
             <div class="col-sm-4">
