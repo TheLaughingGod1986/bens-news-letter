@@ -74,9 +74,9 @@
 
             <?php if (isset($records)) : foreach ($records as $row) : ?>
                 <tr>
-                    <td>ij</td>
-                    <td>in</td>
-                    <td>p</td>
+                    <td><?php echo $row->bank_name; ?></td>
+                    <td>i</td>
+                    <td>k</td>
                 </tr>
             <?php endforeach; ?>
             </tbody>
