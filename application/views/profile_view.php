@@ -52,8 +52,7 @@
                     </tread>
                     <tbody>
             <?php
-            endforeach;
-            endif;
+
             if (isset($records)) :
             foreach ($records as $row) :
                 ?>
@@ -68,7 +67,10 @@
                     </tbody>
                 </table>
             </div>
-        <?php endforeach; ?>
+        <?php
+            endforeach;
+            endif;
+        endforeach; ?>
     <?php endif; ?>
     <!--///////////////////////////////// DESKTOP VIEW END /////////////////////////////////-->
     <!--///////////////////////////////// MOBILE VIEW START /////////////////////////////////-->
