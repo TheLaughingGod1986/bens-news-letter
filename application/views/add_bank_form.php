@@ -44,7 +44,6 @@
                 'id' => 'datepicker',
                 'placeholder' => 'Select Initial Deposit Date',
             );
-            echo " <legend>Personal Details</legend>";
             echo form_input($account_name);
             echo form_input($account_interest);
             echo form_input($account_deposits);
