@@ -48,7 +48,7 @@
                 </tread>
                 <tbody>
 
-                <h3><?php echo $row->bank_name; ?></h3>
+                <h3>Account: <?php echo $row->bank_name; ?></h3>
                 <tr style="background-color: rgba(94, 101, 255, 0.29); text-align: center;">
                     <td>
                         <strong><?php echo $newDate; ?></strong>
@@ -72,7 +72,7 @@
                 </tbody>
             </table>
 
-        <?php endforeach; ?>
+
 
     </div>
 
@@ -86,6 +86,7 @@
 <!--                <td><h3>Balance<br>(Total)</h3></td>-->
 <!--            </tr>-->
 <!--        </table>-->
+    <h3>Account: <?php echo $row->bank_name; ?></h3>
     <table class="table table-hover">
         <thead>
         <tr>
@@ -111,7 +112,7 @@
     </table>
 
 </div>
-
+    <?php endforeach; ?>
 
                 <h3>Total Savings To Date £<?php echo round($grandTotal, 2, PHP_ROUND_HALF_UP); ?></h3>
 
