@@ -73,6 +73,7 @@
             </table>
         <h3>Total Savings To Date £<?php echo round($grandTotal, 2, PHP_ROUND_HALF_UP); ?></h3>
     </div>
+    </div>
     <?php endforeach; ?>
 <!--    MOBILE VIEW START-->
 
@@ -87,4 +88,3 @@
             <h3>You Have No Accounts</h3>
             <h4>Why No Add A Account?</h4>
         <?php endif; ?>
-</div>
