@@ -1,7 +1,7 @@
 <div class="container-fluid">
     <h2>Add A Regular Savings Account</h2>
     <hr>
-    <div class="col-sm-8">
+    <div class="col-sm-7">
         <h2 class="no-margin-top">Regular savings accounts</h2>
 
         <p>A regular savings account is an account whereby interest in compounded monthly and released on account
@@ -11,7 +11,7 @@
             Due to this fact most people set up a standing order for 12 months.</p>
 
         <p>Because on the maximum deposit most people will, if they can afford it, set up many regular savings accounts
-            with different banks, that's where our system comes in handy, you can track your grand total balance, keep a
+            with different banks, that's where our system comes in handy, you can track your grand total balance, keep an
             eye on how long till the account matures and how much interest would have accumulated at the current
             time.</p>
 
