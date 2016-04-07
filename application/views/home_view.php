@@ -12,11 +12,10 @@
                 <?php
             } else { ?>
                 <p>
-                    Welcome to <strong>Servare</strong> A useful tool to help you keep track of your savings accounts no
-                    matter what bank all under one roof.
+                    Welcome to <strong>Servare</strong> A useful tool to help you keep track of all your savings accounts all under one roof.
                 </p>
                 <p>We are very secure due to the fact that we do not ask for any of your account numbers or details.
-                    all we need is your monthly deposits, how much interest you get, the date of your first
+                    All we need is your monthly deposits, how much interest you get, the date of your first
                     deposit and for you to name the account <em>(this could be Big Bobs Savings)</em>. Once we have these you can
                     track the growth of the account, the total interest earned and how long you have left to account
                     maturity.
