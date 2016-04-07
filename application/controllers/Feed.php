@@ -5,7 +5,7 @@ class Feed extends CI_Controller {
         //load xml helper and text helper
         $this->load->helper(array('xml'));
         // load the models
-        $this->load->model('feed_model');
+        $this->load->model('rss_model');
     }
     public function index()
     {
