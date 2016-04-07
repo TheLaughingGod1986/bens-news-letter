@@ -1,7 +1,6 @@
-<div class="container-fluid">
+<!--<div class="container-fluid">-->
     <h2>Account Overview</h2>
     <hr>
-    <div id="desktop-content">
         <?php $grandTotal = 0; ?>
         <?php
         if (isset($records)) :
@@ -34,6 +33,7 @@
             // Add row total to grand total
             $grandTotal += $rowTotal;
             ?>
+            <div id="desktop-content">
     <h3>Account: <?php echo $row->bank_name; ?></h3>
             <table border="1">
                 <tread>
@@ -60,7 +60,7 @@
     </div>
     <?php endforeach; ?>
     <h3>Total Savings To Date £<?php echo round($grandTotal, 2, PHP_ROUND_HALF_UP); ?></h3>
-</div>
+<!--</div>-->
 <!--    MOBILE VIEW START-->
 <!--    <strong id="mobile-content">For full breakdown of your accounts please view on a Tablet or Desktop</strong>-->
 
