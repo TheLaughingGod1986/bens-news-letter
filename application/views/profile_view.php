@@ -79,25 +79,42 @@
 <!--    MOBILE VIEW START-->
 
 <div id="mobile-content">
-    <table border="1">
-            <tr style="background: #858bf0; text-align: center;">
-                <td><h3>Maturity</h3></td>
-                <td><h3>Interest<br>(Total)</h3></td>
-                <td><h3>Balance<br>(Total)</h3></td>
-            </tr>
-        </table>
-
-</div>
-
-    <table>
+<!--    <table border="1">-->
+<!--            <tr style="background: #858bf0; text-align: center;">-->
+<!--                <td><h3>Maturity</h3></td>-->
+<!--                <td><h3>Interest<br>(Total)</h3></td>-->
+<!--                <td><h3>Balance<br>(Total)</h3></td>-->
+<!--            </tr>-->
+<!--        </table>-->
+    <table class="table table-hover">
+        <thead>
+        <tr>
+            <th>Maturity</th>
+            <th>Interest</th>
+            <th>Balance</th>
+        </tr>
+        </thead>
         <tbody>
         <tr>
-            <td>
-                <h3>Total Savings To Date £<?php echo round($grandTotal, 2, PHP_ROUND_HALF_UP); ?></h3>
-            </td>
+            <td><?php echo $remain; ?></td>
+
+        </tr>
+        <tr>
+            <td>£<?php echo round($Total_Int, 2, PHP_ROUND_HALF_UP); ?></td>
+
+        </tr>
+        <tr>
+            <td>£<?php echo round($Total_balance, 2, PHP_ROUND_HALF_UP); ?></td>
+
         </tr>
         </tbody>
     </table>
+
+</div>
+
+
+                <h3>Total Savings To Date £<?php echo round($grandTotal, 2, PHP_ROUND_HALF_UP); ?></h3>
+
 
     <strong id="mobile-content">For full breakdown of your accounts please view on a Tablet or Desktop</strong>
 
