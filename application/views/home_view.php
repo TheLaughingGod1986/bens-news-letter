@@ -1,9 +1,9 @@
 <!--<div id="desktop-content">-->
 <div class="container-fluid">
+    <div id="desktop-content">
     <div class="jumbotron">
         <h1>Servare</h1>
 
-        <div id="desktop-content">
             <?php
             if ($this->session->userdata('id')) { ?>
                 <p>
