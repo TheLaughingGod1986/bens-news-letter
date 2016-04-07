@@ -52,9 +52,6 @@
                     </tread>
                     <tbody>
             <?php
-
-            if (isset($records)) :
-            foreach ($records as $row) :
                 ?>
                     <tr style="background-color: rgba(94, 101, 255, 0.29); text-align: center;">
                         <td><strong><?php echo $newDate; ?></strong></td>
@@ -68,10 +65,8 @@
                 </table>
             </div>
         <?php
-            endforeach;
-            endif;
-        endforeach; ?>
-    <?php endif; ?>
+        endforeach;
+    endif; ?>
     <!--///////////////////////////////// DESKTOP VIEW END /////////////////////////////////-->
     <!--///////////////////////////////// MOBILE VIEW START /////////////////////////////////-->
     <div id="mobile-content">
