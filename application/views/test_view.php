@@ -22,8 +22,8 @@
                 <td>Days Till Account Maturity</td>
                 <td>Interest After <strong><?php echo $date1->diff($date2)->format("%m"); ?></strong> Months
                 </td>
-<!--                <td>Balance After <strong>--><?php //echo $date1->diff($date2)->format("%m"); ?><!--</strong> Months-->
-<!--                </td>-->
+                <td>Balance After <strong><?php echo $date1->diff($date2)->format("%m"); ?></strong> Months
+                </td>
             </tr>
             </thead>
             <tbody>
