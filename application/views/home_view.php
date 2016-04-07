@@ -109,12 +109,11 @@
         </div>
         <div class="col-lg-4">
             <h2>Add New Accounts</h2>
-            <p>Within this section we give you the ability to add as manny savings accounts as you have*. As soon as you
+            <p>Within this section we give you the ability to add as manny savings accounts as you have*<span>*(At the moment we only offer Regular Savings Accounts)</span>. As soon as you
                 add a new account <strong>your dashboard</strong> and <strong>account overview</strong> are dynamical
                 updated without you doing a thing, how cool is that ! </p>
             <p>
-                <span>* At the moment we only offer Regular Savings Accounts</span>
-                <?php
+                                <?php
                 if ($this->session->userdata('id')) { ?>
                     <a class="btn btn-lg btn-primary" <?php echo anchor('banks', 'Add Regular Savings &raquo;'); ?> </a>
                     <?php
