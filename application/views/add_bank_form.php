@@ -1,7 +1,7 @@
 <div class="container-fluid">
     <h2>Add A Regular Savings Account</h2>
     <hr>
-    <div class="col-sm-6">
+    <div class="col-sm-8">
         <h2 class="no-margin-top">Regular savings accounts</h2>
 
         <p>A regular savings account is an account whereby interest in compounded monthly and released on account
@@ -18,7 +18,7 @@
         <p>When you add an account with us all you need to do is add an account name, interest rate, monthly deposit and
             the first deposit date, we do all the maths for you, how good is that !</p>
     </div>
-    <div class="col-sm-6">
+    <div class="col-sm-4">
         <div id="login_form">
             <legend>Account Information</legend>
             <?php
