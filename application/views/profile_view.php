@@ -76,8 +76,7 @@
 <!--    MOBILE VIEW START-->
 
 <div id="mobile-content">
-
-    <h3>Account: <?php echo $row->bank_name; ?></h3>
+    
 
 </div>
 
