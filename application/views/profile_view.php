@@ -58,8 +58,6 @@
                 </tbody>
             </table>
     </div>
-    <?php endforeach; ?>
-
 
 <!--    MOBILE VIEW START-->
             <div id="mobile-content">
@@ -73,7 +71,7 @@
                     </thead>
                     <tbody>
                     <tr>
-                        <td>John</td>
+                        <td><?php echo $row->bank_name; ?></td>
                         <td>Doe</td>
                         <td>john@example.com</td>
                     </tr>
@@ -90,7 +88,7 @@
                     </tbody>
                 </table>
             </div>
-
+        <?php endforeach; ?>
             <h3>Total Savings To Date <strong>£<?php echo round($grandTotal, 2, PHP_ROUND_HALF_UP); ?></strong></h3>
             <strong id="mobile-content">For full breakdown of your accounts please view on a Tablet or Desktop</strong>
 
