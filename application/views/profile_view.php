@@ -4,7 +4,7 @@
         <?php $grandTotal = 0; ?>
         <?php
         if (isset($records)) :
-        foreach ($records as $row) :
+//        foreach ($records as $row) :
 
             $join_date = $row->start_date;
             $date1 = new DateTime('now');
@@ -60,29 +60,30 @@
     </div>
 
 <!--    MOBILE VIEW START-->
-            <div id="mobile-content">
-                <table class="table table-hover">
-                    <thead>
-                    <tr>
-                        <th>Account Name</th>
-                        <th>Start Date</th>
-                        <th>Email</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <td><?php echo $row->bank_name; ?></td>
-                    </tr>
-                    <tr>
-                        <td>Mary</td>
-                    </tr>
-                    <tr>
-                        <td>July</td>
-                    </tr>
-                    </tbody>
-                </table>
-            </div>
-        <?php endforeach; ?>
+
+    <div id="mobile-content">
+        <table class="table table-hover">
+            <thead>
+            <tr>
+                <th>Account Name</th>
+                <th>Balance</th>
+                <th>Start Date</th>
+            </tr>
+            </thead>
+
+            <tbody>
+
+            <?php if (isset($records)) : foreach ($records as $row) : ?>
+                <tr>
+                    <td><?php echo $row->bank_name; ?></td>
+                    <td><?php echo $row->bank_balance; ?></td>
+                    <td><?php echo $row->bank_start_date; ?></td>
+                </tr>
+            <?php endforeach; ?>
+            </tbody>
+        </table>
+    </div>
+
             <h3>Total Savings To Date <strong>£<?php echo round($grandTotal, 2, PHP_ROUND_HALF_UP); ?></strong></h3>
             <strong id="mobile-content">For full breakdown of your accounts please view on a Tablet or Desktop</strong>
 
@@ -91,3 +92,4 @@
             <h4>Why No Add A Account?</h4>
         <?php endif; ?>
 </div>
+<?php endif; ?>
