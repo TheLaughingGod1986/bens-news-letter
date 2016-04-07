@@ -12,6 +12,7 @@
                 echo anchor($path, img($img));
                 ?>
             </div>
+            </div>
 
             <div id="login_form" class="col-sm-4">
                 <?php
@@ -61,6 +62,5 @@
                 echo validation_errors('<p class="error"/>');
                 ?>
             </div>
-               
+
     </div>
-</div>
