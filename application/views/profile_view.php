@@ -83,13 +83,13 @@
             </tread>
             <tbody>
 
-            <?php
-            // Add field values to get row total
-            $rowTotal = $Total_balance;
-
-            // Add row total to grand total
-            $grandTotal += $rowTotal;
-            ?>
+<!--            --><?php
+//            // Add field values to get row total
+//            $rowTotal = $Total_balance;
+//
+//            // Add row total to grand total
+//            $grandTotal += $rowTotal;
+//            ?>
 
             <h3><?php echo $row->bank_name; ?></h3>
             <tr style="background-color: #5eff81; text-align: center;">
