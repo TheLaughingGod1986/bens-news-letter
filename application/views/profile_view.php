@@ -2,7 +2,6 @@
 <hr>
 <div id="desktop-content">
     <div class="container-fluid">
-
 <?php $grandTotal = 0; ?>
 <?php
 if (isset($records)) :
@@ -32,7 +31,6 @@ foreach ($records as $row) :
     $originalDate = $row->start_date;
     $newDate = date("jS \of F Y", strtotime($originalDate));
     ?>
-
             <table border="1">
                 <tread>
                     <tr style="background: rgba(134, 240, 133, 0.31); text-align: center;">
