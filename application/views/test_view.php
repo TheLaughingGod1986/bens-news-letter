@@ -6,10 +6,14 @@
         <table class="table table-striped">
             <thead>
             <tr>
-                <th>Account Name</th>
-                <th>Current Interest</th>
-                <th>Current Balance</th>
-                <th>Days Left</th>
+                <td>Initial Deposit Date</td>
+                <td>Interest Rate</td>
+                <td>Monthly Deposit</td>
+                <td>Days Till Account Maturity</td>
+<!--                <td>Interest After <strong>--><?php //echo $date1->diff($date2)->format("%m"); ?><!--</strong> Months-->
+<!--                </td>-->
+<!--                <td>Balance After <strong>--><?php //echo $date1->diff($date2)->format("%m"); ?><!--</strong> Months-->
+<!--                </td>-->
             </tr>
             </thead>
             <tbody>
@@ -53,7 +57,7 @@
         </table>
 
 <!--///////////////////////////////// MOBILE VIEW END /////////////////////////////////-->
-    <h3>Total Savings To Date <strong>£<?php echo round($grandTotal / 2, 2, PHP_ROUND_HALF_UP); ?></strong></h3>
+    <h3>Total Savings To Date <strong>£<?php echo round($grandTotal , 2, PHP_ROUND_HALF_UP); ?></strong></h3>
     <strong id="mobile-content">For full breakdown of your accounts please view on a Tablet or Desktop</strong>
 <?php else : ?>
     <h3>You Have No Accounts</h3>
