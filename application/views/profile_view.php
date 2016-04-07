@@ -72,6 +72,7 @@
                 <th>Account Name</th>
                 <th>Current Interest</th>
                 <th>Current Balance</th>
+                <th>Time Left</th>
             </tr>
             </thead>
             <tbody>
@@ -108,6 +109,7 @@
                     <td><?php echo $row->bank_name; ?></td>
                     <td>£<?php echo round($Total_Int, 2, PHP_ROUND_HALF_UP); ?></td>
                     <td>£<?php echo round($Total_balance, 2, PHP_ROUND_HALF_UP); ?></td>
+                    <td><?php echo $remain; ?></td>
                 </tr>
             <?php endforeach; ?>
             </tbody>
