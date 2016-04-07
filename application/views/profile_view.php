@@ -80,7 +80,7 @@
                 <tr>
                     <td><?php echo $row->bank_name; ?></td>
                     <td>l</td>
-                    <td>k</td>
+                    <td><?php echo round($Total_balance, 2, PHP_ROUND_HALF_UP); ?></td>
                 </tr>
             <?php endforeach; ?>
             </tbody>
