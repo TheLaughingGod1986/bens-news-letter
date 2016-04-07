@@ -76,14 +76,9 @@
 <!--    MOBILE VIEW START-->
 
 <div id="mobile-content">
-<!--    <table border="1">-->
-<!--            <tr style="background: #858bf0; text-align: center;">-->
-<!--                <td><h3>Maturity</h3></td>-->
-<!--                <td><h3>Interest<br>(Total)</h3></td>-->
-<!--                <td><h3>Balance<br>(Total)</h3></td>-->
-<!--            </tr>-->
-<!--        </table>-->
+
     <h3>Account: <?php echo $row->bank_name; ?></h3>
+
     <table class="table table-hover">
         <thead>
         <tr>
@@ -94,15 +89,15 @@
         </thead>
         <tbody>
         <tr>
-            <td><?php echo $remain; ?></td>
+<!--            <td>--><?php //echo $remain; ?><!--</td>-->
 
         </tr>
         <tr>
-            <td>£<?php echo round($Total_Int, 2, PHP_ROUND_HALF_UP); ?></td>
+<!--            <td>£--><?php //echo round($Total_Int, 2, PHP_ROUND_HALF_UP); ?><!--</td>-->
 
         </tr>
         <tr>
-            <td>£<?php echo round($Total_balance, 2, PHP_ROUND_HALF_UP); ?></td>
+<!--            <td>£--><?php //echo round($Total_balance, 2, PHP_ROUND_HALF_UP); ?><!--</td>-->
 
         </tr>
         </tbody>
