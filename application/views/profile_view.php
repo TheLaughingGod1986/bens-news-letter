@@ -3,7 +3,7 @@
     <hr>
         <?php $grandTotal = 0; ?>
         <?php
-        if (isset($records)) :
+//        if (isset($records)) :
 //        foreach ($records as $row) :
 
             $join_date = $row->start_date;
@@ -90,7 +90,7 @@
         <?php else : ?>
             <h3>You Have No Accounts</h3>
             <h4>Why No Add A Account?</h4>
-        <?php endif; ?>
+<!--        --><?php //endif; ?>
         <?php endif; ?>
 </div>
 <?php //endforeach; ?>
