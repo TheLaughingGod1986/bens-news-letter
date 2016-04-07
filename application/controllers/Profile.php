@@ -22,6 +22,21 @@ class Profile extends MY_Controller
         $this->layout();
     }
 
+    function test()
+    {
+        $data = array();
+        $this->load->model('user_profile/profiles_model');
+        $query = $this->profiles_model->get_bank();
+
+        if (!empty($query)) {
+            $data['records'] = $query;
+        }
+
+        $this->template['middle'] = $this->load->view ($this->middle = 'test_view',$data, true);
+        $this->layout();
+    }
+
+
     public function account_data()
     {
         $string = trim($this->input->get_post('term'));
