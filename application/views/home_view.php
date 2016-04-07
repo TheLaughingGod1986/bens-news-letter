@@ -15,8 +15,8 @@
             <strong>Welcome Back, <?php echo $this->session->userdata('username'); ?></strong>
             <?php
             } else {
-               echo "<a class='btn btn-lg btn-primary'  echo anchor('login/signup', 'Sign up &raquo;'); ?> </a>";
-                    
+               echo '<a class="btn btn-lg btn-primary"  echo anchor("login/signup", "Sign up &raquo;"); ?> </a>';
+
             }
             ?>
 
