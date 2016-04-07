@@ -4,10 +4,15 @@
         <h1>Servare</h1>
 
         <div id="desktop-content">
-            <span>Tool to help you save</span>
-            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris
-                condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis
-                euismod. Donec sed odio dui. </p>
+            <p>
+                Welcome to <strong>Servare</strong> A useful tool to help you keep track of your savings accounts no matter what bank all under one roof.
+            </p>
+            <h2>
+                Security
+            </h2>
+            <p>We are very secure .....</p>
+            <h2>ease of use</h2>
+            <p>easy to use ...</p>
         </div>
         <p>
 
