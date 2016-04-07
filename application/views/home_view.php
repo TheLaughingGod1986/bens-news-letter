@@ -12,11 +12,13 @@
                 <?php
             } else { ?>
                 <p>
-                    Welcome to <strong>Servare</strong> A useful tool to help you keep track of all your savings accounts all under one roof.
+                    Welcome to <strong>Servare</strong> A useful tool to help you keep track of all your savings
+                    accounts all under one roof.
                 </p>
                 <p>We are very secure due to the fact that we do not ask for any of your account numbers or details.
                     All we need is your monthly deposits, how much interest you get, the date of your first
-                    deposit and for you to name the account <em>(this could be Big Bobs Savings)</em>. Once we have these you can
+                    deposit and for you to name the account <em>(this could be Big Bobs Savings)</em>. Once we have
+                    these you can
                     track the growth of the account, the total interest earned and how long you have left to account
                     maturity.
                 </p>
@@ -70,9 +72,10 @@
     <div class="row">
         <div class="col-lg-4">
             <h2>My Dashboard</h2>
-            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris
-                condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis
-                euismod. Donec sed odio dui. </p>
+            <p>Use <strong>your dashboard</strong> to see an overview of all your personal information and total
+                balance.
+                within <strong>your dashboard</strong> you can also edit your personal information.
+            </p>
             <p>
                 <?php
                 if ($this->session->userdata('id')) { ?>
@@ -87,9 +90,10 @@
         </div>
         <div class="col-lg-4">
             <h2>Accounts Overview</h2>
-            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris
-                condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis
-                euismod. Donec sed odio dui. </p>
+            <p>In <strong>accounts overview</strong> we show you all the information about your accounts. we show you
+                your total interest so far, your interest rate, your account balance so far, when you made your first
+                deposit, how much you deposit each month and how long till account maturity as well as plenty of other
+                cool stuff.</p>
             <p>
                 <?php
                 if ($this->session->userdata('id')) { ?>
@@ -105,10 +109,11 @@
         </div>
         <div class="col-lg-4">
             <h2>Add New Accounts</h2>
-            <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula
-                porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut
-                fermentum massa.</p>
+            <p>Within this section we give you the ability to add as manny savings accounts as you have*. As soon as you
+                add a new account <strong>your dashboard</strong> and <strong>account overview</strong> are dynamical
+                updated without you doing a thing, how cool is that ! </p>
             <p>
+                <span>* At the moment we only offer Regular Savings Accounts</span>
                 <?php
                 if ($this->session->userdata('id')) { ?>
                     <a class="btn btn-lg btn-primary" <?php echo anchor('banks', 'Add Regular Savings &raquo;'); ?> </a>
