@@ -34,6 +34,7 @@
             // Add row total to grand total
             $grandTotal += $rowTotal;
             ?>
+    <h3>Account: <?php echo $row->bank_name; ?></h3>
             <table border="1">
                 <tread>
                     <tr style="background: rgba(134, 240, 133, 0.31); text-align: center;">
@@ -41,51 +42,29 @@
                         <td>Interest Rate</td>
                         <td>Monthly Deposit</td>
                         <td>Days Till Account Maturity</td>
-                        <td>Interest After <strong><?php echo $date1->diff($date2)->format("%m"); ?></strong> Months
-                        </td>
+                        <td>Interest After <strong><?php echo $date1->diff($date2)->format("%m"); ?></strong> Months</td>
                         <td>Balance After <strong><?php echo $date1->diff($date2)->format("%m"); ?></strong> Months</td>
                     </tr>
                 </tread>
                 <tbody>
-
-                <h3>Account: <?php echo $row->bank_name; ?></h3>
                 <tr style="background-color: rgba(94, 101, 255, 0.29); text-align: center;">
-                    <td>
-                        <strong><?php echo $newDate; ?></strong>
-                    </td>
-                    <td>
-                        <strong><?php echo $row->interest * 100; ?>%</strong> Interest
-                    </td>
-                    <td>
-                        <strong>£<?php echo $row->monthly_deposits; ?></strong> (PCM)
-                    </td>
-                    <td>
-                        <strong><?php echo $remain; ?></strong> Days Left
-                    </td>
-                    <td>
-                        <strong>£<?php echo round($Total_Int, 2, PHP_ROUND_HALF_UP); ?></strong> Interest
-                    </td>
-                    <td>
-                        <strong>£<?php echo round($Total_balance, 2, PHP_ROUND_HALF_UP); ?></strong>
-                    </td>
+                    <td><strong><?php echo $newDate; ?></strong></td>
+                    <td><strong><?php echo $row->interest * 100; ?>%</strong> Interest</td>
+                    <td><strong>£<?php echo $row->monthly_deposits; ?></strong> (PCM)</td>
+                    <td><strong><?php echo $remain; ?></strong> Days Left</td>
+                    <td><strong>£<?php echo round($Total_Int, 2, PHP_ROUND_HALF_UP); ?></strong> Interest</td>
+                    <td><strong>£<?php echo round($Total_balance, 2, PHP_ROUND_HALF_UP); ?></strong></td>
                 </tr>
                 </tbody>
             </table>
-</div>
     </div>
     <?php endforeach; ?>
     <h3>Total Savings To Date £<?php echo round($grandTotal, 2, PHP_ROUND_HALF_UP); ?></h3>
+</div>
 <!--    MOBILE VIEW START-->
-
-
-
-
-
-
-    <strong id="mobile-content">For full breakdown of your accounts please view on a Tablet or Desktop</strong>
+<!--    <strong id="mobile-content">For full breakdown of your accounts please view on a Tablet or Desktop</strong>-->
 
         <?php else : ?>
             <h3>You Have No Accounts</h3>
             <h4>Why No Add A Account?</h4>
         <?php endif; ?>
-</div>
