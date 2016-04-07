@@ -1,7 +1,7 @@
-    <div class="coInformationuid">
-        <h2>Sign Up Now!</h2>
-        <hr>
-        <div id="login_form">
+<div class="coInformationuid">
+    <h2>Sign Up Now!</h2>
+    <hr>
+    <div id="login_form">
 
         <?php
         echo form_open('login/create_member');
@@ -20,7 +20,7 @@
             'id' => 'username',
             'placeholder' => 'Your Username',
         );
-        echo " <legend>Personal Details</legend>";
+        echo "<legend>Personal Details</legend>";
         echo form_input($your_f_name);
         echo form_input($your_s_name);
         echo form_input($your_username);
