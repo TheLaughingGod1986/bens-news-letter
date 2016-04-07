@@ -7,11 +7,9 @@
             <p>
                 Welcome to <strong>Servare</strong> A useful tool to help you keep track of your savings accounts no matter what bank all under one roof.
             </p>
-            <h2>
-                Security
-            </h2>
+
             <p>We are very secure .....</p>
-            <h2>ease of use</h2>
+
             <p>easy to use ...</p>
         </div>
         <p>
