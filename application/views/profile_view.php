@@ -120,7 +120,7 @@ foreach ($records as $row) :
             </tr>
             </tbody>
         </table>
-
+    </div>
 
 <?php endforeach; ?>
 <div id="mobile-content">
@@ -145,4 +145,4 @@ foreach ($records as $row) :
         <h4>Why No Add A Account?</h4>
     <?php endif; ?>
 
-</div>
+
