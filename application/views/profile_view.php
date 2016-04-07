@@ -78,7 +78,7 @@
             <tbody>
             <tr>
                 <td>
-                    <h3>Total Savings To Date £<?php echo round($grandTotal / 2, 2, PHP_ROUND_HALF_UP); ?></h3>
+                    <h3>Total Savings To Date £<?php echo round($grandTotal , 2, PHP_ROUND_HALF_UP); ?></h3>
                 </td>
             </tr>
             </tbody>
