@@ -169,3 +169,8 @@
 /*@media screen and (min-width: 1025px) {*/
     /*#desktop-content { display: block; }   !* show it elsewhere *!*/
 /*}*/
+
+.no-margin-top
+{
+    margin-top: 0 !important;
+}
