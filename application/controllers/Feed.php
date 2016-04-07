@@ -22,7 +22,7 @@ class Feed extends CI_Controller {
         // set author email
         $this->data['creator_email'] = 'arjunphp@gmail.com';
         // get the feeds  from database through model method called get_feeds()
-        $this->data['query'] = $this->feed_model->get_feeds();
+        $this->data['query'] = $this->rss_model->get_feeds();
         // this line is very important, this will let browser to display XML format output
         header("Content-Type: application/rss+xml");
         $this->load->view('feed_view',$this->data);
