@@ -1,3 +1,4 @@
+<div class="container-fluid">
 <h2>Account Overview</h2>
 <hr>
 <div id="desktop-content">
@@ -15,20 +16,23 @@ foreach ($records as $row) :
     $c = 12; // compound frequency set to monthly
     $n = ((int)$date1->diff($date2)->format("%m")) / 12;
     $r = $row->monthly_deposits;
-
     $x = $i / $c;
     $y = pow((1 + $x), ($n * $c));
-
     $Total_balance = $p * $y + ($r * (1 + $x) * ($y - 1) / $x);
 
     $remain = 365 - $date1->diff($date2)->format("%a days");
-
 
     $Total_Deposits = ($row->monthly_deposits * (int)$date1->diff($date2)->format("%m")) + $row->start_amount;
     $Total_Int = $Total_balance - $Total_Deposits;
 
     $originalDate = $row->start_date;
     $newDate = date("jS \of F Y", strtotime($originalDate));
+
+// Add field values to get row total
+$rowTotal = $Total_balance;
+
+// Add row total to grand total
+$grandTotal += $rowTotal;
     ?>
             <table border="1">
                 <tread>
@@ -37,20 +41,19 @@ foreach ($records as $row) :
                         <td>Interest Rate</td>
                         <td>Monthly Deposit</td>
                         <td>Days Till Account Maturity</td>
-                        <td>Interest After <strong><?php echo $date1->diff($date2)->format("%m"); ?></strong> Months
-                        </td>
+                        <td>Interest After <strong><?php echo $date1->diff($date2)->format("%m"); ?></strong> Months</td>
                         <td>Balance After <strong><?php echo $date1->diff($date2)->format("%m"); ?></strong> Months</td>
                     </tr>
                 </tread>
                 <tbody>
 
-                <?php
-                // Add field values to get row total
-                $rowTotal = $Total_balance;
-
-                // Add row total to grand total
-                $grandTotal += $rowTotal;
-                ?>
+<!--                --><?php
+//                // Add field values to get row total
+//                $rowTotal = $Total_balance;
+//
+//                // Add row total to grand total
+//                $grandTotal += $rowTotal;
+//                ?>
 
                 <h3><?php echo $row->bank_name; ?></h3>
                 <tr style="background-color: rgba(94, 101, 255, 0.29); text-align: center;">
