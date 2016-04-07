@@ -119,8 +119,8 @@
             </tbody>
             <tfoot>
             <tr>
-                <td colspan="2">Total Savings To Date</td>
-                <td colspan="2"><strong>£<?php echo round($grandTotal , 2, PHP_ROUND_HALF_UP); ?></strong></td>
+                <td colspan="3">Total Savings To Date</td>
+                <td colspan="1"><strong>£<?php echo round($grandTotal , 2, PHP_ROUND_HALF_UP); ?></strong></td>
             </tr>
             </tfoot>
         </table>
