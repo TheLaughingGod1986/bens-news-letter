@@ -33,8 +33,6 @@
             // Add row total to grand total
             $grandTotal += $rowTotal;
 
-             endforeach;
-         endif; 
             ?>
             <!--///////////////////////////////// DESKTOP VIEW START /////////////////////////////////-->
             <div id="desktop-content">
@@ -53,7 +51,10 @@
                         </tr>
                     </tread>
                     <tbody>
-            <?php if (isset($records)) :
+            <?php
+            endforeach;
+            endif;
+            if (isset($records)) :
             foreach ($records as $row) :
                 ?>
                     <tr style="background-color: rgba(94, 101, 255, 0.29); text-align: center;">
