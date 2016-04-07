@@ -16,17 +16,14 @@
                     matter what bank all under one roof.
                 </p>
                 <p>We are very secure due to the fact that we do not ask for any of your account numbers or details.
-                    <br>
-                    all we need is just how much you deposit each month, how much interest, when what date was your firs
-                    deposit and for you to name the account (this could be Big Bobs Savings). Once we have these you can
-                    now
-                    track the growth of the account, the total interest earn and how long you have left to account
+                    all we need is your monthly deposits, how much interest you get, the date of your first
+                    deposit and for you to name the account <em>(this could be Big Bobs Savings)</em>. Once we have these you can
+                    track the growth of the account, the total interest earned and how long you have left to account
                     maturity.
                 </p>
                 <p>
                     It really is that easy, and the good news is that once you add all your accounts (and given them
-                    wacky
-                    names) we will give you your total balance of all your accounts !.
+                    wacky names) we will give you the total balance of all your accounts !.
                 </p>
                 <?php
             }
@@ -53,9 +50,8 @@
                 for a more comprehensive breakdown
             </p>
             <p>
-                You can use us on any devise either it be your table on your sofa, your smart phone on your coffee brake
-                or on your desktop.
-                we give different information depending on what device your viewing on !
+                You can use us on any devise be it your tablet, your smart phone or on your desktop.
+                we give different information depending on what device you are viewing on !
             </p>
         </div>
         <p>
