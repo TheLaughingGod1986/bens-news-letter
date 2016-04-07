@@ -2,6 +2,23 @@
     <h2>Add A Regular Savings Account</h2>
     <hr>
     <div class="col-sm-6">
+        <h2 class="no-margin-top">Regular savings accounts</h2>
+
+        <p>A regular savings account is an account whereby interest in compounded monthly and released on account
+            maturity. Regular savers take one year to mature from the initial deposit date.
+            A regular savings account pays anything from 1% to 6% (AER), you need to meet the monthly minimum deposit to
+            validate the account, this minimum is varied from bank to bank, they also have a maximum.
+            Due to this fact most people set up a standing order for 12 months.</p>
+
+        <p>Because on the maximum deposit most people will, if they can afford it, set up many regular savings accounts
+            with different banks, that's where our system comes in handy, you can track your grand total balance, keep a
+            eye on how long till the account matures and how much interest would have accumulated at the current
+            time.</p>
+
+        <p>When you add an account with us all you need to do is add an account name, interest rate, monthly deposit and
+            the first deposit date, we do all the maths for you, how good is that !</p>
+    </div>
+    <div class="col-sm-6">
         <div id="login_form">
             <legend>Account Information</legend>
             <?php
@@ -34,24 +51,6 @@
             ?>
             <?php echo validation_errors('<p class="error"/>'); ?>
         </div>
-    </div>
-    <div class="col-sm-6">
-        <h2 class="no-margin-top">Regular savings accounts</h2>
-
-        <p>A regular savings account is an account whereby interest in compounded monthly and released on account
-            maturity. Regular savers take one year to mature from the initial deposit date.
-            A regular savings account pays anything from 1% to 6% (AER), you need to meet the monthly minimum deposit to
-            validate the account, this minimum is varied from bank to bank, they also have a maximum.
-            Due to this fact most people set up a standing order for 12 months.</p>
-
-        <p>Because on the maximum deposit most people will, if they can afford it, set up many regular savings accounts
-            with different banks, that's where our system comes in handy, you can track your grand total balance, keep a
-            eye on how long till the account matures and how much interest would have accumulated at the current
-            time.</p>
-
-        <p>When you add an account with us all you need to do is add an account name, interest rate, monthly deposit and
-            the first deposit date, we do all the maths for you, how good is that !</p>
-
     </div>
 </div>
 
