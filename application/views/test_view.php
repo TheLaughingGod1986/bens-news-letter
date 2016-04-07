@@ -15,12 +15,6 @@
                 <td>Total Balance</td>
             </tr>
             </thead>
-            <tfoot>
-            <tr>
-                <td colspan="5">Total Savings To Date</td>
-                <td colspan="2"><strong>£<?php echo round($grandTotal , 2, PHP_ROUND_HALF_UP); ?></strong></td>
-            </tr>
-            </tfoot>
             <tbody>
             <?php if (isset($records)) :
             foreach ($records as $row) :
@@ -64,6 +58,12 @@
                 </tr>
             <?php endforeach; ?>
             </tbody>
+            <tfoot>
+            <tr>
+                <td colspan="5">Total Savings To Date</td>
+                <td colspan="2"><strong>£<?php echo round($grandTotal , 2, PHP_ROUND_HALF_UP); ?></strong></td>
+            </tr>
+            </tfoot>
         </table>
     <h3>Total Savings To Date <strong>£<?php echo round($grandTotal , 2, PHP_ROUND_HALF_UP); ?></strong></h3>
 
