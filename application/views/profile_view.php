@@ -76,7 +76,7 @@
 
             <tbody>
 
-            <?php if (isset($records)) : foreach ($records as $row) : 
+            <?php if (isset($records)) : foreach ($records as $row) :
                 $join_date = $row->start_date;
                 $date1 = new DateTime('now');
                 $date2 = new DateTime($join_date);
@@ -114,7 +114,7 @@
         </table>
     </div>
 
-            <h3>Total Savings To Date <strong>£<?php echo round($grandTotal, 2, PHP_ROUND_HALF_UP); ?></strong></h3>
+            <h3>Total Savings To Date <strong>£<?php echo round($grandTotal /2, 2, PHP_ROUND_HALF_UP); ?></strong></h3>
             <strong id="mobile-content">For full breakdown of your accounts please view on a Tablet or Desktop</strong>
 
         <?php else : ?>
