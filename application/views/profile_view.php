@@ -77,8 +77,8 @@
             <?php if (isset($records)) : foreach ($records as $row) : ?>
                 <tr>
                     <td><?php echo $row->bank_name; ?></td>
-                    <td><?php echo $row->bank_balance; ?></td>
-                    <td><?php echo $row->bank_start_date; ?></td>
+                    <td>l</td>
+                    <td>k</td>
                 </tr>
             <?php endforeach; ?>
             </tbody>
