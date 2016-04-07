@@ -33,56 +33,56 @@
             // Add row total to grand total
             $grandTotal += $rowTotal;
             ?>
-<!--            <div id="desktop-content">-->
-<!--    <h3>Account: --><?php //echo $row->bank_name; ?><!--</h3>-->
-<!--            <table border="1">-->
-<!--                <tread>-->
-<!--                    <tr style="background: rgba(134, 240, 133, 0.31); text-align: center;">-->
-<!--                        <td>Initial Deposit Date</td>-->
-<!--                        <td>Interest Rate</td>-->
-<!--                        <td>Monthly Deposit</td>-->
-<!--                        <td>Days Till Account Maturity</td>-->
-<!--                        <td>Interest After <strong>--><?php //echo $date1->diff($date2)->format("%m"); ?><!--</strong> Months</td>-->
-<!--                        <td>Balance After <strong>--><?php //echo $date1->diff($date2)->format("%m"); ?><!--</strong> Months</td>-->
-<!--                    </tr>-->
-<!--                </tread>-->
-<!--                <tbody>-->
-<!--                <tr style="background-color: rgba(94, 101, 255, 0.29); text-align: center;">-->
-<!--                    <td><strong>--><?php //echo $newDate; ?><!--</strong></td>-->
-<!--                    <td><strong>--><?php //echo $row->interest * 100; ?><!--%</strong> Interest</td>-->
-<!--                    <td><strong>£--><?php //echo $row->monthly_deposits; ?><!--</strong> (PCM)</td>-->
-<!--                    <td><strong>--><?php //echo $remain; ?><!--</strong> Days Left</td>-->
-<!--                    <td><strong>£--><?php //echo round($Total_Int, 2, PHP_ROUND_HALF_UP); ?><!--</strong> Interest</td>-->
-<!--                    <td><strong>£--><?php //echo round($Total_balance, 2, PHP_ROUND_HALF_UP); ?><!--</strong></td>-->
-<!--                </tr>-->
-<!--                </tbody>-->
-<!--            </table>-->
-<!--    </div>-->
+            <div id="desktop-content">
+    <h3>Account: <?php echo $row->bank_name; ?></h3>
+            <table border="1">
+                <tread>
+                    <tr style="background: rgba(134, 240, 133, 0.31); text-align: center;">
+                        <td>Initial Deposit Date</td>
+                        <td>Interest Rate</td>
+                        <td>Monthly Deposit</td>
+                        <td>Days Till Account Maturity</td>
+                        <td>Interest After <strong><?php echo $date1->diff($date2)->format("%m"); ?></strong> Months</td>
+                        <td>Balance After <strong><?php echo $date1->diff($date2)->format("%m"); ?></strong> Months</td>
+                    </tr>
+                </tread>
+                <tbody>
+                <tr style="background-color: rgba(94, 101, 255, 0.29); text-align: center;">
+                    <td><strong><?php echo $newDate; ?></strong></td>
+                    <td><strong><?php echo $row->interest * 100; ?>%</strong> Interest</td>
+                    <td><strong>£<?php echo $row->monthly_deposits; ?></strong> (PCM)</td>
+                    <td><strong><?php echo $remain; ?></strong> Days Left</td>
+                    <td><strong>£<?php echo round($Total_Int, 2, PHP_ROUND_HALF_UP); ?></strong> Interest</td>
+                    <td><strong>£<?php echo round($Total_balance, 2, PHP_ROUND_HALF_UP); ?></strong></td>
+                </tr>
+                </tbody>
+            </table>
+    </div>
 
 <!--    MOBILE VIEW START-->
-    <div id="mobile-content">
-        <table class="table table-hover">
-            <thead>
-            <tr>
-                <th>Account Name</th>
-                <th>Balance</th>
-                <th>Start Date</th>
-            </tr>
-            </thead>
-
-            <tbody>
-
-            <?php if (isset($records)) : foreach ($records as $row) : ?>
-                <tr>
-                    <td><?php echo $row->bank_name; ?></td>
-                    <td>i</td>
-<!--                    <td>--><?php //echo $row->bank_start_date; ?><!--</td>-->
-                </tr>
-            <?php endforeach; ?>
-            </tbody>
-        </table>
-    </div>
-<!--        --><?php //endforeach; ?>
+            <div id="mobile-content">
+                <table class="table table-hover">
+                    <thead>
+                    <tr>
+                        <th>Account Name</th>
+                        <th>Start Date</th>
+                        <th>Email</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td><?php echo $row->bank_name; ?></td>
+                    </tr>
+                    <tr>
+                        <td>Mary</td>
+                    </tr>
+                    <tr>
+                        <td>July</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        <?php endforeach; ?>
             <h3>Total Savings To Date <strong>£<?php echo round($grandTotal, 2, PHP_ROUND_HALF_UP); ?></strong></h3>
             <strong id="mobile-content">For full breakdown of your accounts please view on a Tablet or Desktop</strong>
 
@@ -91,5 +91,3 @@
             <h4>Why No Add A Account?</h4>
         <?php endif; ?>
 </div>
-<?php endforeach; ?>
-<?php endif; ?>
