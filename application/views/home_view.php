@@ -8,9 +8,24 @@
                 Welcome to <strong>Servare</strong> A useful tool to help you keep track of your savings accounts no matter what bank all under one roof.
             </p>
 
-            <p>We are very secure .....</p>
+            <p>We are very secure due to the fact that we do not ask for any of your account numbers or details. <br>
+                 all we need is just how much you deposit each month, how much interest, when what date was your firs deposit and for you to name the account (this could be Big Bobs Savings). Once we have these you can now track the growth of the account, the total interest earn and how long you have left to account maturity.
+            </p>
 
-            <p>easy to use ...</p>
+            <p>
+                It really is that easy, and the good news is that once you add all your accounts (and given them wacky names) we will give you your total balance of all your accounts !.
+                You can view this total sum of all your savings combined either on your dashboard or go to <?php
+                if ($this->session->userdata('id')) { ?>
+                    <?php echo anchor('profile', 'Account Overview'); ?>
+                    <?php
+                } else { ?>
+                   <?php echo "<strong>accounts overview</strong>" ?>
+
+                    <?php
+                }
+                ?>
+                for a more comprehensive breakdown
+            </p>
         </div>
         <p>
 
