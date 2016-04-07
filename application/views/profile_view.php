@@ -58,31 +58,6 @@
                 </tbody>
             </table>
     </div>
-    <div id="desktop-content">
-        <table class="table table-hover">
-            <thead>
-            <tr>
-                <td>Initial Deposit Date</td>
-                <td>Interest Rate</td>
-                <td>Monthly Deposit</td>
-                <td>Days Till Account Maturity</td>
-                <td>Interest After <strong><?php echo $date1->diff($date2)->format("%m"); ?></strong> Months</td>
-                <td>Balance After <strong><?php echo $date1->diff($date2)->format("%m"); ?></strong> Months</td>
-            </tr>
-            </thead>
-
-            <tbody>
-
-            <?php if (isset($records)) : foreach ($records as $row) : ?>
-                <tr>
-                    <td><?php echo $row->bank_name; ?></td>
-                    <td><?php echo $row->bank_balance; ?></td>
-                    <td><?php echo $row->bank_start_date; ?></td>
-                </tr>
-            <?php endforeach; ?>
-            </tbody>
-        </table>
-    </div>
 
         <?php endforeach; ?>
         <?php endif; ?>
@@ -131,7 +106,7 @@
                 ?>
                 <tr>
                     <td><?php echo $row->bank_name; ?></td>
-                    <td>£<?php echo round($Total_Int, 2, PHP_ROUND_HALF_UP); ?></td>
+                    <td><?php echo round($Total_Int, 2, PHP_ROUND_HALF_UP); ?></td>
                     <td>£<?php echo round($Total_balance, 2, PHP_ROUND_HALF_UP); ?></td>
                 </tr>
             <?php endforeach; ?>
