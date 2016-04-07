@@ -30,7 +30,6 @@ foreach ($records as $row) :
     $originalDate = $row->start_date;
     $newDate = date("jS \of F Y", strtotime($originalDate));
     ?>
-    <div class="container-fluid">
             <table border="1">
                 <tread>
                     <tr style="background: rgba(134, 240, 133, 0.31); text-align: center;">
@@ -84,7 +83,6 @@ foreach ($records as $row) :
                 </tbody>
             </table>
         </div>
-    </div>
 
     <div id="mobile-content">
         <table border="1">
@@ -130,10 +128,8 @@ foreach ($records as $row) :
     <h3>Total Savings To Date £<?php echo round($grandTotal / 2, 2, PHP_ROUND_HALF_UP); ?></h3>
     <strong>For full breakdown of your accounts please view on a Tablet or Desktop</strong>
 </div>
-</div>
 
 <div id="desktop-content">
-    <div class="container-fluid">
         <table>
             <tbody>
             <tr>
