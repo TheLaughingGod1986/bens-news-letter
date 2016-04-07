@@ -1,7 +1,7 @@
 <div id="login_form">
     <div class="container-fluid">
-        <h1>Create Bank Account</h1>
-
+        <h2>Add A Regular Savings Account</h2>
+        <hr>
         <legend>Account Information</legend>
         <?php
         echo form_open('banks/create_bank');
@@ -31,7 +31,6 @@
         echo form_input($account_date);
         echo form_submit('submit', 'Add Bank ')
         ?>
-
         <?php echo validation_errors('<p class="error"/>'); ?>
     </div>
 </div>
