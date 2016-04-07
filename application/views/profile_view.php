@@ -69,8 +69,8 @@
             <thead>
             <tr>
                 <th>Account Name</th>
-                <th>Balance</th>
-                <th>Start Date</th>
+                <th>Current Interest</th>
+                <th>Current Balance</th>
             </tr>
             </thead>
 
@@ -106,8 +106,8 @@
                 ?>
                 <tr>
                     <td><?php echo $row->bank_name; ?></td>
-                    <td>l</td>
-                    <td><?php echo round($Total_balance, 2, PHP_ROUND_HALF_UP); ?></td>
+                    <td>£<?php echo round($Total_Int, 2, PHP_ROUND_HALF_UP); ?></td>
+                    <td>£<?php echo round($Total_balance, 2, PHP_ROUND_HALF_UP); ?></td>
                 </tr>
             <?php endforeach; ?>
             </tbody>
@@ -122,6 +122,3 @@
             <h4>Why No Add A Account?</h4>
         <?php endif; ?>
 </div>
-
-
-
