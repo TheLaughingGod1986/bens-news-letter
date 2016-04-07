@@ -3,8 +3,8 @@
     <hr>
         <?php $grandTotal = 0; ?>
         <?php
-        if (isset($records)) :
-        foreach ($records as $row) :
+//        if (isset($records)) :
+//        foreach ($records as $row) :
 
             $join_date = $row->start_date;
             $date1 = new DateTime('now');
@@ -64,31 +64,28 @@
                 <table class="table table-hover">
                     <thead>
                     <tr>
-                        <th>Firstname</th>
-                        <th>Lastname</th>
-                        <th>Email</th>
+                        <th>Account Name</th>
+                        <th>Balance</th>
+                        <th>Start Date</th>
                     </tr>
                     </thead>
+
                     <tbody>
+            <?php if (isset($records)) : foreach ($records as $row) : ?>
                     <tr>
                         <td><?php echo $row->bank_name; ?></td>
-                        <td>Doe</td>
-                        <td>john@example.com</td>
                     </tr>
                     <tr>
-                        <td>Mary</td>
-                        <td>Moe</td>
-                        <td>mary@example.com</td>
+                        <td><?php echo $row->bank_balance; ?></td>
                     </tr>
                     <tr>
-                        <td>July</td>
-                        <td>Dooley</td>
-                        <td>july@example.com</td>
+                        <td><?php echo $row->bank_start_date; ?></td>
                     </tr>
+            <?php endforeach; ?>
                     </tbody>
                 </table>
             </div>
-        <?php endforeach; ?>
+<!--        --><?php //endforeach; ?>
             <h3>Total Savings To Date <strong>£<?php echo round($grandTotal, 2, PHP_ROUND_HALF_UP); ?></strong></h3>
             <strong id="mobile-content">For full breakdown of your accounts please view on a Tablet or Desktop</strong>
 
