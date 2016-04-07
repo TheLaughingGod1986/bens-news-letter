@@ -1,6 +1,7 @@
 <div class="coInformationuid">
     <h2>Sign Up Now!</h2>
     <hr>
+        <div id="desktop-content" class="col-sm-5">
             <?php
             $this->load->helper('html');
             $img = base_url('img/cash-flow.jpg');
@@ -10,6 +11,7 @@
                 <?php
                 echo anchor($path, img($img));
                 ?>
+            </div>
             </div>
 
             <div id="login_form" class="col-sm-4">
@@ -62,3 +64,4 @@
             </div>
 
     </div>
+</div>
