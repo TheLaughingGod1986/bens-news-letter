@@ -36,7 +36,7 @@
         </div>
     </div>
     <div class="col-sm-6">
-        <h2 class=".no-margin-top">Regular savings accounts</h2>
+        <h2 class="no-margin-top">Regular savings accounts</h2>
 
         <p>A regular savings account is an account whereby interest in compounded monthly and released on account
             maturity. Regular savers take one year to mature from the initial deposit date.
