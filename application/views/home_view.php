@@ -7,7 +7,7 @@
             <?php
             if ($this->session->userdata('id')) { ?>
                 <p>
-                    Welcome to Back, <strong><?php echo $this->session->userdata('username'); ?></strong>
+                    Welcome Back, <strong><?php echo $this->session->userdata('username'); ?></strong>
                 </p>
                 <?php
             } else { ?>
@@ -28,7 +28,7 @@
             }
             ?>
             <p>
-                You can view this total sum of all your savings combined either on your <?php
+                You can view the total sum of all your savings combined either on your <?php
                 if ($this->session->userdata('id')) { ?>
                     <?php echo anchor('members', 'Dashboard'); ?>
                     <?php
@@ -50,7 +50,7 @@
             </p>
             <p>
                 You can use us on any devise be it your tablet, your smart phone or on your desktop.
-                we give different information depending on what device you are viewing on !
+                We give different information depending on what device you are viewing on !
             </p>
         </div>
         <p>
