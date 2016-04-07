@@ -1,7 +1,7 @@
-    <div class="container-fluid">
-        <h2>Add A Regular Savings Account</h2>
-        <hr>
-        <div id="login_form">
+<div class="container-fluid">
+    <h2>Add A Regular Savings Account</h2>
+    <hr>
+    <div id="login_form">
         <legend>Account Information</legend>
         <?php
         echo form_open('banks/create_bank');

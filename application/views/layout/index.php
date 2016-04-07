@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="<?php echo base_url(); ?>css/new.css" type="text/css" media="screen" charset="uft-8">
     <link rel="stylesheet" href="<?php echo base_url(); ?>css/table.css" type="text/css" media="screen" charset="uft-8">
     <link rel="stylesheet" href="<?php echo base_url(); ?>css/style.css" type="text/css" media="screen" charset="uft-8">
-    <link rel="stylesheet" href="<?php echo base_url(); ?>css/bootstrap.min.css" type="text/css" media="screen" charset="uft-8">
+    <link rel="stylesheet" href="<?php echo base_url(); ?>css/bootstrap.min.css" type="text/css" media="screen"
+          charset="uft-8">
 </head>
 <body>
 
@@ -27,15 +28,12 @@ if ($this->session->userdata('id')) {
     echo ' <div class="col-sm-10 push-top main_content">';
     if ($middle) echo $middle;
     echo '</div>';
-}
-else {
+} else {
     echo ' <div class="col-sm-12 push-top main_content">';
     if ($middle) echo $middle;
     echo '</div>';
 }
 ?>
-
-
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
 <script src="http://code.jquery.com/jquery-1.10.2.js"></script>

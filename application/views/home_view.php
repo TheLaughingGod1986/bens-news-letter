@@ -74,8 +74,9 @@
             <h2>My Dashboard</h2>
             <p>Use <strong>your dashboard</strong> to see an overview of all your personal information and total
                 balance.
-                within <strong>your dashboard</strong> you can also edit your personal information.
-                In <strong>your dashboard</strong> we will also feed you updates on new features that are under development.
+                Within <strong>your dashboard</strong> you can also edit your personal information.
+                In <strong>your dashboard</strong> we will also feed you updates on new features that are under
+                development.
             </p>
             <p>
                 <?php
@@ -91,7 +92,7 @@
         </div>
         <div class="col-lg-4">
             <h2>Accounts Overview</h2>
-            <p>In <strong>accounts overview</strong> we show you all the information about your accounts. we show you
+            <p>In <strong>accounts overview</strong> we show you all the information about your accounts. We show you
                 your total interest so far, your interest rate, your account balance so far, when you made your first
                 deposit, how much you deposit each month and how long till account maturity as well as plenty of other
                 cool stuff.</p>
@@ -110,11 +111,12 @@
         </div>
         <div class="col-lg-4">
             <h2>Add New Accounts</h2>
-            <p>Within this section we give you the ability to add as manny savings accounts as you have*<span>*(At the moment we only offer Regular Savings Accounts)</span>. As soon as you
+            <p>Within this section we give you the ability to add as many savings accounts as you have<span>*(At the moment we only offer Regular Savings Accounts)</span>.
+                As soon as you
                 add a new account <strong>your dashboard</strong> and <strong>account overview</strong> are dynamical
-                updated without you doing a thing, how cool is that ! </p>
+                updated without you doing a thing, how cool is that !</p>
             <p>
-                                <?php
+                <?php
                 if ($this->session->userdata('id')) { ?>
                     <a class="btn btn-lg btn-primary" <?php echo anchor('banks', 'Add Regular Savings &raquo;'); ?> </a>
                     <?php
