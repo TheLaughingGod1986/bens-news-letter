@@ -70,7 +70,7 @@
     <!--///////////////////////////////// DESKTOP VIEW END /////////////////////////////////-->
     <!--///////////////////////////////// MOBILE VIEW START /////////////////////////////////-->
     <div id="mobile-content">
-        <table class="table table-striped">
+        <table class="table table-responsive">
             <thead>
             <tr>
                 <th>Account Name</th>
@@ -119,7 +119,7 @@
             </tbody>
             <tfoot>
             <tr>
-                <td colspan="5">Total Savings To Date</td>
+                <td colspan="2">Total Savings To Date</td>
                 <td colspan="2"><strong>£<?php echo round($grandTotal , 2, PHP_ROUND_HALF_UP); ?></strong></td>
             </tr>
             </tfoot>
