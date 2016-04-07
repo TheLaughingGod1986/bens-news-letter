@@ -117,10 +117,16 @@
                 </tr>
             <?php endforeach; ?>
             </tbody>
+            <tfoot>
+            <tr>
+                <td colspan="5">Total Savings To Date</td>
+                <td colspan="2"><strong>£<?php echo round($grandTotal , 2, PHP_ROUND_HALF_UP); ?></strong></td>
+            </tr>
+            </tfoot>
         </table>
     </div>
 <!--///////////////////////////////// MOBILE VIEW END /////////////////////////////////-->
-    <h3>Total Savings To Date <strong>£<?php echo round($grandTotal / 2, 2, PHP_ROUND_HALF_UP); ?></strong></h3>
+    <h3 id="desktop-content">Total Savings To Date <strong>£<?php echo round($grandTotal / 2, 2, PHP_ROUND_HALF_UP); ?></strong></h3>
     <strong id="mobile-content">For full breakdown of your accounts please view on a Tablet or Desktop</strong>
 <?php else : ?>
     <h3>You Have No Accounts</h3>

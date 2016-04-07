@@ -65,7 +65,6 @@
             </tr>
             </tfoot>
         </table>
-    <h3>Total Savings To Date <strong>£<?php echo round($grandTotal , 2, PHP_ROUND_HALF_UP); ?></strong></h3>
 
 <?php else : ?>
     <h3>You Have No Accounts</h3>
