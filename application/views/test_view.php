@@ -3,7 +3,7 @@
     <hr>
     <?php $grandTotal = 0; ?>
 
-        <table class="table table-striped">
+        <table class="table table-hover">
             <thead>
             <tr>
                 <td>Account Name</td>
@@ -13,7 +13,6 @@
                 <td>Days Till Account Maturity</td>
                 <td>Total Interest</td>
                 <td>Total Balance</td>
-
             </tr>
             </thead>
             <tbody>
