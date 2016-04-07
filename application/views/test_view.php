@@ -11,8 +11,10 @@
                 <td id="desktop-content"><h4>Interest Rate</h4></td>
                 <td id="desktop-content"><h4>Monthly Deposit</h4></td>
                 <td id="desktop-content"><h4>Days Till Account Maturity</h4></td>
-                <td><h4>Total Interest</h4></td>
-                <td><h4>Total Balance</h4></td>
+                <td id="desktop-content"><h4>Total Interest</h4></td>
+                <td id="mobile-content"><h4>Total Interest</h4></td>
+                <td id="desktop-content"><h4>Total Balance</h4></td>
+                <td id="mobile-content"><h4>Total Balance</h4></td>
             </tr>
             </thead>
             <tbody>
