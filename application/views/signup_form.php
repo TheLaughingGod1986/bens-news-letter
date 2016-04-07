@@ -13,8 +13,8 @@
                 ?>
             </div>
             </div>
-
-            <div id="login_form" class="col-sm-4">
+<div class="col-sm-4">
+            <div id="login_form">
                 <?php
                 echo form_open('login/create_member');
                 $your_f_name = array(
@@ -62,6 +62,5 @@
                 echo validation_errors('<p class="error"/>');
                 ?>
             </div>
-
     </div>
-</div>
+    </div>
