@@ -33,7 +33,7 @@
         <p>
             <?php
             if ($this->session->userdata('id')) { ?>
-                <strong>My Dashboard, <?php echo anchor('members', 'Your Dashboard'); ?></strong>
+                <a class="btn btn-lg btn-primary" <?php echo anchor('members', 'My Dashboard &raquo;'); ?> </a>
                 <?php
             } else { ?>
                 <a class="btn btn-lg btn-primary" <?php echo anchor('login/signup', 'Sign up &raquo;'); ?> </a>
@@ -49,7 +49,7 @@
         <p>
             <?php
             if ($this->session->userdata('id')) { ?>
-                <strong>My Account Overview, <?php echo anchor('profile', 'Account Overview'); ?></strong>
+                <a class="btn btn-lg btn-primary" <?php echo anchor('profile', 'My Account Overview &raquo;'); ?> </a>
                 <?php
             } else { ?>
                 <a class="btn btn-lg btn-primary" <?php echo anchor('login/signup', 'Sign up &raquo;'); ?> </a>
@@ -65,7 +65,7 @@
         <p>
             <?php
             if ($this->session->userdata('id')) { ?>
-                <strong>Add A New account, <?php echo anchor('banks', 'Add Regular Savings'); ?></li></strong>
+                <a class="btn btn-lg btn-primary" <?php echo anchor('banks', 'Add Regular Savings &raquo;'); ?> </a>
                 <?php
             } else { ?>
                 <a class="btn btn-lg btn-primary" <?php echo anchor('login/signup', 'Sign up &raquo;'); ?> </a>
