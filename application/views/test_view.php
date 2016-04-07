@@ -2,17 +2,17 @@
     <h2>Account Overview</h2>
     <hr>
     <?php $grandTotal = 0; ?>
-
-        <table class="table table-striped">
+    <div class="table-responsive">
+        <table class="table table-hover">
             <thead>
             <tr style="background: rgba(134, 240, 133, 0.31); text-align: center;">
-                <td>Account Name</td>
-                <td>Initial Deposit Date</td>
-                <td>Interest Rate</td>
-                <td>Monthly Deposit</td>
-                <td>Days Till Account Maturity</td>
-                <td>Total Interest</td>
-                <td>Total Balance</td>
+                <td><h4>Account Name</h4></td>
+                <td><h4>Initial Deposit Date</h4></td>
+                <td><h4>Interest Rate</h4></td>
+                <td><h4>Monthly Deposit</h4></td>
+                <td><h4>Days Till Account Maturity</h4></td>
+                <td><h4>Total Interest</h4></td>
+                <td><h4>Total Balance</h4></td>
             </tr>
             </thead>
             <tbody>
@@ -60,11 +60,12 @@
             </tbody>
             <tfoot>
             <tr>
-                <td colspan="5">Total Savings To Date</td>
+                <td colspan="5"><h4>Total Savings To Date</h4></td>
                 <td colspan="2"><strong>£<?php echo round($grandTotal , 2, PHP_ROUND_HALF_UP); ?></strong></td>
             </tr>
             </tfoot>
         </table>
+        </div>
 
 <?php else : ?>
     <h3>You Have No Accounts</h3>
