@@ -53,12 +53,18 @@
                     <td id="desktop-content"><strong><?php echo $row->interest * 100; ?>%</strong> Interest</td>
                     <td id="desktop-content"><strong>£<?php echo $row->monthly_deposits; ?></strong> (PCM)</td>
                     <td id="desktop-content"><strong><?php echo $remain; ?></strong> Days Left</td>
-                    <td id="desktop-content"><strong>£<?php echo round($Total_Int, 2, PHP_ROUND_HALF_UP); ?></strong><br>
-                       <strong ><?php echo $date1->diff($date2)->format("%m"); ?></strong> Months Old</td>
-                    <td id="mobile-content"><strong>£<?php echo round($Total_Int, 2, PHP_ROUND_HALF_UP); ?></strong></td>
-                    <td id="desktop-content"><strong>£<?php echo round($Total_balance, 2, PHP_ROUND_HALF_UP); ?></strong><br>
-                        <strong><?php echo $date1->diff($date2)->format("%m"); ?></strong> Months Old</td>
-                    <td id="mobile-content"><strong>£<?php echo round($Total_balance, 2, PHP_ROUND_HALF_UP); ?></strong></td>
+                    <td id="desktop-content">
+                        <strong>£<?php echo round($Total_Int, 2, PHP_ROUND_HALF_UP); ?></strong><br>
+                        <strong><?php echo $date1->diff($date2)->format("%m"); ?></strong> Months Old
+                    </td>
+                    <td id="mobile-content"><strong>£<?php echo round($Total_Int, 2, PHP_ROUND_HALF_UP); ?></strong>
+                    </td>
+                    <td id="desktop-content">
+                        <strong>£<?php echo round($Total_balance, 2, PHP_ROUND_HALF_UP); ?></strong><br>
+                        <strong><?php echo $date1->diff($date2)->format("%m"); ?></strong> Months Old
+                    </td>
+                    <td id="mobile-content"><strong>£<?php echo round($Total_balance, 2, PHP_ROUND_HALF_UP); ?></strong>
+                    </td>
                 </tr>
             <?php endforeach; ?>
             </tbody>
@@ -66,14 +72,15 @@
             <tr>
                 <td id="desktop-content" colspan="5"><h4>Total Savings To Date</h4></td>
                 <td id="mobile-content" colspan="2"><h4>Total Savings To Date</h4></td>
-                <td id="desktop-content" colspan="2"><strong>£<?php echo round($grandTotal , 2, PHP_ROUND_HALF_UP); ?></strong></td>
-                <td id="mobile-content" colspan="1"><strong>£<?php echo round($grandTotal , 2, PHP_ROUND_HALF_UP); ?></strong></td>
-
+                <td id="desktop-content" colspan="2">
+                    <strong>£<?php echo round($grandTotal, 2, PHP_ROUND_HALF_UP); ?></strong></td>
+                <td id="mobile-content" colspan="1">
+                    <strong>£<?php echo round($grandTotal, 2, PHP_ROUND_HALF_UP); ?></strong></td>
             </tr>
             </tfoot>
         </table>
-        </div>
-
+    </div>
+    <strong id="mobile-content">For full breakdown of your accounts please view on a Tablet or Desktop</strong>
 <?php else : ?>
     <h3>You Have No Accounts</h3>
     <h4>Why No Add A Account?</h4>
