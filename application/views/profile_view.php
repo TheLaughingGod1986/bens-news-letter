@@ -58,11 +58,7 @@
 <!--                </tbody>-->
 <!--            </table>-->
 <!--    </div>-->
-    <?php
-    $join_date = $row->start_date;
-    $date1 = new DateTime('now');
-    $date2 = new DateTime($join_date);
-    ?>
+
     <div id="desktop-content">
         <table class="table table-hover">
             <thead>
@@ -71,8 +67,8 @@
                 <td>Interest Rate</td>
                 <td>Monthly Deposit</td>
                 <td>Days Till Account Maturity</td>
-                <td>Interest After <strong><?php echo $date1->diff($date2)->format("%m"); ?></strong> Months</td>
-                <td>Balance After <strong><?php echo $date1->diff($date2)->format("%m"); ?></strong> Months</td>
+                <td>Interest After <strong></strong> Months</td>
+                <td>Balance After <strong></strong> Months</td>
             </tr>
             </thead>
 
