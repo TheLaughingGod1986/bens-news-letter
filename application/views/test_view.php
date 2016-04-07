@@ -15,6 +15,12 @@
                 <td>Total Balance</td>
             </tr>
             </thead>
+            <tfoot>
+            <tr>
+                <td>Sum</td>
+                <td>$180</td>
+            </tr>
+            </tfoot>
             <tbody>
             <?php if (isset($records)) :
             foreach ($records as $row) :
@@ -52,7 +58,7 @@
                     <td><strong>£<?php echo $row->monthly_deposits; ?></strong> (PCM)</td>
                     <td><strong><?php echo $remain; ?></strong> Days Left</td>
                     <td><strong>£<?php echo round($Total_Int, 2, PHP_ROUND_HALF_UP); ?></strong><br>
-                        <strong><?php echo $date1->diff($date2)->format("%m"); ?></strong> Monthd Old</td>
+                        <strong><?php echo $date1->diff($date2)->format("%m"); ?></strong> Months Old</td>
                     <td><strong>£<?php echo round($Total_balance, 2, PHP_ROUND_HALF_UP); ?></strong><br>
                         <strong><?php echo $date1->diff($date2)->format("%m"); ?></strong> Months Old</td>
                 </tr>
