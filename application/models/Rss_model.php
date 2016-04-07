@@ -1,6 +1,6 @@
 <?php if (!defined('BASEPATH'))
     exit('No direct script access allowed');
-class feed_model extends Model
+class feed_model extends CI_Model
 {
     // get all
     function get_feeds()
