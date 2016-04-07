@@ -75,6 +75,7 @@
             <p>Use <strong>your dashboard</strong> to see an overview of all your personal information and total
                 balance.
                 within <strong>your dashboard</strong> you can also edit your personal information.
+                In <strong>your dashboard</strong> we will also feed you updates on new features that are under development.
             </p>
             <p>
                 <?php
