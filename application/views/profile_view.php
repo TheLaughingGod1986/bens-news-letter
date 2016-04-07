@@ -79,35 +79,11 @@
 
     <h3>Account: <?php echo $row->bank_name; ?></h3>
 
-    <table class="table table-hover">
-        <thead>
-        <tr>
-            <th>Maturity</th>
-            <th>Interest</th>
-            <th>Balance</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr>
-<!--            <td>--><?php //echo $remain; ?><!--</td>-->
-
-        </tr>
-        <tr>
-<!--            <td>£--><?php //echo round($Total_Int, 2, PHP_ROUND_HALF_UP); ?><!--</td>-->
-
-        </tr>
-        <tr>
-<!--            <td>£--><?php //echo round($Total_balance, 2, PHP_ROUND_HALF_UP); ?><!--</td>-->
-
-        </tr>
-        </tbody>
-    </table>
-
 </div>
+
     <?php endforeach; ?>
 
                 <h3>Total Savings To Date £<?php echo round($grandTotal, 2, PHP_ROUND_HALF_UP); ?></h3>
-
 
     <strong id="mobile-content">For full breakdown of your accounts please view on a Tablet or Desktop</strong>
 
