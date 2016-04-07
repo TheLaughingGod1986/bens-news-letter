@@ -17,7 +17,7 @@
             </thead>
             <tfoot>
             <tr>
-                <td>Sum</td>
+                <td colspan="2">Total Savings To Date</td>
                 <td>$180</td>
             </tr>
             </tfoot>
