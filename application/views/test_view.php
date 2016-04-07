@@ -48,7 +48,7 @@
                 <tr style="background-color: rgba(94, 101, 255, 0.29); text-align: center;">
                     <td><?php echo $row->bank_name; ?></td>
                     <td id="desktop-content"><strong><?php echo $newDate; ?></strong></td>
-                    <td><strong><?php echo $row->interest * 100; ?>%</strong> Interest</td>
+                    <td id="desktop-content"><strong><?php echo $row->interest * 100; ?>%</strong> Interest</td>
                     <td id="desktop-content"><strong>£<?php echo $row->monthly_deposits; ?></strong> (PCM)</td>
                     <td id="desktop-content"><strong><?php echo $remain; ?></strong> Days Left</td>
                     <td><strong>£<?php echo round($Total_Int, 2, PHP_ROUND_HALF_UP); ?></strong><br>
