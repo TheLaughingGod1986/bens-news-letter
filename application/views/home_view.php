@@ -61,7 +61,7 @@
         <p>
             <?php
             if ($this->session->userdata('id')) { ?>
-                <strong>Welcome Back, <?php echo $this->session->userdata('username'); ?></strong>
+                <a class="btn btn-lg btn-primary" <?php echo anchor('banks', 'Add A New Account &raquo;'); ?> </a>
                 <?php
             } else { ?>
                 <a class="btn btn-lg btn-primary" <?php echo anchor('login/signup', 'Sign up &raquo;'); ?> </a>
