@@ -78,65 +78,34 @@
             <tbody>
             <tr>
                 <td>
-                    <h3>Total Savings To Date £<?php echo round($grandTotal , 2, PHP_ROUND_HALF_UP); ?></h3>
+                    <h3>Total Savings To Date £<?php echo round($grandTotal, 2, PHP_ROUND_HALF_UP); ?></h3>
                 </td>
             </tr>
             </tbody>
         </table>
     </div>
 </div>
-<!--    <div id="mobile-content">-->
-<!--        <table border="1">-->
-<!--            <tread>-->
-<!--                <tr style="background: #858bf0; text-align: center;">-->
-<!--                    <td><h3>Maturity</h3></td>-->
-<!--                    <td><h3>Interest<br>(Total)</h3></td>-->
-<!--                    <td><h3>Balance<br>(Total)</h3></td>-->
-<!--                </tr>-->
-<!--            </tread>-->
-<!--            <tbody>-->
-<!---->
-<!--            --><?php
-//            // Add field values to get row total
-//            $rowTotal = $Total_balance;
-//
-//            // Add row total to grand total
-//            $grandTotal += $rowTotal;
-//
-?>
-<!---->
-<!--            <h3>--><?php //echo $row->bank_name;
-?><!--</h3>-->
-<!--            <tr style="background-color: #5eff81; text-align: center;">-->
-<!---->
-<!--                <td>-->
-<!--                    <strong>--><?php //echo $remain;
-?><!--</strong> Days Left-->
-<!--                </td>-->
-<!---->
-<!--                <td>-->
-<!--                    <strong>£--><?php //echo round($Total_Int, 2, PHP_ROUND_HALF_UP);
-?><!--</strong>-->
-<!--                </td>-->
-<!---->
-<!--                <td>-->
-<!--                    <strong>£--><?php //echo round($Total_balance, 2, PHP_ROUND_HALF_UP);
-?><!--</strong>-->
-<!--                </td>-->
-<!--            </tr>-->
-<!--            </tbody>-->
-<!--        </table>-->
-<!--    </div>-->
+
+<!--    MOBILE VIEW START-->
+
+<div id="mobile-content">
+    <table border="1">
+
+            <tr style="background: #858bf0; text-align: center;">
+                <td><h3>Maturity</h3></td>
+                <td><h3>Interest<br>(Total)</h3></td>
+                <td><h3>Balance<br>(Total)</h3></td>
+            </tr>
+
+        </table>
 
 
-<!--    <div id="mobile-content">-->
-<!--        <h3>Total Savings To Date £--><?php //echo round($grandTotal / 2, 2, PHP_ROUND_HALF_UP);
-?><!--</h3>-->
-<!--        <strong>For full breakdown of your accounts please view on a Tablet or Desktop</strong>-->
-<!--    </div>-->
+        
+            <h3>Total Savings To Date £<?php echo round($grandTotal / 2, 2, PHP_ROUND_HALF_UP); ?></h3>
+            <strong>For full breakdown of your accounts please view on a Tablet or Desktop</strong>
+        </div>
 
-
-<?php else : ?>
-    <h3>You Have No Accounts</h3>
-    <h4>Why No Add A Account?</h4>
-<?php endif; ?>
+        <?php else : ?>
+            <h3>You Have No Accounts</h3>
+            <h4>Why No Add A Account?</h4>
+        <?php endif; ?>
