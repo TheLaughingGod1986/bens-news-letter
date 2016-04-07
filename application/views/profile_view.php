@@ -1,4 +1,4 @@
-<!--<div class="container-fluid">-->
+<div class="container-fluid">
     <h2>Account Overview</h2>
     <hr>
         <?php $grandTotal = 0; ?>
@@ -60,9 +60,9 @@
     </div>
     <?php endforeach; ?>
     <h3>Total Savings To Date £<?php echo round($grandTotal, 2, PHP_ROUND_HALF_UP); ?></h3>
-<!--</div>-->
+</div>
 <!--    MOBILE VIEW START-->
-<!--    <strong id="mobile-content">For full breakdown of your accounts please view on a Tablet or Desktop</strong>-->
+    <strong id="mobile-content">For full breakdown of your accounts please view on a Tablet or Desktop</strong>
 
         <?php else : ?>
             <h3>You Have No Accounts</h3>
