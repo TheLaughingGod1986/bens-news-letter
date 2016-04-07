@@ -4,7 +4,7 @@
         <?php $grandTotal = 0; ?>
         <?php
         if (isset($records)) :
-        foreach ($records as $row) :
+//        foreach ($records as $row) :
 
             $join_date = $row->start_date;
             $date1 = new DateTime('now');
@@ -92,5 +92,5 @@
             <h4>Why No Add A Account?</h4>
         <?php endif; ?>
 </div>
-<?php endforeach; ?>
+<?php //endforeach; ?>
 <?php endif; ?>
