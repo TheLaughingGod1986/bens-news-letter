@@ -34,7 +34,7 @@
             <p>
                 You can view this total sum of all your savings combined either on your <?php
                 if ($this->session->userdata('id')) { ?>
-                    <?php echo anchor('profile', 'Dashboard'); ?>
+                    <?php echo anchor('members', 'Dashboard'); ?>
                     <?php
                 } else { ?>
                     <?php echo "<strong>dashboard</strong>" ?>
@@ -43,7 +43,7 @@
                 ?> or go to
                 <?php
                 if ($this->session->userdata('id')) { ?>
-                    <?php echo anchor('members', 'Account Overview'); ?>
+                    <?php echo anchor('profile', 'Account Overview'); ?>
                     <?php
                 } else { ?>
                     <?php echo "<strong>account overview</strong>" ?>
