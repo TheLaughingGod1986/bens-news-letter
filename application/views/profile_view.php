@@ -27,7 +27,8 @@ foreach ($records as $row) :
     $originalDate = $row->start_date;
     $newDate = date("jS \of F Y", strtotime($originalDate));
     ?>
-
+    <h2>Your Dashboard</h2>
+    <hr>
     <div id="desktop-content">
         <div class="container-fluid">
             <table border="1">
