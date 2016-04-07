@@ -13,8 +13,7 @@
                 ?>
             </div>
 
-            <div id="login_form desktop-content" class="col-sm-4">
-                <div id="mobile-content">
+            <div id="login_form" class="col-sm-4">
                 <?php
                 echo form_open('login/create_member');
                 $your_f_name = array(
@@ -62,6 +61,6 @@
                 echo validation_errors('<p class="error"/>');
                 ?>
             </div>
-                </div>
+               
     </div>
 </div>
