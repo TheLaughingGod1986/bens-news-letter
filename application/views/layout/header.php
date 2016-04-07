@@ -51,6 +51,7 @@
                     } else { ?>
                         <li><?php echo anchor('login', 'Login'); ?></li>
                         <li><?php echo anchor('login/signup', 'Sign up'); ?></li>
+                        <li><?php echo anchor('feed', 'feed'); ?></li>
 
                         <?php
                     }
