@@ -108,7 +108,7 @@
         </table>
     </div>
 
-        <?php endforeach; ?>
+        
         <?php endif; ?>
 
 <!--    MOBILE VIEW START-->
