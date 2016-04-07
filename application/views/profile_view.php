@@ -74,34 +74,29 @@
 
         <?php endforeach; ?>
 
-        <table>
-            <tbody>
-            <tr>
-                <td>
-                    <h3>Total Savings To Date £<?php echo round($grandTotal, 2, PHP_ROUND_HALF_UP); ?></h3>
-                </td>
-            </tr>
-            </tbody>
-        </table>
     </div>
-</div>
 
 <!--    MOBILE VIEW START-->
 
 <div id="mobile-content">
     <table border="1">
-
             <tr style="background: #858bf0; text-align: center;">
                 <td><h3>Maturity</h3></td>
                 <td><h3>Interest<br>(Total)</h3></td>
                 <td><h3>Balance<br>(Total)</h3></td>
             </tr>
-
         </table>
 
+    <table>
+        <tbody>
+        <tr>
+            <td>
+                <h3>Total Savings To Date £<?php echo round($grandTotal, 2, PHP_ROUND_HALF_UP); ?></h3>
+            </td>
+        </tr>
+        </tbody>
+    </table>
 
-        
-            <h3>Total Savings To Date £<?php echo round($grandTotal / 2, 2, PHP_ROUND_HALF_UP); ?></h3>
             <strong>For full breakdown of your accounts please view on a Tablet or Desktop</strong>
         </div>
 
@@ -109,3 +104,4 @@
             <h3>You Have No Accounts</h3>
             <h4>Why No Add A Account?</h4>
         <?php endif; ?>
+</div>
