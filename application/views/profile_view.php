@@ -58,6 +58,11 @@
 <!--                </tbody>-->
 <!--            </table>-->
 <!--    </div>-->
+    <?php
+    $join_date = $row->start_date;
+    $date1 = new DateTime('now');
+    $date2 = new DateTime($join_date);
+    ?>
     <div id="desktop-content">
         <table class="table table-hover">
             <thead>
