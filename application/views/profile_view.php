@@ -71,9 +71,6 @@
                 </tr>
                 </tbody>
             </table>
-
-
-
     </div>
 
 <!--    MOBILE VIEW START-->
