@@ -13,7 +13,8 @@
                 ?>
             </div>
 
-            <div id="login_form">
+            <div id="login_form desktop-content" class="col-sm-4">
+                <div id="mobile-content">
                 <?php
                 echo form_open('login/create_member');
                 $your_f_name = array(
@@ -35,7 +36,6 @@
                 echo form_input($your_f_name);
                 echo form_input($your_s_name);
                 echo form_input($your_username);
-
 
                 echo "<legend>Login Info</legend>";
 
@@ -62,5 +62,6 @@
                 echo validation_errors('<p class="error"/>');
                 ?>
             </div>
+                </div>
     </div>
 </div>
