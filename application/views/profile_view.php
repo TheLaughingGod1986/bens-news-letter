@@ -66,7 +66,7 @@
     <!--///////////////////////////////// DESKTOP VIEW END /////////////////////////////////-->
     <!--///////////////////////////////// MOBILE VIEW START /////////////////////////////////-->
     <div id="mobile-content">
-        <table class="table table-hover">
+        <table class="table table-striped">
             <thead>
             <tr>
                 <th>Account Name</th>
