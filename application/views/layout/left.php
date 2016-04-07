@@ -3,8 +3,8 @@
     <li><a <?php echo anchor('profile', 'Account Overview'); ?></a></li>
     <li><a <?php echo anchor('banks', 'Add Regular Savings'); ?></a></li>
 
-    <li><a href="#">Coming Soon...</a></li>
-    <li><a href="#">Easy Access Savings</a></li>
-    <li><a href="#">Notification Accounts</a></li>
-    <li><a href="#">Fixed rate Bonds</a></li>
+    <li><p>Coming Soon...</p></li>
+    <li><p>Easy Access Savings</p></li>
+    <li><p>Notification Accounts</p></li>
+    <li><p>Fixed rate Bonds</p></li>
 </ul>
