@@ -69,7 +69,16 @@
     </div>
     </div>
     <div id="mobile-content">
-        <h1> Welcome to Servare</h1>
+        <?php
+        if ($this->session->userdata('id')) { ?>
+            <h1>Servare</h1>
+            <h3>Welcome Back, <strong><?php echo $this->session->userdata('username'); ?></strong>!</h3>
+            <?php
+        } else { ?>
+            <h1> Welcome to Servare</h1>
+            <?php
+        }
+        ?>
         <hr>
         </div>
 
