@@ -3,8 +3,8 @@
     <hr>
         <?php $grandTotal = 0; ?>
         <?php
-//        if (isset($records)) :
-//        foreach ($records as $row) :
+        if (isset($records)) :
+        foreach ($records as $row) :
 
             $join_date = $row->start_date;
             $date1 = new DateTime('now');
@@ -72,12 +72,11 @@
 
             <tbody>
 
-            <?php if (isset($records)) :
-            foreach ($records as $row) : ?>
+            <?php if (isset($records)) : foreach ($records as $row) : ?>
                 <tr>
                     <td><?php echo $row->bank_name; ?></td>
-                    <td><?php echo $row->interest * 100; ?></td>
-                    <td><?php //echo $row->interest * 100; ?></td>
+                    <td>i</td>
+<!--                    <td>--><?php //echo $row->bank_start_date; ?><!--</td>-->
                 </tr>
             <?php endforeach; ?>
             </tbody>
@@ -90,8 +89,7 @@
         <?php else : ?>
             <h3>You Have No Accounts</h3>
             <h4>Why No Add A Account?</h4>
-<!--        --><?php //endif; ?>
         <?php endif; ?>
 </div>
-<?php //endforeach; ?>
-<?php //endif; ?>
+<?php endforeach; ?>
+<?php endif; ?>
