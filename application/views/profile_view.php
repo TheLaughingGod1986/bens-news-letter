@@ -1,5 +1,9 @@
-<?php $grandTotal = 0; ?>
-<?php
+<div class="container-fluid">
+    <h2>Account Overview</h2>
+    <hr>
+    <div id="desktop-content">
+        
+<?php $grandTotal = 0;
 if (isset($records)) :
 foreach ($records as $row) :
 
@@ -30,10 +34,6 @@ $rowTotal = $Total_balance;
 // Add row total to grand total
 $grandTotal += $rowTotal;
 ?>
-<div class="container-fluid">
-    <h2>Account Overview</h2>
-    <hr>
-    <div id="desktop-content">
 
 <table border="1">
     <tread>
