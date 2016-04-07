@@ -5,7 +5,7 @@
 
         <table class="table table-striped">
             <thead>
-            <tr>
+            <tr style="background: rgba(134, 240, 133, 0.31); text-align: center;">
                 <td>Account Name</td>
                 <td>Initial Deposit Date</td>
                 <td>Interest Rate</td>
@@ -45,7 +45,7 @@
                 // Add row total to grand total
                 $grandTotal += $rowTotal;
                 ?>
-                <tr>
+                <tr style="background-color: rgba(94, 101, 255, 0.29); text-align: center;">
                     <td><?php echo $row->bank_name; ?></td>
                     <td><strong><?php echo $newDate; ?></strong></td>
                     <td><strong><?php echo $row->interest * 100; ?>%</strong> Interest</td>
