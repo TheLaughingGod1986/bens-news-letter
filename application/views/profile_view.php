@@ -73,7 +73,7 @@
 
             <tbody>
 
-            <?php if (isset($records)) : foreach ($records as $row) : 
+            <?php if (isset($records)) : foreach ($records as $row) :
                 $join_date = $row->start_date;
                 $date1 = new DateTime('now');
                 $date2 = new DateTime($join_date);
@@ -114,7 +114,7 @@
         </table>
     </div>
 
-        <?php endforeach; ?>
+<!--        --><?php //endforeach; ?>
         <?php endif; ?>
 
 <!--    MOBILE VIEW START-->
