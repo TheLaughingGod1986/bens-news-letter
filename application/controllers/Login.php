@@ -31,23 +31,21 @@ class Login extends MY_Controller
         if ($this->form_validation->run() == FALSE) {
             $this->middle = 'login_form'; // return page will validation error
             $this->layout();
-        }
-
-        else {
+        } else {
             $this->load->model('members/member_model');
             if ($query = $this->member_model->validate()) {
 
                 $data = array(
-                'username' => $query->username,
-                'id' => $query->id,
-                'password' => $query->password,
-                'first_name' => $query->first_name,
-                'last_name' => $query->last_name,
-                'email_address' => $query->email_address,
-                'is_logged_in' => true
-            );
+                    'username' => $query->username,
+                    'id' => $query->id,
+                    'password' => $query->password,
+                    'first_name' => $query->first_name,
+                    'last_name' => $query->last_name,
+                    'email_address' => $query->email_address,
+                    'is_logged_in' => true
+                );
 
-            $this->session->set_userdata($data);
+                $this->session->set_userdata($data);
 
                 $this->middle = 'home_view';
                 $this->layout();
