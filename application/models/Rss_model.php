@@ -5,7 +5,7 @@ class rss_model extends CI_Model
     // get all
     function get_feeds()
     {
-        $query = $this->db->get('posts');
+        $query = $this->db->get('members');
         if ($query->numRows() > 0) { // check for rows
             return $query->result();
         }

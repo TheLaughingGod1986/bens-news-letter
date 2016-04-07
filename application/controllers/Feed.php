@@ -14,7 +14,7 @@ class Feed extends CI_Controller {
         // set page encoding
         $this->data['encoding'] = 'utf-8';
         // set feed url
-        $this->data['feed_url'] = 'http://phpis.com/feed';
+        $this->data['feed_url'] = 'http://benoats.co/blog/feed';
         // set page language
         $this->data['page_language'] = 'en';
         // set page Description
