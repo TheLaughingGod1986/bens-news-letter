@@ -63,11 +63,36 @@
 
 <!--    MOBILE VIEW START-->
             <div id="mobile-content">
-                mobile view
+                <table class="table table-hover">
+                    <thead>
+                    <tr>
+                        <th>Firstname</th>
+                        <th>Lastname</th>
+                        <th>Email</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>John</td>
+                        <td>Doe</td>
+                        <td>john@example.com</td>
+                    </tr>
+                    <tr>
+                        <td>Mary</td>
+                        <td>Moe</td>
+                        <td>mary@example.com</td>
+                    </tr>
+                    <tr>
+                        <td>July</td>
+                        <td>Dooley</td>
+                        <td>july@example.com</td>
+                    </tr>
+                    </tbody>
+                </table>
             </div>
 
-            <h3>Total Savings To Date £<?php echo round($grandTotal, 2, PHP_ROUND_HALF_UP); ?></h3>
-    <strong id="mobile-content">For full breakdown of your accounts please view on a Tablet or Desktop</strong>
+            <h3>Total Savings To Date <strong>£<?php echo round($grandTotal, 2, PHP_ROUND_HALF_UP); ?></strong></h3>
+            <strong id="mobile-content">For full breakdown of your accounts please view on a Tablet or Desktop</strong>
 
         <?php else : ?>
             <h3>You Have No Accounts</h3>
