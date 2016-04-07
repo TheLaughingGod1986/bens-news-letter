@@ -71,6 +71,7 @@
                 </tr>
                 </tbody>
             </table>
+        <h3>Total Savings To Date £<?php echo round($grandTotal, 2, PHP_ROUND_HALF_UP); ?></h3>
     </div>
     <?php endforeach; ?>
 <!--    MOBILE VIEW START-->
@@ -78,9 +79,9 @@
 
 
 
-                <h3>Total Savings To Date £<?php echo round($grandTotal, 2, PHP_ROUND_HALF_UP); ?></h3>
 
-    <strong id="mobile-content">For full breakdown of your accounts please view on a Tablet or Desktop</strong>
+
+<!--    <strong id="mobile-content">For full breakdown of your accounts please view on a Tablet or Desktop</strong>-->
 
         <?php else : ?>
             <h3>You Have No Accounts</h3>
