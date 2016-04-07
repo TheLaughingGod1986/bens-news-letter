@@ -1,7 +1,7 @@
 #login_form {
-    width: 300px;
+    width: 80%;
     background: #f0f0f0;
-    border: 1px solid white;
+    border: 1px solid rgba(0, 0, 0, 0.22);
     margin: 0 auto 0;
     padding: 1em;
     -moz-border-radius: 3px;
@@ -10,7 +10,6 @@
 
 h1, h2, h3, h4, h5 {
     margin-top: 0;
-    text-align: center;
 }
 
 input[type=text], input[type=password] {
