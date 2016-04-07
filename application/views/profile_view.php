@@ -72,15 +72,11 @@
                 </tbody>
             </table>
     </div>
-
+    <?php endforeach; ?>
 <!--    MOBILE VIEW START-->
 
-<div id="mobile-content">
-    
 
-</div>
 
-    <?php endforeach; ?>
 
                 <h3>Total Savings To Date £<?php echo round($grandTotal, 2, PHP_ROUND_HALF_UP); ?></h3>
 
