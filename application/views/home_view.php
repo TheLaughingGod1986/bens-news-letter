@@ -7,8 +7,13 @@
             <?php
             if ($this->session->userdata('id')) { ?>
                 <p>
-                    Welcome to Back, <em><?php echo $this->session->userdata('username'); ?></em>
-                    <strong>Servare</strong>
+                    Welcome to Back, <strong><?php echo $this->session->userdata('username'); ?></strong>
+                </p>
+                <?php
+            } else { ?>
+                <p>
+                    Welcome to <strong>Servare</strong> A useful tool to help you keep track of your savings accounts no
+                    matter what bank all under one roof.
                 </p>
                 <p>We are very secure due to the fact that we do not ask for any of your account numbers or details.
                     <br>
@@ -22,12 +27,6 @@
                     It really is that easy, and the good news is that once you add all your accounts (and given them
                     wacky
                     names) we will give you your total balance of all your accounts !.
-                </p>
-                <?php
-            } else { ?>
-                <p>
-                    Welcome to <strong>Servare</strong> A useful tool to help you keep track of your savings accounts no
-                    matter what bank all under one roof.
                 </p>
                 <?php
             }
