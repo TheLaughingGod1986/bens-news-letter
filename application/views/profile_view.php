@@ -87,8 +87,6 @@
             </tr>
         </table>
 
-    <strong>For full breakdown of your accounts please view on a Tablet or Desktop</strong>
-
 </div>
 
     <table>
@@ -100,7 +98,9 @@
         </tr>
         </tbody>
     </table>
-    
+
+    <strong id="mobile-content">For full breakdown of your accounts please view on a Tablet or Desktop</strong>
+
         <?php else : ?>
             <h3>You Have No Accounts</h3>
             <h4>Why No Add A Account?</h4>
