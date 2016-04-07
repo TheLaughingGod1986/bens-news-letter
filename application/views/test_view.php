@@ -3,7 +3,7 @@
     <hr>
     <?php $grandTotal = 0; ?>
 
-        <table class="table table-stripe">
+        <table class="table table-striped">
             <thead>
             <tr>
                 <td>Account Name</td>
