@@ -74,9 +74,9 @@
             <thead>
             <tr>
                 <th>Account Name</th>
+                <th>Days Left</th>
                 <th>Current Interest</th>
                 <th>Current Balance</th>
-                <th>Days Left</th>
             </tr>
             </thead>
             <tbody>
@@ -111,16 +111,16 @@
                 ?>
                 <tr>
                     <td><?php echo $row->bank_name; ?></td>
+                    <td><?php echo $remain; ?></td>
                     <td>£<?php echo round($Total_Int, 2, PHP_ROUND_HALF_UP); ?></td>
                     <td>£<?php echo round($Total_balance, 2, PHP_ROUND_HALF_UP); ?></td>
-                    <td><?php echo $remain; ?></td>
                 </tr>
             <?php endforeach; ?>
             </tbody>
             <tfoot>
             <tr>
                 <td colspan="3">Total Savings To Date</td>
-                <td colspan="1"><strong>£<?php echo round($grandTotal , 2, PHP_ROUND_HALF_UP); ?></strong></td>
+                <td colspan="1"><strong>£<?php echo round($grandTotal / 2 , 2, PHP_ROUND_HALF_UP); ?></strong></td>
             </tr>
             </tfoot>
         </table>
