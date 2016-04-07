@@ -23,7 +23,6 @@
 
             </p>
         </div>
-    </div>
 
 <!-- Example row of columns -->
 <div class="row">
@@ -44,6 +43,7 @@
         <p><a class="btn btn-primary" href="#" role="button">View details &raquo;</a></p>
     </div>
 </div>
+        </div>
 <!--</div>-->
 
 <!--<div id="mobile-content">-->
