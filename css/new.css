@@ -130,7 +130,10 @@
 }
 
 .logo-img img {
-    height: 50px;
+     height: 50px;
+ }
+.signup-img img {
+    width: 50%;
 }
 
 .navbar-inverse-light-grey {

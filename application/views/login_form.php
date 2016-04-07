@@ -6,9 +6,9 @@
             <?php
             $this->load->helper('html');
             $img = base_url('img/cash-flow.jpg');
-            $path = 'home';
+            $path = 'login';
             ?>
-            <div>
+            <div class="signup-img">
                 <?php
                 echo anchor($path, img($img));
                 ?>
