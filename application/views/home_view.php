@@ -67,6 +67,9 @@
             ?>
         </p>
     </div>
+    <div id="mobile-content">
+        <h1> Welcome to Servare</h1>
+        </div>
 
     <!-- Example row of columns -->
     <div class="row">
