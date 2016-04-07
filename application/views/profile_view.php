@@ -71,7 +71,7 @@
                 </tr>
                 </tbody>
             </table>
-
+</div>
     </div>
     <?php endforeach; ?>
     <h3>Total Savings To Date £<?php echo round($grandTotal, 2, PHP_ROUND_HALF_UP); ?></h3>
