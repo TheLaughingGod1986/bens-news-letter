@@ -1,4 +1,4 @@
-    <div class="container-fluid">
+    <div class="coInformationuid">
         <h2>Sign Up Now!</h2>
         <hr>
         <div id="login_form">
@@ -20,6 +20,7 @@
             'id' => 'username',
             'placeholder' => 'Your Username',
         );
+        echo " <legend>Personal Infomation</legend>";
         echo form_input($your_f_name);
         echo form_input($your_s_name);
         echo form_input($your_username);

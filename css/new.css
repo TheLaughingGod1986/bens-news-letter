@@ -88,6 +88,11 @@
     margin-top: 0;
 }
 
+.no-margin-top
+{
+    margin-top: 0 !important;
+}
+
 /*
  * Placeholder dashboard ideas
  */
@@ -149,28 +154,7 @@
 }
 
 @media screen and (min-width: 601px) {
-    #desktop-content { display: block; }   /* show it elsewhere */
-}
-
-/*!*//tablet*!*/
-/*@media screen and (min-width: 0px) and (max-width: 600px) {*/
-    /*#tablet-content { display: none; }  !* hide iton small screens *!*/
-/*}*/
-
-/*@media screen and (min-width: 601px) and (max-width: 1024px) {*/
-    /*#tablet-content { display: block; }   !* show it elsewhere *!*/
-/*}*/
-
-/*!*//desktop*!*/
-/*@media screen and (min-width: 0px) and (max-width: 1024px) {*/
-    /*#desktop-content { display: none; }  !* hide iton small screens *!*/
-/*}*/
-
-/*@media screen and (min-width: 1025px) {*/
-    /*#desktop-content { display: block; }   !* show it elsewhere *!*/
-/*}*/
-
-.no-margin-top
-{
-    margin-top: 0px !important;
+    #desktop-content {
+        display: block;
+    }
 }
