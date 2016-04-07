@@ -60,18 +60,15 @@
 <!--    </div>-->
     <div id="desktop-content">
         <table class="table table-hover">
-<!--            <thead>-->
-<!--            <tr>-->
-<!--                <td>Initial Deposit Date</td>-->
-<!--                <td>Interest Rate</td>-->
-<!--                <td>Monthly Deposit</td>-->
-<!--                <td>Days Till Account Maturity</td>-->
-<!--                <td>Interest After <strong>--><?php //echo $date1->diff($date2)->format("%m"); ?><!--</strong> Months</td>-->
-<!--                <td>Balance After <strong>--><?php //echo $date1->diff($date2)->format("%m"); ?><!--</strong> Months</td>-->
-<!--            </tr>-->
-<!--            </thead>-->
-<!---->
-<!--            <tbody>-->
+            <thead>
+            <tr>
+                <th>Account Name</th>
+                <th>Current Interest</th>
+                <th>Current Balance</th>
+            </tr>
+            </thead>
+
+            <tbody>
 
             <?php if (isset($records)) : foreach ($records as $row) :
                 $join_date = $row->start_date;
@@ -101,25 +98,10 @@
                 // Add row total to grand total
                 $grandTotal += $rowTotal;
                 ?>
-            <thead>
-            <tr>
-                <td>Initial Deposit Date</td>
-                <td>Interest Rate</td>
-                <td>Monthly Deposit</td>
-                <td>Days Till Account Maturity</td>
-                <td>Interest After <strong><?php echo $date1->diff($date2)->format("%m"); ?></strong> Months</td>
-                <td>Balance After <strong><?php echo $date1->diff($date2)->format("%m"); ?></strong> Months</td>
-            </tr>
-            </thead>
-
-            <tbody>
                 <tr>
-                    <td><strong><?php echo $newDate; ?></strong></td>
-                    <td><strong><?php echo $row->interest * 100; ?>%</strong> Interest</td>
-                    <td><strong>£<?php echo $row->monthly_deposits; ?></strong> (PCM)</td>
-                    <td><strong><?php echo $remain; ?></strong> Days Left</td>
-                    <td><strong>£<?php echo round($Total_Int, 2, PHP_ROUND_HALF_UP); ?></strong> Interest</td>
-                    <td><strong>£<?php echo round($Total_balance, 2, PHP_ROUND_HALF_UP); ?></strong></td>
+                    <td><?php echo $row->bank_name; ?></td>
+                    <td>£<?php echo round($Total_Int, 2, PHP_ROUND_HALF_UP); ?></td>
+                    <td>£<?php echo round($Total_balance, 2, PHP_ROUND_HALF_UP); ?></td>
                 </tr>
             <?php endforeach; ?>
             </tbody>
