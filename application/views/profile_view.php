@@ -120,11 +120,10 @@ foreach ($records as $row) :
             </tr>
             </tbody>
         </table>
-    </div>
+
 
 <?php endforeach; ?>
 <div id="mobile-content">
-
     <h3>Total Savings To Date £<?php echo round($grandTotal / 2, 2, PHP_ROUND_HALF_UP); ?></h3>
     <strong>For full breakdown of your accounts please view on a Tablet or Desktop</strong>
 </div>
@@ -146,4 +145,4 @@ foreach ($records as $row) :
         <h4>Why No Add A Account?</h4>
     <?php endif; ?>
 
-
+</div>
