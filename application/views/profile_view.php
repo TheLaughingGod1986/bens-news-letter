@@ -114,9 +114,12 @@
 
             <tbody>
                 <tr>
-                    <td><?php echo $row->bank_name; ?></td>
-                    <td>£<?php echo round($Total_Int, 2, PHP_ROUND_HALF_UP); ?></td>
-                    <td>£<?php echo round($Total_balance, 2, PHP_ROUND_HALF_UP); ?></td>
+                    <td><strong><?php echo $newDate; ?></strong></td>
+                    <td><strong><?php echo $row->interest * 100; ?>%</strong> Interest</td>
+                    <td><strong>£<?php echo $row->monthly_deposits; ?></strong> (PCM)</td>
+                    <td><strong><?php echo $remain; ?></strong> Days Left</td>
+                    <td><strong>£<?php echo round($Total_Int, 2, PHP_ROUND_HALF_UP); ?></strong> Interest</td>
+                    <td><strong>£<?php echo round($Total_balance, 2, PHP_ROUND_HALF_UP); ?></strong></td>
                 </tr>
             <?php endforeach; ?>
             </tbody>
