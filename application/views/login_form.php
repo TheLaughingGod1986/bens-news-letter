@@ -1,7 +1,7 @@
 <div class="conInformationid">
     <h2>Log In Now!</h2>
     <hr>
-    <div id="desktop-content" class="col-sm-5">
+    <div id="desktop-content" class="col-sm-7">
         <?php
         $this->load->helper('html');
         $img = base_url('img/cash-flow.jpg');
