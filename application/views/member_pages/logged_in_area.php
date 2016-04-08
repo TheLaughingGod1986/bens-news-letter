@@ -55,7 +55,7 @@
         <?php
         $this->load->helper('html');
         $img = base_url('img/cash-flow.jpg');
-        $path = 'login';
+        $path = 'members';
         ?>
         <div class="logged-img">
             <?php
