@@ -135,6 +135,11 @@
 .signup-img img {
     width: 50%;
 }
+.logged-img img {
+    width: 70%;
+    float: right;
+    vertical-align: right;
+}
 
 .navbar-inverse-light-grey {
     background-color: #F5F5F5;

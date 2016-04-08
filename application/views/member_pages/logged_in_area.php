@@ -57,7 +57,7 @@
         $img = base_url('img/cash-flow.jpg');
         $path = 'login';
         ?>
-        <div class="signup-img">
+        <div class="logged-img">
             <?php
             echo anchor($path, img($img));
             ?>
