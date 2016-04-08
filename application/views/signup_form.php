@@ -13,6 +13,7 @@
             ?>
         </div>
     </div>
+    
     <div class="col-sm-4">
         <div id="login_form">
             <?php
